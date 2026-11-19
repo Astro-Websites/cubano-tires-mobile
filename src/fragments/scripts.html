@@ -1,0 +1,24 @@
+<script>
+(function(){var ON='min-height: 52px; border: 0; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; background: #FFFFFF; color: #E11B22; box-shadow: inset 0 -3px 0 #E11B22;',OFF='min-height: 52px; border: 0; font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; background: #F3F6FA; color: #5B6575;';var tabs=document.querySelectorAll('[data-tab]');
+tabs.forEach(function(t){t.addEventListener('click',function(){var k=t.getAttribute('data-tab');
+tabs.forEach(function(x){var a=x===t;x.setAttribute('style',a?ON:OFF);x.setAttribute('aria-selected',a?'true':'false');});
+document.querySelectorAll('[data-panel]').forEach(function(p){p.hidden=p.getAttribute('data-panel')!==k;});});});
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href').slice(1);var el=id&&document.getElementById(id);if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'});}});});
+})();
+</script>
+<script>
+(function(){var hd=document.querySelector('header'),b=hd&&hd.querySelector('.cub-tog');if(!b)return;
+function set(o){hd.classList.toggle('open',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Close menu':'Open menu');}
+b.addEventListener('click',function(){set(!hd.classList.contains('open'))});
+hd.querySelectorAll('.cub-menu a').forEach(function(a){a.addEventListener('click',function(){set(false)})});
+window.addEventListener('resize',function(){if(innerWidth>=1024)set(false)});})();
+</script>
+<script>
+/* TIRESanytime close (X): stay on this page instead of jumping to the site root */
+document.addEventListener('click',function(e){var b=e.target&&e.target.closest&&e.target.closest('#ta-widget-container .back-button');if(!b)return;e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();window.location.href=window.location.href.split('#')[0].split('?')[0];},true);
+/* Keep TIRESanytime results/overlays above the sticky header */
+(function(){var c=document.getElementById('ta-widget-container');if(!c||!window.MutationObserver)return;var q=false;
+function lift(){q=false;var els=c.querySelectorAll('*');for(var i=0;i<els.length;i++){var e=els[i];if(e.style.zIndex!=='100000'&&getComputedStyle(e).position==='fixed'){e.style.setProperty('z-index','100000','important');}}}
+new MutationObserver(function(){if(!q){q=true;requestAnimationFrame(lift);}}).observe(c,{childList:true,subtree:true,attributes:true,attributeFilter:['class','style']});})();
+</script>
+<script src="https://ta3.tiresanytime.com/app/widget/searchWidget.js" type="text/javascript"></script>

@@ -1,0 +1,8 @@
+---
+import footerSource from '../fragments/footer.html?raw';
+import { bindGlobalFragment } from '../lib/global-fragment';
+
+const { config, navigation } = Astro.props;
+const html = bindGlobalFragment(footerSource, config, navigation);
+---
+<Fragment set:html={html} />

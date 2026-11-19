@@ -1,0 +1,40 @@
+{
+  "header": [
+    { "sourceLabel": "Shop Tires", "label": "Shop Tires", "href": "#shop" },
+    { "sourceLabel": "Tire Services", "label": "Tire Services", "href": "#services" },
+    { "sourceLabel": "Fleet Services", "label": "Fleet Services", "href": "#fleet" },
+    { "sourceLabel": "Coupons", "label": "Coupons", "href": "#coupons" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" }
+  ],
+  "services": [
+    { "sourceLabel": "Fleet & Commercial", "label": "Fleet & Commercial", "href": "#services" },
+    { "sourceLabel": "Tire Installation", "label": "Tire Installation", "href": "#services" },
+    { "sourceLabel": "Flat Repair", "label": "Flat Repair", "href": "#services" },
+    { "sourceLabel": "Tesla & EV", "label": "Tesla & EV", "href": "#services" },
+    { "sourceLabel": "TPMS", "label": "TPMS", "href": "#services" },
+    { "sourceLabel": "Roadside Service", "label": "Roadside Service", "href": "#services" }
+  ],
+  "company": [
+    { "sourceLabel": "Reviews", "label": "Reviews", "href": "#reviews" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" },
+    { "sourceLabel": "FAQ", "label": "FAQ", "href": "#faq" },
+    { "sourceLabel": "About Us", "label": "About Us", "href": "#crew" },
+    { "sourceLabel": "Tire Tips", "label": "Tire Tips", "href": "#services" }
+  ],
+  "social": [
+    { "sourceLabel": "TikTok", "label": "TikTok", "href": "#work" },
+    { "sourceLabel": "Instagram", "label": "Instagram", "href": "#instagram" },
+    { "sourceLabel": "YouTube", "label": "YouTube", "href": "#work" },
+    { "sourceLabel": "Facebook", "label": "Facebook", "href": "#" },
+    { "sourceLabel": "Yelp", "label": "Yelp", "href": "#reviews" }
+  ],
+  "legal": [
+    { "sourceLabel": "Privacy", "label": "Privacy", "href": "#" },
+    { "sourceLabel": "Terms", "label": "Terms", "href": "#" },
+    { "sourceLabel": "Cookie", "label": "Cookie", "href": "#" },
+    { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "#" },
+    { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "#" }
+  ]
+}

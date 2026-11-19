@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.astro-launch/
+.dependency-backup/
+evidence/
+playwright-report/
+test-results/
+tina/__generated__/
+.env
+.env.*
+!.env.example
+.DS_Store
