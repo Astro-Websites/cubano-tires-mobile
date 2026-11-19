@@ -64,33 +64,39 @@ demoSections:
   copy:
   - text: Meet the Crew
   - text: The people behind every job
-  - text: Photo coming soon
   - text: Joel Gonzalez
   - text: Owner
   - text: Answers the phone, quotes every job and builds the fleet relationships.
-  - text: Photo coming soon
   - text: Jay
   - text: General Manager
   - text: '[One line from Jay about his role]'
-  - text: Photo coming soon
   - text: Ramiro
   - text: Technician
   - text: '"Arrived right on time, just as promised." Tess S., Google'
-  - text: Photo coming soon
   - text: Steven
   - text: Technician
   - text: '[One line from Steven]'
-  - text: Photo coming soon
   - text: Orafnel
   - text: Technician
   - text: '"My tire miracle worker." Google review'
-  - text: Photo coming soon
   - text: Joey
   - text: Social Media Manager
   - text: Rides along and films the job. If you see a camera, say hi.
-  - text: '[Headshots: phone photos in front of the truck work great]'
+
   links: []
-  images: []
+  images:
+  - source: /uploads/crew/joel-gonzalez.webp
+    alt: Joel Gonzalez
+  - source: /uploads/crew/jay.webp
+    alt: Jay
+  - source: /uploads/crew/ramiro.webp
+    alt: Ramiro
+  - source: /uploads/crew/steven.webp
+    alt: Steven
+  - source: /uploads/crew/orafnel.webp
+    alt: Orafnel
+  - source: /uploads/crew/joey.webp
+    alt: Joey
 - label: Trusted by the tire brands
   copy:
   - text: Trusted by the tire brands

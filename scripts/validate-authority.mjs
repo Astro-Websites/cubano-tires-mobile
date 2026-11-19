@@ -15,7 +15,7 @@ if (source) {
   if (digest !== manifest['index.html']?.sha256) throw new Error('ASTRO-DEMO-LOCK authority hash mismatch');
 }
 const pins = {
-  'src/fragments/body.html': 'f50bacb49dca9f092c58c9e8ba96bb8faca0dce99f34b308998c838adb79e710',
+  'src/fragments/body.html': '7162de27a1daeb715ecf33a5b4227c56f28b3df07681d4f1ef4c21f211469b26',
   'src/fragments/footer.html': '2a41e8daaff9bd74e444467b28e59237420c8e1da6e5b8bc69dadaa3bbdb5354',
   'src/fragments/header.html': '4d31760356054655dd823f438fdcec61afd32ff7d21043056a3723a777129265',
   'src/fragments/scripts.html': 'd871b8aca8f242e015eb321b4e46ebb6362e46d9a1b887471bf3c2f51a35db86',
