@@ -33,7 +33,10 @@ export default defineConfig({
         path: 'src/content/global',
         match: { include: 'config' },
         format: 'json',
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: {
+          global: true,
+          allowedActions: { create: false, delete: false },
+        },
         fields: [
           { type: 'string', name: 'siteName', label: 'Site Name', required: true },
           {

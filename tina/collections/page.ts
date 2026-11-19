@@ -6,8 +6,15 @@ export const PageCollection: Collection = {
   path: 'src/content/page',
   format: 'md',
   ui: {
-    filename: { readonly: true },
-    allowedActions: { create: false, delete: false },
+    filename: {
+      readonly: false,
+      slugify: (values) =>
+        String(values?.title || 'untitled')
+          .toLowerCase()
+          .trim()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, ''),
+    },
   },
   fields: [
     { type: 'string', name: 'title', label: 'Title', isTitle: true, required: true },
