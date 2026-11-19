@@ -4,9 +4,12 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description: string;
+  favicon?: string;
+  headerCode?: string;
+  footerCode?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, favicon, headerCode, footerCode } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
@@ -14,13 +17,16 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    {favicon && <link rel="icon" href={favicon} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" />
     <title>{title}</title>
+    {headerCode && <Fragment set:html={headerCode} />}
   </head>
   <body>
     <div style="background: #FFFFFF; color: #1B2430; font-family: Inter, system-ui, sans-serif; width: 100%; min-height: 100vh; overflow-x: clip">
       <slot />
+      {footerCode && <Fragment set:html={footerCode} />}
     </div>
   </body>
 </html>

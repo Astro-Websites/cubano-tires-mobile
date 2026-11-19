@@ -3,6 +3,6 @@ import headerSource from '../fragments/header.html?raw';
 import { bindGlobalFragment } from '../lib/global-fragment';
 
 const { config, navigation } = Astro.props;
-const html = bindGlobalFragment(headerSource, config, navigation);
+const html = bindGlobalFragment(headerSource, config, navigation, 'header');
 ---
 <Fragment set:html={html} />

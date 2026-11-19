@@ -36,11 +36,31 @@ export default defineConfig({
         ui: { allowedActions: { create: false, delete: false } },
         fields: [
           { type: 'string', name: 'siteName', label: 'Site Name', required: true },
+          {
+            type: 'object',
+            name: 'seo',
+            label: 'Site Identity & SEO',
+            fields: [
+              { type: 'string', name: 'description', label: 'Default Meta Description', ui: { component: 'textarea' } },
+              { type: 'image', name: 'logo', label: 'Logo' },
+              { type: 'image', name: 'favicon', label: 'Favicon', description: 'Upload the browser tab/site icon. Recommended: square PNG, SVG, or ICO.' },
+              { type: 'image', name: 'footerLogo', label: 'Footer Logo', description: 'Upload the logo used in the footer. Falls back to the header logo when empty.' },
+            ],
+          },
           { type: 'string', name: 'phoneDisplay', label: 'Phone Display', required: true },
           { type: 'string', name: 'phoneDigits', label: 'Phone Digits', required: true },
           { type: 'string', name: 'addressLine1', label: 'Address Line 1', required: true },
           { type: 'string', name: 'addressLine2', label: 'Address Line 2', required: true },
           { type: 'string', name: 'copyright', label: 'Copyright', required: true },
+          {
+            type: 'object',
+            name: 'codeInjection',
+            label: 'Code Injection',
+            fields: [
+              { type: 'string', name: 'headerCode', label: 'Header Code', ui: { component: 'textarea' } },
+              { type: 'string', name: 'footerCode', label: 'Footer Code', ui: { component: 'textarea' } },
+            ],
+          },
         ],
       },
       {

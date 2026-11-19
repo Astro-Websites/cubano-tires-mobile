@@ -3,6 +3,6 @@ import footerSource from '../fragments/footer.html?raw';
 import { bindGlobalFragment } from '../lib/global-fragment';
 
 const { config, navigation } = Astro.props;
-const html = bindGlobalFragment(footerSource, config, navigation);
+const html = bindGlobalFragment(footerSource, config, navigation, 'footer');
 ---
 <Fragment set:html={html} />

@@ -6,13 +6,21 @@ import Base from '../layouts/Base.astro';
 import config from '../content/global/config.json';
 import navigation from '../content/global/navigation.json';
 import scriptsSource from '../fragments/scripts.html?raw';
+import { getEntry } from 'astro:content';
+
+const homepage = await getEntry('page', 'homepage');
+if (!homepage) throw new Error('Required Tina Pages document src/content/page/homepage.mdx is missing.');
+const page = homepage.data as any;
 ---
 <Base
-  title="Cubano Tires Mobile Shop | Mobile Tire Service in Orange County & LA"
-  description="Mobile tire and fleet service in Orange County and Los Angeles."
+  title={page.title}
+  description={page.description || config.seo?.description}
+  favicon={config.seo?.favicon}
+  headerCode={config.codeInjection?.headerCode}
+  footerCode={config.codeInjection?.footerCode}
 >
   <Header {config} {navigation} />
-  <main><HomePage /></main>
+  <main><HomePage {page} /></main>
   <Footer {config} {navigation} />
   <Fragment set:html={scriptsSource} />
 </Base>

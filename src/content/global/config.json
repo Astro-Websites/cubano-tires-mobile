@@ -1,8 +1,18 @@
 {
   "siteName": "Cubano Tires Mobile Shop",
+  "seo": {
+    "description": "Mobile tire and fleet service in Orange County and Los Angeles.",
+    "logo": "/uploads/cubano-logo.png",
+    "favicon": "/uploads/cubano-logo.png",
+    "footerLogo": "/uploads/cubano-logo.png"
+  },
   "phoneDisplay": "(888) 333-3173",
   "phoneDigits": "8883333173",
   "addressLine1": "3911 E La Palma Ave, Suite J",
   "addressLine2": "Anaheim, CA 92807",
-  "copyright": "© 2026 Cubano Tires Mobile Shop. All rights reserved."
+  "copyright": "© 2026 Cubano Tires Mobile Shop. All rights reserved.",
+  "codeInjection": {
+    "headerCode": "",
+    "footerCode": ""
+  }
 }

@@ -1,10 +1,12 @@
 type GlobalConfig = {
   siteName: string;
+  seo?: { description?: string; logo?: string; favicon?: string; footerLogo?: string };
   phoneDisplay: string;
   phoneDigits: string;
   addressLine1: string;
   addressLine2: string;
   copyright: string;
+  codeInjection?: { headerCode?: string; footerCode?: string };
 };
 
 type NavigationItem = { sourceLabel: string; label: string; href: string };
@@ -19,13 +21,18 @@ const escapeHtml = (value: string) => value
 
 const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-export function bindGlobalFragment(source: string, config: GlobalConfig, navigation: Navigation) {
+export function bindGlobalFragment(source: string, config: GlobalConfig, navigation: Navigation, placement: 'header' | 'footer') {
   let html = source
     .replaceAll('(888) 333-3173', escapeHtml(config.phoneDisplay))
     .replaceAll('8883333173', escapeHtml(config.phoneDigits))
     .replaceAll('3911 E La Palma Ave, Suite J', escapeHtml(config.addressLine1))
     .replaceAll('Anaheim, CA 92807', escapeHtml(config.addressLine2))
     .replaceAll('© 2026 Cubano Tires Mobile Shop. All rights reserved.', escapeHtml(config.copyright));
+
+  const logo = placement === 'footer' ? (config.seo?.footerLogo || config.seo?.logo) : config.seo?.logo;
+  if (logo) {
+    html = html.replace(/(<img\s+src=")[^"]+("[^>]*>)/i, `$1${escapeHtml(logo)}$2`);
+  }
 
   for (const item of Object.values(navigation).flat()) {
     const label = escapeRegExp(item.sourceLabel);
