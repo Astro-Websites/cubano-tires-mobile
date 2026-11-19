@@ -7,4 +7,24 @@ const global = defineCollection({
   schema: z.record(z.string(), z.unknown()),
 });
 
-export const collections = { global };
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
+const category = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/category' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
+const page = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/page' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
+const user = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/content/user' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
+export const collections = { global, blog, category, page, user };

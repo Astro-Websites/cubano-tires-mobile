@@ -27,5 +27,18 @@ if (!page.includes('<Header {config} {navigation} />') || !page.includes('<Foote
 }
 const tina = await readFile(path.join(root, 'tina/config.ts'), 'utf8');
 for (const collection of ["name: 'globalConfig'", "name: 'navigation'"]) if (!tina.includes(collection)) throw new Error(`Missing Tina ${collection}`);
+const modularCollections = [
+  ['blog', 'Blogs', 'BlogCollection'],
+  ['category', 'Categories', 'CategoryCollection'],
+  ['page', 'Pages', 'PageCollection'],
+  ['user', 'Users', 'UserCollection'],
+];
+for (const [name, label, symbol] of modularCollections) {
+  if (!tina.includes(symbol)) throw new Error(`Tina config does not register ${symbol}`);
+  const definition = await readFile(path.join(root, `tina/collections/${name}.ts`), 'utf8');
+  if (!definition.includes(`name: '${name}'`) || !definition.includes(`label: '${label}'`)) {
+    throw new Error(`Tina ${label} collection definition is incomplete`);
+  }
+}
 
-console.log(JSON.stringify({ gate: 'LOCAL_AUTHORITY_PREFLIGHT', status: 'PASS', digest, globalComponents: true, tinaCollections: ['globalConfig', 'navigation'] }));
+console.log(JSON.stringify({ gate: 'LOCAL_AUTHORITY_PREFLIGHT', status: 'PASS', digest, globalComponents: true, tinaCollections: ['blog', 'category', 'page', 'user', 'globalConfig', 'navigation'] }));

@@ -1,4 +1,8 @@
 import { defineConfig } from 'tinacms';
+import { BlogCollection } from './collections/blog';
+import { CategoryCollection } from './collections/category';
+import { PageCollection } from './collections/page';
+import { UserCollection } from './collections/user';
 
 const navigationItem = {
   type: 'object' as const,
@@ -19,6 +23,10 @@ export default defineConfig({
   media: { tina: { mediaRoot: 'uploads', publicFolder: 'public' } },
   schema: {
     collections: [
+      BlogCollection,
+      CategoryCollection,
+      PageCollection,
+      UserCollection,
       {
         name: 'globalConfig',
         label: 'Global Config',
