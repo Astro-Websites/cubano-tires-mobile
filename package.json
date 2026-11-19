@@ -13,7 +13,7 @@
     "cms:build": "tinacms build --content=local --skip-cloud-checks --skip-indexing --skip-search-index --noTelemetry",
     "check": "astro check",
     "build:site": "astro build",
-    "build": "npm run validate:authority && npm run check && npm run build:site",
+    "build": "npm run build:full",
     "build:full": "npm run validate:authority && npm run cms:build && npm run check && npm run build:site",
     "preview": "astro preview",
     "validate:authority": "node scripts/validate-authority.mjs",
@@ -29,6 +29,8 @@
   "devDependencies": {
     "@playwright/test": "^1.56.0",
     "@tinacms/cli": "^4.0.5",
-    "@types/node": "^22.0.0"
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0"
   }
 }
