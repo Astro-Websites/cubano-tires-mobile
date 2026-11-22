@@ -6,8 +6,6 @@ demoSections:
 - label: Save up to $120 on new tires, installed in your driveway.
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
     text: Coupons & Rebates
   - role: Eyebrow
     text: COUPONS & REBATES
@@ -17,10 +15,6 @@ demoSections:
     text: installed in your driveway.
   - role: Paragraph
     text: Current manufacturer rebates on the brands we install, plus free mobile service when you buy 4 tires in Orange County. Text us your tire size and the offer you want, and we quote with it applied.
-  - role: Button or link text
-    text: Text a Photo for a Quote
-  - role: Button or link text
-    text: See Current Rebates
   - role: Eyebrow
     text: ORANGE COUNTY
   - role: Paragraph
@@ -31,14 +25,14 @@ demoSections:
     text: Outside OC? Ask for our flat mobile rate. Combines with manufacturer rebates.
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for a Quote
+    url: sms:8883333173
   - role: Button
-    url: '#rebates'
     label: See Current Rebates
+    url: '#rebates'
   images: []
 - label: Brand rebates we can install today
   copy:
@@ -52,12 +46,10 @@ demoSections:
     text: Online Appointment Special
   - role: Paragraph
     text: '[OFFER DETAILS: amount, what it applies to, how to claim]'
-  - role: Button or link text
-    text: Book by Text
   links:
   - role: Button
-    url: sms:8883333173
     label: Book by Text
+    url: sms:8883333173
   images: []
   cards:
   - _template: rebate
@@ -129,17 +121,13 @@ demoSections:
     text: Want the rebate price? Text us your tire size.
   - role: Paragraph
     text: We reply with a price that includes the offer and an arrival time. Mon–Fri 8–5, after-hours texts answered next business morning.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: coupons
 ---

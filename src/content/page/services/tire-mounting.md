@@ -6,10 +6,6 @@ demoSections:
 - label: Tire Mounting on Your Wheels in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Tire Mounting on Your Wheels
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Bought new wheels or have a second set ready to go? You bring the wheels, we bring the tires and the shop truck. We mount, balance and install them in your driveway, and move your TPMS sensors over so the dash stays clear.
-  - role: Button or link text
-    text: Text Us a Photo of Your Wheels
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Jesse M. V. · Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Wheels
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -160,12 +152,10 @@ demoSections:
     text: How much does tire mounting on my wheels cost?
   - role: Paragraph
     text: Mounting and installing tires on your wheels starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. We supply the tires; you provide the wheels. We quote everything up front, so the price we text you is the price you pay. An optional nationwide warranty is available for $15 per tire.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: Tire Mounting FAQ
   copy:
@@ -196,14 +186,12 @@ demoSections:
   copy:
   - role: Heading
     text: Tire mounting near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -248,17 +236,13 @@ demoSections:
     text: Got your wheels? Text us a photo.
   - role: Paragraph
     text: Tell us your vehicle, your wheel size and the tires you want. We'll text back a price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Wheels
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Wheels
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: tire-mounting
 ---

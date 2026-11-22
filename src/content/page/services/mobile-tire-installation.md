@@ -6,10 +6,6 @@ demoSections:
 - label: Mobile Tire Installation in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Mobile Tire Installation
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,14 +15,8 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: New tires, delivered and installed in your driveway or office lot. We bring the tires, mount and balance them on the truck, and you never sit in a waiting room.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone, or
-  - role: Button or link text
-    text: shop tires by size
   - role: Paragraph
     text: .
   - role: Badge
@@ -43,20 +33,20 @@ demoSections:
     text: Jesse M. V. · Google review
   links:
   - role: Link
-    url: /
     label: Home
-  - role: Link
-    url: '#services'
-    label: Tire Services
-  - role: Button
-    url: sms:8883333173
-    label: Text Us a Photo of Your Tire
-  - role: Button
-    url: tel:8883333173
-    label: Call (888) 333-3173
-  - role: Link
     url: /
+  - role: Link
+    label: Tire Services
+    url: '#services'
+  - role: Button
+    label: Text Us a Photo of Your Tire
+    url: sms:8883333173
+  - role: Button
+    label: Call (888) 333-3173
+    url: tel:8883333173
+  - role: Link
     label: shop tires by size
+    url: /
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -76,14 +66,10 @@ demoSections:
     text: Shop tires online
   - role: Paragraph
     text: Search by your tire size or your vehicle, compare brands, and pick a set. We'll confirm the price and your install time by text.
-  - role: Button or link text
-    text: Search Tires by Size
   - role: Paragraph
     text: Text us a photo
   - role: Paragraph
     text: Snap the side of your tire where the size is printed (it looks like 245/45R19). Joel reads it, gives you a few options, and quotes the full job.
-  - role: Button or link text
-    text: Text a Photo of Your Tire
   - role: Paragraph
     text: Every install includes
   - role: List item
@@ -130,11 +116,11 @@ demoSections:
     text: Want extra peace of mind? Add an optional nationwide warranty for $15 per tire.
   links:
   - role: Button
-    url: /
     label: Search Tires by Size
+    url: /
   - role: Button
-    url: sms:8883333173
     label: Text a Photo of Your Tire
+    url: sms:8883333173
   images: []
 - label: What we install on-site
   copy:
@@ -201,12 +187,10 @@ demoSections:
     text: How much does mobile tire installation cost?
   - role: Paragraph
     text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: Mobile Tire Installation FAQ
   copy:
@@ -237,14 +221,12 @@ demoSections:
   copy:
   - role: Heading
     text: Mobile tire installation near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -289,17 +271,13 @@ demoSections:
     text: Need new tires? Skip the shop.
   - role: Paragraph
     text: Text us a photo of your tire and we'll send options, one price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: mobile-tire-installation
 ---

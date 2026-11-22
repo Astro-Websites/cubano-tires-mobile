@@ -6,10 +6,6 @@ demoSections:
 - label: TPMS Sensor Replacement in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: TPMS Sensor Service
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Tire pressure light won't go off? We test every sensor, replace the one that's dead and run the relearn so the light stays off. No shop visit. We do it where your car is parked.
-  - role: Button or link text
-    text: Text Us a Photo of Your Dash Light
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Dash Light
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -166,12 +158,10 @@ demoSections:
     text: TPMS sensors start at $95 and up per sensor, depending on the vehicle. We complete the TPMS relearn and reset procedures on-site before leaving, so the system is properly programmed and working after installation. We quote the full job, so the price we text you is the price you pay.
   - role: Paragraph
     text: Due for new tires too? We can do the sensors in the same visit.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: TPMS Sensor FAQ
   copy:
@@ -202,14 +192,12 @@ demoSections:
   copy:
   - role: Heading
     text: TPMS sensor service near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -254,17 +242,13 @@ demoSections:
     text: Tire pressure light on? Text us a photo.
   - role: Paragraph
     text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Dash
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Dash
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: tpms-sensor-service
 ---

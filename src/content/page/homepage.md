@@ -15,39 +15,31 @@ demoSections:
     text: Mobile Tire & Fleet Service in Orange County & LA
   - role: Paragraph
     text: Skip the tire shop. Our fully stocked service trucks come to your driveway, job site or fleet yard and handle installs, repairs and replacements on the spot, for cars, EVs and heavy commercial equipment.
-  - role: Button or link text
-    text: Call (888) 333-3173
-  - role: Button or link text
-    text: Text Us Your Tire Size
   - role: Text
     text: '@cubanotiresmobileshop'
   - role: Paragraph
     text: Real jobs. Posted daily.
   - role: Paragraph
     text: 565+ videos on TikTok, IG & YouTube
-  - role: Button or link text
-    text: Watch Us Work
   - role: Bold text
     text: $75 MOBILE FEE WAIVED
   - role: Text
     text: with 4 new tires · Orange County only
   - role: Paragraph
     text: Can't find your tire?
-  - role: Button or link text
-    text: Text or call (888) 333-3173
   links:
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   - role: Button
-    url: sms:8883333173
     label: Text Us Your Tire Size
-  - role: Button
-    url: '#work'
-    label: Watch Us Work
-  - role: Link
     url: sms:8883333173
+  - role: Button
+    label: Watch Us Work
+    url: '#work'
+  - role: Link
     label: Text or call (888) 333-3173
+    url: sms:8883333173
   images:
   - role: Image
     source: /uploads/home/google.png
@@ -120,17 +112,13 @@ demoSections:
     text: Why Drive to a Tire Shop When We Can Come to You?
   - role: Eyebrow
     text: Convenient. Professional. 100% Mobile.
-  - role: Button or link text
-    text: Get My Free Quote
-  - role: Button or link text
-    text: or text (888) 333-3173
   links:
   - role: Button
-    url: '#'
     label: Get My Free Quote
+    url: '#'
   - role: Link
-    url: sms:8883333173
     label: or text (888) 333-3173
+    url: sms:8883333173
   images:
   - role: Background image
     source: /uploads/home/how-it-works-background.jpg
@@ -240,17 +228,13 @@ demoSections:
     text: to you.
   - role: Paragraph
     text: Driveway, office lot, roadside or job site. Our stocked trucks roll up with the tire, the machine and the tech.
-  - role: Button or link text
-    text: Call (888) 333-3173
-  - role: Button or link text
-    text: Text Us
   links:
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   - role: Button
-    url: sms:8883333173
     label: Text Us
+    url: sms:8883333173
   images:
   - role: Image
     source: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
@@ -289,22 +273,16 @@ demoSections:
     text: 'Watch Us Work: 565+ Jobs on Video'
   - role: Paragraph
     text: Real jobs, real customers, posted every day. This feed updates automatically from our TikTok, Instagram and YouTube.
-  - role: Button or link text
-    text: Follow on TikTok
-  - role: Button or link text
-    text: Instagram
-  - role: Button or link text
-    text: YouTube
   links:
   - role: Button
-    url: https://www.tiktok.com/@cubanotiresmobileshop
     label: Follow on TikTok
+    url: https://www.tiktok.com/@cubanotiresmobileshop
   - role: Button
-    url: https://www.instagram.com/cubanotiresmobile/
     label: Instagram
+    url: https://www.instagram.com/cubanotiresmobile/
   - role: Button
-    url: https://www.youtube.com/@CubanoTiresMobileShop
     label: YouTube
+    url: https://www.youtube.com/@CubanoTiresMobileShop
   images: []
   cards:
   - _template: photo
@@ -419,12 +397,10 @@ demoSections:
     text: Fresh From Our Instagram
   - role: Paragraph
     text: Our latest jobs, Reels and updates, straight from the road.
-  - role: Button or link text
-    text: Follow on Instagram
   links:
   - role: Button
-    url: https://www.instagram.com/cubanotiresmobile/
     label: Follow on Instagram
+    url: https://www.instagram.com/cubanotiresmobile/
   - role: Link
     url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
@@ -551,12 +527,10 @@ demoSections:
     text: Locations We Serve
   - role: Paragraph
     text: Mobile tire and fleet service across Orange County and Los Angeles.
-  - role: Button or link text
-    text: Los Angeles
   links:
   - role: Button
-    url: '#los-angeles'
     label: Los Angeles
+    url: '#los-angeles'
   images: []
   cards:
   - _template: pill
@@ -610,17 +584,13 @@ demoSections:
     text: Send us your tire size or snap a picture of your tire, whichever is easier for you. We'll text you a free quote and a time, then come right to you.
   - role: Paragraph
     text: 3911 E La Palma Ave, Suite J, Anaheim, CA 92807
-  - role: Button or link text
-    text: (888) 333-3173
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
   links:
   - role: Link
-    url: tel:8883333173
     label: (888) 333-3173
+    url: tel:8883333173
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   images: []
 - label: Fleet logos
   copy:
