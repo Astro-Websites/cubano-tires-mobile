@@ -29,7 +29,7 @@ demoSections:
     url: /
   - role: Link
     label: Vehicles
-    url: '#vehicles'
+    url: /#services
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -56,32 +56,32 @@ demoSections:
   images: []
   cards:
   - _template: linkCard
-    url: '#model-y'
+    url: /tires/
     title: Model Y
     text: The most common EV we see. All-season and performance sizes.
     cta: Get a price →
   - _template: linkCard
-    url: '#model-3'
+    url: /tires/
     title: Model 3
     text: Standard, Long Range and Performance fitments.
     cta: Get a price →
   - _template: linkCard
-    url: '#model-s-and-x'
+    url: /tires/
     title: Model S & X
     text: Large staggered and performance wheels, handled with care.
     cta: Get a price →
   - _template: linkCard
-    url: '#cybertruck'
+    url: /tires/
     title: Cybertruck
     text: The big all-terrain sizes most shops turn away.
     cta: Get a price →
   - _template: linkCard
-    url: '#rivian'
+    url: /tires/
     title: Rivian
     text: R1T and R1S all-terrain and road tires.
     cta: Get a price →
   - _template: linkCard
-    url: '#other-evs'
+    url: /tires/
     title: Other EVs
     text: Mustang Mach-E, Ioniq 5, EV6, Lucid, Polestar and more.
     cta: Get a price →
@@ -188,35 +188,35 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: '#newport-beach'
+    url: /#locations
     label: Newport Beach
   - _template: pill
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#yorba-linda'
+    url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: '#costa-mesa'
+    url: /#locations
     label: Costa Mesa
   - _template: pill
-    url: '#tustin'
+    url: /#locations
     label: Tustin
   - _template: arrowLink
     url: /services/flat-tire-repair/
     label: Flat Tire Repair
   - _template: arrowLink
-    url: '#cybertruck'
+    url: '#vehicles'
     label: Cybertruck Tires
   - _template: arrowLink
-    url: '#luxury'
+    url: /services/mobile-tire-installation/
     label: Luxury & Exotic Tires
   - _template: arrowLink
     url: /services/tpms-sensor-service/

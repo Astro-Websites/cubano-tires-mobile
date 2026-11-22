@@ -35,7 +35,7 @@ demoSections:
     url: /
   - role: Link
     label: Tire Services
-    url: '#services'
+    url: /#services
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -198,32 +198,32 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: '#newport-beach'
+    url: /#locations
     label: Newport Beach
   - _template: pill
-    url: '#laguna-niguel'
+    url: /#locations
     label: Laguna Niguel
   - _template: pill
-    url: '#costa-mesa'
+    url: /#locations
     label: Costa Mesa
   - _template: pill
-    url: '#huntington-beach'
+    url: /#locations
     label: Huntington Beach
   - _template: pill
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#yorba-linda'
+    url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: '#tustin'
+    url: /#locations
     label: Tustin
   - _template: arrowLink
     url: /services/flat-tire-repair/

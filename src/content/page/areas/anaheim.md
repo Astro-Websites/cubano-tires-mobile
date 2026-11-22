@@ -29,7 +29,7 @@ demoSections:
     url: /
   - role: Link
     label: Areas Served
-    url: '#areas'
+    url: /#locations
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -126,7 +126,7 @@ demoSections:
     title: Tesla, EV & Cybertruck Tires
     text: EV-rated tires and big Cybertruck sizes
   - _template: linkCard
-    url: '#luxury'
+    url: /services/mobile-tire-installation/
     imageAlt: BMW M8 tire install
     image: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
     title: Luxury & Exotic Tires
@@ -179,29 +179,29 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
-    url: '#orange'
+    url: /#locations
     label: Orange
   - _template: pill
-    url: '#fullerton'
+    url: /#locations
     label: Fullerton
   - _template: pill
-    url: '#placentia'
+    url: /#locations
     label: Placentia
   - _template: pill
-    url: '#yorba-linda'
+    url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: '#santa-ana'
+    url: /#locations
     label: Santa Ana
   - _template: pill
-    url: '#garden-grove'
+    url: /#locations
     label: Garden Grove
   - _template: pill
-    url: '#brea'
+    url: /#locations
     label: Brea
 - label: Need tires in Anaheim? Text us a photo.
   copy:

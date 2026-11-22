@@ -35,7 +35,7 @@ demoSections:
     url: /
   - role: Link
     label: Tire Services
-    url: '#services'
+    url: /#services
   - role: Button
     label: Text a Photo of the Tire
     url: sms:8883333173
@@ -235,32 +235,32 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#orange'
+    url: /#locations
     label: Orange
   - _template: pill
-    url: '#santa-ana'
+    url: /#locations
     label: Santa Ana
   - _template: pill
-    url: '#fullerton'
+    url: /#locations
     label: Fullerton
   - _template: pill
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: '#long-beach'
+    url: /#locations
     label: Long Beach
   - _template: pill
-    url: '#los-angeles'
+    url: /#locations
     label: Los Angeles
   - _template: pill
-    url: '#commerce'
+    url: /#locations
     label: Commerce
   - _template: arrowLink
     url: /services/fleet-tire-service/

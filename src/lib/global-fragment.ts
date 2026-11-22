@@ -41,6 +41,9 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   ];
   for (const [original, replacement] of hourRows) if (replacement) html = html.replace(original, replacement);
 
+  // The header logo links to "#top", which only exists on some pages; send it home instead.
+  if (placement === 'header') html = html.replace('<a href="#top" style="display: flex; align-items: center">', '<a href="/" style="display: flex; align-items: center">');
+
   const logo = placement === 'footer' ? (config.seo?.footerLogo || config.seo?.logo) : config.seo?.logo;
   const logoAlt = placement === 'footer' ? (config.seo?.footerLogoAlt || config.seo?.logoAlt) : config.seo?.logoAlt;
   if (logoAlt) html = html.replace('alt="Cubano Tires Mobile Shop"', `alt="${escapeHtml(logoAlt)}"`);
