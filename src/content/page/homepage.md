@@ -1,7 +1,7 @@
 ---
 title: Homepage
-seoTitle: Cubano Tires Mobile Shop | Mobile Tire Service in Orange County & LA111
-description: Mobile tire and fleet service in Orange County and Los Angeles.111
+seoTitle: Cubano Tires Mobile Shop | Mobile Tire Service in Orange County & LA
+description: Mobile tire and fleet service in Orange County and Los Angeles.
 demoTemplate: homepage
 demoSections:
   - label: Hero
