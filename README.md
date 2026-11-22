@@ -28,4 +28,8 @@ Every designed page (homepage, services, areas, vehicles, about, coupons) is a d
 - `title` is the short page name shown in Tina; `seoTitle` is the browser tab and Google title.
 - In the Tina visual editor, clicking any text or image in the preview opens its field.
 
+Repeated blocks (FAQs, coupons/rebates, team, photos, reviews, steps, links) are `cards` lists in each section, marked in the template with `<!--repeat:section:type-->`; card types are defined in `tina/card-types.ts`.
+
+Simple pages (Tina: **Simple Pages**, `src/content/simple-page/*.md`) are a generic heading + rich-text template served at `/<file-name>/`.
+
 Helpers for bulk content edits are in `scripts/designed_pages.py`.
