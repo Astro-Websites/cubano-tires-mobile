@@ -158,11 +158,11 @@ demoSections:
   - text: TPMS Sensor Service
   - text: →
   links:
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#newport-beach'
     label: Newport Beach
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#yorba-linda'
     label: Yorba Linda
@@ -172,13 +172,13 @@ demoSections:
     label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
   - url: '#cybertruck'
     label: Cybertruck Tires →
   - url: '#luxury'
     label: Luxury & Exotic Tires →
-  - url: /tpms-sensor-service/
+  - url: /services/tpms-sensor-service/
     label: TPMS Sensor Service →
   images: []
 - label: EV need tires? Text us a photo.

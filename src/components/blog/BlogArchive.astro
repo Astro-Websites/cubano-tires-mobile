@@ -30,7 +30,7 @@ const sms = `sms:${config.phoneDigits}`;
     <section id="top" style="background: #F3F6FA">
       <div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 0">
         <nav aria-label="Breadcrumb" style="font-size: 14px; color: #5B6575">
-          <a href="/" style="color: #5B6575">Home</a>{' › '}{current ? (<><a href="/blog/" style="color: #5B6575">Tire Tips</a> › <span style="color: #16181D; font-weight: 700">{current.title}</span></>) : <span style="color: #16181D; font-weight: 700">Tire Tips</span>}
+          <a href="/" style="color: #5B6575">Home</a>{' › '}{current ? (<><a href="/tire-tips/" style="color: #5B6575">Tire Tips</a> › <span style="color: #16181D; font-weight: 700">{current.title}</span></>) : <span style="color: #16181D; font-weight: 700">Tire Tips</span>}
         </nav>
       </div>
       <div style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 40px">
@@ -39,8 +39,8 @@ const sms = `sms:${config.phoneDigits}`;
         {intro && <p style="font-size: 18px; line-height: 1.6; color: #4A5565; margin: 14px 0 0; max-width: 640px">{intro}</p>}
         {categories.length > 0 && (
           <div aria-label="Topics" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px">
-            <a href="/blog/" style={chip(!current)}>All</a>
-            {categories.map((category) => <a href={`/blog/category/${category.slug}/`} style={chip(current?.slug === category.slug)}>{category.title}</a>)}
+            <a href="/tire-tips/" style={chip(!current)}>All</a>
+            {categories.map((category) => <a href={`/tire-tips/category/${category.slug}/`} style={chip(current?.slug === category.slug)}>{category.title}</a>)}
           </div>
         )}
       </div>

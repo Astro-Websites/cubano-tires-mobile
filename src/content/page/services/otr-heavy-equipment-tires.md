@@ -178,7 +178,7 @@ demoSections:
   - text: Mobile Tire Installation
   - text: →
   links:
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#orange'
     label: Orange
@@ -186,7 +186,7 @@ demoSections:
     label: Santa Ana
   - url: '#fullerton'
     label: Fullerton
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#long-beach'
     label: Long Beach
@@ -196,13 +196,13 @@ demoSections:
     label: Commerce
   - url: '#areas'
     label: All areas
-  - url: /fleet-tire-service/
+  - url: /services/fleet-tire-service/
     label: Fleet Tire Service →
-  - url: /commercial-truck-tires/
+  - url: /services/commercial-truck-tires/
     label: Commercial Truck Tires →
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
   images: []
 - label: Machine down? Text us a photo.

@@ -148,11 +148,11 @@ demoSections:
   - text: TPMS Sensor Service
   - text: →
   links:
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#santa-ana'
     label: Santa Ana
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#orange'
     label: Orange
@@ -166,13 +166,13 @@ demoSections:
     label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /commercial-truck-tires/
+  - url: /services/commercial-truck-tires/
     label: Commercial & Fleet Tires →
-  - url: /vehicle-tesla-ev/
+  - url: /vehicles/tesla-ev-tires/
     label: Tesla & EV Tires →
-  - url: /tpms-sensor-service/
+  - url: /services/tpms-sensor-service/
     label: TPMS Sensor Service →
   images: []
 - label: Stuck? Get safe, then text us.

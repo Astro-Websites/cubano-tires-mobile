@@ -153,11 +153,11 @@ demoSections:
   - text: Tesla & EV Tires
   - text: →
   links:
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#santa-ana'
     label: Santa Ana
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#orange'
     label: Orange
@@ -171,13 +171,13 @@ demoSections:
     label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
-  - url: /new-wheel-installation/
+  - url: /services/new-wheel-installation/
     label: New Wheels & Tire Packages →
-  - url: /vehicle-tesla-ev/
+  - url: /vehicles/tesla-ev-tires/
     label: Tesla & EV Tires →
   images: []
 - label: Tire pressure light on? Text us a photo.
