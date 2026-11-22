@@ -14,7 +14,7 @@ const { title, description, favicon, headerCode, footerCode } = Astro.props;
 // Staging (staging.*) is never indexed; the canonical follows `site` in astro.config.mjs.
 const noindex = !Astro.site || Astro.site.hostname.startsWith('staging.');
 const iconType = (href: string) => (/\.svg$/i.test(href) ? 'image/svg+xml' : /\.png$/i.test(href) ? 'image/png' : undefined);
-const icon = favicon || '/favicon.svg';
+const icon = favicon || config.seo?.favicon || '/favicon.svg';
 const appleIcon = (config.seo as { appleTouchIcon?: string } | undefined)?.appleTouchIcon || '/apple-touch-icon.png';
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
 ---
