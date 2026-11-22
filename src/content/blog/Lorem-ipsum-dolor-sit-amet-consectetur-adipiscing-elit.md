@@ -2,7 +2,7 @@
 title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
 author: src/content/user/Cubano-Team.json
 heroImage: /uploads/cubano-tires-technician-at-the-branded-service.jpg
-heroImageAlt: Placeholder
+heroImageAlt: Cubano Tires technician at the branded mobile service truck
 ---
 
 Proin libero lectus, convallis vitae metus sit amet, egestas sodales nulla. Vestibulum nunc sem, ornare et faucibus nec, vulputate vel justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin laoreet sed eros id feugiat. Quisque eu rhoncus enim. Curabitur hendrerit, enim ac feugiat pellentesque, arcu sem malesuada ipsum, sit amet auctor lorem purus id ipsum. Morbi nisl risus, ultricies nec aliquet sed, pulvinar sit amet dui. Nunc condimentum, mi ac eleifend dapibus, urna libero condimentum nisi, a dapibus sem neque nec enim. Suspendisse malesuada maximus sollicitudin. Integer faucibus a dui eget mollis. In suscipit faucibus tristique. Nam ante metus, consequat ut urna at, feugiat porttitor eros. Fusce vitae ligula bibendum, bibendum nibh sed, consectetur metus. Pellentesque accumsan quis mi eu aliquet. Suspendisse dolor odio, laoreet ut tellus eget, pretium consequat metus. Praesent vel libero consequat, porttitor sapien at, rhoncus velit.

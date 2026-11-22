@@ -1,6 +1,6 @@
 type GlobalConfig = {
   siteName: string;
-  seo?: { description?: string; logo?: string; favicon?: string; footerLogo?: string };
+  seo?: { description?: string; logo?: string; favicon?: string; footerLogo?: string; logoAlt?: string; footerLogoAlt?: string };
   phoneDisplay: string;
   phoneDigits: string;
   addressLine1: string;
@@ -42,6 +42,8 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   for (const [original, replacement] of hourRows) if (replacement) html = html.replace(original, replacement);
 
   const logo = placement === 'footer' ? (config.seo?.footerLogo || config.seo?.logo) : config.seo?.logo;
+  const logoAlt = placement === 'footer' ? (config.seo?.footerLogoAlt || config.seo?.logoAlt) : config.seo?.logoAlt;
+  if (logoAlt) html = html.replace('alt="Cubano Tires Mobile Shop"', `alt="${escapeHtml(logoAlt)}"`);
   if (logo) {
     html = html.replace(/(<img\s+src=")[^"]+("[^>]*>)/i, `$1${escapeHtml(logo)}$2`);
   }

@@ -22,7 +22,7 @@ export const SimplePageCollection: Collection = {
     { type: 'string', name: 'heading', label: 'Heading', description: 'Big heading at the top. Falls back to the page name.' },
     { type: 'string', name: 'intro', label: 'Introduction', ui: { component: 'textarea' } },
     { type: 'image', name: 'image', label: 'Top Image (optional)' },
-    { type: 'string', name: 'imageAlt', label: 'Top Image Description' },
+    { type: 'string', name: 'imageAlt', label: 'Top Image Alt Text (SEO)', description: 'Describe the image for Google and screen readers, e.g. "Technician replacing a semi truck tire in Anaheim".' },
     { type: 'rich-text', name: 'body', label: 'Content', isBody: true },
   ],
 };

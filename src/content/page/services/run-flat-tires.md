@@ -6,10 +6,6 @@ demoSections:
 - label: Run-Flat Tire Replacement in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Run-Flat Tire Replacement
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Low-pressure light on your BMW, Mini or Mercedes? Run-flats get you off the road, not back to normal. Text us a photo and we'll replace the tire at your home or office, no dealer wait.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -170,12 +162,10 @@ demoSections:
     text: How much does run-flat tire replacement cost?
   - role: Paragraph
     text: Run-flat pricing depends on your tire size and brand, so we quote each job instead of listing a starting price. We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes. Replace all 4 and mobile service in Orange County is free, and the price we text you is the price you pay.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: Run-Flat Tire FAQ
   copy:
@@ -203,14 +193,12 @@ demoSections:
   copy:
   - role: Heading
     text: Run-flat tire replacement near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -255,17 +243,13 @@ demoSections:
     text: Run-flat warning on? Text us before you drive further.
   - role: Paragraph
     text: Send a photo of the tire and we'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: run-flat-tires
 ---

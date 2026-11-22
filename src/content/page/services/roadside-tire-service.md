@@ -6,10 +6,6 @@ demoSections:
 - label: Roadside Tire Service in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Roadside Tire Service
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Flat or blowout away from home? Get somewhere safe first. Then text us your location and a photo of the tire. We come to parking lots, freeway shoulders, surface streets and job sites and fix it or replace it right there.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Tess S. · Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -156,12 +148,10 @@ demoSections:
     text: How much does roadside tire service cost?
   - role: Paragraph
     text: Roadside assistance starts at $75 and up, depending on the service location and whether the vehicle is on a highway, freeway shoulder or regular street. If the tire needs replacing, we quote the new tire before we head out. Commercial and big rig tires are quoted per job.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: Roadside Tire Service FAQ
   copy:
@@ -192,14 +182,12 @@ demoSections:
   copy:
   - role: Heading
     text: Roadside tire service near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -244,17 +232,13 @@ demoSections:
     text: Stuck? Get safe, then text us.
   - role: Paragraph
     text: Send your location and a photo of the tire. We'll text back a price and when we can be there. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5 · After-hours texts answered the next business morning
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: roadside-tire-service
 ---

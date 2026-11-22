@@ -48,8 +48,10 @@ export default defineConfig({
             fields: [
               { type: 'string', name: 'description', label: 'Default Meta Description', ui: { component: 'textarea' } },
               { type: 'image', name: 'logo', label: 'Logo' },
+              { type: 'string', name: 'logoAlt', label: 'Logo Alt Text (SEO)', description: 'Used for the header logo, and the footer logo unless set below.' },
               { type: 'image', name: 'favicon', label: 'Favicon', description: 'Upload the browser tab/site icon. Recommended: square PNG, SVG, or ICO.' },
               { type: 'image', name: 'footerLogo', label: 'Footer Logo', description: 'Upload the logo used in the footer. Falls back to the header logo when empty.' },
+              { type: 'string', name: 'footerLogoAlt', label: 'Footer Logo Alt Text (SEO)' },
             ],
           },
           { type: 'string', name: 'announcement', label: 'Top Bar Announcement', description: 'Promo text in the black bar above the header. "Text or call <phone>" is added after it.' },

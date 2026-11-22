@@ -6,10 +6,6 @@ demoSections:
 - label: OTR & Heavy Equipment Tires at Your Job Site
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: OTR & Heavy Equipment Tires
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,14 +15,8 @@ demoSections:
     text: at Your Job Site
   - role: Paragraph
     text: Skid steers, forklifts, loaders, scissor lifts and boom lifts. We come to the job site, warehouse or rental yard and change the tire where the machine sits, so nobody has to load it on a trailer.
-  - role: Button or link text
-    text: Text a Photo of the Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - role: Button or link text
-    text: 'Set up a fleet account: call (888) 333-3173'
   - role: Badge
     text: Quote by equipment
   - role: Badge
@@ -41,20 +31,20 @@ demoSections:
     text: Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text a Photo of the Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
-  - role: Link
     url: tel:8883333173
+  - role: Link
     label: 'Set up a fleet account: call (888) 333-3173'
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -204,12 +194,10 @@ demoSections:
     text: How much does heavy equipment tire service cost?
   - role: Paragraph
     text: It depends on the machine, the tire size and whether it's air-filled, foam-filled or solid, so we quote by equipment. Text a photo of the tire and the machine and we'll send a price that includes the service call. The price we quote is the price you pay.
-  - role: Button or link text
-    text: Text a Photo for a Quote
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for a Quote
+    url: sms:8883333173
   images: []
 - label: OTR & Heavy Equipment Tire FAQ
   copy:
@@ -240,16 +228,14 @@ demoSections:
   copy:
   - role: Heading
     text: Equipment tire service near you
-  - role: Button or link text
-    text: All areas
   - role: Paragraph
     text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -294,22 +280,16 @@ demoSections:
     text: Machine down? Text us a photo.
   - role: Paragraph
     text: Send the tire, the machine and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text a Photo of the Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
-  - role: Button or link text
-    text: 'Set up a fleet account: call (888) 333-3173'
   links:
   - role: Link
-    url: sms:8883333173
     label: Text a Photo of the Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
-  - role: Link
     url: tel:8883333173
+  - role: Link
     label: 'Set up a fleet account: call (888) 333-3173'
+    url: tel:8883333173
   images: []
 demoTemplate: otr-heavy-equipment-tires
 ---

@@ -6,10 +6,6 @@ demoSections:
 - label: Mobile Tire Rotation & Balancing in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Tire Rotation & Balancing
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Rotate and balance your tires without losing a morning at the shop. We do it in your driveway or your office lot while you get on with your day.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text a photo of your tire and your car's year, make and model to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -168,12 +160,10 @@ demoSections:
     text: How much does tire rotation and balancing cost?
   - role: Paragraph
     text: Tire rotations start at $35 and up, depending on the vehicle. Balancing can be added at the same visit. We quote the full visit before we come out, so the price we text you is the price you pay.
-  - role: Button or link text
-    text: Text Us for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text Us for Your Price
+    url: sms:8883333173
   images: []
 - label: Tire Rotation & Balancing FAQ
   copy:
@@ -204,14 +194,12 @@ demoSections:
   copy:
   - role: Heading
     text: Tire rotation near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -256,17 +244,13 @@ demoSections:
     text: Due for a rotation? We'll come to you.
   - role: Paragraph
     text: Text us a photo of your tire, your car and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: tire-rotation-balancing
 ---

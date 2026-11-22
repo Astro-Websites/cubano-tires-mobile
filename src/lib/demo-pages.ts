@@ -8,7 +8,7 @@ export type Section = { label: string; copy: Row[]; links: Row[]; images: Row[];
 export type DemoPage = { title: string; seoTitle?: string; description: string; demoSections: Section[]; demoTemplate: string; _sys?: unknown };
 
 export const pageFields = `__typename _sys { filename basename path relativePath extension } title seoTitle description demoTemplate
-    demoSections { label copy { text } links { label url } images { source alt } ${cardQueryFields} }`;
+    demoSections { label copy { text } links { label url newTab } images { source alt } ${cardQueryFields} }`;
 export const pageQuery = `query CubanoPage($relativePath: String!) {
   page(relativePath: $relativePath) { ${pageFields} }
 }`;
@@ -58,13 +58,16 @@ export function renderDemo(template: string, page: DemoPage, options: { preview?
   return expanded.replace(/<[^>]*>|[^<]+/g, (token) => {
     if (token.startsWith('<')) {
       let field = '';
+      let newTab = false;
       const tag = token.replace(SLOT, (_, section, list, index, name) => {
         const row = lookup(section, list, index);
         const kind = kindOf(list, name);
         if (kind === 'image' && options.preview) field ||= tinaField(row, name);
+        if (kind === 'url' && row?.newTab) newTab = true;
         return escape(clean(kind, row?.[name]));
       });
-      return field ? tag.replace(/\s*(\/?)>$/, ` data-tina-field="${escape(field)}"$1>`) : tag;
+      const extra = (newTab ? ' target="_blank" rel="noopener"' : '') + (field ? ` data-tina-field="${escape(field)}"` : '');
+      return extra ? tag.replace(/\s*(\/?)>$/, `${extra}$1>`) : tag;
     }
     return token.replace(SLOT, (_, section, list, index, name) => {
       const row = lookup(section, list, index);

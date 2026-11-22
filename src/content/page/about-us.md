@@ -6,8 +6,6 @@ demoSections:
 - label: We bring the tire shop to you, and we show our work.
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
     text: About Us
   - role: Eyebrow
     text: ABOUT CUBANO TIRES
@@ -17,20 +15,16 @@ demoSections:
     text: and we show our work.
   - role: Paragraph
     text: Cubano Tires Mobile Shop is an Anaheim-based mobile tire company serving Orange County drivers and fleets from LA to the OC. Real people, stocked trucks, honest quotes, and a camera on almost every job.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Meet the Crew
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: '#crew'
     label: Meet the Crew
+    url: '#crew'
   images:
   - role: Image
     source: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
@@ -178,17 +172,13 @@ demoSections:
     text: See for yourself. Text us a photo of your tire.
   - role: Paragraph
     text: Joel will text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: about-us
 ---
