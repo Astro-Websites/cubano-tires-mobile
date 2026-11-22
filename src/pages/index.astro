@@ -1,26 +1,11 @@
 ---
-import Header from '../components/Header.astro';
-import HomePage from '../components/HomePage.astro';
-import Footer from '../components/Footer.astro';
-import Base from '../layouts/Base.astro';
-import config from '../content/global/config.json';
-import navigation from '../content/global/navigation.json';
-import scriptsSource from '../fragments/scripts.html?raw';
+// The homepage is a designed page like the others: its design is
+// src/fragments/demo-pages/homepage.html and its text and images live in
+// src/content/page/homepage.md (Tina: Pages > homepage).
+import DesignedPage from '../components/DesignedPage.astro';
 import { getEntry } from 'astro:content';
 
-const homepage = await getEntry('page', 'homepage');
-if (!homepage) throw new Error('Required Tina Pages document src/content/page/homepage.mdx is missing.');
-const page = homepage.data as any;
+const entry = await getEntry('page', 'homepage');
+if (!entry) throw new Error('Required Tina Pages document src/content/page/homepage.md is missing.');
 ---
-<Base
-  title={page.title}
-  description={page.description || config.seo?.description}
-  favicon={config.seo?.favicon}
-  headerCode={config.codeInjection?.headerCode}
-  footerCode={config.codeInjection?.footerCode}
->
-  <Header {config} {navigation} />
-  <main><HomePage {page} /></main>
-  <Footer {config} {navigation} />
-  <Fragment set:html={scriptsSource} />
-</Base>
+<DesignedPage {entry} />

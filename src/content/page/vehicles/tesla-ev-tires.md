@@ -1,15 +1,13 @@
 ---
-title: Mobile Tesla & EV Tire Service in Orange County | Cubano Tires Mobile Shop
+title: Tesla & EV Tires
+seoTitle: Mobile Tesla & EV Tire Service in Orange County | Cubano Tires Mobile Shop
 description: Mobile Tesla & EV Tire Service in Orange County
 demoSections:
 - label: Mobile Tesla & EV Tire Service in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Vehicles
-  - text: ›
   - text: Tesla & EV Tires
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: NO SPARE? NO PROBLEM.
   - text: Mobile Tesla & EV Tire Service in
@@ -105,7 +103,6 @@ demoSections:
   - text: Real EV Jobs
   - text: Teslas and Cybertrucks, every week
   - text: We post real jobs every day on TikTok, Instagram and YouTube, from a slashed Tesla tire swapped in a driveway to full sets of Cybertruck all-terrains.
-  - text: ★★★★★
   - text: '"Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
   - text: Slashed Tesla tire, swapped in the driveway
@@ -150,13 +147,9 @@ demoSections:
   - text: All areas
   - text: Related pages
   - text: Flat Tire Repair
-  - text: →
   - text: Cybertruck Tires
-  - text: →
   - text: Luxury & Exotic Tires
-  - text: →
   - text: TPMS Sensor Service
-  - text: →
   links:
   - url: /areas/irvine/
     label: Irvine

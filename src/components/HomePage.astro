@@ -1,8 +1,0 @@
----
-import bodySource from '../fragments/body.html?raw';
-import { bindHomepageFragment } from '../lib/homepage-fragment';
-
-const { page } = Astro.props;
-const html = bindHomepageFragment(bodySource, page);
----
-<Fragment set:html={html} />

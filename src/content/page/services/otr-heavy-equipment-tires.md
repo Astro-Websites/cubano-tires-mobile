@@ -1,15 +1,13 @@
 ---
-title: OTR & Heavy Equipment Tires in Orange County & LA | Cubano Tires Mobile Shop
+title: OTR & Heavy Equipment Tires
+seoTitle: OTR & Heavy Equipment Tires in Orange County & LA | Cubano Tires Mobile Shop
 description: OTR & Heavy Equipment Tires at Your Job Site
 demoSections:
 - label: OTR & Heavy Equipment Tires at Your Job Site
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: OTR & Heavy Equipment Tires
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: OTR & Heavy Equipment Tires
   - text: at Your Job Site
@@ -22,7 +20,6 @@ demoSections:
   - text: Job sites & rental yards
   - text: Price quoted = price paid
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"I was able to continue working while the work was done."'
   - text: Google review
   links:
@@ -120,10 +117,8 @@ demoSections:
   copy:
   - text: How We Work
   - text: What customers say
-  - text: ★★★★★
   - text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
   - text: Tess S. · Google review
-  - text: ★★★★★
   - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
   - text: Google review
   - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
@@ -170,13 +165,9 @@ demoSections:
   - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - text: Related services
   - text: Fleet Tire Service
-  - text: →
   - text: Commercial Truck Tires
-  - text: →
   - text: Flat Tire Repair
-  - text: →
   - text: Mobile Tire Installation
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

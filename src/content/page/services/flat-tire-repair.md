@@ -1,15 +1,13 @@
 ---
-title: Mobile Flat Tire Repair in Orange County | Cubano Tires Mobile Shop
+title: Flat Tire Repair
+seoTitle: Mobile Flat Tire Repair in Orange County | Cubano Tires Mobile Shop
 description: Mobile Flat Tire Repair in Orange County
 demoSections:
 - label: Mobile Flat Tire Repair in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Flat Tire Repair
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Mobile Flat Tire Repair in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"They came right to me and had my tire changed in just 9 minutes!"'
   - text: Tess S. · Google review
   links:
@@ -92,10 +89,8 @@ demoSections:
   copy:
   - text: Real Flat Tire Jobs
   - text: What customers say after a flat
-  - text: ★★★★★
   - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
   - text: Google review
-  - text: ★★★★★
   - text: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
   - text: Tess S. · Google review
   links: []
@@ -138,13 +133,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Mobile Tire Installation
-  - text: →
   - text: Run-Flat Tire Replacement
-  - text: →
   - text: TPMS Sensor Service
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

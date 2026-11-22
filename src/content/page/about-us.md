@@ -1,11 +1,11 @@
 ---
-title: About Cubano Tires Mobile Shop | Anaheim Mobile Tire Service
+title: About Us
+seoTitle: About Cubano Tires Mobile Shop | Anaheim Mobile Tire Service
 description: We bring the tire shop to you, and we show our work.
 demoSections:
 - label: We bring the tire shop to you, and we show our work.
   copy:
   - text: Home
-  - text: ›
   - text: About Us
   - text: ABOUT CUBANO TIRES
   - text: We bring the tire shop to you,
@@ -42,7 +42,6 @@ demoSections:
   - text: '[Joel''s story in his own words, 3 to 4 sentences: how he got into tires, when and why he started Cubano, and where the name comes from. Get this on a 10-minute call; don''t write it for him.]'
   - text: Today Cubano runs fully stocked trucks out of our shop on E La Palma Ave in Anaheim. Joel still answers the phone and quotes every job himself. Our techs show up with the tire, the machine and everything needed to finish in your driveway, office lot or fleet yard.
   - text: And because we're proud of the work, we film it. Joey rides along and posts real jobs every day, from Teslas and BMW M8s to big rigs and rental equipment.
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why!"'
   - text: Google review
   links: []
@@ -82,7 +81,6 @@ demoSections:
   - text: Joey
   - text: Social Media Manager
   - text: Rides along and films the job. If you see a camera, say hi.
-
   links: []
   images:
   - source: /uploads/crew/joel-gonzalez.webp

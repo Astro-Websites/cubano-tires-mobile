@@ -1,30 +1,11 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import Base from '../layouts/Base.astro';
-import config from '../content/global/config.json';
-import navigation from '../content/global/navigation.json';
-import scriptsSource from '../fragments/scripts.html?raw';
+import DesignedPage from '../components/DesignedPage.astro';
 import { getCollection } from 'astro:content';
-import { renderDemo, type DemoPage } from '../lib/demo-pages';
-const templates = import.meta.glob<string>('../fragments/demo-pages/*.html', { eager: true, query: '?raw', import: 'default' });
 export async function getStaticPaths() {
-  return (await getCollection('page')).filter(({data}) => Boolean(data.demoTemplate)).map(entry => ({params:{demo:entry.id},props:{entry}}));
+  return (await getCollection('page'))
+    .filter(({ id, data }) => Boolean(data.demoTemplate) && id !== 'homepage')
+    .map((entry) => ({ params: { demo: entry.id }, props: { entry } }));
 }
-const {entry} = Astro.props;
-const page = entry.data as DemoPage;
-const template = templates[`../fragments/demo-pages/${page.demoTemplate}.html`];
-if (!template) throw new Error(`Missing design for ${entry.id}`);
-const relativePath = `${entry.id}.md`;
-const preview = JSON.stringify({template, relativePath, page}).replace(/</g,'\\u003c');
+const { entry } = Astro.props;
 ---
-<Base title={page.title} description={page.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
-  <Header {config} {navigation} />
-  <main id="cubano-demo-content" set:html={renderDemo(template,page)} />
-  <Footer {config} {navigation} />
-  <Fragment set:html={scriptsSource} />
-  <script type="application/json" id="cubano-tina-preview" set:html={preview} />
-  <script>
-    if (window.parent !== window) import('../lib/demo-preview').then(({mountDemoPreview}) => mountDemoPreview());
-  </script>
-</Base>
+<DesignedPage {entry} />

@@ -1,15 +1,13 @@
 ---
-title: Run-Flat Tire Replacement in Orange County | Cubano Tires Mobile Shop
+title: Run-Flat Tires
+seoTitle: Run-Flat Tire Replacement in Orange County | Cubano Tires Mobile Shop
 description: Run-Flat Tire Replacement in Orange County
 demoSections:
 - label: Run-Flat Tire Replacement in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Run-Flat Tire Replacement
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Run-Flat Tire Replacement in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: BMW · Mini · Mercedes
   - text: Price quoted = price paid
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"Everything was so simple, straightforward and easy."'
   - text: Google review
   links:
@@ -99,10 +96,8 @@ demoSections:
   copy:
   - text: Straight Answers
   - text: Told the truth up front
-  - text: ★★★★★
   - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
   - text: Google review
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
   links: []
@@ -145,13 +140,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Flat Tire Repair
-  - text: →
   - text: Mobile Tire Installation
-  - text: →
   - text: TPMS Sensor Service
-  - text: →
   - text: Tire Rotation & Balancing
-  - text: →
   links:
   - url: /areas/irvine/
     label: Irvine
