@@ -1,0 +1,9 @@
+---
+import BlogArchive from '../../components/blog/BlogArchive.astro';
+import { getCategories, getPosts } from '../../lib/blog';
+
+const posts = await getPosts();
+const used = new Set(posts.flatMap((post) => post.categories.map((category) => category.slug)));
+const categories = (await getCategories()).filter((category) => used.has(category.slug));
+---
+<BlogArchive {posts} {categories} />

@@ -14,5 +14,10 @@
   "codeInjection": {
     "headerCode": "",
     "footerCode": ""
+  },
+  "blog": {
+    "eyebrow": "FROM THE CUBANO CREW",
+    "heading": "Tire Tips & Answers",
+    "intro": "Straight answers to the questions our customers ask every day, from the techs who do the work."
   }
 }

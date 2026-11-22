@@ -1,0 +1,96 @@
+---
+import Header from '../Header.astro';
+import Footer from '../Footer.astro';
+import Base from '../../layouts/Base.astro';
+import BlogCard from './BlogCard.astro';
+import config from '../../content/global/config.json';
+import navigation from '../../content/global/navigation.json';
+import scriptsSource from '../../fragments/scripts.html?raw';
+import { initial, pill, postMeta, type Category, type Post } from '../../lib/blog';
+
+interface Props { posts: Post[]; categories: Category[]; current?: Category }
+const { posts, categories, current } = Astro.props;
+const blog = (config as any).blog || {};
+const heading = current ? current.title : blog.heading || 'Tire Tips & Answers';
+const intro = current ? current.description || blog.intro : blog.intro;
+const title = current ? `${current.title} | Tire Tips | ${config.siteName}` : `${blog.heading || 'Tire Tips & Answers'} | ${config.siteName}`;
+const featured = current ? undefined : posts.find((post) => post.featured) || posts[0];
+const rest = posts.filter((post) => post !== featured);
+const featuredCategory = featured?.categories[0];
+const featuredColors = pill(featuredCategory?.color);
+const chip = (active: boolean) =>
+  active
+    ? 'padding: 10px 18px; border-radius: 999px; background: #16181D; font-size: 14px; font-weight: 700; color: #FFFFFF'
+    : 'padding: 10px 18px; border-radius: 999px; background: #FFFFFF; border: 1px solid #CBD3DD; font-size: 14px; font-weight: 700';
+const sms = `sms:${config.phoneDigits}`;
+---
+<Base title={title} description={intro || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
+  <Header {config} {navigation} />
+  <main>
+    <section id="top" style="background: #F3F6FA">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 0">
+        <nav aria-label="Breadcrumb" style="font-size: 14px; color: #5B6575">
+          <a href="/" style="color: #5B6575">Home</a>{' › '}{current ? (<><a href="/blog/" style="color: #5B6575">Tire Tips</a> › <span style="color: #16181D; font-weight: 700">{current.title}</span></>) : <span style="color: #16181D; font-weight: 700">Tire Tips</span>}
+        </nav>
+      </div>
+      <div style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 40px">
+        {blog.eyebrow && <p style="margin: 0; font-size: 15px; font-weight: 800; letter-spacing: 0.12em; color: #1D3E8A">{blog.eyebrow}</p>}
+        <h1 style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(38px, 4.4vw, 58px); line-height: 1.05; margin: 10px 0 0; color: #16181D">{heading}</h1>
+        {intro && <p style="font-size: 18px; line-height: 1.6; color: #4A5565; margin: 14px 0 0; max-width: 640px">{intro}</p>}
+        {categories.length > 0 && (
+          <div aria-label="Topics" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px">
+            <a href="/blog/" style={chip(!current)}>All</a>
+            {categories.map((category) => <a href={`/blog/category/${category.slug}/`} style={chip(current?.slug === category.slug)}>{category.title}</a>)}
+          </div>
+        )}
+      </div>
+    </section>
+
+    {featured && (
+      <section style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 24px">
+        <a href={featured.url} style="display: flex; flex-wrap: wrap; border-radius: 22px; overflow: hidden; border: 1px solid #E4E8EE">
+          <img alt={featured.heroImageAlt} src={featured.heroImage} style="flex: 1 1 480px; min-width: 0; height: 380px; object-fit: cover"/>
+          <span style="flex: 1 1 420px; min-width: 0; padding: 40px; display: flex; flex-direction: column; gap: 14px; justify-content: center">
+            <span style={`align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: ${featuredColors.bg}; font-size: 13px; font-weight: 800; color: ${featuredColors.fg}; text-transform: uppercase`}>{featuredCategory ? `${featuredCategory.title} · Featured` : 'Featured'}</span>
+            <span style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 34px; line-height: 1.12; color: #16181D">{featured.title}</span>
+            {featured.description && <span style="font-size: 16px; line-height: 1.6; color: #5B6575">{featured.description}</span>}
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #5B6575"><span style="display: inline-flex; width: 32px; height: 32px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; color: #16181D">{initial(featured.author?.name)}</span>{postMeta(featured)}</span>
+          </span>
+        </a>
+      </section>
+    )}
+
+    <section id="all" style={`max-width: 1240px; margin: 0 auto; padding: ${featured ? '24px' : '48px'} 24px 72px`}>
+      {rest.length > 0 ? (
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(340px, 100%), 1fr)); gap: 24px">
+          {rest.map((post) => <BlogCard {post} />)}
+        </div>
+      ) : !featured && <p style="font-size: 18px; color: #5B6575">No articles here yet. Check back soon.</p>}
+    </section>
+
+    <section style="background: #FFC72C">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 56px 24px; display: flex; flex-wrap: wrap; gap: 24px 40px; align-items: center; justify-content: space-between">
+        <div style="max-width: 640px">
+          <p style="margin: 0; font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(26px, 3vw, 38px); line-height: 1.1; color: #16181D">Rather watch than read?</p>
+          <p style="margin: 10px 0 0; font-size: 17px; line-height: 1.6; color: #2A2F38">565+ real jobs on video, with new ones every day on YouTube, TikTok and Instagram.</p>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px">
+          <a href="https://www.youtube.com/@CubanoTiresMobileShop" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 999px; background: #16181D; font-weight: 700; color: #FFFFFF">YouTube</a>
+          <a href="https://www.tiktok.com/@cubanotiresmobileshop" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 999px; background: #FFFFFF; font-weight: 700">TikTok</a>
+          <a href="https://www.instagram.com/cubanotiresmobile/" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 20px; border-radius: 999px; background: #FFFFFF; font-weight: 700">Instagram</a>
+        </div>
+      </div>
+    </section>
+    <section style="background: #16181D">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 64px 24px; display: flex; flex-wrap: wrap; gap: 32px; align-items: center; justify-content: space-between">
+        <div style="color: #FFFFFF; max-width: 640px">
+          <h2 style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(28px, 3vw, 40px); line-height: 1.1; margin: 0">Got a tire question we didn't answer?</h2>
+          <p style="font-size: 17px; line-height: 1.6; color: #C9CBD1; margin: 12px 0 0">Text us a photo. Joel will tell you what's going on and what it costs to fix.</p>
+        </div>
+        <a href={sms} style="display: inline-flex; align-items: center; min-height: 60px; padding: 0 30px; border-radius: 999px; background: #E11B22; font-weight: 800; font-size: 18px; color: #FFFFFF">Text Us a Photo of Your Tire</a>
+      </div>
+    </section>
+  </main>
+  <Footer {config} {navigation} />
+  <Fragment set:html={scriptsSource} />
+</Base>
