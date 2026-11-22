@@ -10,9 +10,10 @@ const navigationItem = {
   list: true,
   ui: { itemProps: (item: { label?: string }) => ({ label: item?.label }) },
   fields: [
-    { type: 'string' as const, name: 'sourceLabel', label: 'Locked Source Label', required: true },
+    // Internal: the label this link had in the original design. Not needed for new items.
+    { type: 'string' as const, name: 'sourceLabel', label: 'Original Label', ui: { component: 'hidden' } },
     { type: 'string' as const, name: 'label', label: 'Label', required: true },
-    { type: 'string' as const, name: 'href', label: 'Link', required: true },
+    { type: 'string' as const, name: 'href', label: 'Link (URL)', required: true, description: 'A page path like /services/flat-tire-repair/, a homepage section like /#reviews, or a full https:// link.' },
   ],
 };
 
