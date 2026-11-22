@@ -1,7 +1,6 @@
 # 301 redirects for the SEO plan URL structure.
 # Cloudflare format: <from> <to> <status>. Static rules first, splats last.
-# The Tires Anytime catalog paths (/Tires, /Tires/Tire-Catalog, /Tires/Commercial-Tires/*,
-# /Tires/Instant-Quote, /Tires/Advanced-Quoting) are intentionally not redirected yet.
+# Tires Anytime shop paths (/Tires, /Tires/brands/*, /Tires/Commercial-Tires/*, quote pages) go to /tires/.
 
 # --- Old live site (cubanotiresmobile.com) ---
 /New-Home                                  /                                         301
@@ -97,3 +96,17 @@
 /About/News/*                              /tire-tips/                               301
 /blog                                      /tire-tips/                               301
 /blog/*                                    /tire-tips/:splat                         301
+
+# --- Tires Anytime shop pages on the old live site -> /tires/ shop page ---
+/Tires                                     /tires/                                   301
+/Tires/                                     /tires/                                   301
+/Tires/Tire-Catalog                        /tires/                                   301
+/Tires/Tire-Catalog/                        /tires/                                   301
+/Tires/Instant-Quote                       /tires/                                   301
+/Tires/Instant-Quote/                       /tires/                                   301
+/Tires/Advanced-Quoting                    /tires/                                   301
+/Tires/Advanced-Quoting/                    /tires/                                   301
+/Tires/Commercial-Tires                    /tires/                                   301
+/Tires/Commercial-Tires/                    /tires/                                   301
+/Tires/Commercial-Tires/*                  /tires/                                   301
+/Tires/brands/*                            /tires/                                   301
