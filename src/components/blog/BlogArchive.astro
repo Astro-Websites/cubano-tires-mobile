@@ -54,7 +54,7 @@ const sms = `sms:${config.phoneDigits}`;
             <span style={`align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: ${featuredColors.bg}; font-size: 13px; font-weight: 800; color: ${featuredColors.fg}; text-transform: uppercase`}>{featuredCategory ? `${featuredCategory.title} · Featured` : 'Featured'}</span>
             <span style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 34px; line-height: 1.12; color: #16181D">{featured.title}</span>
             {featured.description && <span style="font-size: 16px; line-height: 1.6; color: #5B6575">{featured.description}</span>}
-            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #5B6575"><span style="display: inline-flex; width: 32px; height: 32px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; color: #16181D">{initial(featured.author?.name)}</span>{postMeta(featured)}</span>
+            <span style="display: flex; align-items: center; gap: 10px; font-size: 14px; color: #5B6575">{featured.author?.avatar ? <img src={featured.author.avatar} alt={featured.author.avatarAlt || featured.author.name} style="flex: none; width: 32px; height: 32px; border-radius: 50%; object-fit: cover"/> : <span style="display: inline-flex; width: 32px; height: 32px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; color: #16181D">{initial(featured.author?.name)}</span>}{postMeta(featured)}</span>
           </span>
         </a>
       </section>
