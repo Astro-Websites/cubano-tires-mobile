@@ -54,110 +54,126 @@ demoSections:
 - label: Everywhere in Anaheim
   copy:
   - text: Everywhere in Anaheim
-  - text: Anaheim Hills
-  - text: Driveway installs for family SUVs, Teslas and luxury cars.
-  - text: The Canyon business area
-  - text: Fleet yards, box trucks and company vehicles around La Palma and Kraemer.
-  - text: Platinum Triangle
-  - text: Apartment garages and office lots near Angel Stadium and Honda Center.
-  - text: Downtown & West Anaheim
-  - text: Flats, new tires and TPMS service at home or at work.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Anaheim Hills
+    text: Driveway installs for family SUVs, Teslas and luxury cars.
+  - _template: feature
+    title: The Canyon business area
+    text: Fleet yards, box trucks and company vehicles around La Palma and Kraemer.
+  - _template: feature
+    title: Platinum Triangle
+    text: Apartment garages and office lots near Angel Stadium and Honda Center.
+  - _template: feature
+    title: Downtown & West Anaheim
+    text: Flats, new tires and TPMS service at home or at work.
 - label: Tire services in Anaheim
   copy:
   - text: Tire services in Anaheim
-  - text: Flat Tire Repair in Anaheim
-  - text: Nails, slow leaks and blowouts, fixed where you're parked
-  - text: Mobile Tire Installation
-  - text: New tires mounted and balanced in your driveway
-  - text: Tesla, EV & Cybertruck Tires
-  - text: EV-rated tires and big Cybertruck sizes
-  - text: Luxury & Exotic Tires
-  - text: Careful handling on premium wheels
-  - text: TPMS, Rotation & Balancing
-  - text: Sensors, rotations and balancing at your place
   - text: Anaheim Fleet Tire Service
   - text: Box trucks, trailers and 22.5" tires on-site
   links:
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair in Anaheim Nails, slow leaks and blowouts, fixed where you're parked
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation New tires mounted and balanced in your driveway
-  - url: /vehicles/tesla-ev-tires/
-    label: Tesla, EV & Cybertruck Tires EV-rated tires and big Cybertruck sizes
-  - url: '#luxury'
-    label: Luxury & Exotic Tires Careful handling on premium wheels
-  - url: /services/tpms-sensor-service/
-    label: TPMS, Rotation & Balancing Sensors, rotations and balancing at your place
   - url: /services/fleet-tire-service/
     label: Anaheim Fleet Tire Service Box trucks, trailers and 22.5" tires on-site
   images:
-  - source: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg
-    alt: Roadside blowout repair
-  - source: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
-    alt: Cubano service truck
-  - source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
-    alt: Tesla tire install
-  - source: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
-    alt: BMW M8 tire install
-  - source: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
-    alt: TPMS valve service
   - source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
     alt: Semi truck tire service
+  cards:
+  - _template: linkCard
+    url: /services/flat-tire-repair/
+    imageAlt: Roadside blowout repair
+    image: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg
+    title: Flat Tire Repair in Anaheim
+    text: Nails, slow leaks and blowouts, fixed where you're parked
+  - _template: linkCard
+    url: /services/mobile-tire-installation/
+    imageAlt: Cubano service truck
+    image: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
+    title: Mobile Tire Installation
+    text: New tires mounted and balanced in your driveway
+  - _template: linkCard
+    url: /vehicles/tesla-ev-tires/
+    imageAlt: Tesla tire install
+    image: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
+    title: Tesla, EV & Cybertruck Tires
+    text: EV-rated tires and big Cybertruck sizes
+  - _template: linkCard
+    url: '#luxury'
+    imageAlt: BMW M8 tire install
+    image: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
+    title: Luxury & Exotic Tires
+    text: Careful handling on premium wheels
+  - _template: linkCard
+    url: /services/tpms-sensor-service/
+    imageAlt: TPMS valve service
+    image: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
+    title: TPMS, Rotation & Balancing
+    text: Sensors, rotations and balancing at your place
 - label: Why Anaheim drivers text Cubano
   copy:
   - text: Why Anaheim drivers text Cubano
-  - text: '"I also appreciate, the price they quote is the price I pay. Highly recommend."'
-  - text: Repeat customer · Google review
-  - text: '"Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today!"'
-  - text: Jesse M. V. · Google review
-  - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes."'
-  - text: Justin K. · Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"I also appreciate, the price they quote is the price I pay. Highly recommend."'
+    author: Repeat customer · Google review
+  - _template: review
+    quote: '"Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today!"'
+    author: Jesse M. V. · Google review
+  - _template: review
+    quote: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes."'
+    author: Justin K. · Google review
 - label: Anaheim Tire Service FAQ
   copy:
   - text: Anaheim Tire Service FAQ
-  - text: Do you charge extra to come to my part of Anaheim?
-  - text: No. Anaheim Hills, the Canyon, the Platinum Triangle or West Anaheim, the mobile service is the same. It's free with 4 new tires, and any fee is included up front in your quote.
-  - text: Can you come to my work instead of my house?
-  - text: Yes. Office lots, parking structures and job sites all work. Many customers keep working while we change the tires.
-  - text: Do you service fleets and company trucks in Anaheim?
-  - text: Yes. We service box trucks, trailers, big rigs and equipment at your yard, including 17.5", 19.5" and 22.5" tires. Call to set up a fleet account.
-  - text: Can I pick up tires at your Anaheim shop?
-  - text: '[Confirm with Joel: walk-ins / pickups at 3911 E La Palma Ave?]'
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: Do you charge extra to come to my part of Anaheim?
+    answer: No. Anaheim Hills, the Canyon, the Platinum Triangle or West Anaheim, the mobile service is the same. It's free with 4 new tires, and any fee is included up front in your quote.
+  - _template: faq
+    question: Can you come to my work instead of my house?
+    answer: Yes. Office lots, parking structures and job sites all work. Many customers keep working while we change the tires.
+  - _template: faq
+    question: Do you service fleets and company trucks in Anaheim?
+    answer: Yes. We service box trucks, trailers, big rigs and equipment at your yard, including 17.5", 19.5" and 22.5" tires. Call to set up a fleet account.
+  - _template: faq
+    question: Can I pick up tires at your Anaheim shop?
+    answer: '[Confirm with Joel: walk-ins / pickups at 3911 E La Palma Ave?]'
 - label: We also come to cities near Anaheim
   copy:
   - text: We also come to cities near Anaheim
-  - text: Orange
-  - text: Fullerton
-  - text: Placentia
-  - text: Yorba Linda
-  - text: Santa Ana
-  - text: Garden Grove
-  - text: Brea
   - text: All areas
   links:
-  - url: '#orange'
-    label: Orange
-  - url: '#fullerton'
-    label: Fullerton
-  - url: '#placentia'
-    label: Placentia
-  - url: '#yorba-linda'
-    label: Yorba Linda
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: '#garden-grove'
-    label: Garden Grove
-  - url: '#brea'
-    label: Brea
   - url: '#areas'
     label: All areas
   images: []
+  cards:
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: '#placentia'
+    label: Placentia
+  - _template: pill
+    url: '#yorba-linda'
+    label: Yorba Linda
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: '#garden-grove'
+    label: Garden Grove
+  - _template: pill
+    url: '#brea'
+    label: Brea
 - label: Need tires in Anaheim? Text us a photo.
   copy:
   - text: Need tires in Anaheim? Text us a photo.

@@ -1,4 +1,14 @@
-import type { Collection } from 'tinacms';
+import type { Collection, Template } from 'tinacms';
+import { CARD_TYPES } from '../card-types';
+
+const cardTemplates: Template[] = Object.entries(CARD_TYPES).map(([name, card]) => ({
+  name,
+  label: card.label,
+  ui: { itemProps: (item: Record<string, string>) => ({ label: item?.[card.title] ? `${card.label}: ${item[card.title]}` : card.label }) },
+  fields: card.fields.map((field) => field.kind === 'image'
+    ? { type: 'image' as const, name: field.name, label: field.label }
+    : { type: 'string' as const, name: field.name, label: field.label, ...(field.kind === 'textarea' ? { ui: { component: 'textarea' } } : {}) }),
+}));
 
 export const PageCollection: Collection = {
   name: 'page',
@@ -37,6 +47,8 @@ export const PageCollection: Collection = {
         { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: item?.alt }) }, fields: [
           { type: 'image', name: 'source', label: 'Image' }, { type: 'string', name: 'alt', label: 'Alternative Text' },
         ] },
+        { type: 'object', name: 'cards', label: 'Repeating items (add, remove, reorder)', list: true, templates: cardTemplates,
+          description: 'FAQs, coupons, team members, photos, reviews and similar. New items must use the same type as the ones already in this section.' },
       ],
     },
   ],

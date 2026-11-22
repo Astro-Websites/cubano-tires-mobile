@@ -59,44 +59,58 @@ demoSections:
 - label: What every tire mounting includes
   copy:
   - text: What every tire mounting includes
-  - text: Mount on your wheels
-  - text: Tires mounted carefully on the wheels you provide, right in our service truck.
-  - text: Balanced on our machine
-  - text: Each wheel and tire is spun and balanced before it goes on the vehicle.
-  - text: TPMS sensors moved over
-  - text: Your sensors go into your new wheels. If one is dead or won't fit, we quote a new one.
-  - text: Installed & torqued
-  - text: Your wheels go on the vehicle and the lugs are torqued to spec.
-  - text: Old set handed back
-  - text: Your old wheels and tires stay with you, ready to store or sell.
-  - text: Trucks to luxury cars
-  - text: From Tacomas and Jeeps to G-Wagons, BMWs and Teslas.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Mount on your wheels
+    text: Tires mounted carefully on the wheels you provide, right in our service truck.
+  - _template: feature
+    title: Balanced on our machine
+    text: Each wheel and tire is spun and balanced before it goes on the vehicle.
+  - _template: feature
+    title: TPMS sensors moved over
+    text: Your sensors go into your new wheels. If one is dead or won't fit, we quote a new one.
+  - _template: feature
+    title: Installed & torqued
+    text: Your wheels go on the vehicle and the lugs are torqued to spec.
+  - _template: feature
+    title: Old set handed back
+    text: Your old wheels and tires stay with you, ready to store or sell.
+  - _template: feature
+    title: Trucks to luxury cars
+    text: From Tacomas and Jeeps to G-Wagons, BMWs and Teslas.
 - label: Tires on your wheels in 3 steps
   copy:
   - text: Tires on your wheels in 3 steps
-  - text: '1'
-  - text: Text us your wheels
-  - text: Send a photo of your wheels, the wheel size, and the tire size or tread you're after.
-  - text: '2'
-  - text: Get your price
-  - text: Joel quotes the tires, mounting and install as one price, with a day and time that works for you.
-  - text: '3'
-  - text: We install at your place
-  - text: Mounted, balanced, sensors transferred and lugs torqued, right in your driveway.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text us your wheels
+    text: Send a photo of your wheels, the wheel size, and the tire size or tread you're after.
+  - _template: step
+    number: '2'
+    title: Get your price
+    text: Joel quotes the tires, mounting and install as one price, with a day and time that works for you.
+  - _template: step
+    number: '3'
+    title: We install at your place
+    text: Mounted, balanced, sensors transferred and lugs torqued, right in your driveway.
 - label: What customers say about the install
   copy:
   - text: Real Install Jobs
   - text: What customers say about the install
-  - text: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-  - text: Jesse M. V. · Google review
-  - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
-  - text: Justin K. · Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
+    author: Jesse M. V. · Google review
+  - _template: review
+    quote: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
+    author: Justin K. · Google review
 - label: How much does tire mounting cost?
   copy:
   - text: How much does tire mounting on my wheels cost?
@@ -109,65 +123,73 @@ demoSections:
 - label: Tire Mounting FAQ
   copy:
   - text: Tire Mounting FAQ
-  - text: Do you sell wheels?
-  - text: No. We don't sell wheels, and we don't repair bent or curbed rims. You buy the wheels from a wheel shop, a dealer or online, and we mount tires on them and install them at your place.
-  - text: Can you mount tires on wheels I bought online?
-  - text: Yes. Have the wheels shipped to you, then text us the wheel size and your tire size. We'll bring the tires, mount and balance them on your wheels, and install them where you're parked.
-  - text: Will my TPMS sensors work in my new wheels?
-  - text: Usually. We move your sensors into the new wheels and check that each one reads. If a sensor is dead or doesn't fit the wheel, we'll tell you and quote a new one before we install it.
-  - text: Should I get all-terrain or off-road tires?
-  - text: As a rule of thumb, all-terrains suit trucks that mostly drive on pavement with some dirt. Off-road or mud-terrain tires suit trucks that hit trails often, but they're louder and wear faster on the street. Tell us how you drive and we'll suggest a few options.
-  - text: Do you work on lifted trucks and Jeeps?
-  - text: 'Yes, we mount and install tires on your wheels for lifted and leveled trucks, Jeeps and SUVs. [Confirm with Joel: whether you install lift or leveling kits, or tires only.]'
-  - text: Is there a warranty?
-  - text: An optional nationwide tire warranty is available for $15 per tire. Ask when you get your quote.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: Do you sell wheels?
+    answer: No. We don't sell wheels, and we don't repair bent or curbed rims. You buy the wheels from a wheel shop, a dealer or online, and we mount tires on them and install them at your place.
+  - _template: faq
+    question: Can you mount tires on wheels I bought online?
+    answer: Yes. Have the wheels shipped to you, then text us the wheel size and your tire size. We'll bring the tires, mount and balance them on your wheels, and install them where you're parked.
+  - _template: faq
+    question: Will my TPMS sensors work in my new wheels?
+    answer: Usually. We move your sensors into the new wheels and check that each one reads. If a sensor is dead or doesn't fit the wheel, we'll tell you and quote a new one before we install it.
+  - _template: faq
+    question: Should I get all-terrain or off-road tires?
+    answer: As a rule of thumb, all-terrains suit trucks that mostly drive on pavement with some dirt. Off-road or mud-terrain tires suit trucks that hit trails often, but they're louder and wear faster on the street. Tell us how you drive and we'll suggest a few options.
+  - _template: faq
+    question: Do you work on lifted trucks and Jeeps?
+    answer: 'Yes, we mount and install tires on your wheels for lifted and leveled trucks, Jeeps and SUVs. [Confirm with Joel: whether you install lift or leveling kits, or tires only.]'
+  - _template: faq
+    question: Is there a warranty?
+    answer: An optional nationwide tire warranty is available for $15 per tire. Ask when you get your quote.
 - label: Tire mounting near you
   copy:
   - text: Tire mounting near you
-  - text: Anaheim
-  - text: Santa Ana
-  - text: Irvine
-  - text: Orange
-  - text: Fullerton
-  - text: Costa Mesa
-  - text: Huntington Beach
-  - text: Tustin
   - text: All areas
   - text: Related services
-  - text: Mobile Tire Installation
-  - text: TPMS Sensor Service
-  - text: Flat Tire Repair
-  - text: Tesla & EV Tires
   links:
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#orange'
-    label: Orange
-  - url: '#fullerton'
-    label: Fullerton
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#huntington-beach'
-    label: Huntington Beach
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
-  - url: /services/tpms-sensor-service/
-    label: TPMS Sensor Service →
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /vehicles/tesla-ev-tires/
-    label: Tesla & EV Tires →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#huntington-beach'
+    label: Huntington Beach
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
+  - _template: arrowLink
+    url: /services/tpms-sensor-service/
+    label: TPMS Sensor Service
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /vehicles/tesla-ev-tires/
+    label: Tesla & EV Tires
 - label: Got your wheels? Text us a photo.
   copy:
   - text: Got your wheels? Text us a photo.

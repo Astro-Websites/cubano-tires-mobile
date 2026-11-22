@@ -61,44 +61,58 @@ demoSections:
 - label: TPMS problems we fix
   copy:
   - text: TPMS problems we fix
-  - text: Dead sensor batteries
-  - text: The battery is sealed inside the sensor. When it dies, the sensor gets replaced.
-  - text: Broken or corroded sensors
-  - text: Snapped valve stems, rusted nuts and sensors damaged during a past tire change.
-  - text: Relearn & reset
-  - text: New sensors have to be paired to the car. We complete the TPMS relearn and reset on-site before we leave.
-  - text: Light on after new tires
-  - text: Got tires somewhere else and the light came on? We find which sensor isn't talking.
-  - text: Slow leaks
-  - text: If the sensor is doing its job, the leak is the real problem. We find it and fix it.
-  - text: Sensors for your own wheels
-  - text: Putting tires on wheels you bought? We transfer your sensors or fit new ones.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Dead sensor batteries
+    text: The battery is sealed inside the sensor. When it dies, the sensor gets replaced.
+  - _template: feature
+    title: Broken or corroded sensors
+    text: Snapped valve stems, rusted nuts and sensors damaged during a past tire change.
+  - _template: feature
+    title: Relearn & reset
+    text: New sensors have to be paired to the car. We complete the TPMS relearn and reset on-site before we leave.
+  - _template: feature
+    title: Light on after new tires
+    text: Got tires somewhere else and the light came on? We find which sensor isn't talking.
+  - _template: feature
+    title: Slow leaks
+    text: If the sensor is doing its job, the leak is the real problem. We find it and fix it.
+  - _template: feature
+    title: Sensors for your own wheels
+    text: Putting tires on wheels you bought? We transfer your sensors or fit new ones.
 - label: Light off in 3 steps
   copy:
   - text: Light off in 3 steps
-  - text: '1'
-  - text: Text a photo of your dash
-  - text: Tell us if the light is solid or flashing, plus your year, make and model.
-  - text: '2'
-  - text: Get your price and time
-  - text: We tell you what a sensor costs for your car and when we can be there.
-  - text: '3'
-  - text: We test, replace and relearn
-  - text: Every sensor checked, the bad one swapped, pressures set, and the light off before we go.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text a photo of your dash
+    text: Tell us if the light is solid or flashing, plus your year, make and model.
+  - _template: step
+    number: '2'
+    title: Get your price and time
+    text: We tell you what a sensor costs for your car and when we can be there.
+  - _template: step
+    number: '3'
+    title: We test, replace and relearn
+    text: Every sensor checked, the bad one swapped, pressures set, and the light off before we go.
 - label: Why people text us instead of driving to a shop
   copy:
   - text: Real Customer Reviews
   - text: Why people text us instead of driving to a shop
-  - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
-  - text: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
-  - text: Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
+    author: Google review
+  - _template: review
+    quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
+    author: Google review
 - label: How much does TPMS sensor replacement cost?
   copy:
   - text: How much does TPMS sensor replacement cost?
@@ -112,65 +126,73 @@ demoSections:
 - label: TPMS Sensor FAQ
   copy:
   - text: TPMS Sensor FAQ
-  - text: Why is my tire pressure light flashing?
-  - text: As a rule of thumb, a light that flashes for about a minute and then stays on points to a problem with the system, not your air. Most often it's a sensor with a dead battery. Adding air won't fix it, but we can.
-  - text: Why does the light come on when it's cold out?
-  - text: Tire pressure drops as the air cools, roughly 1 psi for every 10°F by the usual rule of thumb. If your tires were a bit low already, a cold morning pushes them under the warning point. Fill them to the door jamb number and the light should clear.
-  - text: How long do TPMS sensors last?
-  - text: Most sensor batteries are commonly said to last around 5 to 10 years. The battery is sealed in, so when it goes, the whole sensor is replaced.
-  - text: Do I need to replace all four sensors?
-  - text: Not always. We test each one and tell you what we find. If one died of old age, the others are often the same age, so some people choose to do them all at once. It's your call.
-  - text: Is it safe to drive with the light on?
-  - text: Check your pressures first. If a tire is low, fill it or get it fixed before driving far. If the light is on because of a bad sensor, the system can't warn you about a real leak, so check your tires by hand until it's fixed.
-  - text: Can you do this at my home or office?
-  - text: Yes. We replace and program sensors in your driveway, office lot or parking structure anywhere in Orange County, Monday to Friday, 8 to 5.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: Why is my tire pressure light flashing?
+    answer: As a rule of thumb, a light that flashes for about a minute and then stays on points to a problem with the system, not your air. Most often it's a sensor with a dead battery. Adding air won't fix it, but we can.
+  - _template: faq
+    question: Why does the light come on when it's cold out?
+    answer: Tire pressure drops as the air cools, roughly 1 psi for every 10°F by the usual rule of thumb. If your tires were a bit low already, a cold morning pushes them under the warning point. Fill them to the door jamb number and the light should clear.
+  - _template: faq
+    question: How long do TPMS sensors last?
+    answer: Most sensor batteries are commonly said to last around 5 to 10 years. The battery is sealed in, so when it goes, the whole sensor is replaced.
+  - _template: faq
+    question: Do I need to replace all four sensors?
+    answer: Not always. We test each one and tell you what we find. If one died of old age, the others are often the same age, so some people choose to do them all at once. It's your call.
+  - _template: faq
+    question: Is it safe to drive with the light on?
+    answer: Check your pressures first. If a tire is low, fill it or get it fixed before driving far. If the light is on because of a bad sensor, the system can't warn you about a real leak, so check your tires by hand until it's fixed.
+  - _template: faq
+    question: Can you do this at my home or office?
+    answer: Yes. We replace and program sensors in your driveway, office lot or parking structure anywhere in Orange County, Monday to Friday, 8 to 5.
 - label: TPMS sensor service near you
   copy:
   - text: TPMS sensor service near you
-  - text: Anaheim
-  - text: Santa Ana
-  - text: Irvine
-  - text: Orange
-  - text: Fullerton
-  - text: Costa Mesa
-  - text: Huntington Beach
-  - text: Tustin
   - text: All areas
   - text: Related services
-  - text: Flat Tire Repair
-  - text: Mobile Tire Installation
-  - text: Tire Mounting on Your Wheels
-  - text: Tesla & EV Tires
   links:
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#orange'
-    label: Orange
-  - url: '#fullerton'
-    label: Fullerton
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#huntington-beach'
-    label: Huntington Beach
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
-  - url: /services/tire-mounting/
-    label: Tire Mounting on Your Wheels →
-  - url: /vehicles/tesla-ev-tires/
-    label: Tesla & EV Tires →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#huntington-beach'
+    label: Huntington Beach
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
+  - _template: arrowLink
+    url: /services/tire-mounting/
+    label: Tire Mounting on Your Wheels
+  - _template: arrowLink
+    url: /vehicles/tesla-ev-tires/
+    label: Tesla & EV Tires
 - label: Tire pressure light on? Text us a photo.
   copy:
   - text: Tire pressure light on? Text us a photo.

@@ -22,9 +22,14 @@ const page = defineCollection({
   schema: z.record(z.string(), z.unknown()),
 });
 
+const simplePage = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/simple-page' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
 const user = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/user' }),
   schema: z.record(z.string(), z.unknown()),
 });
 
-export const collections = { global, blog, category, page, user };
+export const collections = { global, blog, category, page, simplePage, user };

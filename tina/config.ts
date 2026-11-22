@@ -2,6 +2,7 @@ import { defineConfig } from 'tinacms';
 import { BlogCollection } from './collections/blog';
 import { CategoryCollection } from './collections/category';
 import { PageCollection } from './collections/page';
+import { SimplePageCollection } from './collections/simple-page';
 import { UserCollection } from './collections/user';
 
 const navigationItem = {
@@ -26,6 +27,7 @@ export default defineConfig({
       BlogCollection,
       CategoryCollection,
       PageCollection,
+      SimplePageCollection,
       UserCollection,
       {
         name: 'globalConfig',

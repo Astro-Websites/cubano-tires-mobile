@@ -63,44 +63,58 @@ demoSections:
 - label: What every visit covers
   copy:
   - text: What every visit covers
-  - text: The right pattern
-  - text: Front-wheel, rear-wheel or all-wheel drive. Each gets the rotation it needs.
-  - text: Balancing on the truck
-  - text: Wheels spun and weighted on our machine, right where you're parked.
-  - text: Tesla & EVs
-  - text: EVs are heavy and can wear tires fast. Regular rotation helps.
-  - text: Staggered setups
-  - text: Different sizes front and rear can't always swap. We'll rotate what can be rotated.
-  - text: Tread check
-  - text: We look over each tire and tell you how much life is left.
-  - text: Pressure & TPMS
-  - text: Pressure set to spec and the warning system checked before we leave.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: The right pattern
+    text: Front-wheel, rear-wheel or all-wheel drive. Each gets the rotation it needs.
+  - _template: feature
+    title: Balancing on the truck
+    text: Wheels spun and weighted on our machine, right where you're parked.
+  - _template: feature
+    title: Tesla & EVs
+    text: EVs are heavy and can wear tires fast. Regular rotation helps.
+  - _template: feature
+    title: Staggered setups
+    text: Different sizes front and rear can't always swap. We'll rotate what can be rotated.
+  - _template: feature
+    title: Tread check
+    text: We look over each tire and tell you how much life is left.
+  - _template: feature
+    title: Pressure & TPMS
+    text: Pressure set to spec and the warning system checked before we leave.
 - label: Rotated and balanced in 3 steps
   copy:
   - text: Rotated and balanced in 3 steps
-  - text: '1'
-  - text: Text a photo of your tire
-  - text: Add your year, make and model and where you'll be parked. Mention any shake you've noticed.
-  - text: '2'
-  - text: Pick a time that works
-  - text: We send your price and an arrival time, and text you when we're on the way.
-  - text: '3'
-  - text: Keep doing your thing
-  - text: We rotate, balance and check pressure. Most jobs take under 45 minutes.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text a photo of your tire
+    text: Add your year, make and model and where you'll be parked. Mention any shake you've noticed.
+  - _template: step
+    number: '2'
+    title: Pick a time that works
+    text: We send your price and an arrival time, and text you when we're on the way.
+  - _template: step
+    number: '3'
+    title: Keep doing your thing
+    text: We rotate, balance and check pressure. Most jobs take under 45 minutes.
 - label: Tire service that fits around your day
   copy:
   - text: From Our Customers
   - text: Tire service that fits around your day
-  - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
-  - text: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-  - text: Jesse M. V. · Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
+    author: Google review
+  - _template: review
+    quote: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
+    author: Jesse M. V. · Google review
 - label: How much does tire rotation and balancing cost?
   copy:
   - text: How much does tire rotation and balancing cost?
@@ -113,65 +127,73 @@ demoSections:
 - label: Tire Rotation & Balancing FAQ
   copy:
   - text: Tire Rotation & Balancing FAQ
-  - text: How often should I rotate my tires?
-  - text: A common rule of thumb is every 5,000–7,500 miles, and Tesla suggests about every 6,250 miles. Your owner's manual has the exact interval for your car.
-  - text: What's the difference between rotation and balancing?
-  - text: Rotation moves your tires to different spots on the car so they wear evenly. Balancing adds small weights to each wheel so it spins smoothly without shaking. Many people get both at the same visit.
-  - text: Why does my steering wheel shake on the freeway?
-  - text: A shake that shows up at highway speed is often a wheel out of balance. It can also be a damaged tire or a bent wheel. We'll check and tell you what we find. We don't sell or repair wheels.
-  - text: Can you rotate my tires at my office?
-  - text: 'Yes. Office lots, parking structures and driveways all work. Leave the keys handy and keep working. [Confirm with Joel: does the customer need to be present?]'
-  - text: Do you rotate tires for company vehicles?
-  - text: 'Yes. We work with fleets across Orange County, LA, Long Beach and Commerce. See our fleet services or text us about your vehicles. [Confirm with Joel: offer scheduled rotations for fleets?]'
-  - text: Do you do wheel alignments?
-  - text: Only for larger trucks and commercial vehicles. Our mobile alignment service covers Ford F-150s and up, through semi-trucks and other heavy-duty equipment. We don't provide wheel alignments for regular passenger vehicles. Rotation and balancing are available for all vehicles.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: How often should I rotate my tires?
+    answer: A common rule of thumb is every 5,000–7,500 miles, and Tesla suggests about every 6,250 miles. Your owner's manual has the exact interval for your car.
+  - _template: faq
+    question: What's the difference between rotation and balancing?
+    answer: Rotation moves your tires to different spots on the car so they wear evenly. Balancing adds small weights to each wheel so it spins smoothly without shaking. Many people get both at the same visit.
+  - _template: faq
+    question: Why does my steering wheel shake on the freeway?
+    answer: A shake that shows up at highway speed is often a wheel out of balance. It can also be a damaged tire or a bent wheel. We'll check and tell you what we find. We don't sell or repair wheels.
+  - _template: faq
+    question: Can you rotate my tires at my office?
+    answer: 'Yes. Office lots, parking structures and driveways all work. Leave the keys handy and keep working. [Confirm with Joel: does the customer need to be present?]'
+  - _template: faq
+    question: Do you rotate tires for company vehicles?
+    answer: 'Yes. We work with fleets across Orange County, LA, Long Beach and Commerce. See our fleet services or text us about your vehicles. [Confirm with Joel: offer scheduled rotations for fleets?]'
+  - _template: faq
+    question: Do you do wheel alignments?
+    answer: Only for larger trucks and commercial vehicles. Our mobile alignment service covers Ford F-150s and up, through semi-trucks and other heavy-duty equipment. We don't provide wheel alignments for regular passenger vehicles. Rotation and balancing are available for all vehicles.
 - label: Tire rotation near you
   copy:
   - text: Tire rotation near you
-  - text: Irvine
-  - text: Santa Ana
-  - text: Anaheim
-  - text: Garden Grove
-  - text: Brea
-  - text: Costa Mesa
-  - text: Fullerton
-  - text: Tustin
   - text: All areas
   - text: Related services
-  - text: Mobile Tire Installation
-  - text: Flat Tire Repair
-  - text: Tesla & EV Tires
-  - text: Fleet & Commercial Tires
   links:
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#garden-grove'
-    label: Garden Grove
-  - url: '#brea'
-    label: Brea
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#fullerton'
-    label: Fullerton
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /vehicles/tesla-ev-tires/
-    label: Tesla & EV Tires →
-  - url: /services/fleet-tire-service/
-    label: Fleet & Commercial Tires →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#garden-grove'
+    label: Garden Grove
+  - _template: pill
+    url: '#brea'
+    label: Brea
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /vehicles/tesla-ev-tires/
+    label: Tesla & EV Tires
+  - _template: arrowLink
+    url: /services/fleet-tire-service/
+    label: Fleet & Commercial Tires
 - label: Due for a rotation? We'll come to you.
   copy:
   - text: Due for a rotation? We'll come to you.

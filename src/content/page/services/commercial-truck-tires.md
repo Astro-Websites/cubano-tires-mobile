@@ -70,60 +70,78 @@ demoSections:
 - label: Commercial tire work we do
   copy:
   - text: Commercial tire work we do
-  - text: Box trucks
-  - text: 17.5" and 19.5" tires replaced at your yard or the curb where the truck is parked.
-  - text: Sprinter & work vans
-  - text: LT tires for vans that carry tools and loads all day.
-  - text: Semi tractors
-  - text: Steer and drive tires in 22.5", mounted and aired up on site.
-  - text: Trailers
-  - text: Semi trailers, equipment trailers and travel trailers. No hauling it to a shop.
-  - text: Roadside commercial blowouts
-  - text: Get somewhere safe, text your location and we'll bring the tire. Mon–Fri 8–5.
-  - text: New & replacement tires
-  - text: 'Matched to your size and load range. [Confirm with Joel: commercial brands carried, and whether you patch commercial tires or replace only]'
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Box trucks
+    text: 17.5" and 19.5" tires replaced at your yard or the curb where the truck is parked.
+  - _template: feature
+    title: Sprinter & work vans
+    text: LT tires for vans that carry tools and loads all day.
+  - _template: feature
+    title: Semi tractors
+    text: Steer and drive tires in 22.5", mounted and aired up on site.
+  - _template: feature
+    title: Trailers
+    text: Semi trailers, equipment trailers and travel trailers. No hauling it to a shop.
+  - _template: feature
+    title: Roadside commercial blowouts
+    text: Get somewhere safe, text your location and we'll bring the tire. Mon–Fri 8–5.
+  - _template: feature
+    title: New & replacement tires
+    text: 'Matched to your size and load range. [Confirm with Joel: commercial brands carried, and whether you patch commercial tires or replace only]'
 - label: Big-truck work, on site
   copy:
   - text: From Recent Jobs
   - text: Big-truck work, on site
-  - text: Semi truck service on a Sunbelt Rentals job
-  - text: 22.5" swap on site for Herc Rentals
-  - text: Roadside service on a big rig hauling an excavator
   links: []
-  images:
-  - source: /uploads/cubano-pages/cubano-technician-servicing-a-semi-truck-on-a.jpg
-    alt: Cubano technician servicing a semi truck on a Sunbelt Rentals job
-  - source: /uploads/cubano-pages/cubano-technician-swapping-a-22-5-inch.jpg
-    alt: Cubano technician doing a 22.5 inch tire swap on site for Herc Rentals
-  - source: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
-    alt: Cubano roadside service on a big rig hauling an excavator
+  images: []
+  cards:
+  - _template: photo
+    imageAlt: Cubano technician servicing a semi truck on a Sunbelt Rentals job
+    image: /uploads/cubano-pages/cubano-technician-servicing-a-semi-truck-on-a.jpg
+    caption: Semi truck service on a Sunbelt Rentals job
+  - _template: photo
+    imageAlt: Cubano technician doing a 22.5 inch tire swap on site for Herc Rentals
+    image: /uploads/cubano-pages/cubano-technician-swapping-a-22-5-inch.jpg
+    caption: 22.5" swap on site for Herc Rentals
+  - _template: photo
+    imageAlt: Cubano roadside service on a big rig hauling an excavator
+    image: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
+    caption: Roadside service on a big rig hauling an excavator
 - label: Truck tire down? 3 steps.
   copy:
   - text: Truck tire down? 3 steps.
-  - text: '1'
-  - text: Text a photo of the sidewall
-  - text: Show us the size and the damage. Tell us the position (steer, drive or trailer) and where the truck is.
-  - text: '2'
-  - text: Get your quote by size
-  - text: Joel texts back the tire, the price and when we'll be there.
-  - text: '3'
-  - text: We swap it where it sits
-  - text: Yard, lot or roadside. Mounted, aired up and ready to roll. We text when we're on the way.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text a photo of the sidewall
+    text: Show us the size and the damage. Tell us the position (steer, drive or trailer) and where the truck is.
+  - _template: step
+    number: '2'
+    title: Get your quote by size
+    text: Joel texts back the tire, the price and when we'll be there.
+  - _template: step
+    number: '3'
+    title: We swap it where it sits
+    text: Yard, lot or roadside. Mounted, aired up and ready to roll. We text when we're on the way.
 - label: What customers say
   copy:
   - text: Trucks, Trailers & Big Jobs
   - text: What customers say
-  - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
-  - text: Justin K. · Google review
-  - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
   - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
+    author: Justin K. · Google review
+  - _template: review
+    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
+    author: Google review
 - label: How much do commercial truck tires cost?
   copy:
   - text: How much do commercial truck tires cost?
@@ -136,66 +154,74 @@ demoSections:
 - label: Commercial Truck Tire FAQ
   copy:
   - text: Commercial Truck Tire FAQ
-  - text: Can you replace a semi truck tire on the side of the road?
-  - text: Yes, including on freeway shoulders. Get as far from the travel lanes as you safely can, text us a photo and your location, and we'll quote it and give you a time. We're open Monday to Friday, 8 to 5.
-  - text: Do you repair semi truck tires or only replace them?
-  - text: '[Confirm with Joel: whether you patch commercial tires.] As a rule of thumb, a small puncture in the tread can often be repaired, while sidewall damage or a blowout means a new tire.'
-  - text: What size are my trailer tires?
-  - text: Check the sidewall. Semi trailers usually run 22.5", with some low-deck trailers on 17.5". Travel and utility trailers usually run ST trailer tires in smaller sizes. Text a photo and we'll tell you.
-  - text: What's the difference between steer, drive and trailer tires?
-  - text: As a rule of thumb, steer tires have a rib tread for handling, drive tires have a deeper lug tread for traction, and trailer tires are built to roll free and resist scrubbing. Tell us the position so we bring the right one.
-  - text: Can you do several trucks in one visit?
-  - text: Yes. That's what a fleet account is for. Call (888) 333-3173 to set one up and we'll schedule a multi-vehicle day at your yard.
-  - text: Do you work outside Orange County?
-  - text: Fleet accounts are covered in Los Angeles, Long Beach and Commerce as well as all of Orange County.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: Can you replace a semi truck tire on the side of the road?
+    answer: Yes, including on freeway shoulders. Get as far from the travel lanes as you safely can, text us a photo and your location, and we'll quote it and give you a time. We're open Monday to Friday, 8 to 5.
+  - _template: faq
+    question: Do you repair semi truck tires or only replace them?
+    answer: '[Confirm with Joel: whether you patch commercial tires.] As a rule of thumb, a small puncture in the tread can often be repaired, while sidewall damage or a blowout means a new tire.'
+  - _template: faq
+    question: What size are my trailer tires?
+    answer: Check the sidewall. Semi trailers usually run 22.5", with some low-deck trailers on 17.5". Travel and utility trailers usually run ST trailer tires in smaller sizes. Text a photo and we'll tell you.
+  - _template: faq
+    question: What's the difference between steer, drive and trailer tires?
+    answer: As a rule of thumb, steer tires have a rib tread for handling, drive tires have a deeper lug tread for traction, and trailer tires are built to roll free and resist scrubbing. Tell us the position so we bring the right one.
+  - _template: faq
+    question: Can you do several trucks in one visit?
+    answer: Yes. That's what a fleet account is for. Call (888) 333-3173 to set one up and we'll schedule a multi-vehicle day at your yard.
+  - _template: faq
+    question: Do you work outside Orange County?
+    answer: Fleet accounts are covered in Los Angeles, Long Beach and Commerce as well as all of Orange County.
 - label: Commercial truck tires near you
   copy:
   - text: Commercial truck tires near you
-  - text: Anaheim
-  - text: Santa Ana
-  - text: Orange
-  - text: Fullerton
-  - text: Irvine
-  - text: Long Beach
-  - text: Los Angeles
-  - text: Commerce
   - text: All areas
   - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - text: Related services
-  - text: Fleet Tire Service
-  - text: OTR & Heavy Equipment Tires
-  - text: Flat Tire Repair
-  - text: Mobile Tire Installation
   links:
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: '#orange'
-    label: Orange
-  - url: '#fullerton'
-    label: Fullerton
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#long-beach'
-    label: Long Beach
-  - url: '#los-angeles'
-    label: Los Angeles
-  - url: '#commerce'
-    label: Commerce
   - url: '#areas'
     label: All areas
-  - url: /services/fleet-tire-service/
-    label: Fleet Tire Service →
-  - url: /services/otr-heavy-equipment-tires/
-    label: OTR & Heavy Equipment Tires →
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#long-beach'
+    label: Long Beach
+  - _template: pill
+    url: '#los-angeles'
+    label: Los Angeles
+  - _template: pill
+    url: '#commerce'
+    label: Commerce
+  - _template: arrowLink
+    url: /services/fleet-tire-service/
+    label: Fleet Tire Service
+  - _template: arrowLink
+    url: /services/otr-heavy-equipment-tires/
+    label: OTR & Heavy Equipment Tires
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
 - label: Truck down? Text us the tire size.
   copy:
   - text: Truck down? Text us the tire size.
