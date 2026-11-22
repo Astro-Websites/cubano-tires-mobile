@@ -29,18 +29,18 @@ demoSections:
   - text: 340+ Google reviews
   - text: 565+
   - text: real jobs posted on video
-  - text: '[__]'
-  - text: stocked service trucks
-  - text: '[Year]'
-  - text: serving Orange County since
+  - text: '4'
+  - text: fully stocked service trucks
+  - text: '2018'
+  - text: Established · Serving Orange County since 2018
   links: []
   images: []
 - label: Started by a tire guy who hated waiting rooms as much as you do
   copy:
   - text: Our Story
   - text: Started by a tire guy who hated waiting rooms as much as you do
-  - text: '[Joel''s story in his own words, 3 to 4 sentences: how he got into tires, when and why he started Cubano, and where the name comes from. Get this on a 10-minute call; don''t write it for him.]'
-  - text: Today Cubano runs fully stocked trucks out of our shop on E La Palma Ave in Anaheim. Joel still answers the phone and quotes every job himself. Our techs show up with the tire, the machine and everything needed to finish in your driveway, office lot or fleet yard.
+  - text: My journey in the tire industry began about 10 years ago, working alongside my father at his tire shop in El Monte, California. During that time, I saw firsthand how much time customers spent waiting for their tires to be serviced, and I knew there had to be a more convenient way. That experience inspired me to start Cubano Tires Mobile Shop about eight years ago, bringing professional tire services directly to customers at their homes, workplaces, or wherever they need us. The name "Cubano Tires" reflects my Cuban heritage, something I'm proud to represent through the business I've built. — Joel Gonzalez, Owner
+  - text: Today Cubano runs 4 fully stocked service trucks out of our shop on E La Palma Ave in Anaheim, serving Orange County since 2018. Joel and our General Manager, Jay, answer the phone and quote every job. Our techs show up with the tire, the machine and everything needed to finish in your driveway, office lot or fleet yard.
   - text: And because we're proud of the work, we film it. Joey rides along and posts real jobs every day, from Teslas and BMW M8s to big rigs and rental equipment.
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why!"'
   - text: Google review
@@ -68,13 +68,13 @@ demoSections:
   - text: Answers the phone, quotes every job and builds the fleet relationships.
   - text: Jay
   - text: General Manager
-  - text: '[One line from Jay about his role]'
+  - text: With over 20 years of experience in the industry, Jay oversees all in-house operations at Cubano Tires Mobile Shop. He manages daily operations, answers customer calls, coordinates appointments, and oversees scheduling to ensure everything runs smoothly and efficiently.
   - text: Ramiro
   - text: Technician
   - text: '"Arrived right on time, just as promised." Tess S., Google'
   - text: Steven
   - text: Technician
-  - text: '[One line from Steven]'
+  - text: With approximately seven years of experience in the tire industry, Steven brings hands-on expertise, professionalism, and a commitment to getting every job done right.
   - text: Orafnel
   - text: Technician
   - text: '"My tire miracle worker." Google review'

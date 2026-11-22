@@ -15,7 +15,7 @@ demoSections:
   - text: Text Us a Photo of Your Flat
   - text: Call (888) 333-3173
   - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Repairs from [$__]
+  - text: Repairs from $35
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
   - text: We text when we're on the way
@@ -39,19 +39,26 @@ demoSections:
   copy:
   - text: Patch or Replace?
   - text: Can my flat tire be repaired?
-  - text: 'Send us a photo and we''ll tell you before we roll. Here''s the rule of thumb most tire pros follow:'
+  - text: 'Send us a photo and we''ll tell you before we roll. We only repair a puncture when it can be fixed safely. Here''s the policy we follow:'
   - text: Usually repairable
-  - text: Nail or screw in the tread
-  - text: Puncture about ¼" or smaller
-  - text: Slow leak from the bead or valve stem
-  - text: Tire wasn't driven on while flat
-  - text: We repair it from the inside the right way, re-mount, balance and set your pressure.
+  - text: Nail or screw in the center of the tread
+  - text: Puncture ¼" or smaller
+  - text: Puncture at the edge of the shoulder, only if it angles toward the center of the tread
+  - text: Tread at 4/32" or deeper, and the tire wasn't driven on while flat
+  - text: We repair it from the inside with a plug-patch, re-mount, balance and set your pressure.
   - text: Needs a new tire
-  - text: Damage in the sidewall or shoulder
-  - text: Cut or gash bigger than ¼"
-  - text: Blowout, or driven on flat for miles
-  - text: Tread worn below 2/32"
+  - text: Any puncture or damage in the sidewall or shoulder
+  - text: Puncture larger than ¼", or a slice that can't be properly repaired
+  - text: Blowout, or the tire was driven on while flat
+  - text: Tread worn below 4/32", or the tire is over 6 years old
   - text: No problem. We bring the right tire on the truck and install it on the spot. You'll know the price before we come.
+  - text: Where the puncture is matters
+  - text: 'Center of the tread: may be repaired under certain circumstances.'
+  - text: 'Edge of the shoulder: may be repaired if the puncture angles toward the center of the tread.'
+  - text: 'Shoulder and sidewall: not repairable.'
+  - text: No outer grooves on your tread? Then we don't repair a puncture within 25% of the tire's width from the tread edge. On a 205mm tire, that's about 2 inches from the edge.
+  - text: How a Proper Tire Repair Is Done
+  - text: At Cubano Tires Mobile Shop, we use professional plug-patch repairs to safely repair punctured tires. We start by removing the tire from the wheel and inspecting the inside to make sure the damage is repairable. Once approved, we install a plug-patch combination from the inside of the tire to properly seal the puncture. We then remount the tire, balance the wheel, and inflate it to the manufacturer's recommended tire pressure before completing the service.
   links: []
   images: []
 - label: Flats we fix every day
@@ -98,7 +105,7 @@ demoSections:
 - label: How much does mobile flat tire repair cost?
   copy:
   - text: How much does mobile flat tire repair cost?
-  - text: Flat repairs start at [$__]. If the tire can't be saved, we'll quote the replacement tire before we come out. Your quote includes the mobile service, so the price we text you is the price you pay.
+  - text: Tire repairs start at $35 and up, depending on tire size. The mobile service fee is additional. If the tire can't be saved, we'll quote the replacement tire before we come out, and the price we text you is the price you pay.
   - text: Text a Photo for Your Price
   links:
   - url: sms:8883333173
@@ -108,7 +115,7 @@ demoSections:
   copy:
   - text: Flat Tire Repair FAQ
   - text: Can a tire with a nail in it be fixed?
-  - text: Usually, yes, if the nail is in the tread and the hole is about ¼" or smaller. Nails near the sidewall or shoulder mean a new tire. Text us a photo and we'll tell you which before we come.
+  - text: Usually, yes, if the nail is in the center of the tread and the hole is ¼" or smaller. Nails in the sidewall or shoulder mean a new tire. Text us a photo and we'll tell you which before we come.
   - text: How long does a mobile flat repair take?
   - text: Most jobs take under 45 minutes once we arrive. We text you an arrival time with your quote.
   - text: My Tesla has no spare. Can you help?

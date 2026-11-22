@@ -17,7 +17,7 @@ demoSections:
   - text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone, or
   - text: shop tires by size
   - text: .
-  - text: Install from [$__]
+  - text: Install from $35/tire
   - text: Free mobile service with 4 tires
   - text: Price quoted = price paid
   - text: Tire Rack Top Rated Installer
@@ -55,7 +55,7 @@ demoSections:
   - text: Mounting and balancing on our truck
   - text: Pressure set to your vehicle's spec
   - text: TPMS sensor check
-  - text: 'Old tire removal and disposal [Confirm with Joel: included?]'
+  - text: Old tire removal and disposal (disposal fee applies)
   - text: Brands we carry
   - text: Michelin
   - text: Goodyear
@@ -91,8 +91,8 @@ demoSections:
   - text: All-terrain and mud tires from Nitto, Toyo and BFGoodrich.
   - text: Trailers & RVs
   - text: Travel trailer tires swapped where it's parked. No towing it anywhere.
-  - text: New wheels
-  - text: Bought new wheels? We mount your tires and install them. (We don't repair wheels.)
+  - text: Your own wheels
+  - text: Have wheels of your own? We mount new tires on them and install them. We supply tires only and don't sell or repair wheels.
   links: []
   images: []
 - label: New tires in 3 steps
@@ -122,7 +122,7 @@ demoSections:
 - label: How much does mobile tire installation cost?
   copy:
   - text: How much does mobile tire installation cost?
-  - text: 'Installation starts at [$__] per tire [Confirm with Joel: per-tire install price]. Buy 4 new tires and mobile service in Orange County is free. Your quote covers the tires, install and mobile service together, so the price we text you is the price you pay.'
+  - text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
   - text: Text a Photo for Your Price
   links:
   - url: sms:8883333173
@@ -136,7 +136,7 @@ demoSections:
   - text: How do I find my tire size?
   - text: 'It''s printed on the side of the tire and looks something like 225/65R17. Easiest option: text us a photo of it and we''ll read it for you.'
   - text: What happens to my old tires?
-  - text: 'We take them off and haul them away for you. [Confirm with Joel: is old tire disposal included in the price, or is there a per-tire fee?]'
+  - text: We take them off and haul them away for you. A tire disposal fee applies, and it's included in your quote.
   - text: Can you install tires at my office?
   - text: 'Yes. Office lots, parking structures, job sites and driveways all work. Many customers keep working while we install. Most jobs take under 45 minutes. [Confirm with Joel: any parking setups you can''t work in, like low-clearance garages?]'
   - text: Do you offer a tire warranty?

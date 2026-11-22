@@ -288,6 +288,10 @@ demoSections:
   - text: 336 Google reviews
   - text: 230+
   - text: Yelp reviews
+  - text: '2018'
+  - text: Established · Serving Orange County since 2018
+  - text: '4'
+  - text: Fully stocked service trucks
   links: []
   images:
   - source: /uploads/home/google.png

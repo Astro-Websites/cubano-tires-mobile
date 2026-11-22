@@ -15,7 +15,7 @@ demoSections:
   - text: Text Us a Photo of Your Tire
   - text: Call (888) 333-3173
   - text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone.
-  - text: Run-flats from [$__]
+  - text: Any run-flat, any make
   - text: BMW · Mini · Mercedes
   - text: Price quoted = price paid
   - text: We text when we're on the way
@@ -64,7 +64,7 @@ demoSections:
   copy:
   - text: Run-flat jobs we handle
   - text: BMW
-  - text: '3, 5 and X series and more. [Confirm with Joel: can you source star-marked (BMW-spec) run-flats?]'
+  - text: 3, 5 and X series and more. We source the run-flat your BMW calls for.
   - text: Mini
   - text: Small tires, small trunk, no spare. We come to you.
   - text: Mercedes-Benz
@@ -75,7 +75,7 @@ demoSections:
   - text: We'll tell you if your other tires are worn enough that a pair makes more sense.
   - text: TPMS checked
   - text: Run-flats rely on your pressure warning. We check the sensor after install.
-  - text: 'Run-flat brands we carry include Bridgestone, Pirelli, Michelin, Continental and Goodyear. [Confirm with Joel: common run-flat sizes on the truck, or ordered per job? Typical lead time?]'
+  - text: 'We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes: Bridgestone, Pirelli, Michelin, Continental, Goodyear and more.'
   links: []
   images: []
 - label: Warning light to new run-flat in 3 steps
@@ -105,7 +105,7 @@ demoSections:
 - label: How much does run-flat tire replacement cost?
   copy:
   - text: How much does run-flat tire replacement cost?
-  - text: Run-flats start at [$__] per tire, installed. Price depends on your size and brand, and run-flats usually cost more than regular tires. Replace all 4 and mobile service in Orange County is free. Either way, your quote includes everything, so the price we text you is the price you pay.
+  - text: Run-flat pricing depends on your tire size and brand, so we quote each job instead of listing a starting price. We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes. Replace all 4 and mobile service in Orange County is free, and the price we text you is the price you pay.
   - text: Text a Photo for Your Price
   links:
   - url: sms:8883333173

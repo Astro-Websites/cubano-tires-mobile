@@ -51,39 +51,39 @@ demoSections:
   copy:
   - text: Know Your Tire Type
   - text: Air-filled, foam-filled or solid?
-  - text: 'Equipment tires come in a few builds, and the build decides how the tire gets changed. Text a photo of the sidewall and the machine and we''ll tell you what it takes. [Confirm with Joel: which equipment types/sizes they actually service, e.g. solid/pneumatic forklift tires, press-on?]'
+  - text: Equipment tires come in three builds, and we service all three. The build decides how the tire gets changed. Text a photo of the sidewall and the machine and we'll tell you what it takes.
   - text: Pneumatic (air-filled)
   - text: Skid steers and compact loaders
   - text: Wheel loaders and backhoes
   - text: Rough-terrain forklifts and telehandlers
-  - text: Can go flat. Usually changed on site with the machine where it sits.
+  - text: We service skid steers, compact loaders, wheel loaders, backhoes, rough-terrain forklifts and telehandlers, and replace these tires on-site.
   - text: Foam-filled
+  - text: Skid steers
   - text: Boom lifts
-  - text: Skid steers on demolition or scrap sites
-  - text: Machines that can't afford a flat
-  - text: 'No flats, but heavy and slow to swap. [Confirm with Joel: do you handle foam-filled tires?]'
+  - text: Other industrial equipment
+  - text: We handle foam-filled tires for skid steers, boom lifts and other industrial equipment.
   - text: Solid
   - text: Solid pneumatic tires on warehouse forklifts
   - text: Press-on cushion tires on indoor forklifts
   - text: Non-marking tires on scissor lifts
-  - text: 'Press-on tires need a hydraulic press. [Confirm with Joel: press-on forklift tires on site, or solid pneumatic only?]'
+  - text: We handle solid pneumatic, press-on cushion and non-marking tires, and we have access to hydraulic press equipment for solid forklift tire installation.
   links: []
   images: []
 - label: Equipment we handle
   copy:
   - text: Equipment we handle
   - text: Skid steers
-  - text: 'Common sizes like 10-16.5 and 12-16.5, replaced on the job site. [Confirm with Joel: sizes carried]'
+  - text: Including common tire sizes such as 10-16.5 and 12-16.5.
   - text: Forklifts
-  - text: 'Warehouse and yard forklifts. [Confirm with Joel: pneumatic, solid pneumatic, press-on]'
+  - text: Pneumatic, solid pneumatic and press-on tires.
   - text: Loaders & backhoes
-  - text: 'Wheel loaders and backhoes on active sites. [Confirm with Joel: largest size you handle]'
+  - text: On-site tire replacement.
   - text: Scissor lifts
-  - text: Lift tires swapped where the lift is parked. [Confirm with Joel]
+  - text: Tire replacement at the equipment's location.
   - text: Boom lifts & telehandlers
-  - text: Larger lift and telehandler tires on site. [Confirm with Joel]
+  - text: Industrial tire replacement services.
   - text: Rental fleets
-  - text: We do tire work for rental companies like Herc Rentals and Sunbelt Rentals, at job sites and at their yards.
+  - text: We service equipment for rental companies, including Sunbelt Rentals and Herc Rentals, at job sites and rental yards.
   links: []
   images: []
 - label: Equipment and rental work
@@ -127,7 +127,7 @@ demoSections:
 - label: How much does heavy equipment tire service cost?
   copy:
   - text: How much does heavy equipment tire service cost?
-  - text: It depends on the machine, the tire size and whether it's air-filled, foam-filled or solid. We quote by equipment, from [$__] [Confirm with Joel]. Text a photo of the tire and the machine and we'll send a price that includes the service call. The price we quote is the price you pay.
+  - text: It depends on the machine, the tire size and whether it's air-filled, foam-filled or solid, so we quote by equipment. Text a photo of the tire and the machine and we'll send a price that includes the service call. The price we quote is the price you pay.
   - text: Text a Photo for a Quote
   links:
   - url: sms:8883333173
@@ -139,9 +139,9 @@ demoSections:
   - text: What does OTR mean?
   - text: Off-the-road. It covers tires for machines that work off the highway, like construction, warehouse and material-handling equipment.
   - text: What size are skid steer tires?
-  - text: 'Many skid steers run 10-16.5 or 12-16.5 tires, but check the sidewall to be sure. Text us a photo and we''ll match it. [Confirm with Joel: skid steer sizes carried]'
+  - text: Many skid steers run 10-16.5 or 12-16.5 tires, but check the sidewall to be sure. Text us a photo and we'll match it.
   - text: Can you change forklift tires on site?
-  - text: '[Confirm with Joel: which forklift tires you change on site.] As a rule of thumb, pneumatic and solid pneumatic tires can be changed on a standard rim, while press-on cushion tires need a hydraulic press.'
+  - text: Yes. We change pneumatic, solid pneumatic and press-on forklift tires. Press-on cushion tires need a hydraulic press, and we have access to hydraulic press equipment for solid forklift tire installation.
   - text: Do you work with equipment rental companies?
   - text: Yes. We do tire work for rental companies including Herc Rentals and Sunbelt Rentals, on machines at job sites and in rental yards.
   - text: Can you come to an active job site?

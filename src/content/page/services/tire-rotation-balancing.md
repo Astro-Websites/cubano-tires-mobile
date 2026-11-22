@@ -15,7 +15,7 @@ demoSections:
   - text: Text Us a Photo of Your Tire
   - text: Call (888) 333-3173
   - text: On a computer? Text a photo of your tire and your car's year, make and model to (888) 333-3173 from your phone.
-  - text: Rotation from [$__]
+  - text: Rotation from $35
   - text: At home or at work
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
@@ -57,7 +57,7 @@ demoSections:
   - text: Vibration in the seat or floor
   - text: Patchy or cupped wear on the tread
   - text: Vibration started after a tire was replaced
-  - text: 'A pull to one side or wear on just one edge can point to an alignment problem instead. We''ll tell you what we see. [Confirm with Joel: do you do alignments, or refer them out?]'
+  - text: Need an alignment? We don't align regular passenger vehicles. Our mobile alignment service is only for larger trucks and commercial vehicles, from Ford F-150s up to semi-trucks and other heavy-duty equipment. On a passenger car, a pull to one side or wear on one edge means a visit to an alignment shop.
   links: []
   images: []
 - label: What every visit covers
@@ -104,7 +104,7 @@ demoSections:
 - label: How much does tire rotation and balancing cost?
   copy:
   - text: How much does tire rotation and balancing cost?
-  - text: 'Rotation starts at [$__]. Rotation plus balancing on all four starts at [$__]. Your quote includes the mobile service, so the price we text you is the price you pay. [Confirm with Joel: rotation and balance prices, and how the mobile fee applies to rotation-only visits.]'
+  - text: Tire rotations start at $35 and up, depending on the vehicle. Balancing can be added at the same visit. We quote the full visit before we come out, so the price we text you is the price you pay.
   - text: Text Us for Your Price
   links:
   - url: sms:8883333173
@@ -118,11 +118,13 @@ demoSections:
   - text: What's the difference between rotation and balancing?
   - text: Rotation moves your tires to different spots on the car so they wear evenly. Balancing adds small weights to each wheel so it spins smoothly without shaking. Many people get both at the same visit.
   - text: Why does my steering wheel shake on the freeway?
-  - text: A shake that shows up at highway speed is often a wheel out of balance. It can also be a damaged tire or a bent wheel. We'll check and tell you what we find. We don't repair wheels, but we can install new ones.
+  - text: A shake that shows up at highway speed is often a wheel out of balance. It can also be a damaged tire or a bent wheel. We'll check and tell you what we find. We don't sell or repair wheels.
   - text: Can you rotate my tires at my office?
   - text: 'Yes. Office lots, parking structures and driveways all work. Leave the keys handy and keep working. [Confirm with Joel: does the customer need to be present?]'
   - text: Do you rotate tires for company vehicles?
   - text: 'Yes. We work with fleets across Orange County, LA, Long Beach and Commerce. See our fleet services or text us about your vehicles. [Confirm with Joel: offer scheduled rotations for fleets?]'
+  - text: Do you do wheel alignments?
+  - text: Only for larger trucks and commercial vehicles. Our mobile alignment service covers Ford F-150s and up, through semi-trucks and other heavy-duty equipment. We don't provide wheel alignments for regular passenger vehicles. Rotation and balancing are available for all vehicles.
   links: []
   images: []
 - label: Tire rotation near you

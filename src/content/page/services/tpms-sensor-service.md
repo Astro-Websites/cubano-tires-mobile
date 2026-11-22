@@ -15,7 +15,7 @@ demoSections:
   - text: Text Us a Photo of Your Dash Light
   - text: Call (888) 333-3173
   - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Sensors from [$__]
+  - text: Sensors from $95
   - text: Relearn done on the spot
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
@@ -66,13 +66,13 @@ demoSections:
   - text: Broken or corroded sensors
   - text: Snapped valve stems, rusted nuts and sensors damaged during a past tire change.
   - text: Relearn & reset
-  - text: 'Many cars need new sensors paired to the car. We do it before we leave. [Confirm with Joel: makes your relearn tool covers]'
+  - text: New sensors have to be paired to the car. We complete the TPMS relearn and reset on-site before we leave.
   - text: Light on after new tires
   - text: Got tires somewhere else and the light came on? We find which sensor isn't talking.
   - text: Slow leaks
   - text: If the sensor is doing its job, the leak is the real problem. We find it and fix it.
-  - text: Sensors for new wheels
-  - text: Moving to new wheels? We transfer your sensors or fit new ones.
+  - text: Sensors for your own wheels
+  - text: Putting tires on wheels you bought? We transfer your sensors or fit new ones.
   links: []
   images: []
 - label: Light off in 3 steps
@@ -102,7 +102,7 @@ demoSections:
 - label: How much does TPMS sensor replacement cost?
   copy:
   - text: How much does TPMS sensor replacement cost?
-  - text: 'Sensors start at [$__] each, installed and programmed. The price depends on your car, since some need a specific sensor. [Confirm with Joel: OEM vs. aftermarket sensors, and whether the relearn is included in the sensor price.] Your quote includes the mobile service, so the price we text you is the price you pay.'
+  - text: TPMS sensors start at $95 and up per sensor, depending on the vehicle. We complete the TPMS relearn and reset procedures on-site before leaving, so the system is properly programmed and working after installation. We quote the full job, so the price we text you is the price you pay.
   - text: Due for new tires too? We can do the sensors in the same visit.
   - text: Text a Photo for Your Price
   links:
