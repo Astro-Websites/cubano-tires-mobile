@@ -2,6 +2,7 @@ import { createElement, useEffect } from 'react';
 import { createRoot, type Root } from 'react-dom/client';
 import { tinaField, useTina } from 'tinacms/dist/react';
 import { TinaMarkdown } from 'tinacms/dist/rich-text';
+import { addImageEditStyles } from './preview-styles';
 
 const query = `query CubanoSimplePage($relativePath: String!) {
   simplePage(relativePath: $relativePath) { __typename _sys { filename relativePath } title seoTitle description heading intro image imageAlt body }
@@ -13,6 +14,7 @@ export function mountSimplePreview() {
   if (!script?.textContent) return;
   const { relativePath } = JSON.parse(script.textContent) as { relativePath: string };
   const el = (name: string) => document.querySelector<HTMLElement>(`[data-simple-field="${name}"]`);
+  addImageEditStyles();
   const mount = document.createElement('div');
   mount.hidden = true;
   document.body.append(mount);

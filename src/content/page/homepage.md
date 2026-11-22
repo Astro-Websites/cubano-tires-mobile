@@ -303,12 +303,18 @@ demoSections:
   - _template: review
     quote: “I’m impressed. They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised. From start to finish, he was professional, courteous, and respectful.”
     author: Tess S. · Verified Google review
+    logo: /uploads/home/google.png
+    logoAlt: Google
   - _template: review
     quote: “I was pleasantly impressed with the whole operation. Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appointment for today! Romero arrived on time and was very professional.”
     author: Jesse M. V. · Verified Google review
+    logo: /uploads/home/google.png
+    logoAlt: Google
   - _template: review
     quote: “The team at Cubano Tires was super helpful from start to finish. They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. The convenience was hard to beat.”
     author: Justin K. · Verified Google review
+    logo: /uploads/home/google.png
+    logoAlt: Google
   - _template: stat
     value: 565+
     label: Jobs posted on video

@@ -1,6 +1,6 @@
 // Repeatable items ("cards") inside designed-page sections. Each type matches a
 // <!--repeat:section:type--> block in src/fragments/demo-pages/*.html.
-// Field names ending in Url are links; image/photo are images; the rest is text.
+// Field names ending in Url are links; image/photo/logo are images; the rest is text.
 type CardField = { name: string; label: string; kind?: 'text' | 'textarea' | 'url' | 'image' };
 export const CARD_TYPES: Record<string, { label: string; title: string; fields: CardField[] }> = {
   faq: { label: 'FAQ', title: 'question', fields: [
@@ -9,7 +9,8 @@ export const CARD_TYPES: Record<string, { label: string; title: string; fields: 
     { name: 'brand', label: 'Brand or offer name' }, { name: 'tag', label: 'Tag (e.g. REBATE)' }, { name: 'amount', label: 'Amount (e.g. $100)' },
     { name: 'details', label: 'Details and dates', kind: 'textarea' }, { name: 'buttonLabel', label: 'Button text' }, { name: 'buttonUrl', label: 'Button link', kind: 'url' }] },
   review: { label: 'Review', title: 'author', fields: [
-    { name: 'quote', label: 'Review text', kind: 'textarea' }, { name: 'author', label: 'Reviewer' }] },
+    { name: 'quote', label: 'Review text', kind: 'textarea' }, { name: 'author', label: 'Reviewer' },
+    { name: 'logo', label: 'Review site logo (homepage only)', kind: 'image' }, { name: 'logoAlt', label: 'Review site name' }] },
   stat: { label: 'Stat', title: 'value', fields: [
     { name: 'value', label: 'Number' }, { name: 'label', label: 'Label' }] },
   person: { label: 'Team member', title: 'name', fields: [
