@@ -1,15 +1,13 @@
 ---
-title: Fleet Tire Service in Orange County & LA | Cubano Tires Mobile Shop
+title: Fleet Tire Service
+seoTitle: Fleet Tire Service in Orange County & LA | Cubano Tires Mobile Shop
 description: Fleet Tire Service at Your Yard, Orange County to LA
 demoSections:
 - label: Fleet Tire Service at Your Yard, Orange County to LA
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Fleet Tire Service
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Fleet Tire Service at Your Yard,
   - text: Orange County to LA
@@ -22,7 +20,6 @@ demoSections:
   - text: Price quoted = price paid
   - text: On-site at your yard
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"...the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
   links:
@@ -119,10 +116,8 @@ demoSections:
   copy:
   - text: Why Accounts Stay With Us
   - text: Customers on how we work
-  - text: ★★★★★
   - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
   - text: Google review
-  - text: ★★★★★
   - text: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
   - text: Google review
   - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
@@ -170,13 +165,9 @@ demoSections:
   - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - text: Related services
   - text: Commercial Truck Tires
-  - text: →
   - text: OTR & Heavy Equipment Tires
-  - text: →
   - text: Flat Tire Repair
-  - text: →
   - text: Mobile Tire Installation
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

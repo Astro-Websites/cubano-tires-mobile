@@ -15,7 +15,6 @@ if (source) {
   if (digest !== manifest['index.html']?.sha256) throw new Error('ASTRO-DEMO-LOCK authority hash mismatch');
 }
 const pins = {
-  'src/fragments/body.html': '7162de27a1daeb715ecf33a5b4227c56f28b3df07681d4f1ef4c21f211469b26',
   'src/fragments/footer.html': '2a41e8daaff9bd74e444467b28e59237420c8e1da6e5b8bc69dadaa3bbdb5354',
   'src/fragments/header.html': '4d31760356054655dd823f438fdcec61afd32ff7d21043056a3723a777129265',
   'src/fragments/scripts.html': 'd871b8aca8f242e015eb321b4e46ebb6362e46d9a1b887471bf3c2f51a35db86',
@@ -27,7 +26,7 @@ for (const [file, expected] of Object.entries(pins)) {
 
 const required = [
   ['src/fragments/header.html', ['<!-- Top bar -->', '<header', '</header>']],
-  ['src/fragments/body.html', ['<!-- Hero -->', '<section id="top"', '<!-- Fleet logos -->']],
+  ['src/fragments/demo-pages/homepage.html', ['<section id="top"', 'ta-widget-container', '@@0:copy:0:text@@']],
   ['src/fragments/footer.html', ['<!-- Footer -->', '<footer', '</footer>', 'cub-mbar']],
   ['src/fragments/scripts.html', ['data-tab', 'cub-tog', 'searchWidget.js']],
   ['src/styles/global.css', ['font-family:Montserrat', '@media (max-width: 760px)', '.cub-tog']],
@@ -37,7 +36,7 @@ for (const [file, needles] of required) {
   for (const needle of needles) if (!value.includes(needle)) throw new Error(`${file} missing ${needle}`);
 }
 
-const page = await readFile(path.join(root, 'src/pages/index.astro'), 'utf8');
+const page = await readFile(path.join(root, 'src/components/DesignedPage.astro'), 'utf8');
 if (!page.includes('<Header {config} {navigation} />') || !page.includes('<Footer {config} {navigation} />')) {
   throw new Error('Global header/footer are not route-wired components');
 }

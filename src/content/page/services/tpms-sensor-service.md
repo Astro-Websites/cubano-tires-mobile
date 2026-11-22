@@ -1,15 +1,13 @@
 ---
-title: TPMS Sensor Replacement in Orange County | Cubano Tires Mobile Shop
+title: TPMS Sensor Service
+seoTitle: TPMS Sensor Replacement in Orange County | Cubano Tires Mobile Shop
 description: TPMS Sensor Replacement in Orange County
 demoSections:
 - label: TPMS Sensor Replacement in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: TPMS Sensor Service
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: TPMS Sensor Replacement in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: Relearn done on the spot
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
-  - text: ★★★★★
   - text: '"Everything was so simple, straightforward and easy."'
   - text: Google review
   links:
@@ -96,10 +93,8 @@ demoSections:
   copy:
   - text: Real Customer Reviews
   - text: Why people text us instead of driving to a shop
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
-  - text: ★★★★★
   - text: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
   - text: Google review
   links: []
@@ -145,13 +140,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Flat Tire Repair
-  - text: →
   - text: Mobile Tire Installation
-  - text: →
   - text: Tire Mounting on Your Wheels
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

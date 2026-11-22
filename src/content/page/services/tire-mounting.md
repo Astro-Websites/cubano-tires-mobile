@@ -1,15 +1,13 @@
 ---
-title: Mobile Tire Mounting on Your Wheels in Orange County | Cubano Tires Mobile Shop
+title: Tire Mounting
+seoTitle: Mobile Tire Mounting on Your Wheels in Orange County | Cubano Tires Mobile Shop
 description: Bought new wheels or have a second set? Cubano mounts and balances tires on the wheels you provide, moves your TPMS sensors and installs them at your home or work in Orange County. We don't sell wheels.
 demoSections:
 - label: Tire Mounting on Your Wheels in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Tire Mounting on Your Wheels
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Tire Mounting on Your Wheels in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: Your wheels, mounted & balanced
   - text: TPMS transferred
   - text: Price quoted = price paid
-  - text: ★★★★★
   - text: '"They had everything needed in the truck!"'
   - text: Jesse M. V. · Google review
   links:
@@ -94,10 +91,8 @@ demoSections:
   copy:
   - text: Real Install Jobs
   - text: What customers say about the install
-  - text: ★★★★★
   - text: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
   - text: Jesse M. V. · Google review
-  - text: ★★★★★
   - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
   - text: Justin K. · Google review
   links: []
@@ -142,13 +137,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Mobile Tire Installation
-  - text: →
   - text: TPMS Sensor Service
-  - text: →
   - text: Flat Tire Repair
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

@@ -1,0 +1,29 @@
+---
+// Renders a designed page (a template in src/fragments/demo-pages/ filled from Tina content)
+// and wires the Tina visual editor preview.
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import Base from '../layouts/Base.astro';
+import config from '../content/global/config.json';
+import navigation from '../content/global/navigation.json';
+import scriptsSource from '../fragments/scripts.html?raw';
+import { renderDemo, type DemoPage } from '../lib/demo-pages';
+
+const templates = import.meta.glob<string>('../fragments/demo-pages/*.html', { eager: true, query: '?raw', import: 'default' });
+const { entry } = Astro.props;
+const page = entry.data as DemoPage;
+const template = templates[`../fragments/demo-pages/${page.demoTemplate}.html`];
+if (!template) throw new Error(`Missing design ${page.demoTemplate} for ${entry.id}`);
+const relativePath = entry.filePath.replace(/^src\/content\/page\//, '');
+const preview = JSON.stringify({ template, relativePath, page }).replace(/</g, '\\u003c');
+---
+<Base title={page.seoTitle || page.title} description={page.description || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
+  <Header {config} {navigation} />
+  <main id="cubano-demo-content" set:html={renderDemo(template, page)} />
+  <Footer {config} {navigation} />
+  <Fragment set:html={scriptsSource} />
+  <script type="application/json" id="cubano-tina-preview" set:html={preview} />
+  <script>
+    if (window.parent !== window) import('../lib/demo-preview').then(({ mountDemoPreview }) => mountDemoPreview());
+  </script>
+</Base>

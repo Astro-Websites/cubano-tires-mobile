@@ -1,15 +1,13 @@
 ---
-title: Mobile Tire Installation in Orange County | Cubano Tires Mobile Shop
+title: Mobile Tire Installation
+seoTitle: Mobile Tire Installation in Orange County | Cubano Tires Mobile Shop
 description: Mobile Tire Installation in Orange County
 demoSections:
 - label: Mobile Tire Installation in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Mobile Tire Installation
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Mobile Tire Installation in
   - text: Orange County
@@ -23,7 +21,6 @@ demoSections:
   - text: Free mobile service with 4 tires
   - text: Price quoted = price paid
   - text: Tire Rack Top Rated Installer
-  - text: ★★★★★
   - text: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires."'
   - text: Jesse M. V. · Google review
   links:
@@ -116,10 +113,8 @@ demoSections:
   copy:
   - text: Real Install Jobs
   - text: No shop visit. No waiting room.
-  - text: ★★★★★
   - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
   - text: Justin K. · Google review
-  - text: ★★★★★
   - text: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
   - text: Google review
   links: []
@@ -164,13 +159,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Shop Tires by Size
-  - text: →
   - text: Tire Rotation & Balancing
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   - text: Fleet & Commercial Tires
-  - text: →
   links:
   - url: /areas/irvine/
     label: Irvine

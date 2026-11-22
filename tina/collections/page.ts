@@ -18,11 +18,13 @@ export const PageCollection: Collection = {
     },
   },
   fields: [
-    { type: 'string', name: 'title', label: 'Title', isTitle: true, required: true },
+    { type: 'string', name: 'title', label: 'Page Name', isTitle: true, required: true, description: 'Short name shown in the CMS list, e.g. "About Us".' },
+    { type: 'string', name: 'seoTitle', label: 'SEO Title', description: 'Browser tab and Google title. Falls back to the page name when empty.' },
     { type: 'string', name: 'description', label: 'Meta Description', required: true, ui: { component: 'textarea' } },
     { type: 'string', name: 'demoTemplate', label: 'Layout', ui: { component: 'hidden' } },
     {
       type: 'object', name: 'demoSections', label: 'Page Sections', list: true,
+      description: 'Tip: click any text or image in the page preview to jump straight to its field.',
       ui: { itemProps: (item) => ({ label: item?.label }) },
       fields: [
         { type: 'string', name: 'label', label: 'Section Label' },
@@ -35,21 +37,6 @@ export const PageCollection: Collection = {
         { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: item?.alt }) }, fields: [
           { type: 'image', name: 'source', label: 'Image' }, { type: 'string', name: 'alt', label: 'Alternative Text' },
         ] },
-      ],
-    },
-    {
-      type: 'object',
-      name: 'hero',
-      label: 'Homepage Hero',
-      fields: [
-        { type: 'string', name: 'badge', label: 'Review Badge', required: true },
-        { type: 'string', name: 'displayTitle', label: 'Display Title', required: true, ui: { component: 'textarea' } },
-        { type: 'string', name: 'heading', label: 'Heading', required: true, ui: { component: 'textarea' } },
-        { type: 'string', name: 'intro', label: 'Introduction', required: true, ui: { component: 'textarea' } },
-        { type: 'string', name: 'primaryCtaLabel', label: 'Primary Button Label', required: true },
-        { type: 'string', name: 'primaryCtaHref', label: 'Primary Button Link', required: true },
-        { type: 'string', name: 'secondaryCtaLabel', label: 'Secondary Button Label', required: true },
-        { type: 'string', name: 'secondaryCtaHref', label: 'Secondary Button Link', required: true },
       ],
     },
   ],

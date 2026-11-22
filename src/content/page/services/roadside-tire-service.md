@@ -1,15 +1,13 @@
 ---
-title: Roadside Tire Service in Orange County | Cubano Tires Mobile Shop
+title: Roadside Tire Service
+seoTitle: Roadside Tire Service in Orange County | Cubano Tires Mobile Shop
 description: Roadside Tire Service in Orange County
 demoSections:
 - label: Roadside Tire Service in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Roadside Tire Service
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Roadside Tire Service in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: Mon–Fri 8–5
   - text: Price quoted = price paid
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"Ramiro arrived right on time, just as promised."'
   - text: Tess S. · Google review
   links:
@@ -92,10 +89,8 @@ demoSections:
   copy:
   - text: Real Roadside Jobs
   - text: What it's like when we come to you
-  - text: ★★★★★
   - text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
   - text: Tess S. · Google review
-  - text: ★★★★★
   - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
   - text: Google review
   links: []
@@ -140,13 +135,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Flat Tire Repair
-  - text: →
   - text: Commercial & Fleet Tires
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   - text: TPMS Sensor Service
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

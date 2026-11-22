@@ -1,15 +1,13 @@
 ---
-title: Mobile Tire Service in Anaheim, CA | Cubano Tires Mobile Shop
+title: Anaheim
+seoTitle: Mobile Tire Service in Anaheim, CA | Cubano Tires Mobile Shop
 description: Mobile Tire Service in Anaheim, CA
 demoSections:
 - label: Mobile Tire Service in Anaheim, CA
   copy:
   - text: Home
-  - text: ›
   - text: Areas Served
-  - text: ›
   - text: Anaheim
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: OUR HOME BASE
   - text: Mobile Tire Service in
@@ -110,13 +108,10 @@ demoSections:
 - label: Why Anaheim drivers text Cubano
   copy:
   - text: Why Anaheim drivers text Cubano
-  - text: ★★★★★
   - text: '"I also appreciate, the price they quote is the price I pay. Highly recommend."'
   - text: Repeat customer · Google review
-  - text: ★★★★★
   - text: '"Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today!"'
   - text: Jesse M. V. · Google review
-  - text: ★★★★★
   - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes."'
   - text: Justin K. · Google review
   links: []

@@ -1,15 +1,13 @@
 ---
-title: Mobile Tire Rotation & Balancing in Orange County | Cubano Tires Mobile Shop
+title: Tire Rotation & Balancing
+seoTitle: Mobile Tire Rotation & Balancing in Orange County | Cubano Tires Mobile Shop
 description: Mobile Tire Rotation & Balancing in Orange County
 demoSections:
 - label: Mobile Tire Rotation & Balancing in Orange County
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: Tire Rotation & Balancing
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: Mobile Tire Rotation & Balancing in
   - text: Orange County
@@ -21,7 +19,6 @@ demoSections:
   - text: At home or at work
   - text: Price quoted = price paid
   - text: Most jobs under 45 min
-  - text: ★★★★★
   - text: '"I was able to continue working while the work was done."'
   - text: Google review
   links:
@@ -98,10 +95,8 @@ demoSections:
   copy:
   - text: From Our Customers
   - text: Tire service that fits around your day
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
-  - text: ★★★★★
   - text: '"Called yesterday, and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today! They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
   - text: Jesse M. V. · Google review
   links: []
@@ -144,13 +139,9 @@ demoSections:
   - text: All areas
   - text: Related services
   - text: Mobile Tire Installation
-  - text: →
   - text: Flat Tire Repair
-  - text: →
   - text: Tesla & EV Tires
-  - text: →
   - text: Fleet & Commercial Tires
-  - text: →
   links:
   - url: /areas/irvine/
     label: Irvine

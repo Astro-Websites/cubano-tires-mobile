@@ -1,15 +1,13 @@
 ---
-title: 'Commercial Truck Tires: 17.5", 19.5" & 22.5" | Cubano Tires Mobile Shop'
+title: Commercial Truck Tires
+seoTitle: 'Commercial Truck Tires: 17.5", 19.5" & 22.5" | Cubano Tires Mobile Shop'
 description: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
 demoSections:
 - label: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
   copy:
   - text: Home
-  - text: ›
   - text: Tire Services
-  - text: ›
   - text: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: 'Commercial Truck Tires:'
   - text: 17.5", 19.5" & 22.5"
@@ -22,7 +20,6 @@ demoSections:
   - text: 17.5" · 19.5" · 22.5"
   - text: Price quoted = price paid
   - text: We text when we're on the way
-  - text: ★★★★★
   - text: '"Ramiro arrived right on time, just as promised."'
   - text: Tess S. · Google review
   links:
@@ -120,10 +117,8 @@ demoSections:
   copy:
   - text: Trucks, Trailers & Big Jobs
   - text: What customers say
-  - text: ★★★★★
   - text: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
   - text: Justin K. · Google review
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
   - text: Google review
   - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
@@ -170,13 +165,9 @@ demoSections:
   - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - text: Related services
   - text: Fleet Tire Service
-  - text: →
   - text: OTR & Heavy Equipment Tires
-  - text: →
   - text: Flat Tire Repair
-  - text: →
   - text: Mobile Tire Installation
-  - text: →
   links:
   - url: /areas/anaheim/
     label: Anaheim

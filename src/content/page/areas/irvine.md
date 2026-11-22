@@ -1,15 +1,13 @@
 ---
-title: Mobile Tire Service in Irvine, CA | Cubano Tires Mobile Shop
+title: Irvine
+seoTitle: Mobile Tire Service in Irvine, CA | Cubano Tires Mobile Shop
 description: Mobile Tire Service in Irvine, CA
 demoSections:
 - label: Mobile Tire Service in Irvine, CA
   copy:
   - text: Home
-  - text: ›
   - text: Areas Served
-  - text: ›
   - text: Irvine
-  - text: ★★★★★
   - text: 5.0 from 340+ Google reviews
   - text: NO SHOP VISIT NEEDED
   - text: Mobile Tire Service in
@@ -110,13 +108,10 @@ demoSections:
 - label: Why Irvine drivers text Cubano
   copy:
   - text: Why Irvine drivers text Cubano
-  - text: ★★★★★
   - text: '"I also appreciate, the price they quote is the price I pay. Highly recommend."'
   - text: Repeat customer · Google review
-  - text: ★★★★★
   - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy."'
   - text: Google review
-  - text: ★★★★★
   - text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
   - text: Tess S. · Google review
   links: []

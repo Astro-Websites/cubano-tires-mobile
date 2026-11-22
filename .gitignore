@@ -12,3 +12,4 @@ tina/__generated__/
 .env.*
 !.env.example
 .DS_Store
+__pycache__/
