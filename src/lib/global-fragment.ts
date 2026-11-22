@@ -6,6 +6,8 @@ type GlobalConfig = {
   addressLine1: string;
   addressLine2: string;
   copyright: string;
+  announcement?: string;
+  hours?: { weekdayLabel?: string; weekdayHours?: string; weekendLabel?: string; weekendHours?: string };
   codeInjection?: { headerCode?: string; footerCode?: string };
 };
 
@@ -28,6 +30,16 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
     .replaceAll('3911 E La Palma Ave, Suite J', escapeHtml(config.addressLine1))
     .replaceAll('Anaheim, CA 92807', escapeHtml(config.addressLine2))
     .replaceAll('© 2026 Cubano Tires Mobile Shop. All rights reserved.', escapeHtml(config.copyright));
+
+  if (config.announcement) html = html.replace('$75 mobile fee waived with 4 new tires in Orange County', escapeHtml(config.announcement));
+  const hours = config.hours || {};
+  const hourRows: Array<[string, string | undefined]> = [
+    ['<span>Monday – Friday</span>', hours.weekdayLabel && `<span>${escapeHtml(hours.weekdayLabel)}</span>`],
+    ['font-weight: 700">8:00 AM – 5:00 PM<', hours.weekdayHours && `font-weight: 700">${escapeHtml(hours.weekdayHours)}<`],
+    ['<span>Saturday – Sunday</span>', hours.weekendLabel && `<span>${escapeHtml(hours.weekendLabel)}</span>`],
+    ['font-weight: 700">Closed<', hours.weekendHours && `font-weight: 700">${escapeHtml(hours.weekendHours)}<`],
+  ];
+  for (const [original, replacement] of hourRows) if (replacement) html = html.replace(original, replacement);
 
   const logo = placement === 'footer' ? (config.seo?.footerLogo || config.seo?.logo) : config.seo?.logo;
   if (logo) {

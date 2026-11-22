@@ -52,6 +52,18 @@ export default defineConfig({
               { type: 'image', name: 'footerLogo', label: 'Footer Logo', description: 'Upload the logo used in the footer. Falls back to the header logo when empty.' },
             ],
           },
+          { type: 'string', name: 'announcement', label: 'Top Bar Announcement', description: 'Promo text in the black bar above the header. "Text or call <phone>" is added after it.' },
+          {
+            type: 'object',
+            name: 'hours',
+            label: 'Business Hours (footer)',
+            fields: [
+              { type: 'string', name: 'weekdayLabel', label: 'First Row Days' },
+              { type: 'string', name: 'weekdayHours', label: 'First Row Hours' },
+              { type: 'string', name: 'weekendLabel', label: 'Second Row Days' },
+              { type: 'string', name: 'weekendHours', label: 'Second Row Hours' },
+            ],
+          },
           { type: 'string', name: 'phoneDisplay', label: 'Phone Display', required: true },
           { type: 'string', name: 'phoneDigits', label: 'Phone Digits', required: true },
           { type: 'string', name: 'addressLine1', label: 'Address Line 1', required: true },

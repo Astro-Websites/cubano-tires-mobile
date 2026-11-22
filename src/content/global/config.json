@@ -19,5 +19,12 @@
     "eyebrow": "FROM THE CUBANO CREW",
     "heading": "Tire Tips & Answers",
     "intro": "Straight answers to the questions our customers ask every day, from the techs who do the work."
+  },
+  "announcement": "$75 mobile fee waived with 4 new tires in Orange County",
+  "hours": {
+    "weekdayLabel": "Monday – Friday",
+    "weekdayHours": "8:00 AM – 5:00 PM",
+    "weekendLabel": "Saturday – Sunday",
+    "weekendHours": "Closed"
   }
 }
