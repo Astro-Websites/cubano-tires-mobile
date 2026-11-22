@@ -20,7 +20,7 @@ faqs:
     answer: It depends on the tire maker and whether it was driven on flat. Text us the tire brand and a photo and we'll tell you.
 relatedService:
   label: Mobile Flat Tire Repair
-  url: /flat-tire-repair/
+  url: /services/flat-tire-repair/
 ---
 
 ## Where the nail is matters most

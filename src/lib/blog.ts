@@ -68,7 +68,7 @@ export async function getPosts(): Promise<Post[]> {
       return {
         entry,
         slug,
-        url: `/blog/${slug}/`,
+        url: `/tire-tips/${slug}/`,
         title: String(data.title || slug),
         seoTitle: String(data.seoTitle || data.title || slug),
         description: String(data.description || ''),

@@ -153,7 +153,7 @@ demoSections:
   - text: Tire Rotation & Balancing
   - text: →
   links:
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#newport-beach'
     label: Newport Beach
@@ -163,7 +163,7 @@ demoSections:
     label: Costa Mesa
   - url: '#huntington-beach'
     label: Huntington Beach
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#yorba-linda'
     label: Yorba Linda
@@ -171,13 +171,13 @@ demoSections:
     label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
-  - url: /tpms-sensor-service/
+  - url: /services/tpms-sensor-service/
     label: TPMS Sensor Service →
-  - url: /tire-rotation-balancing/
+  - url: /services/tire-rotation-balancing/
     label: Tire Rotation & Balancing →
   images: []
 - label: Run-flat warning on? Text us before you drive further.

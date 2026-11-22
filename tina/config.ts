@@ -59,7 +59,7 @@ export default defineConfig({
             type: 'object',
             name: 'blog',
             label: 'Blog Archive',
-            description: 'Heading copy for the /blog/ archive and category pages.',
+            description: 'Heading copy for the /tire-tips/ archive and category pages.',
             fields: [
               { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
               { type: 'string', name: 'heading', label: 'Heading' },

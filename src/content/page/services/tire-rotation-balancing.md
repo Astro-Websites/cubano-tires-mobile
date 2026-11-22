@@ -152,11 +152,11 @@ demoSections:
   - text: Fleet & Commercial Tires
   - text: →
   links:
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#santa-ana'
     label: Santa Ana
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#garden-grove'
     label: Garden Grove
@@ -170,13 +170,13 @@ demoSections:
     label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /vehicle-tesla-ev/
+  - url: /vehicles/tesla-ev-tires/
     label: Tesla & EV Tires →
-  - url: /fleet-tire-service/
+  - url: /services/fleet-tire-service/
     label: Fleet & Commercial Tires →
   images: []
 - label: Due for a rotation? We'll come to you.

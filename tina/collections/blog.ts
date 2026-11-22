@@ -13,11 +13,11 @@ export const BlogCollection: Collection = {
   path: 'src/content/blog',
   format: 'md',
   ui: {
-    router: ({ document }) => `/blog/${document._sys.filename.toLowerCase()}/`,
+    router: ({ document }) => `/tire-tips/${document._sys.filename.toLowerCase()}/`,
     filename: {
       readonly: false,
       slugify: (values) => slugify(values?.title),
-      description: 'The file name becomes the post URL: /blog/<file-name>/',
+      description: 'The file name becomes the post URL: /tire-tips/<file-name>/',
     },
   },
   defaultItem: () => ({ pubDate: new Date().toISOString() }),
@@ -42,7 +42,7 @@ export const BlogCollection: Collection = {
       type: 'boolean',
       name: 'featured',
       label: 'Feature on Blog Archive',
-      description: 'Show this post in the large featured slot at the top of /blog/. The newest featured post wins.',
+      description: 'Show this post in the large featured slot at the top of /tire-tips/. The newest featured post wins.',
     },
     {
       type: 'object',

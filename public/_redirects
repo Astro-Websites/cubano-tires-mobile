@@ -1,3 +1,99 @@
-# Wheels page renamed: Cubano mounts tires on customer-supplied wheels and does not sell wheels.
-/new-wheel-installation /services/tire-mounting/ 301
-/new-wheel-installation/ /services/tire-mounting/ 301
+# 301 redirects for the SEO plan URL structure.
+# Cloudflare format: <from> <to> <status>. Static rules first, splats last.
+# The Tires Anytime catalog paths (/Tires, /Tires/Tire-Catalog, /Tires/Commercial-Tires/*,
+# /Tires/Instant-Quote, /Tires/Advanced-Quoting) are intentionally not redirected yet.
+
+# --- Old live site (cubanotiresmobile.com) ---
+/New-Home                                  /                                         301
+/New-Home/                                  /                                         301
+/Tire-Services                             /#services                                301
+/Tire-Services/                             /#services                                301
+/Tire-Services/Residential-Tire-Services   /services/mobile-tire-installation/       301
+/Tire-Services/Residential-Tire-Services/   /services/mobile-tire-installation/       301
+/Tire-Services/Schedule-a-Repair           /services/flat-tire-repair/               301
+/Tire-Services/Schedule-a-Repair/           /services/flat-tire-repair/               301
+/Tire-Services/Schedule-Service-Response   /                                         301
+/Tire-Services/Schedule-Service-Response/   /                                         301
+/Tire-Services/cat/tire-installation       /services/mobile-tire-installation/       301
+/Tire-Services/cat/tire-installation/       /services/mobile-tire-installation/       301
+/Tire-Services/cat/tire-repair             /services/flat-tire-repair/               301
+/Tire-Services/cat/tire-repair/             /services/flat-tire-repair/               301
+/Tire-Services/cat/tire-balancing          /services/tire-rotation-balancing/        301
+/Tire-Services/cat/tire-balancing/          /services/tire-rotation-balancing/        301
+/Tire-Services/cat/tire-rotation           /services/tire-rotation-balancing/        301
+/Tire-Services/cat/tire-rotation/           /services/tire-rotation-balancing/        301
+/Tire-Services/cat/tpms-service            /services/tpms-sensor-service/            301
+/Tire-Services/cat/tpms-service/            /services/tpms-sensor-service/            301
+/Fleet-Services                            /services/fleet-tire-service/             301
+/Fleet-Services/                            /services/fleet-tire-service/             301
+/Fleet-Services/Commercial-Tire-Replacement /services/commercial-truck-tires/        301
+/Fleet-Services/Commercial-Tire-Replacement/ /services/commercial-truck-tires/        301
+/Coupons                                   /coupons/                                 301
+/Coupons/                                   /coupons/                                 301
+/Coupons/Financing                         /coupons/                                 301
+/Coupons/Financing/                         /coupons/                                 301
+/About                                     /about-us/                                301
+/About/                                     /about-us/                                301
+/About/Nationwide-Warranty                 /about-us/                                301
+/About/Nationwide-Warranty/                 /about-us/                                301
+/About/Reviews                             /#reviews                                 301
+/About/Reviews/                             /#reviews                                 301
+/About/Read-Our-Reviews                    /#reviews                                 301
+/About/Read-Our-Reviews/                    /#reviews                                 301
+/About/Gallery                             /#work                                    301
+/About/Gallery/                             /#work                                    301
+/About/News                                /tire-tips/                               301
+/About/News/                                /tire-tips/                               301
+/Hours                                     /about-us/                                301
+/Hours/                                     /about-us/                                301
+/Hours/Contact                             /#quote                                   301
+/Hours/Contact/                             /#quote                                   301
+/Hours/Contact-Us-Response                 /                                         301
+/Hours/Contact-Us-Response/                 /                                         301
+/Hours/Jobs                                /about-us/                                301
+/Hours/Jobs/                                /about-us/                                301
+/Tires/EV-Tesla-Tires                      /vehicles/tesla-ev-tires/                 301
+/Tires/EV-Tesla-Tires/                      /vehicles/tesla-ev-tires/                 301
+/Tires/Tire-Care-Tips                      /tire-tips/                               301
+/Tires/Tire-Care-Tips/                      /tire-tips/                               301
+
+# --- Earlier staging paths ---
+/flat-tire-repair/                         /services/flat-tire-repair/               301
+/flat-tire-repair                          /services/flat-tire-repair/               301
+/mobile-tire-installation/                 /services/mobile-tire-installation/       301
+/mobile-tire-installation                  /services/mobile-tire-installation/       301
+/tpms-sensor-service/                      /services/tpms-sensor-service/            301
+/tpms-sensor-service                       /services/tpms-sensor-service/            301
+/fleet-tire-service/                       /services/fleet-tire-service/             301
+/fleet-tire-service                        /services/fleet-tire-service/             301
+/commercial-truck-tires/                   /services/commercial-truck-tires/         301
+/commercial-truck-tires                    /services/commercial-truck-tires/         301
+/roadside-tire-service/                    /services/roadside-tire-service/          301
+/roadside-tire-service                     /services/roadside-tire-service/          301
+/run-flat-tires/                           /services/run-flat-tires/                 301
+/run-flat-tires                            /services/run-flat-tires/                 301
+/tire-rotation-balancing/                  /services/tire-rotation-balancing/        301
+/tire-rotation-balancing                   /services/tire-rotation-balancing/        301
+/otr-heavy-equipment-tires/                /services/otr-heavy-equipment-tires/      301
+/otr-heavy-equipment-tires                 /services/otr-heavy-equipment-tires/      301
+/new-wheel-installation/                   /services/tire-mounting/                 301
+/new-wheel-installation                    /services/tire-mounting/                 301
+/city-anaheim/                             /areas/anaheim/                           301
+/city-anaheim                              /areas/anaheim/                           301
+/city-irvine/                              /areas/irvine/                            301
+/city-irvine                               /areas/irvine/                            301
+/vehicle-tesla-ev/                         /vehicles/tesla-ev-tires/                 301
+/vehicle-tesla-ev                          /vehicles/tesla-ev-tires/                 301
+
+# --- Section roots without their own page yet (temporary) ---
+/services/                                 /#services                                302
+/services                                  /#services                                302
+/areas/                                    /#locations                               302
+/areas                                     /#locations                               302
+/vehicles/                                 /#services                                302
+/vehicles                                  /#services                                302
+
+# --- Splats ---
+/About/News/*                              /tire-tips/                               301
+/blog                                      /tire-tips/                               301
+/blog/*                                    /tire-tips/:splat                         301

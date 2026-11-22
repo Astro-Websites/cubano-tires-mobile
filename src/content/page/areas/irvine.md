@@ -82,17 +82,17 @@ demoSections:
   - text: Irvine Fleet & Company Vehicles
   - text: Box trucks, trailers and 22.5" tires on-site
   links:
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair in Irvine Nails, slow leaks and blowouts, fixed where you're parked
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation New tires mounted and balanced in your driveway
-  - url: /vehicle-tesla-ev/
+  - url: /vehicles/tesla-ev-tires/
     label: Tesla, EV & Cybertruck Tires EV-rated tires for Teslas, Rivians and Cybertrucks, no spare needed
   - url: '#luxury'
     label: Luxury & Exotic Tires Careful handling on premium wheels
-  - url: /tpms-sensor-service/
+  - url: /services/tpms-sensor-service/
     label: TPMS, Rotation & Balancing Sensors, rotations and balancing at your place
-  - url: /fleet-tire-service/
+  - url: /services/fleet-tire-service/
     label: Irvine Fleet & Company Vehicles Box trucks, trailers and 22.5" tires on-site
   images:
   - source: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg

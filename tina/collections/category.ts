@@ -15,7 +15,7 @@ export const CategoryCollection: Collection = {
           .trim()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/^-+|-+$/g, ''),
-      description: 'The file name becomes the archive URL: /blog/category/<file-name>/',
+      description: 'The file name becomes the archive URL: /tire-tips/category/<file-name>/',
     },
   },
   fields: [

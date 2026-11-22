@@ -172,9 +172,9 @@ demoSections:
   - text: Fleet & Commercial Tires
   - text: →
   links:
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#newport-beach'
     label: Newport Beach
@@ -192,11 +192,11 @@ demoSections:
     label: All areas
   - url: /
     label: Shop Tires by Size →
-  - url: /tire-rotation-balancing/
+  - url: /services/tire-rotation-balancing/
     label: Tire Rotation & Balancing →
-  - url: /vehicle-tesla-ev/
+  - url: /vehicles/tesla-ev-tires/
     label: Tesla & EV Tires →
-  - url: /fleet-tire-service/
+  - url: /services/fleet-tire-service/
     label: Fleet & Commercial Tires →
   images: []
 - label: Need new tires? Skip the shop.

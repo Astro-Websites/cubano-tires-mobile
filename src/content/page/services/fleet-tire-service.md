@@ -178,13 +178,13 @@ demoSections:
   - text: Mobile Tire Installation
   - text: →
   links:
-  - url: /city-anaheim/
+  - url: /areas/anaheim/
     label: Anaheim
   - url: '#santa-ana'
     label: Santa Ana
   - url: '#orange'
     label: Orange
-  - url: /city-irvine/
+  - url: /areas/irvine/
     label: Irvine
   - url: '#fullerton'
     label: Fullerton
@@ -198,13 +198,13 @@ demoSections:
     label: Commerce
   - url: '#areas'
     label: All areas
-  - url: /commercial-truck-tires/
+  - url: /services/commercial-truck-tires/
     label: Commercial Truck Tires →
-  - url: /otr-heavy-equipment-tires/
+  - url: /services/otr-heavy-equipment-tires/
     label: OTR & Heavy Equipment Tires →
-  - url: /flat-tire-repair/
+  - url: /services/flat-tire-repair/
     label: Flat Tire Repair →
-  - url: /mobile-tire-installation/
+  - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
   images: []
 - label: Keep your fleet on the road.
