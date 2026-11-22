@@ -1,0 +1,16 @@
+---
+import BlogArchive from '../../../components/blog/BlogArchive.astro';
+import { getCategories, getPosts, type Category, type Post } from '../../../lib/blog';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  const used = new Set(posts.flatMap((post) => post.categories.map((category) => category.slug)));
+  const categories = (await getCategories()).filter((category) => used.has(category.slug));
+  return categories.map((current) => ({
+    params: { category: current.slug },
+    props: { current, categories, posts: posts.filter((post) => post.categories.some((category) => category.slug === current.slug)) },
+  }));
+}
+const { current, categories, posts } = Astro.props as { current: Category; categories: Category[]; posts: Post[] };
+---
+<BlogArchive {posts} {categories} {current} />
