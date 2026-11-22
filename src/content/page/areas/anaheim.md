@@ -5,55 +5,88 @@ description: Mobile Tire Service in Anaheim, CA
 demoSections:
 - label: Mobile Tire Service in Anaheim, CA
   copy:
-  - text: Home
-  - text: Areas Served
-  - text: Anaheim
-  - text: 5.0 from 340+ Google reviews
-  - text: OUR HOME BASE
-  - text: Mobile Tire Service in
-  - text: Anaheim, CA
-  - text: Our shop is right here on E La Palma Ave. From Anaheim Hills to West Anaheim, we bring new tires, flat repairs and fleet service to your driveway, office lot or job site.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: Price quoted = price paid
-  - text: Most jobs under 45 min
-  - text: Free mobile service with 4 tires
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Areas Served
+  - role: Breadcrumb
+    text: Anaheim
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Eyebrow
+    text: OUR HOME BASE
+  - role: Main heading
+    text: Mobile Tire Service in
+  - role: Main heading
+    text: Anaheim, CA
+  - role: Paragraph
+    text: Our shop is right here on E La Palma Ave. From Anaheim Hills to West Anaheim, we bring new tires, flat repairs and fleet service to your driveway, office lot or job site.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Most jobs under 45 min
+  - role: Badge
+    text: Free mobile service with 4 tires
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#areas'
+  - role: Link
+    url: '#areas'
     label: Areas Served
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
     alt: Cubano Tires technician at the branded service truck in Anaheim
 - label: An Anaheim tire shop that comes to you
   copy:
-  - text: Local, Not a Call Center
-  - text: An Anaheim tire shop that comes to you
-  - text: Cubano Tires started in Anaheim, and our trucks roll out from here every morning. When you text us from Anaheim, Joel answers, quotes your job and tells you when the truck will be there. Then Ramiro, Steven or Orafnel shows up with your tires, the machine and everything needed to finish in your driveway.
-  - text: No towing, no waiting room, no shuttle back from the shop. Keep working, keep the kids' schedule, and we'll handle the tires.
-  - text: Cubano Tires Mobile Shop
-  - text: 3911 E La Palma Ave, Suite J
-  - text: Anaheim, CA 92807
-  - text: (888) 333-3173
-  - text: Mon–Fri 8:00 AM – 5:00 PM
-  - text: Texts answered next business morning after hours
-  - text: View on Google Maps
+  - role: Paragraph
+    text: Local, Not a Call Center
+  - role: Heading
+    text: An Anaheim tire shop that comes to you
+  - role: Paragraph
+    text: Cubano Tires started in Anaheim, and our trucks roll out from here every morning. When you text us from Anaheim, Joel answers, quotes your job and tells you when the truck will be there. Then Ramiro, Steven or Orafnel shows up with your tires, the machine and everything needed to finish in your driveway.
+  - role: Paragraph
+    text: No towing, no waiting room, no shuttle back from the shop. Keep working, keep the kids' schedule, and we'll handle the tires.
+  - role: Paragraph
+    text: Cubano Tires Mobile Shop
+  - role: Paragraph
+    text: 3911 E La Palma Ave, Suite J
+  - role: Paragraph
+    text: Anaheim, CA 92807
+  - role: Button or link text
+    text: (888) 333-3173
+  - role: Paragraph
+    text: Mon–Fri 8:00 AM – 5:00 PM
+  - role: Paragraph
+    text: Texts answered next business morning after hours
+  - role: Button or link text
+    text: View on Google Maps
   links:
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: (888) 333-3173
-  - url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
+  - role: Button
+    url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
     label: View on Google Maps
   images: []
 - label: Everywhere in Anaheim
   copy:
-  - text: Everywhere in Anaheim
+  - role: Heading
+    text: Everywhere in Anaheim
   links: []
   images: []
   cards:
@@ -71,14 +104,19 @@ demoSections:
     text: Flats, new tires and TPMS service at home or at work.
 - label: Tire services in Anaheim
   copy:
-  - text: Tire services in Anaheim
-  - text: Anaheim Fleet Tire Service
-  - text: Box trucks, trailers and 22.5" tires on-site
+  - role: Heading
+    text: Tire services in Anaheim
+  - role: Bold text
+    text: Anaheim Fleet Tire Service
+  - role: Button or link text
+    text: Box trucks, trailers and 22.5" tires on-site
   links:
-  - url: /services/fleet-tire-service/
+  - role: Link
+    url: /services/fleet-tire-service/
     label: Anaheim Fleet Tire Service Box trucks, trailers and 22.5" tires on-site
   images:
-  - source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
     alt: Semi truck tire service
   cards:
   - _template: linkCard
@@ -113,7 +151,8 @@ demoSections:
     text: Sensors, rotations and balancing at your place
 - label: Why Anaheim drivers text Cubano
   copy:
-  - text: Why Anaheim drivers text Cubano
+  - role: Heading
+    text: Why Anaheim drivers text Cubano
   links: []
   images: []
   cards:
@@ -128,7 +167,8 @@ demoSections:
     author: Justin K. · Google review
 - label: Anaheim Tire Service FAQ
   copy:
-  - text: Anaheim Tire Service FAQ
+  - role: Heading
+    text: Anaheim Tire Service FAQ
   links: []
   images: []
   cards:
@@ -146,10 +186,13 @@ demoSections:
     answer: '[Confirm with Joel: walk-ins / pickups at 3911 E La Palma Ave?]'
 - label: We also come to cities near Anaheim
   copy:
-  - text: We also come to cities near Anaheim
-  - text: All areas
+  - role: Heading
+    text: We also come to cities near Anaheim
+  - role: Button or link text
+    text: All areas
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -176,14 +219,20 @@ demoSections:
     label: Brea
 - label: Need tires in Anaheim? Text us a photo.
   copy:
-  - text: Need tires in Anaheim? Text us a photo.
-  - text: We'll text back a price and an arrival time. On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Need tires in Anaheim? Text us a photo.
+  - role: Paragraph
+    text: We'll text back a price and an arrival time. On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: city-anaheim

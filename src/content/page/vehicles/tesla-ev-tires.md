@@ -5,39 +5,61 @@ description: Mobile Tesla & EV Tire Service in Orange County
 demoSections:
 - label: Mobile Tesla & EV Tire Service in Orange County
   copy:
-  - text: Home
-  - text: Vehicles
-  - text: Tesla & EV Tires
-  - text: 5.0 from 340+ Google reviews
-  - text: NO SPARE? NO PROBLEM.
-  - text: Mobile Tesla & EV Tire Service in
-  - text: Orange County
-  - text: New tires, flat repairs and rotations for Model 3, Model Y, Model S, Model X, Cybertruck, Rivian and other EVs, done in your garage or office lot. Lifted the right way, on the right points.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: Snap the sidewall so we can read your size. On a computer? Text it to (888) 333-3173 from your phone.
-  - text: Price quoted = price paid
-  - text: Free mobile service with 4 tires
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Vehicles
+  - role: Breadcrumb
+    text: Tesla & EV Tires
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Eyebrow
+    text: NO SPARE? NO PROBLEM.
+  - role: Main heading
+    text: Mobile Tesla & EV Tire Service in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: New tires, flat repairs and rotations for Model 3, Model Y, Model S, Model X, Cybertruck, Rivian and other EVs, done in your garage or office lot. Lifted the right way, on the right points.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: Snap the sidewall so we can read your size. On a computer? Text it to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Free mobile service with 4 tires
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#vehicles'
+  - role: Link
+    url: '#vehicles'
     label: Vehicles
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
     alt: Technician installing a new tire on a Tesla in a driveway
-  - source: /uploads/cubano-pages/tesla-getting-a-new-kumho-tire-in-a-driveway.jpg
+  - role: Image
+    source: /uploads/cubano-pages/tesla-getting-a-new-kumho-tire-in-a-driveway.jpg
     alt: Tesla getting a new Kumho tire in a driveway
 - label: Tires for every Tesla and EV
   copy:
-  - text: Pick Your EV
-  - text: Tires for every Tesla and EV
+  - role: Paragraph
+    text: Pick Your EV
+  - role: Heading
+    text: Tires for every Tesla and EV
   links: []
   images: []
   cards:
@@ -73,8 +95,10 @@ demoSections:
     cta: Get a price →
 - label: Your EV needs a tire shop that knows EVs
   copy:
-  - text: Why EV Tires Are Different
-  - text: Your EV needs a tire shop that knows EVs
+  - role: Paragraph
+    text: Why EV Tires Are Different
+  - role: Heading
+    text: Your EV needs a tire shop that knows EVs
   links: []
   images: []
   cards:
@@ -92,7 +116,8 @@ demoSections:
     text: We use proper jack pads and lift points so the battery pack is never touched.
 - label: What we do for EVs
   copy:
-  - text: What we do for EVs
+  - role: Heading
+    text: What we do for EVs
   links: []
   images: []
   cards:
@@ -110,29 +135,42 @@ demoSections:
     text: Sensor checks and replacements when the pressure warning won't go away.
 - label: Teslas and Cybertrucks, every week
   copy:
-  - text: Real EV Jobs
-  - text: Teslas and Cybertrucks, every week
-  - text: We post real jobs every day on TikTok, Instagram and YouTube, from a slashed Tesla tire swapped in a driveway to full sets of Cybertruck all-terrains.
-  - text: '"Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
-  - text: Slashed Tesla tire, swapped in the driveway
-  - text: '[Cybertruck job video from Joey]'
+  - role: Paragraph
+    text: Real EV Jobs
+  - role: Heading
+    text: Teslas and Cybertrucks, every week
+  - role: Paragraph
+    text: We post real jobs every day on TikTok, Instagram and YouTube, from a slashed Tesla tire swapped in a driveway to full sets of Cybertruck all-terrains.
+  - role: Paragraph
+    text: '"Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
+  - role: Paragraph
+    text: Google review
+  - role: Caption
+    text: Slashed Tesla tire, swapped in the driveway
+  - role: Caption
+    text: '[Cybertruck job video from Joey]'
   links: []
   images:
-  - source: /uploads/cubano-pages/tesla-getting-a-new-kumho-tire-in-a-driveway.jpg
+  - role: Image
+    source: /uploads/cubano-pages/tesla-getting-a-new-kumho-tire-in-a-driveway.jpg
     alt: Slashed Tesla tire swapped in the driveway
 - label: How much do Tesla tires cost?
   copy:
-  - text: How much do Tesla tires cost?
-  - text: It depends on your model, wheel size and the tire you pick. Text us a photo of your sidewall and we'll send options with installed prices. Mobile service is free with 4 tires, and the price we quote is the price you pay.
-  - text: Shop EV Tires
+  - role: Heading
+    text: How much do Tesla tires cost?
+  - role: Paragraph
+    text: It depends on your model, wheel size and the tire you pick. Text us a photo of your sidewall and we'll send options with installed prices. Mobile service is free with 4 tires, and the price we quote is the price you pay.
+  - role: Button or link text
+    text: Shop EV Tires
   links:
-  - url: /
+  - role: Button
+    url: /
     label: Shop EV Tires
   images: []
 - label: Tesla & EV Tire FAQ
   copy:
-  - text: Tesla & EV Tire FAQ
+  - role: Heading
+    text: Tesla & EV Tire FAQ
   links: []
   images: []
   cards:
@@ -153,11 +191,15 @@ demoSections:
     answer: Yes. We install the large all-terrain sizes the Cybertruck uses, mounted and balanced on site.
 - label: EV tire service near you
   copy:
-  - text: EV tire service near you
-  - text: All areas
-  - text: Related pages
+  - role: Heading
+    text: EV tire service near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related pages
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -193,14 +235,20 @@ demoSections:
     label: TPMS Sensor Service
 - label: EV need tires? Text us a photo.
   copy:
-  - text: EV need tires? Text us a photo.
-  - text: We'll text back options, a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: EV need tires? Text us a photo.
+  - role: Paragraph
+    text: We'll text back options, a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: vehicle-tesla-ev

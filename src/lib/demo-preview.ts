@@ -15,8 +15,12 @@ export function mountDemoPreview() {
   const mount = document.createElement('div');
   mount.hidden = true;
   document.body.append(mount);
+  // Stable references: useTina re-processes (and re-announces itself to the admin) whenever
+  // these change, so creating them per render caused an endless re-render loop.
+  const initialData = { page };
+  const variables = { relativePath };
   function TinaPage() {
-    const { data } = useTina({ query: pageQuery, variables: { relativePath }, data: { page } });
+    const { data } = useTina({ query: pageQuery, variables, data: initialData });
     useEffect(() => {
       if (!data.page) return;
       // Keep third-party widgets (the TIRESanytime shop search) alive across re-renders.

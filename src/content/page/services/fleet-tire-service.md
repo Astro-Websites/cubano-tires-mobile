@@ -5,70 +5,115 @@ description: Fleet Tire Service at Your Yard, Orange County to LA
 demoSections:
 - label: Fleet Tire Service at Your Yard, Orange County to LA
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Fleet Tire Service
-  - text: 5.0 from 340+ Google reviews
-  - text: Fleet Tire Service at Your Yard,
-  - text: Orange County to LA
-  - text: Every truck that leaves the route for a tire is a day of work lost. We bring the tire truck to your yard, lot or job site and work through your vehicles on site. One account, one point of contact, one invoice.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: 'Set up a fleet account: call (888) 333-3173'
-  - text: Fleet account pricing
-  - text: Price quoted = price paid
-  - text: On-site at your yard
-  - text: We text when we're on the way
-  - text: '"...the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Fleet Tire Service
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Fleet Tire Service at Your Yard,
+  - role: Main heading
+    text: Orange County to LA
+  - role: Paragraph
+    text: Every truck that leaves the route for a tire is a day of work lost. We bring the tire truck to your yard, lot or job site and work through your vehicles on site. One account, one point of contact, one invoice.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Badge
+    text: Fleet account pricing
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: On-site at your yard
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"...the tech sharing arrival time info, and the whole service took less than 45 min."'
+  - role: Paragraph
+    text: Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-swapping-a-22-5-inch.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-swapping-a-22-5-inch.jpg
     alt: Cubano technician swapping a 22.5 inch commercial tire on site for Herc Rentals
 - label: Section 2
   copy:
-  - text: Fleet and rental accounts include
-  - text: Herc Rentals
-  - text: Sunbelt Rentals
-  - text: U-Haul
-  - text: City of Orange
+  - role: Eyebrow
+    text: Fleet and rental accounts include
+  - role: Bold text
+    text: Herc Rentals
+  - role: Bold text
+    text: Sunbelt Rentals
+  - role: Bold text
+    text: U-Haul
+  - role: Bold text
+    text: City of Orange
   links: []
   images: []
 - label: Why fleets move tire work on site
   copy:
-  - text: Shop Run or Yard Visit?
-  - text: Why fleets move tire work on site
-  - text: 'Sending trucks to a tire shop means a driver off the route, a truck out of service and a receipt to chase. Here''s how the two compare:'
-  - text: Sending trucks to a shop
-  - text: A driver drives the truck in and waits
-  - text: One truck per trip, out of service the whole time
-  - text: Separate receipts from each visit
-  - text: A blowout on the road means a tow or a scramble
-  - text: It works for one car. It gets expensive across a fleet.
-  - text: We come to your yard
-  - text: 'We work while trucks are parked, before or after routes [Confirm with Joel: early-morning yard visits?]'
-  - text: Several vehicles in one visit
-  - text: One account and one invoice, with Net 30 or Net 45 terms and POs
-  - text: Joel quotes every job before we roll
-  - text: Your drivers stay on their routes. You get a clear list of what we did and what it cost.
+  - role: Paragraph
+    text: Shop Run or Yard Visit?
+  - role: Heading
+    text: Why fleets move tire work on site
+  - role: Paragraph
+    text: 'Sending trucks to a tire shop means a driver off the route, a truck out of service and a receipt to chase. Here''s how the two compare:'
+  - role: Paragraph
+    text: Sending trucks to a shop
+  - role: List item
+    text: A driver drives the truck in and waits
+  - role: List item
+    text: One truck per trip, out of service the whole time
+  - role: List item
+    text: Separate receipts from each visit
+  - role: List item
+    text: A blowout on the road means a tow or a scramble
+  - role: Paragraph
+    text: It works for one car. It gets expensive across a fleet.
+  - role: Paragraph
+    text: We come to your yard
+  - role: List item
+    text: 'We work while trucks are parked, before or after routes [Confirm with Joel: early-morning yard visits?]'
+  - role: List item
+    text: Several vehicles in one visit
+  - role: List item
+    text: One account and one invoice, with Net 30 or Net 45 terms and POs
+  - role: List item
+    text: Joel quotes every job before we roll
+  - role: Paragraph
+    text: Your drivers stay on their routes. You get a clear list of what we did and what it cost.
   links: []
   images: []
 - label: What a fleet account covers
   copy:
-  - text: What a fleet account covers
+  - role: Heading
+    text: What a fleet account covers
   links: []
   images: []
   cards:
@@ -92,8 +137,10 @@ demoSections:
     text: Pickups, vans, box trucks, trailers, big rigs and heavy equipment. 17.5", 19.5" and 22.5" tires.
 - label: Recent work for fleet and rental accounts
   copy:
-  - text: Fleet Jobs
-  - text: Recent work for fleet and rental accounts
+  - role: Paragraph
+    text: Fleet Jobs
+  - role: Heading
+    text: Recent work for fleet and rental accounts
   links: []
   images: []
   cards:
@@ -111,7 +158,8 @@ demoSections:
     caption: Roadside service on a big rig hauling an excavator
 - label: Set up a fleet account in 3 steps
   copy:
-  - text: Set up a fleet account in 3 steps
+  - role: Heading
+    text: Set up a fleet account in 3 steps
   links: []
   images: []
   cards:
@@ -129,9 +177,12 @@ demoSections:
     text: Book a regular visit or text a photo when a truck needs a tire. We text when we're on the way.
 - label: Customers on how we work
   copy:
-  - text: Why Accounts Stay With Us
-  - text: Customers on how we work
-  - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
+  - role: Paragraph
+    text: Why Accounts Stay With Us
+  - role: Heading
+    text: Customers on how we work
+  - role: Paragraph
+    text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
   links: []
   images: []
   cards:
@@ -143,16 +194,21 @@ demoSections:
     author: Google review
 - label: How much does fleet tire service cost?
   copy:
-  - text: How much does fleet tire service cost?
-  - text: Fleet pricing depends on your tire sizes, how many vehicles we service per visit and how often we come out. Joel builds account pricing around your fleet, and we offer Net 30 and Net 45 invoicing terms with purchase orders (POs). Every job is quoted before we roll, and the price we quote is the price you pay.
-  - text: Call to Set Up a Fleet Account
+  - role: Heading
+    text: How much does fleet tire service cost?
+  - role: Paragraph
+    text: Fleet pricing depends on your tire sizes, how many vehicles we service per visit and how often we come out. Joel builds account pricing around your fleet, and we offer Net 30 and Net 45 invoicing terms with purchase orders (POs). Every job is quoted before we roll, and the price we quote is the price you pay.
+  - role: Button or link text
+    text: Call to Set Up a Fleet Account
   links:
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call to Set Up a Fleet Account
   images: []
 - label: Fleet Tire Service FAQ
   copy:
-  - text: Fleet Tire Service FAQ
+  - role: Heading
+    text: Fleet Tire Service FAQ
   links: []
   images: []
   cards:
@@ -176,12 +232,17 @@ demoSections:
     answer: We're open Monday to Friday, 8 to 5, and closed weekends. Text anytime. After-hours texts are answered first thing the next business morning.
 - label: Fleet tire service near you
   copy:
-  - text: Fleet tire service near you
-  - text: All areas
-  - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
-  - text: Related services
+  - role: Heading
+    text: Fleet tire service near you
+  - role: Button or link text
+    text: All areas
+  - role: Paragraph
+    text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -226,17 +287,25 @@ demoSections:
     label: Mobile Tire Installation
 - label: Keep your fleet on the road.
   copy:
-  - text: Keep your fleet on the road.
-  - text: Call Joel to set up an account, or text a photo when a truck needs a tire. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Heading
+    text: Keep your fleet on the road.
+  - role: Paragraph
+    text: Call Joel to set up an account, or text a photo when a truck needs a tire. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images: []
 demoTemplate: fleet-tire-service

@@ -32,4 +32,6 @@ Repeated blocks (FAQs, coupons/rebates, team, photos, reviews, steps, links) are
 
 Simple pages (Tina: **Simple Pages**, `src/content/simple-page/*.md`) are a generic heading + rich-text template served at `/<file-name>/`.
 
+Each text/link/image item carries a `role` (Heading, Eyebrow, Button...) used as its label in the Tina sidebar. After adding slots, rerun `cd scripts && python3 label-copy-roles.py`.
+
 Helpers for bulk content edits are in `scripts/designed_pages.py`.

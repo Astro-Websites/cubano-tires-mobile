@@ -5,73 +5,121 @@ description: OTR & Heavy Equipment Tires at Your Job Site
 demoSections:
 - label: OTR & Heavy Equipment Tires at Your Job Site
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: OTR & Heavy Equipment Tires
-  - text: 5.0 from 340+ Google reviews
-  - text: OTR & Heavy Equipment Tires
-  - text: at Your Job Site
-  - text: Skid steers, forklifts, loaders, scissor lifts and boom lifts. We come to the job site, warehouse or rental yard and change the tire where the machine sits, so nobody has to load it on a trailer.
-  - text: Text a Photo of the Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: 'Set up a fleet account: call (888) 333-3173'
-  - text: Quote by equipment
-  - text: Job sites & rental yards
-  - text: Price quoted = price paid
-  - text: We text when we're on the way
-  - text: '"I was able to continue working while the work was done."'
-  - text: Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: OTR & Heavy Equipment Tires
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: OTR & Heavy Equipment Tires
+  - role: Main heading
+    text: at Your Job Site
+  - role: Paragraph
+    text: Skid steers, forklifts, loaders, scissor lifts and boom lifts. We come to the job site, warehouse or rental yard and change the tire where the machine sits, so nobody has to load it on a trailer.
+  - role: Button or link text
+    text: Text a Photo of the Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Badge
+    text: Quote by equipment
+  - role: Badge
+    text: Job sites & rental yards
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"I was able to continue working while the work was done."'
+  - role: Paragraph
+    text: Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo of the Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
     alt: Cubano roadside service on a big rig hauling an excavator
 - label: Section 2
   copy:
-  - text: Rental and fleet accounts include
-  - text: Herc Rentals
-  - text: Sunbelt Rentals
-  - text: U-Haul
-  - text: City of Orange
+  - role: Eyebrow
+    text: Rental and fleet accounts include
+  - role: Bold text
+    text: Herc Rentals
+  - role: Bold text
+    text: Sunbelt Rentals
+  - role: Bold text
+    text: U-Haul
+  - role: Bold text
+    text: City of Orange
   links: []
   images: []
 - label: Air-filled, foam-filled or solid?
   copy:
-  - text: Know Your Tire Type
-  - text: Air-filled, foam-filled or solid?
-  - text: Equipment tires come in three builds, and we service all three. The build decides how the tire gets changed. Text a photo of the sidewall and the machine and we'll tell you what it takes.
-  - text: Pneumatic (air-filled)
-  - text: Skid steers and compact loaders
-  - text: Wheel loaders and backhoes
-  - text: Rough-terrain forklifts and telehandlers
-  - text: We service skid steers, compact loaders, wheel loaders, backhoes, rough-terrain forklifts and telehandlers, and replace these tires on-site.
-  - text: Foam-filled
-  - text: Skid steers
-  - text: Boom lifts
-  - text: Other industrial equipment
-  - text: We handle foam-filled tires for skid steers, boom lifts and other industrial equipment.
-  - text: Solid
-  - text: Solid pneumatic tires on warehouse forklifts
-  - text: Press-on cushion tires on indoor forklifts
-  - text: Non-marking tires on scissor lifts
-  - text: We handle solid pneumatic, press-on cushion and non-marking tires, and we have access to hydraulic press equipment for solid forklift tire installation.
+  - role: Paragraph
+    text: Know Your Tire Type
+  - role: Heading
+    text: Air-filled, foam-filled or solid?
+  - role: Paragraph
+    text: Equipment tires come in three builds, and we service all three. The build decides how the tire gets changed. Text a photo of the sidewall and the machine and we'll tell you what it takes.
+  - role: Paragraph
+    text: Pneumatic (air-filled)
+  - role: List item
+    text: Skid steers and compact loaders
+  - role: List item
+    text: Wheel loaders and backhoes
+  - role: List item
+    text: Rough-terrain forklifts and telehandlers
+  - role: Paragraph
+    text: We service skid steers, compact loaders, wheel loaders, backhoes, rough-terrain forklifts and telehandlers, and replace these tires on-site.
+  - role: Paragraph
+    text: Foam-filled
+  - role: List item
+    text: Skid steers
+  - role: List item
+    text: Boom lifts
+  - role: List item
+    text: Other industrial equipment
+  - role: Paragraph
+    text: We handle foam-filled tires for skid steers, boom lifts and other industrial equipment.
+  - role: Paragraph
+    text: Solid
+  - role: List item
+    text: Solid pneumatic tires on warehouse forklifts
+  - role: List item
+    text: Press-on cushion tires on indoor forklifts
+  - role: List item
+    text: Non-marking tires on scissor lifts
+  - role: Paragraph
+    text: We handle solid pneumatic, press-on cushion and non-marking tires, and we have access to hydraulic press equipment for solid forklift tire installation.
   links: []
   images: []
 - label: Equipment we handle
   copy:
-  - text: Equipment we handle
+  - role: Heading
+    text: Equipment we handle
   links: []
   images: []
   cards:
@@ -95,20 +143,29 @@ demoSections:
     text: We service equipment for rental companies, including Sunbelt Rentals and Herc Rentals, at job sites and rental yards.
 - label: Equipment and rental work
   copy:
-  - text: On the Job
-  - text: Equipment and rental work
-  - text: On a Sunbelt Rentals job
-  - text: '[Photo: skid steer or forklift tire swap on a job site from Joey]'
-  - text: '[Caption: equipment type and site]'
-  - text: '[Photo: scissor or boom lift tire job at a rental yard from Joey]'
-  - text: '[Caption: equipment type and site]'
+  - role: Paragraph
+    text: On the Job
+  - role: Heading
+    text: Equipment and rental work
+  - role: Caption
+    text: On a Sunbelt Rentals job
+  - role: Text
+    text: '[Photo: skid steer or forklift tire swap on a job site from Joey]'
+  - role: Caption
+    text: '[Caption: equipment type and site]'
+  - role: Text
+    text: '[Photo: scissor or boom lift tire job at a rental yard from Joey]'
+  - role: Caption
+    text: '[Caption: equipment type and site]'
   links: []
   images:
-  - source: /uploads/cubano-pages/cubano-technician-servicing-a-semi-truck-on-a.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-servicing-a-semi-truck-on-a.jpg
     alt: Cubano technician servicing a semi truck on a Sunbelt Rentals job
 - label: Machine down to back at work in 3 steps
   copy:
-  - text: Machine down to back at work in 3 steps
+  - role: Heading
+    text: Machine down to back at work in 3 steps
   links: []
   images: []
   cards:
@@ -126,9 +183,12 @@ demoSections:
     text: Job site, warehouse or rental yard. Your crew keeps working while we do it.
 - label: What customers say
   copy:
-  - text: How We Work
-  - text: What customers say
-  - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
+  - role: Paragraph
+    text: How We Work
+  - role: Heading
+    text: What customers say
+  - role: Paragraph
+    text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
   links: []
   images: []
   cards:
@@ -140,16 +200,21 @@ demoSections:
     author: Google review
 - label: How much does heavy equipment tire service cost?
   copy:
-  - text: How much does heavy equipment tire service cost?
-  - text: It depends on the machine, the tire size and whether it's air-filled, foam-filled or solid, so we quote by equipment. Text a photo of the tire and the machine and we'll send a price that includes the service call. The price we quote is the price you pay.
-  - text: Text a Photo for a Quote
+  - role: Heading
+    text: How much does heavy equipment tire service cost?
+  - role: Paragraph
+    text: It depends on the machine, the tire size and whether it's air-filled, foam-filled or solid, so we quote by equipment. Text a photo of the tire and the machine and we'll send a price that includes the service call. The price we quote is the price you pay.
+  - role: Button or link text
+    text: Text a Photo for a Quote
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for a Quote
   images: []
 - label: OTR & Heavy Equipment Tire FAQ
   copy:
-  - text: OTR & Heavy Equipment Tire FAQ
+  - role: Heading
+    text: OTR & Heavy Equipment Tire FAQ
   links: []
   images: []
   cards:
@@ -173,12 +238,17 @@ demoSections:
     answer: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts. We're open Monday to Friday, 8 to 5.
 - label: Equipment tire service near you
   copy:
-  - text: Equipment tire service near you
-  - text: All areas
-  - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
-  - text: Related services
+  - role: Heading
+    text: Equipment tire service near you
+  - role: Button or link text
+    text: All areas
+  - role: Paragraph
+    text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -220,17 +290,25 @@ demoSections:
     label: Mobile Tire Installation
 - label: Machine down? Text us a photo.
   copy:
-  - text: Machine down? Text us a photo.
-  - text: Send the tire, the machine and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text a Photo of the Tire
-  - text: Call (888) 333-3173
-  - text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Heading
+    text: Machine down? Text us a photo.
+  - role: Paragraph
+    text: Send the tire, the machine and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text a Photo of the Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text a Photo of the Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images: []
 demoTemplate: otr-heavy-equipment-tires

@@ -19,8 +19,10 @@ export function mountSimplePreview() {
   mount.hidden = true;
   document.body.append(mount);
   let bodyRoot: Root | undefined;
+  const initialData = { simplePage: null };
+  const variables = { relativePath };
   function TinaSimplePage() {
-    const { data } = useTina<{ simplePage: any }>({ query, variables: { relativePath }, data: { simplePage: null } });
+    const { data } = useTina<{ simplePage: any }>({ query, variables, data: initialData });
     useEffect(() => {
       const page = data?.simplePage;
       if (!page) return;

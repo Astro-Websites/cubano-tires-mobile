@@ -5,65 +5,110 @@ description: Run-Flat Tire Replacement in Orange County
 demoSections:
 - label: Run-Flat Tire Replacement in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Run-Flat Tire Replacement
-  - text: 5.0 from 340+ Google reviews
-  - text: Run-Flat Tire Replacement in
-  - text: Orange County
-  - text: Low-pressure light on your BMW, Mini or Mercedes? Run-flats get you off the road, not back to normal. Text us a photo and we'll replace the tire at your home or office, no dealer wait.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone.
-  - text: Any run-flat, any make
-  - text: BMW · Mini · Mercedes
-  - text: Price quoted = price paid
-  - text: We text when we're on the way
-  - text: '"Everything was so simple, straightforward and easy."'
-  - text: Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Run-Flat Tire Replacement
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Run-Flat Tire Replacement in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Low-pressure light on your BMW, Mini or Mercedes? Run-flats get you off the road, not back to normal. Text us a photo and we'll replace the tire at your home or office, no dealer wait.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Any run-flat, any make
+  - role: Badge
+    text: BMW · Mini · Mercedes
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"Everything was so simple, straightforward and easy."'
+  - role: Paragraph
+    text: Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
     alt: Cubano technician installing tires on a white BMW in a customer's driveway
 - label: What is a run-flat tire?
   copy:
-  - text: Run-Flats 101
-  - text: What is a run-flat tire?
-  - text: A run-flat has extra-stiff sidewalls that hold up the car after the tire loses air. That's why many BMWs, Minis and Mercedes come with no spare.
-  - text: The common rule of thumb is about 50 miles at up to 50 mph once the tire is flat. Your owner's manual and the tire maker have the real limit for your car, and it varies.
-  - text: Not sure if you have run-flats?
-  - text: Look on the sidewall for a mark like RFT, ROF, ZP, SSR or RSC
-  - text: Check the trunk. No spare is a good hint
-  - text: Or just text us a photo of the sidewall and we'll tell you
-  - text: Can a run-flat be patched?
-  - text: Often not. When a run-flat is driven with no air, the sidewall carries the weight and can break down inside where you can't see it. Many tire makers say not to repair a run-flat after it's been driven flat, and some say not to repair them at all. Rules vary by brand, so we go by the maker's guidance for your tire.
-  - text: Might be repairable
-  - text: Small nail or screw in the tread
-  - text: Caught early, while the tire still had air
-  - text: The tire maker allows a repair
-  - text: '[Confirm with Joel: does Cubano ever patch run-flats, and under what conditions?]'
-  - text: Plan on a new tire
-  - text: You drove on it after the warning light came on
-  - text: Damage in the sidewall or shoulder
-  - text: A large cut, gash or bulge
-  - text: Tread worn low
-  - text: We bring the right run-flat to you and install it in your driveway or office lot.
+  - role: Paragraph
+    text: Run-Flats 101
+  - role: Heading
+    text: What is a run-flat tire?
+  - role: Paragraph
+    text: A run-flat has extra-stiff sidewalls that hold up the car after the tire loses air. That's why many BMWs, Minis and Mercedes come with no spare.
+  - role: Paragraph
+    text: The common rule of thumb is about 50 miles at up to 50 mph once the tire is flat. Your owner's manual and the tire maker have the real limit for your car, and it varies.
+  - role: Paragraph
+    text: Not sure if you have run-flats?
+  - role: List item
+    text: Look on the sidewall for a mark like RFT, ROF, ZP, SSR or RSC
+  - role: List item
+    text: Check the trunk. No spare is a good hint
+  - role: List item
+    text: Or just text us a photo of the sidewall and we'll tell you
+  - role: Heading
+    text: Can a run-flat be patched?
+  - role: Paragraph
+    text: Often not. When a run-flat is driven with no air, the sidewall carries the weight and can break down inside where you can't see it. Many tire makers say not to repair a run-flat after it's been driven flat, and some say not to repair them at all. Rules vary by brand, so we go by the maker's guidance for your tire.
+  - role: Paragraph
+    text: Might be repairable
+  - role: List item
+    text: Small nail or screw in the tread
+  - role: List item
+    text: Caught early, while the tire still had air
+  - role: List item
+    text: The tire maker allows a repair
+  - role: Paragraph
+    text: '[Confirm with Joel: does Cubano ever patch run-flats, and under what conditions?]'
+  - role: Paragraph
+    text: Plan on a new tire
+  - role: List item
+    text: You drove on it after the warning light came on
+  - role: List item
+    text: Damage in the sidewall or shoulder
+  - role: List item
+    text: A large cut, gash or bulge
+  - role: List item
+    text: Tread worn low
+  - role: Paragraph
+    text: We bring the right run-flat to you and install it in your driveway or office lot.
   links: []
   images: []
 - label: Run-flat jobs we handle
   copy:
-  - text: Run-flat jobs we handle
-  - text: 'We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes: Bridgestone, Pirelli, Michelin, Continental, Goodyear and more.'
+  - role: Heading
+    text: Run-flat jobs we handle
+  - role: Paragraph
+    text: 'We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes: Bridgestone, Pirelli, Michelin, Continental, Goodyear and more.'
   links: []
   images: []
   cards:
@@ -87,7 +132,8 @@ demoSections:
     text: Run-flats rely on your pressure warning. We check the sensor after install.
 - label: Warning light to new run-flat in 3 steps
   copy:
-  - text: Warning light to new run-flat in 3 steps
+  - role: Heading
+    text: Warning light to new run-flat in 3 steps
   links: []
   images: []
   cards:
@@ -105,8 +151,10 @@ demoSections:
     text: Mounted, balanced, pressure set and TPMS checked. Most jobs take under 45 minutes.
 - label: Told the truth up front
   copy:
-  - text: Straight Answers
-  - text: Told the truth up front
+  - role: Paragraph
+    text: Straight Answers
+  - role: Heading
+    text: Told the truth up front
   links: []
   images: []
   cards:
@@ -118,16 +166,21 @@ demoSections:
     author: Google review
 - label: How much does run-flat tire replacement cost?
   copy:
-  - text: How much does run-flat tire replacement cost?
-  - text: Run-flat pricing depends on your tire size and brand, so we quote each job instead of listing a starting price. We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes. Replace all 4 and mobile service in Orange County is free, and the price we text you is the price you pay.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does run-flat tire replacement cost?
+  - role: Paragraph
+    text: Run-flat pricing depends on your tire size and brand, so we quote each job instead of listing a starting price. We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes. Replace all 4 and mobile service in Orange County is free, and the price we text you is the price you pay.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: Run-Flat Tire FAQ
   copy:
-  - text: Run-Flat Tire FAQ
+  - role: Heading
+    text: Run-Flat Tire FAQ
   links: []
   images: []
   cards:
@@ -148,11 +201,15 @@ demoSections:
     answer: 'Text us your size and we''ll send a price you can compare. We come to you, so there''s no drive to the dealer and no waiting room. [Confirm with Joel: OK to make a dealer comparison here?]'
 - label: Run-flat tire replacement near you
   copy:
-  - text: Run-flat tire replacement near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Run-flat tire replacement near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -194,14 +251,20 @@ demoSections:
     label: Tire Rotation & Balancing
 - label: Run-flat warning on? Text us before you drive further.
   copy:
-  - text: Run-flat warning on? Text us before you drive further.
-  - text: Send a photo of the tire and we'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Run-flat warning on? Text us before you drive further.
+  - role: Paragraph
+    text: Send a photo of the tire and we'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: run-flat-tires
