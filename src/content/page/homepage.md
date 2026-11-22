@@ -9,7 +9,7 @@ demoSections:
       - role: Badge
         text: 5.0 from 336 Google reviews · 230+ on Yelp
       - role: Eyebrow
-        text: WE COME111
+        text: WE COME
       - role: Eyebrow
         text: TO YOU!
       - role: Main heading
