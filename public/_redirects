@@ -76,8 +76,8 @@
 /tire-rotation-balancing                   /services/tire-rotation-balancing/        301
 /otr-heavy-equipment-tires/                /services/otr-heavy-equipment-tires/      301
 /otr-heavy-equipment-tires                 /services/otr-heavy-equipment-tires/      301
-/new-wheel-installation/                   /services/new-wheel-installation/         301
-/new-wheel-installation                    /services/new-wheel-installation/         301
+/new-wheel-installation/                   /services/tire-mounting/                 301
+/new-wheel-installation                    /services/tire-mounting/                 301
 /city-anaheim/                             /areas/anaheim/                           301
 /city-anaheim                              /areas/anaheim/                           301
 /city-irvine/                              /areas/irvine/                            301

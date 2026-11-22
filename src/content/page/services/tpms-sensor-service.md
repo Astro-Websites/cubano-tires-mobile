@@ -148,7 +148,7 @@ demoSections:
   - text: →
   - text: Mobile Tire Installation
   - text: →
-  - text: New Wheels & Tire Packages
+  - text: Tire Mounting on Your Wheels
   - text: →
   - text: Tesla & EV Tires
   - text: →
@@ -175,8 +175,8 @@ demoSections:
     label: Flat Tire Repair →
   - url: /services/mobile-tire-installation/
     label: Mobile Tire Installation →
-  - url: /services/new-wheel-installation/
-    label: New Wheels & Tire Packages →
+  - url: /services/tire-mounting/
+    label: Tire Mounting on Your Wheels →
   - url: /vehicles/tesla-ev-tires/
     label: Tesla & EV Tires →
   images: []
