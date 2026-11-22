@@ -11,7 +11,7 @@ type GlobalConfig = {
   codeInjection?: { headerCode?: string; footerCode?: string };
 };
 
-type NavigationItem = { sourceLabel: string; label: string; href: string };
+type NavigationItem = { sourceLabel?: string; label: string; href: string };
 type Navigation = Record<string, NavigationItem[]>;
 
 const escapeHtml = (value: string) => value
@@ -20,6 +20,12 @@ const escapeHtml = (value: string) => value
   .replaceAll('>', '&gt;')
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&#39;');
+
+// Only site paths, anchors, web, phone and email links; anything else becomes "#".
+const safeHref = (value: string) => {
+  const href = String(value || '').trim();
+  return /^(?:\/(?![/\\])|#|https?:\/\/|tel:|sms:|mailto:)/i.test(href) && !/[\u0000- ]/.test(href) ? href : '#';
+};
 
 const escapeRegExp = (value: string) => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
@@ -51,11 +57,33 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
     html = html.replace(/(<img\s+src=")[^"]+("[^>]*>)/i, `$1${escapeHtml(logo)}$2`);
   }
 
+  // Links outside the menus below (e.g. the mobile action bar's "Shop Tires") are matched by their original label.
   for (const item of Object.values(navigation).flat()) {
-    // Labels in the fragments are HTML-escaped ("Fleet &amp; Commercial"), so match either form.
+    if (!item?.sourceLabel) continue;
     const label = `(?:${escapeRegExp(item.sourceLabel)}|${escapeRegExp(escapeHtml(item.sourceLabel))})`;
     const pattern = new RegExp(`<a([^>]*?)href="[^"]*"([^>]*?)>${label}</a>`, 'g');
-    html = html.replace(pattern, `<a$1href="${escapeHtml(item.href)}"$2>${escapeHtml(item.label)}</a>`);
+    html = html.replace(pattern, `<a$1href="${escapeHtml(safeHref(item.href))}"$2>${escapeHtml(item.label)}</a>`);
+  }
+
+  // Each menu is rebuilt from its Tina list, so items can be added, removed and reordered in Tina.
+  const menus: Array<[string, RegExp]> = placement === 'header'
+    ? [['social', /(<span style="display: flex; flex-wrap: wrap; gap: 20px">)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
+       ['header', /(<div id="cub-links"[^>]*>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/]]
+    : [['services', /(>Services<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
+       ['company', /(>Company<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
+       ['social', /(>Follow Us<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
+       ['legal', /(<nav aria-label="Legal"[^>]*>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/]];
+  for (const [group, pattern] of menus) {
+    const items = (navigation[group] || []).filter((item) => item?.label && item?.href);
+    html = html.replace(pattern, (_, open: string, run: string) => {
+      const newline = run.startsWith('\n') ? '\n' : '';
+      const attrs = (run.match(/<a\b([^>]*)>/)?.[1] || '').replace(/\s*href="[^"]*"/, '');
+      return open + items.map((item) => {
+        const href = safeHref(item.href);
+        const external = /^https?:\/\//i.test(href) ? ' target="_blank" rel="noopener"' : '';
+        return `${newline}<a href="${escapeHtml(href)}"${external}${attrs}>${escapeHtml(item.label)}</a>`;
+      }).join('');
+    });
   }
 
   return html;

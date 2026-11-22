@@ -8,12 +8,17 @@
     { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "/#locations" }
   ],
   "services": [
-    { "sourceLabel": "Fleet & Commercial", "label": "Fleet & Commercial", "href": "/services/fleet-tire-service/" },
-    { "sourceLabel": "Tire Installation", "label": "Tire Installation", "href": "/services/mobile-tire-installation/" },
-    { "sourceLabel": "Flat Repair", "label": "Flat Repair", "href": "/services/flat-tire-repair/" },
-    { "sourceLabel": "Tesla & EV", "label": "Tesla & EV", "href": "/vehicles/tesla-ev-tires/" },
-    { "sourceLabel": "TPMS", "label": "TPMS", "href": "/services/tpms-sensor-service/" },
-    { "sourceLabel": "Roadside Service", "label": "Roadside Service", "href": "/services/roadside-tire-service/" }
+    { "sourceLabel": "Tire Installation", "label": "Mobile Tire Installation", "href": "/services/mobile-tire-installation/" },
+    { "label": "Tire Mounting", "href": "/services/tire-mounting/" },
+    { "sourceLabel": "Flat Repair", "label": "Flat Tire Repair", "href": "/services/flat-tire-repair/" },
+    { "sourceLabel": "Roadside Service", "label": "Roadside Tire Service", "href": "/services/roadside-tire-service/" },
+    { "label": "Rotation & Balancing", "href": "/services/tire-rotation-balancing/" },
+    { "sourceLabel": "TPMS", "label": "TPMS Sensor Service", "href": "/services/tpms-sensor-service/" },
+    { "label": "Run-Flat Tires", "href": "/services/run-flat-tires/" },
+    { "sourceLabel": "Tesla & EV", "label": "Tesla & EV Tires", "href": "/vehicles/tesla-ev-tires/" },
+    { "sourceLabel": "Fleet & Commercial", "label": "Fleet Tire Service", "href": "/services/fleet-tire-service/" },
+    { "label": "Commercial Truck Tires", "href": "/services/commercial-truck-tires/" },
+    { "label": "OTR & Heavy Equipment", "href": "/services/otr-heavy-equipment-tires/" }
   ],
   "company": [
     { "sourceLabel": "Reviews", "label": "Reviews", "href": "/#reviews" },
@@ -21,7 +26,10 @@
     { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "/#locations" },
     { "sourceLabel": "FAQ", "label": "FAQ", "href": "/#faq" },
     { "sourceLabel": "About Us", "label": "About Us", "href": "/about-us/" },
-    { "sourceLabel": "Tire Tips", "label": "Tire Tips", "href": "/tire-tips/" }
+    { "sourceLabel": "Tire Tips", "label": "Tire Tips", "href": "/tire-tips/" },
+    { "label": "Coupons", "href": "/coupons/" },
+    { "label": "Anaheim", "href": "/areas/anaheim/" },
+    { "label": "Irvine", "href": "/areas/irvine/" }
   ],
   "social": [
     { "sourceLabel": "TikTok", "label": "TikTok", "href": "https://www.tiktok.com/@cubanotiresmobileshop" },
@@ -32,9 +40,6 @@
   ],
   "legal": [
     { "sourceLabel": "Privacy", "label": "Privacy", "href": "/privacy-policy/" },
-    { "sourceLabel": "Terms", "label": "Terms", "href": "#" },
-    { "sourceLabel": "Cookie", "label": "Cookie", "href": "#" },
-    { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "#" },
     { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "/sitemap/" }
   ]
 }
