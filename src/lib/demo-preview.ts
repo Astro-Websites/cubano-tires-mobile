@@ -1,6 +1,7 @@
 import { createElement, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { useTina } from 'tinacms/dist/react';
+import { addImageEditStyles } from './preview-styles';
 import { pageQuery, renderDemo, type DemoPage } from './demo-pages';
 
 // Live preview inside the Tina editor: re-render the design from the form values and
@@ -10,6 +11,7 @@ export function mountDemoPreview() {
   const script = document.querySelector('#cubano-tina-preview');
   if (!root || !script?.textContent) return;
   const { template, relativePath, page } = JSON.parse(script.textContent) as { template: string; relativePath: string; page: DemoPage };
+  addImageEditStyles();
   const mount = document.createElement('div');
   mount.hidden = true;
   document.body.append(mount);

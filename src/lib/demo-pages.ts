@@ -21,7 +21,7 @@ type Kind = 'text' | 'url' | 'image';
 function kindOf(list: string, field: string): Kind {
   if (list === 'links') return field === 'url' ? 'url' : 'text';
   if (list === 'images') return field === 'source' ? 'image' : 'text';
-  if (list === 'cards') return /url$/i.test(field) ? 'url' : /^(image|photo)$/.test(field) ? 'image' : 'text';
+  if (list === 'cards') return /url$/i.test(field) ? 'url' : /^(image|photo|logo)$/.test(field) ? 'image' : 'text';
   return 'text';
 }
 
