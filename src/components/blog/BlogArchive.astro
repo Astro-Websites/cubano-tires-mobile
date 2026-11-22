@@ -49,7 +49,7 @@ const sms = `sms:${config.phoneDigits}`;
     {featured && (
       <section style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 24px">
         <a href={featured.url} style="display: flex; flex-wrap: wrap; border-radius: 22px; overflow: hidden; border: 1px solid #E4E8EE">
-          <img alt={featured.heroImageAlt} src={featured.heroImage} style="flex: 1 1 480px; min-width: 0; height: 380px; object-fit: cover"/>
+          <img alt={featured.heroImageAlt || featured.title} src={featured.heroImage} style="flex: 1 1 480px; min-width: 0; height: 380px; object-fit: cover"/>
           <span style="flex: 1 1 420px; min-width: 0; padding: 40px; display: flex; flex-direction: column; gap: 14px; justify-content: center">
             <span style={`align-self: flex-start; padding: 6px 12px; border-radius: 999px; background: ${featuredColors.bg}; font-size: 13px; font-weight: 800; color: ${featuredColors.fg}; text-transform: uppercase`}>{featuredCategory ? `${featuredCategory.title} · Featured` : 'Featured'}</span>
             <span style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 34px; line-height: 1.12; color: #16181D">{featured.title}</span>

@@ -60,7 +60,7 @@ export const BlogCollection: Collection = {
     },
     { type: 'string', name: 'reviewedBy', label: 'Reviewed By' },
     { type: 'image', name: 'heroImage', label: 'Hero Image' },
-    { type: 'string', name: 'heroImageAlt', label: 'Hero Image Alt Text' },
+    { type: 'string', name: 'heroImageAlt', label: 'Hero Image Alt Text (SEO)', description: 'Describe the image for Google and screen readers, e.g. "Technician replacing a semi truck tire in Anaheim".' },
     {
       type: 'string',
       name: 'quickAnswer',
