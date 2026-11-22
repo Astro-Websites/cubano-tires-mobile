@@ -5,64 +5,108 @@ description: Mobile Tire Rotation & Balancing in Orange County
 demoSections:
 - label: Mobile Tire Rotation & Balancing in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Tire Rotation & Balancing
-  - text: 5.0 from 340+ Google reviews
-  - text: Mobile Tire Rotation & Balancing in
-  - text: Orange County
-  - text: Rotate and balance your tires without losing a morning at the shop. We do it in your driveway or your office lot while you get on with your day.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text a photo of your tire and your car's year, make and model to (888) 333-3173 from your phone.
-  - text: Rotation from $35
-  - text: At home or at work
-  - text: Price quoted = price paid
-  - text: Most jobs under 45 min
-  - text: '"I was able to continue working while the work was done."'
-  - text: Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Tire Rotation & Balancing
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Mobile Tire Rotation & Balancing in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Rotate and balance your tires without losing a morning at the shop. We do it in your driveway or your office lot while you get on with your day.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text a photo of your tire and your car's year, make and model to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Rotation from $35
+  - role: Badge
+    text: At home or at work
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Most jobs under 45 min
+  - role: Paragraph
+    text: '"I was able to continue working while the work was done."'
+  - role: Paragraph
+    text: Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
     alt: Cubano technician servicing a wheel on the tire machine in the service truck
 - label: Rotation and balancing are two different jobs
   copy:
-  - text: Why It Matters
-  - text: Rotation and balancing are two different jobs
-  - text: Both help your tires last longer and ride smoother. Here's what each one does and when it's usually due.
-  - text: Tire rotation
-  - text: Your front and rear tires wear at different rates. Moving them to new positions evens out the wear so all four last longer and wear out together.
-  - text: Rule of thumb
-  - text: Many carmakers recommend every 5,000–7,500 miles
-  - text: Tesla suggests about every 6,250 miles
-  - text: Your owner's manual has the interval for your car
-  - text: Wheel balancing
-  - text: No tire and wheel is perfectly even. Balancing adds small weights so the wheel spins smoothly. Without it, you feel a shake and the tread wears unevenly.
-  - text: Rule of thumb
-  - text: Any time you get new tires
-  - text: After a tire repair or remount
-  - text: When you feel a vibration that wasn't there before
-  - text: Signs your tires are out of balance
-  - text: Steering wheel shakes at highway speed
-  - text: Vibration in the seat or floor
-  - text: Patchy or cupped wear on the tread
-  - text: Vibration started after a tire was replaced
-  - text: Need an alignment? We don't align regular passenger vehicles. Our mobile alignment service is only for larger trucks and commercial vehicles, from Ford F-150s up to semi-trucks and other heavy-duty equipment. On a passenger car, a pull to one side or wear on one edge means a visit to an alignment shop.
+  - role: Paragraph
+    text: Why It Matters
+  - role: Heading
+    text: Rotation and balancing are two different jobs
+  - role: Paragraph
+    text: Both help your tires last longer and ride smoother. Here's what each one does and when it's usually due.
+  - role: Paragraph
+    text: Tire rotation
+  - role: Paragraph
+    text: Your front and rear tires wear at different rates. Moving them to new positions evens out the wear so all four last longer and wear out together.
+  - role: Paragraph
+    text: Rule of thumb
+  - role: List item
+    text: Many carmakers recommend every 5,000–7,500 miles
+  - role: List item
+    text: Tesla suggests about every 6,250 miles
+  - role: List item
+    text: Your owner's manual has the interval for your car
+  - role: Paragraph
+    text: Wheel balancing
+  - role: Paragraph
+    text: No tire and wheel is perfectly even. Balancing adds small weights so the wheel spins smoothly. Without it, you feel a shake and the tread wears unevenly.
+  - role: Paragraph
+    text: Rule of thumb
+  - role: List item
+    text: Any time you get new tires
+  - role: List item
+    text: After a tire repair or remount
+  - role: List item
+    text: When you feel a vibration that wasn't there before
+  - role: Paragraph
+    text: Signs your tires are out of balance
+  - role: List item
+    text: Steering wheel shakes at highway speed
+  - role: List item
+    text: Vibration in the seat or floor
+  - role: List item
+    text: Patchy or cupped wear on the tread
+  - role: List item
+    text: Vibration started after a tire was replaced
+  - role: Paragraph
+    text: Need an alignment? We don't align regular passenger vehicles. Our mobile alignment service is only for larger trucks and commercial vehicles, from Ford F-150s up to semi-trucks and other heavy-duty equipment. On a passenger car, a pull to one side or wear on one edge means a visit to an alignment shop.
   links: []
   images: []
 - label: What every visit covers
   copy:
-  - text: What every visit covers
+  - role: Heading
+    text: What every visit covers
   links: []
   images: []
   cards:
@@ -86,7 +130,8 @@ demoSections:
     text: Pressure set to spec and the warning system checked before we leave.
 - label: Rotated and balanced in 3 steps
   copy:
-  - text: Rotated and balanced in 3 steps
+  - role: Heading
+    text: Rotated and balanced in 3 steps
   links: []
   images: []
   cards:
@@ -104,8 +149,10 @@ demoSections:
     text: We rotate, balance and check pressure. Most jobs take under 45 minutes.
 - label: Tire service that fits around your day
   copy:
-  - text: From Our Customers
-  - text: Tire service that fits around your day
+  - role: Paragraph
+    text: From Our Customers
+  - role: Heading
+    text: Tire service that fits around your day
   links: []
   images: []
   cards:
@@ -117,16 +164,21 @@ demoSections:
     author: Jesse M. V. · Google review
 - label: How much does tire rotation and balancing cost?
   copy:
-  - text: How much does tire rotation and balancing cost?
-  - text: Tire rotations start at $35 and up, depending on the vehicle. Balancing can be added at the same visit. We quote the full visit before we come out, so the price we text you is the price you pay.
-  - text: Text Us for Your Price
+  - role: Heading
+    text: How much does tire rotation and balancing cost?
+  - role: Paragraph
+    text: Tire rotations start at $35 and up, depending on the vehicle. Balancing can be added at the same visit. We quote the full visit before we come out, so the price we text you is the price you pay.
+  - role: Button or link text
+    text: Text Us for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us for Your Price
   images: []
 - label: Tire Rotation & Balancing FAQ
   copy:
-  - text: Tire Rotation & Balancing FAQ
+  - role: Heading
+    text: Tire Rotation & Balancing FAQ
   links: []
   images: []
   cards:
@@ -150,11 +202,15 @@ demoSections:
     answer: Only for larger trucks and commercial vehicles. Our mobile alignment service covers Ford F-150s and up, through semi-trucks and other heavy-duty equipment. We don't provide wheel alignments for regular passenger vehicles. Rotation and balancing are available for all vehicles.
 - label: Tire rotation near you
   copy:
-  - text: Tire rotation near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Tire rotation near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -196,14 +252,20 @@ demoSections:
     label: Fleet & Commercial Tires
 - label: Due for a rotation? We'll come to you.
   copy:
-  - text: Due for a rotation? We'll come to you.
-  - text: Text us a photo of your tire, your car and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Due for a rotation? We'll come to you.
+  - role: Paragraph
+    text: Text us a photo of your tire, your car and where it's parked. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: tire-rotation-balancing

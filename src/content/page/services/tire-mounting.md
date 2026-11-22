@@ -5,60 +5,100 @@ description: Bought new wheels or have a second set? Cubano mounts and balances 
 demoSections:
 - label: Tire Mounting on Your Wheels in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Tire Mounting on Your Wheels
-  - text: 5.0 from 340+ Google reviews
-  - text: Tire Mounting on Your Wheels in
-  - text: Orange County
-  - text: Bought new wheels or have a second set ready to go? You bring the wheels, we bring the tires and the shop truck. We mount, balance and install them in your driveway, and move your TPMS sensors over so the dash stays clear.
-  - text: Text Us a Photo of Your Wheels
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Mounting from $35/tire
-  - text: Your wheels, mounted & balanced
-  - text: TPMS transferred
-  - text: Price quoted = price paid
-  - text: '"They had everything needed in the truck!"'
-  - text: Jesse M. V. · Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Tire Mounting on Your Wheels
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Tire Mounting on Your Wheels in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Bought new wheels or have a second set ready to go? You bring the wheels, we bring the tires and the shop truck. We mount, balance and install them in your driveway, and move your TPMS sensors over so the dash stays clear.
+  - role: Button or link text
+    text: Text Us a Photo of Your Wheels
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Mounting from $35/tire
+  - role: Badge
+    text: Your wheels, mounted & balanced
+  - role: Badge
+    text: TPMS transferred
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Paragraph
+    text: '"They had everything needed in the truck!"'
+  - role: Paragraph
+    text: Jesse M. V. · Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Wheels
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
     alt: Cubano technician installing tires on a white BMW M8 in a driveway
 - label: You bring the wheels, we do the rest
   copy:
-  - text: Customer-Supplied Wheels
-  - text: You bring the wheels, we do the rest
-  - text: 'We don''t sell wheels. If you bought a set online, picked up wheels from a dealer, or keep a second set for the truck, we mount tires on them and install them wherever you''re parked. Here''s what we work on and what to have ready:'
-  - text: '[Photo: Cubano tech mounting a tire on a customer''s wheel in the service truck, from Joey]'
-  - text: Wheels we mount tires on
-  - text: Aftermarket wheels you ordered online
-  - text: OEM upgrade wheels from a dealer or another car
-  - text: A second set for off-road, track or spare use
-  - text: Truck, Jeep and SUV wheels, lifted or stock
-  - text: Before we come out
-  - text: Have the wheels at the address where we'll do the install
-  - text: Text us the wheel size and your tire size
-  - text: Keep any lug nuts or hub rings that came with the wheels
-  - text: Tell us if the wheels already have TPMS sensors
-  - text: 'Need tires for them? We carry the major brands, including BFGoodrich, Nitto, Toyo, Falken, General and Cooper for trucks. [Confirm with Joel: do you also mount tires the customer already bought?] Going bigger than stock on a truck? Make sure your lift or leveling kit clears the new size first.'
-  - text: We don't sell, repair or straighten wheels.
-  - text: Bent, cracked or curb-rashed wheel? Get a replacement from a wheel shop or dealer, then text us a photo. We'll mount your tire on it and install it where you're parked.
+  - role: Paragraph
+    text: Customer-Supplied Wheels
+  - role: Heading
+    text: You bring the wheels, we do the rest
+  - role: Paragraph
+    text: 'We don''t sell wheels. If you bought a set online, picked up wheels from a dealer, or keep a second set for the truck, we mount tires on them and install them wherever you''re parked. Here''s what we work on and what to have ready:'
+  - role: Text
+    text: '[Photo: Cubano tech mounting a tire on a customer''s wheel in the service truck, from Joey]'
+  - role: Paragraph
+    text: Wheels we mount tires on
+  - role: List item
+    text: Aftermarket wheels you ordered online
+  - role: List item
+    text: OEM upgrade wheels from a dealer or another car
+  - role: List item
+    text: A second set for off-road, track or spare use
+  - role: List item
+    text: Truck, Jeep and SUV wheels, lifted or stock
+  - role: Paragraph
+    text: Before we come out
+  - role: List item
+    text: Have the wheels at the address where we'll do the install
+  - role: List item
+    text: Text us the wheel size and your tire size
+  - role: List item
+    text: Keep any lug nuts or hub rings that came with the wheels
+  - role: List item
+    text: Tell us if the wheels already have TPMS sensors
+  - role: Paragraph
+    text: 'Need tires for them? We carry the major brands, including BFGoodrich, Nitto, Toyo, Falken, General and Cooper for trucks. [Confirm with Joel: do you also mount tires the customer already bought?] Going bigger than stock on a truck? Make sure your lift or leveling kit clears the new size first.'
+  - role: Paragraph
+    text: We don't sell, repair or straighten wheels.
+  - role: Paragraph
+    text: Bent, cracked or curb-rashed wheel? Get a replacement from a wheel shop or dealer, then text us a photo. We'll mount your tire on it and install it where you're parked.
   links: []
   images: []
 - label: What every tire mounting includes
   copy:
-  - text: What every tire mounting includes
+  - role: Heading
+    text: What every tire mounting includes
   links: []
   images: []
   cards:
@@ -82,7 +122,8 @@ demoSections:
     text: From Tacomas and Jeeps to G-Wagons, BMWs and Teslas.
 - label: Tires on your wheels in 3 steps
   copy:
-  - text: Tires on your wheels in 3 steps
+  - role: Heading
+    text: Tires on your wheels in 3 steps
   links: []
   images: []
   cards:
@@ -100,8 +141,10 @@ demoSections:
     text: Mounted, balanced, sensors transferred and lugs torqued, right in your driveway.
 - label: What customers say about the install
   copy:
-  - text: Real Install Jobs
-  - text: What customers say about the install
+  - role: Paragraph
+    text: Real Install Jobs
+  - role: Heading
+    text: What customers say about the install
   links: []
   images: []
   cards:
@@ -113,16 +156,21 @@ demoSections:
     author: Justin K. · Google review
 - label: How much does tire mounting cost?
   copy:
-  - text: How much does tire mounting on my wheels cost?
-  - text: Mounting and installing tires on your wheels starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. We supply the tires; you provide the wheels. We quote everything up front, so the price we text you is the price you pay. An optional nationwide warranty is available for $15 per tire.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does tire mounting on my wheels cost?
+  - role: Paragraph
+    text: Mounting and installing tires on your wheels starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. We supply the tires; you provide the wheels. We quote everything up front, so the price we text you is the price you pay. An optional nationwide warranty is available for $15 per tire.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: Tire Mounting FAQ
   copy:
-  - text: Tire Mounting FAQ
+  - role: Heading
+    text: Tire Mounting FAQ
   links: []
   images: []
   cards:
@@ -146,11 +194,15 @@ demoSections:
     answer: An optional nationwide tire warranty is available for $15 per tire. Ask when you get your quote.
 - label: Tire mounting near you
   copy:
-  - text: Tire mounting near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Tire mounting near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -192,14 +244,20 @@ demoSections:
     label: Tesla & EV Tires
 - label: Got your wheels? Text us a photo.
   copy:
-  - text: Got your wheels? Text us a photo.
-  - text: Tell us your vehicle, your wheel size and the tires you want. We'll text back a price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Wheels
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Got your wheels? Text us a photo.
+  - role: Paragraph
+    text: Tell us your vehicle, your wheel size and the tires you want. We'll text back a price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Wheels
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Wheels
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: tire-mounting

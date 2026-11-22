@@ -5,36 +5,58 @@ description: Save up to $120 on new tires, installed in your driveway.
 demoSections:
 - label: Save up to $120 on new tires, installed in your driveway.
   copy:
-  - text: Home
-  - text: Coupons & Rebates
-  - text: COUPONS & REBATES
-  - text: Save up to $120 on new tires,
-  - text: installed in your driveway.
-  - text: Current manufacturer rebates on the brands we install, plus free mobile service when you buy 4 tires in Orange County. Text us your tire size and the offer you want, and we quote with it applied.
-  - text: Text a Photo for a Quote
-  - text: See Current Rebates
-  - text: ORANGE COUNTY
-  - text: FREE mobile service
-  - text: With the purchase of 4 new tires at an Orange County address. We come to your home, office or job site.
-  - text: Outside OC? Ask for our flat mobile rate. Combines with manufacturer rebates.
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Coupons & Rebates
+  - role: Eyebrow
+    text: COUPONS & REBATES
+  - role: Main heading
+    text: Save up to $120 on new tires,
+  - role: Main heading
+    text: installed in your driveway.
+  - role: Paragraph
+    text: Current manufacturer rebates on the brands we install, plus free mobile service when you buy 4 tires in Orange County. Text us your tire size and the offer you want, and we quote with it applied.
+  - role: Button or link text
+    text: Text a Photo for a Quote
+  - role: Button or link text
+    text: See Current Rebates
+  - role: Eyebrow
+    text: ORANGE COUNTY
+  - role: Paragraph
+    text: FREE mobile service
+  - role: Paragraph
+    text: With the purchase of 4 new tires at an Orange County address. We come to your home, office or job site.
+  - role: Paragraph
+    text: Outside OC? Ask for our flat mobile rate. Combines with manufacturer rebates.
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for a Quote
-  - url: '#rebates'
+  - role: Button
+    url: '#rebates'
     label: See Current Rebates
   images: []
 - label: Brand rebates we can install today
   copy:
-  - text: CURRENT REBATES
-  - text: Brand rebates we can install today
-  - text: Rebates come from the tire makers, usually as a prepaid card after you submit a claim. We hand you the itemized invoice the form asks for.
-  - text: Online Appointment Special
-  - text: '[OFFER DETAILS: amount, what it applies to, how to claim]'
-  - text: Book by Text
+  - role: Eyebrow
+    text: CURRENT REBATES
+  - role: Heading
+    text: Brand rebates we can install today
+  - role: Paragraph
+    text: Rebates come from the tire makers, usually as a prepaid card after you submit a claim. We hand you the itemized invoice the form asks for.
+  - role: Paragraph
+    text: Online Appointment Special
+  - role: Paragraph
+    text: '[OFFER DETAILS: amount, what it applies to, how to claim]'
+  - role: Button or link text
+    text: Book by Text
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Book by Text
   images: []
   cards:
@@ -82,8 +104,10 @@ demoSections:
     buttonLabel: Text for a Cooper Quote
 - label: How to use a coupon
   copy:
-  - text: How to use a coupon
-  - text: Rebates are offered by the tire manufacturers, not Cubano Tires Mobile Shop. Amounts, dates and qualifying tires are set by each brand and can change, so ask us to confirm before you book. Coupon values have no cash value. [ADD ANY SHOP TERMS]
+  - role: Heading
+    text: How to use a coupon
+  - role: Paragraph
+    text: Rebates are offered by the tire manufacturers, not Cubano Tires Mobile Shop. Amounts, dates and qualifying tires are set by each brand and can change, so ask us to confirm before you book. Coupon values have no cash value. [ADD ANY SHOP TERMS]
   links: []
   images: []
   cards:
@@ -101,14 +125,20 @@ demoSections:
     text: We mount and balance on site, then send the invoice for your rebate.
 - label: Want the rebate price? Text us your tire size.
   copy:
-  - text: Want the rebate price? Text us your tire size.
-  - text: We reply with a price that includes the offer and an arrival time. Mon–Fri 8–5, after-hours texts answered next business morning.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Want the rebate price? Text us your tire size.
+  - role: Paragraph
+    text: We reply with a price that includes the offer and an arrival time. Mon–Fri 8–5, after-hours texts answered next business morning.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: coupons

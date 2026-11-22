@@ -5,65 +5,110 @@ description: Mobile Flat Tire Repair in Orange County
 demoSections:
 - label: Mobile Flat Tire Repair in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Flat Tire Repair
-  - text: 5.0 from 340+ Google reviews
-  - text: Mobile Flat Tire Repair in
-  - text: Orange County
-  - text: Nail, screw, slow leak or full blowout. Text us a photo of your flat and we'll text back a price and an arrival time, then fix it in your driveway, office lot or job site.
-  - text: Text Us a Photo of Your Flat
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Repairs from $35
-  - text: Price quoted = price paid
-  - text: Most jobs under 45 min
-  - text: We text when we're on the way
-  - text: '"They came right to me and had my tire changed in just 9 minutes!"'
-  - text: Tess S. · Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Flat Tire Repair
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Mobile Flat Tire Repair in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Nail, screw, slow leak or full blowout. Text us a photo of your flat and we'll text back a price and an arrival time, then fix it in your driveway, office lot or job site.
+  - role: Button or link text
+    text: Text Us a Photo of Your Flat
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Repairs from $35
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Most jobs under 45 min
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"They came right to me and had my tire changed in just 9 minutes!"'
+  - role: Paragraph
+    text: Tess S. · Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Flat
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg
     alt: Cubano technician removing a shredded blowout tire at the roadside
 - label: Can my flat tire be repaired?
   copy:
-  - text: Patch or Replace?
-  - text: Can my flat tire be repaired?
-  - text: 'Send us a photo and we''ll tell you before we roll. We only repair a puncture when it can be fixed safely. Here''s the policy we follow:'
-  - text: Usually repairable
-  - text: Nail or screw in the center of the tread
-  - text: Puncture ¼" or smaller
-  - text: Puncture at the edge of the shoulder, only if it angles toward the center of the tread
-  - text: Tread at 4/32" or deeper, and the tire wasn't driven on while flat
-  - text: We repair it from the inside with a plug-patch, re-mount, balance and set your pressure.
-  - text: Needs a new tire
-  - text: Any puncture or damage in the sidewall or shoulder
-  - text: Puncture larger than ¼", or a slice that can't be properly repaired
-  - text: Blowout, or the tire was driven on while flat
-  - text: Tread worn below 4/32", or the tire is over 6 years old
-  - text: No problem. We bring the right tire on the truck and install it on the spot. You'll know the price before we come.
-  - text: Where the puncture is matters
-  - text: 'Center of the tread: may be repaired under certain circumstances.'
-  - text: 'Edge of the shoulder: may be repaired if the puncture angles toward the center of the tread.'
-  - text: 'Shoulder and sidewall: not repairable.'
-  - text: No outer grooves on your tread? Then we don't repair a puncture within 25% of the tire's width from the tread edge. On a 205mm tire, that's about 2 inches from the edge.
-  - text: How a Proper Tire Repair Is Done
-  - text: At Cubano Tires Mobile Shop, we use professional plug-patch repairs to safely repair punctured tires. We start by removing the tire from the wheel and inspecting the inside to make sure the damage is repairable. Once approved, we install a plug-patch combination from the inside of the tire to properly seal the puncture. We then remount the tire, balance the wheel, and inflate it to the manufacturer's recommended tire pressure before completing the service.
+  - role: Paragraph
+    text: Patch or Replace?
+  - role: Heading
+    text: Can my flat tire be repaired?
+  - role: Paragraph
+    text: 'Send us a photo and we''ll tell you before we roll. We only repair a puncture when it can be fixed safely. Here''s the policy we follow:'
+  - role: Paragraph
+    text: Usually repairable
+  - role: List item
+    text: Nail or screw in the center of the tread
+  - role: List item
+    text: Puncture ¼" or smaller
+  - role: List item
+    text: Puncture at the edge of the shoulder, only if it angles toward the center of the tread
+  - role: List item
+    text: Tread at 4/32" or deeper, and the tire wasn't driven on while flat
+  - role: Paragraph
+    text: We repair it from the inside with a plug-patch, re-mount, balance and set your pressure.
+  - role: Paragraph
+    text: Needs a new tire
+  - role: List item
+    text: Any puncture or damage in the sidewall or shoulder
+  - role: List item
+    text: Puncture larger than ¼", or a slice that can't be properly repaired
+  - role: List item
+    text: Blowout, or the tire was driven on while flat
+  - role: List item
+    text: Tread worn below 4/32", or the tire is over 6 years old
+  - role: Paragraph
+    text: No problem. We bring the right tire on the truck and install it on the spot. You'll know the price before we come.
+  - role: Paragraph
+    text: Where the puncture is matters
+  - role: List item
+    text: 'Center of the tread: may be repaired under certain circumstances.'
+  - role: List item
+    text: 'Edge of the shoulder: may be repaired if the puncture angles toward the center of the tread.'
+  - role: List item
+    text: 'Shoulder and sidewall: not repairable.'
+  - role: Paragraph
+    text: No outer grooves on your tread? Then we don't repair a puncture within 25% of the tire's width from the tread edge. On a 205mm tire, that's about 2 inches from the edge.
+  - role: Subheading
+    text: How a Proper Tire Repair Is Done
+  - role: Paragraph
+    text: At Cubano Tires Mobile Shop, we use professional plug-patch repairs to safely repair punctured tires. We start by removing the tire from the wheel and inspecting the inside to make sure the damage is repairable. Once approved, we install a plug-patch combination from the inside of the tire to properly seal the puncture. We then remount the tire, balance the wheel, and inflate it to the manufacturer's recommended tire pressure before completing the service.
   links: []
   images: []
 - label: Flats we fix every day
   copy:
-  - text: Flats we fix every day
+  - role: Heading
+    text: Flats we fix every day
   links: []
   images: []
   cards:
@@ -87,7 +132,8 @@ demoSections:
     text: Sensor checked and reset after the repair.
 - label: From flat to fixed in 3 steps
   copy:
-  - text: From flat to fixed in 3 steps
+  - role: Heading
+    text: From flat to fixed in 3 steps
   links: []
   images: []
   cards:
@@ -105,8 +151,10 @@ demoSections:
     text: Repaired or replaced, balanced and back to the right pressure. Most jobs under 45 minutes.
 - label: What customers say after a flat
   copy:
-  - text: Real Flat Tire Jobs
-  - text: What customers say after a flat
+  - role: Paragraph
+    text: Real Flat Tire Jobs
+  - role: Heading
+    text: What customers say after a flat
   links: []
   images: []
   cards:
@@ -118,16 +166,21 @@ demoSections:
     author: Tess S. · Google review
 - label: How much does mobile flat tire repair cost?
   copy:
-  - text: How much does mobile flat tire repair cost?
-  - text: Tire repairs start at $35 and up, depending on tire size. The mobile service fee is additional. If the tire can't be saved, we'll quote the replacement tire before we come out, and the price we text you is the price you pay.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does mobile flat tire repair cost?
+  - role: Paragraph
+    text: Tire repairs start at $35 and up, depending on tire size. The mobile service fee is additional. If the tire can't be saved, we'll quote the replacement tire before we come out, and the price we text you is the price you pay.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: Flat Tire Repair FAQ
   copy:
-  - text: Flat Tire Repair FAQ
+  - role: Heading
+    text: Flat Tire Repair FAQ
   links: []
   images: []
   cards:
@@ -148,11 +201,15 @@ demoSections:
     answer: Text us anyway. We're open Monday to Friday, 8 to 5, and answer after-hours texts first thing the next business morning.
 - label: Flat tire repair near you
   copy:
-  - text: Flat tire repair near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Flat tire repair near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -194,14 +251,20 @@ demoSections:
     label: Tesla & EV Tires
 - label: Got a flat? Text us a photo.
   copy:
-  - text: Got a flat? Text us a photo.
-  - text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Flat
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Got a flat? Text us a photo.
+  - role: Paragraph
+    text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Flat
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Flat
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: flat-tire-repair

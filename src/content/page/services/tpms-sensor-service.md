@@ -5,62 +5,104 @@ description: TPMS Sensor Replacement in Orange County
 demoSections:
 - label: TPMS Sensor Replacement in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: TPMS Sensor Service
-  - text: 5.0 from 340+ Google reviews
-  - text: TPMS Sensor Replacement in
-  - text: Orange County
-  - text: Tire pressure light won't go off? We test every sensor, replace the one that's dead and run the relearn so the light stays off. No shop visit. We do it where your car is parked.
-  - text: Text Us a Photo of Your Dash Light
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Sensors from $95
-  - text: Relearn done on the spot
-  - text: Price quoted = price paid
-  - text: Most jobs under 45 min
-  - text: '"Everything was so simple, straightforward and easy."'
-  - text: Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: TPMS Sensor Service
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: TPMS Sensor Replacement in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Tire pressure light won't go off? We test every sensor, replace the one that's dead and run the relearn so the light stays off. No shop visit. We do it where your car is parked.
+  - role: Button or link text
+    text: Text Us a Photo of Your Dash Light
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Sensors from $95
+  - role: Badge
+    text: Relearn done on the spot
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Most jobs under 45 min
+  - role: Paragraph
+    text: '"Everything was so simple, straightforward and easy."'
+  - role: Paragraph
+    text: Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Dash Light
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
     alt: Cubano technician servicing a wheel and TPMS valve on the tire machine
 - label: What does my tire pressure light mean?
   copy:
-  - text: Solid or Flashing?
-  - text: What does my tire pressure light mean?
-  - text: 'Watch the light for the first minute or two after you start the car. What it does tells you a lot. This is the rule of thumb most tire pros go by:'
-  - text: Solid light
-  - text: Usually means a tire is low on air.
-  - text: Check all four with a gauge
-  - text: Fill to the number on your door jamb sticker
-  - text: Drive a few miles and the light should go off
-  - text: Keeps coming back? You likely have a slow leak
-  - text: Flashes, then stays on
-  - text: Usually means the system has a fault.
-  - text: A sensor battery has died
-  - text: A sensor is broken or corroded
-  - text: A sensor was never set up after a tire change
-  - text: Adding air won't turn this one off
-  - text: On after a cold night
-  - text: Usually means the tires were already a little low.
-  - text: Cold air takes up less space. A common rule of thumb is about 1 psi lost for every 10°F drop. If the light goes off once the tires warm up, top them off. Your sensors are probably fine.
-  - text: Not sure which one you have? Start the car, take a short video or photo of the dash, and text it to us with your year, make and model.
+  - role: Paragraph
+    text: Solid or Flashing?
+  - role: Heading
+    text: What does my tire pressure light mean?
+  - role: Paragraph
+    text: 'Watch the light for the first minute or two after you start the car. What it does tells you a lot. This is the rule of thumb most tire pros go by:'
+  - role: Paragraph
+    text: Solid light
+  - role: Paragraph
+    text: Usually means a tire is low on air.
+  - role: List item
+    text: Check all four with a gauge
+  - role: List item
+    text: Fill to the number on your door jamb sticker
+  - role: List item
+    text: Drive a few miles and the light should go off
+  - role: List item
+    text: Keeps coming back? You likely have a slow leak
+  - role: Paragraph
+    text: Flashes, then stays on
+  - role: Paragraph
+    text: Usually means the system has a fault.
+  - role: List item
+    text: A sensor battery has died
+  - role: List item
+    text: A sensor is broken or corroded
+  - role: List item
+    text: A sensor was never set up after a tire change
+  - role: List item
+    text: Adding air won't turn this one off
+  - role: Paragraph
+    text: On after a cold night
+  - role: Paragraph
+    text: Usually means the tires were already a little low.
+  - role: Paragraph
+    text: Cold air takes up less space. A common rule of thumb is about 1 psi lost for every 10°F drop. If the light goes off once the tires warm up, top them off. Your sensors are probably fine.
+  - role: Paragraph
+    text: Not sure which one you have? Start the car, take a short video or photo of the dash, and text it to us with your year, make and model.
   links: []
   images: []
 - label: TPMS problems we fix
   copy:
-  - text: TPMS problems we fix
+  - role: Heading
+    text: TPMS problems we fix
   links: []
   images: []
   cards:
@@ -84,7 +126,8 @@ demoSections:
     text: Putting tires on wheels you bought? We transfer your sensors or fit new ones.
 - label: Light off in 3 steps
   copy:
-  - text: Light off in 3 steps
+  - role: Heading
+    text: Light off in 3 steps
   links: []
   images: []
   cards:
@@ -102,8 +145,10 @@ demoSections:
     text: Every sensor checked, the bad one swapped, pressures set, and the light off before we go.
 - label: Why people text us instead of driving to a shop
   copy:
-  - text: Real Customer Reviews
-  - text: Why people text us instead of driving to a shop
+  - role: Paragraph
+    text: Real Customer Reviews
+  - role: Heading
+    text: Why people text us instead of driving to a shop
   links: []
   images: []
   cards:
@@ -115,17 +160,23 @@ demoSections:
     author: Google review
 - label: How much does TPMS sensor replacement cost?
   copy:
-  - text: How much does TPMS sensor replacement cost?
-  - text: TPMS sensors start at $95 and up per sensor, depending on the vehicle. We complete the TPMS relearn and reset procedures on-site before leaving, so the system is properly programmed and working after installation. We quote the full job, so the price we text you is the price you pay.
-  - text: Due for new tires too? We can do the sensors in the same visit.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does TPMS sensor replacement cost?
+  - role: Paragraph
+    text: TPMS sensors start at $95 and up per sensor, depending on the vehicle. We complete the TPMS relearn and reset procedures on-site before leaving, so the system is properly programmed and working after installation. We quote the full job, so the price we text you is the price you pay.
+  - role: Paragraph
+    text: Due for new tires too? We can do the sensors in the same visit.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: TPMS Sensor FAQ
   copy:
-  - text: TPMS Sensor FAQ
+  - role: Heading
+    text: TPMS Sensor FAQ
   links: []
   images: []
   cards:
@@ -149,11 +200,15 @@ demoSections:
     answer: Yes. We replace and program sensors in your driveway, office lot or parking structure anywhere in Orange County, Monday to Friday, 8 to 5.
 - label: TPMS sensor service near you
   copy:
-  - text: TPMS sensor service near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: TPMS sensor service near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -195,14 +250,20 @@ demoSections:
     label: Tesla & EV Tires
 - label: Tire pressure light on? Text us a photo.
   copy:
-  - text: Tire pressure light on? Text us a photo.
-  - text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Dash
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Tire pressure light on? Text us a photo.
+  - role: Paragraph
+    text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Dash
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Dash
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: tpms-sensor-service

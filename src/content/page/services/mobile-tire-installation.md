@@ -5,82 +5,141 @@ description: Mobile Tire Installation in Orange County
 demoSections:
 - label: Mobile Tire Installation in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Mobile Tire Installation
-  - text: 5.0 from 340+ Google reviews
-  - text: Mobile Tire Installation in
-  - text: Orange County
-  - text: New tires, delivered and installed in your driveway or office lot. We bring the tires, mount and balance them on the truck, and you never sit in a waiting room.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone, or
-  - text: shop tires by size
-  - text: .
-  - text: Install from $35/tire
-  - text: Free mobile service with 4 tires
-  - text: Price quoted = price paid
-  - text: Tire Rack Top Rated Installer
-  - text: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires."'
-  - text: Jesse M. V. · Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Mobile Tire Installation
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Mobile Tire Installation in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: New tires, delivered and installed in your driveway or office lot. We bring the tires, mount and balance them on the truck, and you never sit in a waiting room.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text a photo of your tire's sidewall to (888) 333-3173 from your phone, or
+  - role: Button or link text
+    text: shop tires by size
+  - role: Paragraph
+    text: .
+  - role: Badge
+    text: Install from $35/tire
+  - role: Badge
+    text: Free mobile service with 4 tires
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Tire Rack Top Rated Installer
+  - role: Paragraph
+    text: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires."'
+  - role: Paragraph
+    text: Jesse M. V. · Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: /
+  - role: Link
+    url: /
     label: shop tires by size
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
     alt: Cubano technician installing a tire on a Tesla in a customer's driveway
 - label: Pick your tires two ways. We install them where you park.
   copy:
-  - text: How Ordering Works
-  - text: Pick your tires two ways. We install them where you park.
-  - text: You don't need to know much about tires. If you know your size, shop. If you don't, send us a photo and we'll do the rest.
-  - text: Shop tires online
-  - text: Search by your tire size or your vehicle, compare brands, and pick a set. We'll confirm the price and your install time by text.
-  - text: Search Tires by Size
-  - text: Text us a photo
-  - text: Snap the side of your tire where the size is printed (it looks like 245/45R19). Joel reads it, gives you a few options, and quotes the full job.
-  - text: Text a Photo of Your Tire
-  - text: Every install includes
-  - text: Delivery to your home, office or job site
-  - text: Mounting and balancing on our truck
-  - text: Pressure set to your vehicle's spec
-  - text: TPMS sensor check
-  - text: Old tire removal and disposal (disposal fee applies)
-  - text: Brands we carry
-  - text: Michelin
-  - text: Goodyear
-  - text: Bridgestone
-  - text: Pirelli
-  - text: Continental
-  - text: Toyo
-  - text: Nitto
-  - text: BFGoodrich
-  - text: General
-  - text: Firestone
-  - text: Kumho
-  - text: Hankook
-  - text: Cooper
-  - text: Falken
-  - text: Want extra peace of mind? Add an optional nationwide warranty for $15 per tire.
+  - role: Paragraph
+    text: How Ordering Works
+  - role: Heading
+    text: Pick your tires two ways. We install them where you park.
+  - role: Paragraph
+    text: You don't need to know much about tires. If you know your size, shop. If you don't, send us a photo and we'll do the rest.
+  - role: Paragraph
+    text: Shop tires online
+  - role: Paragraph
+    text: Search by your tire size or your vehicle, compare brands, and pick a set. We'll confirm the price and your install time by text.
+  - role: Button or link text
+    text: Search Tires by Size
+  - role: Paragraph
+    text: Text us a photo
+  - role: Paragraph
+    text: Snap the side of your tire where the size is printed (it looks like 245/45R19). Joel reads it, gives you a few options, and quotes the full job.
+  - role: Button or link text
+    text: Text a Photo of Your Tire
+  - role: Paragraph
+    text: Every install includes
+  - role: List item
+    text: Delivery to your home, office or job site
+  - role: List item
+    text: Mounting and balancing on our truck
+  - role: List item
+    text: Pressure set to your vehicle's spec
+  - role: List item
+    text: TPMS sensor check
+  - role: List item
+    text: Old tire removal and disposal (disposal fee applies)
+  - role: Paragraph
+    text: Brands we carry
+  - role: Badge
+    text: Michelin
+  - role: Badge
+    text: Goodyear
+  - role: Badge
+    text: Bridgestone
+  - role: Badge
+    text: Pirelli
+  - role: Badge
+    text: Continental
+  - role: Badge
+    text: Toyo
+  - role: Badge
+    text: Nitto
+  - role: Badge
+    text: BFGoodrich
+  - role: Badge
+    text: General
+  - role: Badge
+    text: Firestone
+  - role: Badge
+    text: Kumho
+  - role: Badge
+    text: Hankook
+  - role: Badge
+    text: Cooper
+  - role: Badge
+    text: Falken
+  - role: Paragraph
+    text: Want extra peace of mind? Add an optional nationwide warranty for $15 per tire.
   links:
-  - url: /
+  - role: Button
+    url: /
     label: Search Tires by Size
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo of Your Tire
   images: []
 - label: What we install on-site
   copy:
-  - text: What we install on-site
+  - role: Heading
+    text: What we install on-site
   links: []
   images: []
   cards:
@@ -104,7 +163,8 @@ demoSections:
     text: Have wheels of your own? We mount new tires on them and install them. We supply tires only and don't sell or repair wheels.
 - label: New tires in 3 steps
   copy:
-  - text: New tires in 3 steps
+  - role: Heading
+    text: New tires in 3 steps
   links: []
   images: []
   cards:
@@ -122,8 +182,10 @@ demoSections:
     text: Mounted, balanced and set to the right pressure. Most jobs take under 45 minutes.
 - label: No shop visit. No waiting room.
   copy:
-  - text: Real Install Jobs
-  - text: No shop visit. No waiting room.
+  - role: Paragraph
+    text: Real Install Jobs
+  - role: Heading
+    text: No shop visit. No waiting room.
   links: []
   images: []
   cards:
@@ -135,16 +197,21 @@ demoSections:
     author: Google review
 - label: How much does mobile tire installation cost?
   copy:
-  - text: How much does mobile tire installation cost?
-  - text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does mobile tire installation cost?
+  - role: Paragraph
+    text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: Mobile Tire Installation FAQ
   copy:
-  - text: Mobile Tire Installation FAQ
+  - role: Heading
+    text: Mobile Tire Installation FAQ
   links: []
   images: []
   cards:
@@ -168,11 +235,15 @@ demoSections:
     answer: '[Confirm with Joel: do you install customer-supplied tires, and at what price?] Text us what you have and we''ll let you know.'
 - label: Mobile tire installation near you
   copy:
-  - text: Mobile tire installation near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Mobile tire installation near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -214,14 +285,20 @@ demoSections:
     label: Fleet & Commercial Tires
 - label: Need new tires? Skip the shop.
   copy:
-  - text: Need new tires? Skip the shop.
-  - text: Text us a photo of your tire and we'll send options, one price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Need new tires? Skip the shop.
+  - role: Paragraph
+    text: Text us a photo of your tire and we'll send options, one price and an install time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: mobile-tire-installation

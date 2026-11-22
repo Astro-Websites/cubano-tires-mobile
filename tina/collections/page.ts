@@ -38,13 +38,16 @@ export const PageCollection: Collection = {
       ui: { itemProps: (item) => ({ label: item?.label }) },
       fields: [
         { type: 'string', name: 'label', label: 'Section Label' },
-        { type: 'object', name: 'copy', label: 'Text', list: true, ui: { itemProps: (item) => ({ label: item?.text?.slice(0, 75) }) }, fields: [
+        { type: 'object', name: 'copy', label: 'Text', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.text?.slice(0, 70)].filter(Boolean).join(': ') }) }, fields: [
+          { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
           { type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } },
         ] },
-        { type: 'object', name: 'links', label: 'Links', list: true, ui: { itemProps: (item) => ({ label: item?.label }) }, fields: [
-          { type: 'string', name: 'label', label: 'Editor Label' }, { type: 'string', name: 'url', label: 'Link Destination' },
+        { type: 'object', name: 'links', label: 'Link destinations', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.label].filter(Boolean).join(': ') }) }, fields: [
+          { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
+          { type: 'string', name: 'label', label: 'Editor Label', description: 'Only for finding the link here. Change the visible text in the Text list.' }, { type: 'string', name: 'url', label: 'Link Destination' },
         ] },
-        { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: item?.alt }) }, fields: [
+        { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.alt].filter(Boolean).join(': ') }) }, fields: [
+          { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
           { type: 'image', name: 'source', label: 'Image' }, { type: 'string', name: 'alt', label: 'Alternative Text' },
         ] },
         { type: 'object', name: 'cards', label: 'Repeating items (add, remove, reorder)', list: true, templates: cardTemplates,

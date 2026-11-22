@@ -5,42 +5,67 @@ description: Mobile tire and fleet service in Orange County and Los Angeles.
 demoSections:
 - label: Hero
   copy:
-  - text: 5.0 from 336 Google reviews · 230+ on Yelp
-  - text: WE COME
-  - text: TO YOU!
-  - text: Mobile Tire & Fleet Service in Orange County & LA
-  - text: Skip the tire shop. Our fully stocked service trucks come to your driveway, job site or fleet yard and handle installs, repairs and replacements on the spot, for cars, EVs and heavy commercial equipment.
-  - text: Call (888) 333-3173
-  - text: Text Us Your Tire Size
-  - text: '@cubanotiresmobileshop'
-  - text: Real jobs. Posted daily.
-  - text: 565+ videos on TikTok, IG & YouTube
-  - text: Watch Us Work
-  - text: $75 MOBILE FEE WAIVED
-  - text: with 4 new tires · Orange County only
-  - text: Can't find your tire?
-  - text: Text or call (888) 333-3173
+  - role: Badge
+    text: 5.0 from 336 Google reviews · 230+ on Yelp
+  - role: Eyebrow
+    text: WE COME
+  - role: Eyebrow
+    text: TO YOU!
+  - role: Main heading
+    text: Mobile Tire & Fleet Service in Orange County & LA
+  - role: Paragraph
+    text: Skip the tire shop. Our fully stocked service trucks come to your driveway, job site or fleet yard and handle installs, repairs and replacements on the spot, for cars, EVs and heavy commercial equipment.
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Button or link text
+    text: Text Us Your Tire Size
+  - role: Text
+    text: '@cubanotiresmobileshop'
+  - role: Paragraph
+    text: Real jobs. Posted daily.
+  - role: Paragraph
+    text: 565+ videos on TikTok, IG & YouTube
+  - role: Button or link text
+    text: Watch Us Work
+  - role: Bold text
+    text: $75 MOBILE FEE WAIVED
+  - role: Text
+    text: with 4 new tires · Orange County only
+  - role: Paragraph
+    text: Can't find your tire?
+  - role: Button or link text
+    text: Text or call (888) 333-3173
   links:
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us Your Tire Size
-  - url: '#work'
+  - role: Button
+    url: '#work'
     label: Watch Us Work
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text or call (888) 333-3173
   images:
-  - source: /uploads/home/google.png
+  - role: Image
+    source: /uploads/home/google.png
     alt: Google
-  - source: /uploads/home/cubano-tires-branded-service-truck.jpg
+  - role: Image
+    source: /uploads/home/cubano-tires-branded-service-truck.jpg
     alt: Cubano Tires branded service truck
-  - source: /uploads/home/blowout-tire-being-removed-at-the-roadside.jpg
+  - role: Image
+    source: /uploads/home/blowout-tire-being-removed-at-the-roadside.jpg
     alt: Blowout tire being removed at the roadside
-  - source: /uploads/home/technician-installing-tires-on-a-bmw-m8.jpg
+  - role: Image
+    source: /uploads/home/technician-installing-tires-on-a-bmw-m8.jpg
     alt: Technician installing tires on a BMW M8
-  - source: /uploads/home/technician-servicing-a-semi-truck.jpg
+  - role: Image
+    source: /uploads/home/technician-servicing-a-semi-truck.jpg
     alt: Technician servicing a semi truck
-  - source: /uploads/home/hero.png
+  - role: Image
+    source: /uploads/home/hero.png
     alt: ''
   cards:
   - _template: feature
@@ -54,40 +79,61 @@ demoSections:
     text: Michelin, Goodyear, Pirelli, Bridgestone, Toyo and more, with an optional nationwide warranty for $15 per tire.
 - label: Trust row
   copy:
-  - text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
-  - text: Tess S. · Google review
-  - text: 5.0 · 336 reviews
-  - text: 230 reviews
-  - text: Top Rated Installer
-  - text: Authorized Shop
+  - role: Paragraph
+    text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
+  - role: Paragraph
+    text: Tess S. · Google review
+  - role: Text
+    text: 5.0 · 336 reviews
+  - role: Text
+    text: 230 reviews
+  - role: Text
+    text: Top Rated Installer
+  - role: Text
+    text: Authorized Shop
   links: []
   images:
-  - source: /uploads/home/google.png
+  - role: Logo
+    source: /uploads/home/google.png
     alt: Google
-  - source: /uploads/home/google.png
+  - role: Logo
+    source: /uploads/home/google.png
     alt: Google
-  - source: /uploads/home/yelp.png
+  - role: Image
+    source: /uploads/home/yelp.png
     alt: Yelp
-  - source: /uploads/home/tire-rack.png
+  - role: Logo
+    source: /uploads/home/tire-rack.png
     alt: Tire Rack
-  - source: /uploads/home/goodyear.png
+  - role: Image
+    source: /uploads/home/goodyear.png
     alt: Goodyear
 - label: How it works
   copy:
-  - text: How It Works
-  - text: Your Tires. Your Location. Our Service.
-  - text: Skip the tire shop. We bring professional tire service directly to you in 3 simple steps.
-  - text: Why Drive to a Tire Shop When We Can Come to You?
-  - text: Convenient. Professional. 100% Mobile.
-  - text: Get My Free Quote
-  - text: or text (888) 333-3173
+  - role: Paragraph
+    text: How It Works
+  - role: Heading
+    text: Your Tires. Your Location. Our Service.
+  - role: Paragraph
+    text: Skip the tire shop. We bring professional tire service directly to you in 3 simple steps.
+  - role: Subheading
+    text: Why Drive to a Tire Shop When We Can Come to You?
+  - role: Eyebrow
+    text: Convenient. Professional. 100% Mobile.
+  - role: Button or link text
+    text: Get My Free Quote
+  - role: Button or link text
+    text: or text (888) 333-3173
   links:
-  - url: '#'
+  - role: Button
+    url: '#'
     label: Get My Free Quote
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: or text (888) 333-3173
   images:
-  - source: /uploads/home/how-it-works-background.jpg
+  - role: Background image
+    source: /uploads/home/how-it-works-background.jpg
     alt: How it works background
   cards:
   - _template: step
@@ -104,8 +150,10 @@ demoSections:
     text: From professional tire installation to balancing and final safety checks, we handle everything on-site while you carry on with your day. No waiting rooms. No wasted trips.
 - label: Services
   copy:
-  - text: What We Offer
-  - text: Mobile Tire Services
+  - role: Paragraph
+    text: What We Offer
+  - role: Heading
+    text: Mobile Tire Services
   links: []
   images: []
   cards:
@@ -165,37 +213,56 @@ demoSections:
     callLabel: Text or Call
 - label: Coupon CTA
   copy:
-  - text: Save up to
-  - text: $100
-  - text: on new tires
-  - text: Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service with 4 tires in Orange County.
-  - text: View Coupons & Rebates
+  - role: Bold text
+    text: Save up to
+  - role: Bold text
+    text: $100
+  - role: Bold text
+    text: on new tires
+  - role: Button or link text
+    text: Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service with 4 tires in Orange County.
+  - role: Badge
+    text: View Coupons & Rebates
   links:
-  - url: /coupons/
+  - role: Link
+    url: /coupons/
     label: Save up to $100 on new tires Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service with 4 tires in Orange County. View Coupons & Rebates
   images: []
 - label: Truck band
   copy:
-  - text: FLAT TIRE RIGHT NOW?
-  - text: We bring the
-  - text: tire shop
-  - text: to you.
-  - text: Driveway, office lot, roadside or job site. Our stocked trucks roll up with the tire, the machine and the tech.
-  - text: Call (888) 333-3173
-  - text: Text Us
+  - role: Eyebrow
+    text: FLAT TIRE RIGHT NOW?
+  - role: Paragraph
+    text: We bring the
+  - role: Paragraph
+    text: tire shop
+  - role: Paragraph
+    text: to you.
+  - role: Paragraph
+    text: Driveway, office lot, roadside or job site. Our stocked trucks roll up with the tire, the machine and the tech.
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Button or link text
+    text: Text Us
   links:
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us
   images:
-  - source: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
+  - role: Image
+    source: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
     alt: Cubano Tires technician at the branded service truck
 - label: Not your average
   copy:
-  - text: NOT YOUR AVERAGE
-  - text: TIRE SHOP.
-  - text: From BMW M8s and Teslas to big rigs hauling excavators, if it rolls, we've put tires on it.
+  - role: Paragraph
+    text: NOT YOUR AVERAGE
+  - role: Paragraph
+    text: TIRE SHOP.
+  - role: Paragraph
+    text: From BMW M8s and Teslas to big rigs hauling excavators, if it rolls, we've put tires on it.
   links: []
   images: []
   cards:
@@ -216,18 +283,27 @@ demoSections:
     caption: Big rig · 2 blowouts
 - label: 'Our work: social feed'
   copy:
-  - text: Our Work
-  - text: 'Watch Us Work: 565+ Jobs on Video'
-  - text: Real jobs, real customers, posted every day. This feed updates automatically from our TikTok, Instagram and YouTube.
-  - text: Follow on TikTok
-  - text: Instagram
-  - text: YouTube
+  - role: Paragraph
+    text: Our Work
+  - role: Heading
+    text: 'Watch Us Work: 565+ Jobs on Video'
+  - role: Paragraph
+    text: Real jobs, real customers, posted every day. This feed updates automatically from our TikTok, Instagram and YouTube.
+  - role: Button or link text
+    text: Follow on TikTok
+  - role: Button or link text
+    text: Instagram
+  - role: Button or link text
+    text: YouTube
   links:
-  - url: https://www.tiktok.com/@cubanotiresmobileshop
+  - role: Button
+    url: https://www.tiktok.com/@cubanotiresmobileshop
     label: Follow on TikTok
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Button
+    url: https://www.instagram.com/cubanotiresmobile/
     label: Instagram
-  - url: https://www.youtube.com/@CubanoTiresMobileShop
+  - role: Button
+    url: https://www.youtube.com/@CubanoTiresMobileShop
     label: YouTube
   images: []
   cards:
@@ -257,9 +333,12 @@ demoSections:
     caption: 4 new Pirellis for a Land Rover
 - label: Crew
   copy:
-  - text: Meet the Crew
-  - text: The People Behind Cubano Tires
-  - text: Real people, not a call center. These are the folks who answer your call and show up in your driveway.
+  - role: Paragraph
+    text: Meet the Crew
+  - role: Heading
+    text: The People Behind Cubano Tires
+  - role: Paragraph
+    text: Real people, not a call center. These are the folks who answer your call and show up in your driveway.
   links: []
   images: []
   cards:
@@ -295,8 +374,10 @@ demoSections:
     role: Social Media Manager
 - label: Reviews
   copy:
-  - text: Testimonials
-  - text: What Our Customers Are Saying
+  - role: Paragraph
+    text: Testimonials
+  - role: Heading
+    text: What Our Customers Are Saying
   links: []
   images: []
   cards:
@@ -332,37 +413,53 @@ demoSections:
     label: Fully stocked service trucks
 - label: Instagram feed
   copy:
-  - text: '@cubanotiresmobile'
-  - text: Fresh From Our Instagram
-  - text: Our latest jobs, Reels and updates, straight from the road.
-  - text: Follow on Instagram
+  - role: Paragraph
+    text: '@cubanotiresmobile'
+  - role: Heading
+    text: Fresh From Our Instagram
+  - role: Paragraph
+    text: Our latest jobs, Reels and updates, straight from the road.
+  - role: Button or link text
+    text: Follow on Instagram
   links:
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Button
+    url: https://www.instagram.com/cubanotiresmobile/
     label: Follow on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
-  - url: https://www.instagram.com/cubanotiresmobile/
+  - role: Link
+    url: https://www.instagram.com/cubanotiresmobile/
     label: View on Instagram
   images: []
 - label: Brands
   copy:
-  - text: Brands we carry
+  - role: Eyebrow
+    text: Brands we carry
   links: []
   images: []
   cards:
@@ -424,8 +521,10 @@ demoSections:
     image: /uploads/home/firestone.png
 - label: FAQ
   copy:
-  - text: FAQ
-  - text: Frequently Asked Questions
+  - role: Paragraph
+    text: FAQ
+  - role: Heading
+    text: Frequently Asked Questions
   links: []
   images: []
   cards:
@@ -446,12 +545,17 @@ demoSections:
     answer: A nationwide warranty is available as an add-on for $15 per tire. It isn’t included automatically, so just ask for it when you book.
 - label: Locations
   copy:
-  - text: Areas Served
-  - text: Locations We Serve
-  - text: Mobile tire and fleet service across Orange County and Los Angeles.
-  - text: Los Angeles
+  - role: Paragraph
+    text: Areas Served
+  - role: Heading
+    text: Locations We Serve
+  - role: Paragraph
+    text: Mobile tire and fleet service across Orange County and Los Angeles.
+  - role: Button or link text
+    text: Los Angeles
   links:
-  - url: '#los-angeles'
+  - role: Button
+    url: '#los-angeles'
     label: Los Angeles
   images: []
   cards:
@@ -496,37 +600,55 @@ demoSections:
     label: Chino Hills
 - label: Request a quote
   copy:
-  - text: Start Today
-  - text: Need New Tires?
-  - text: Get a Free Quote!
-  - text: Send us your tire size or snap a picture of your tire, whichever is easier for you. We'll text you a free quote and a time, then come right to you.
-  - text: 3911 E La Palma Ave, Suite J, Anaheim, CA 92807
-  - text: (888) 333-3173
-  - text: Text Us a Photo of Your Tire
+  - role: Paragraph
+    text: Start Today
+  - role: Heading
+    text: Need New Tires?
+  - role: Heading
+    text: Get a Free Quote!
+  - role: Paragraph
+    text: Send us your tire size or snap a picture of your tire, whichever is easier for you. We'll text you a free quote and a time, then come right to you.
+  - role: Paragraph
+    text: 3911 E La Palma Ave, Suite J, Anaheim, CA 92807
+  - role: Button or link text
+    text: (888) 333-3173
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
   links:
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: (888) 333-3173
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
   images: []
 - label: Fleet logos
   copy:
-  - text: Also trusted by commercial fleets like
-  - text: PPC PLUMBING
-  - text: CABLECOM
+  - role: Eyebrow
+    text: Also trusted by commercial fleets like
+  - role: Text
+    text: PPC PLUMBING
+  - role: Text
+    text: CABLECOM
   links: []
   images:
-  - source: /uploads/home/herc-rentals.png
+  - role: Image
+    source: /uploads/home/herc-rentals.png
     alt: Herc Rentals
-  - source: /uploads/home/sunbelt-rentals.png
+  - role: Image
+    source: /uploads/home/sunbelt-rentals.png
     alt: Sunbelt Rentals
-  - source: /uploads/home/u-haul.png
+  - role: Image
+    source: /uploads/home/u-haul.png
     alt: U-Haul
-  - source: /uploads/home/city-of-orange.png
+  - role: Image
+    source: /uploads/home/city-of-orange.png
     alt: City of Orange
-  - source: /uploads/home/adt.png
+  - role: Image
+    source: /uploads/home/adt.png
     alt: ADT
-  - source: /uploads/home/all-access-rentals.jpg
+  - role: Image
+    source: /uploads/home/all-access-rentals.jpg
     alt: All Access Rentals
 demoTemplate: homepage
 ---

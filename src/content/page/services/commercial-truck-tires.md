@@ -5,71 +5,117 @@ description: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
 demoSections:
 - label: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
-  - text: 5.0 from 340+ Google reviews
-  - text: 'Commercial Truck Tires:'
-  - text: 17.5", 19.5" & 22.5"
-  - text: Box trucks, Sprinter and work vans, semis and trailers. We bring new and replacement commercial tires to your yard or the roadside and swap them where the truck is parked. Text a photo of the sidewall and we'll quote by size.
-  - text: Text a Photo of the Tire Size
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: 'Set up a fleet account: call (888) 333-3173'
-  - text: Quote by size
-  - text: 17.5" · 19.5" · 22.5"
-  - text: Price quoted = price paid
-  - text: We text when we're on the way
-  - text: '"Ramiro arrived right on time, just as promised."'
-  - text: Tess S. · Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: 'Commercial Truck Tires: 17.5", 19.5" & 22.5"'
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: 'Commercial Truck Tires:'
+  - role: Main heading
+    text: 17.5", 19.5" & 22.5"
+  - role: Paragraph
+    text: Box trucks, Sprinter and work vans, semis and trailers. We bring new and replacement commercial tires to your yard or the roadside and swap them where the truck is parked. Text a photo of the sidewall and we'll quote by size.
+  - role: Button or link text
+    text: Text a Photo of the Tire Size
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Badge
+    text: Quote by size
+  - role: Badge
+    text: 17.5" · 19.5" · 22.5"
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"Ramiro arrived right on time, just as promised."'
+  - role: Paragraph
+    text: Tess S. · Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo of the Tire Size
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
     alt: Cubano technician replacing a 22.5 inch tire beside a green semi truck
 - label: Section 2
   copy:
-  - text: Commercial accounts include
-  - text: Herc Rentals
-  - text: Sunbelt Rentals
-  - text: U-Haul
-  - text: City of Orange
+  - role: Eyebrow
+    text: Commercial accounts include
+  - role: Bold text
+    text: Herc Rentals
+  - role: Bold text
+    text: Sunbelt Rentals
+  - role: Bold text
+    text: U-Haul
+  - role: Bold text
+    text: City of Orange
   links: []
   images: []
 - label: Which size does your truck run?
   copy:
-  - text: Size Guide
-  - text: Which size does your truck run?
-  - text: 'Look at the sidewall. The number after the R is the rim size, so 225/70R19.5 is a 19.5" tire. Text us a photo of it and we''ll match the size, load range and tread. Here''s where each size usually shows up:'
-  - text: 17.5"
-  - text: Lighter commercial trucks
-  - text: Common on medium-duty box trucks, cutaway vans and many equipment and low-deck trailers.
-  - text: Often seen as 215/75R17.5 or 235/75R17.5
-  - text: 19.5"
-  - text: Medium-duty trucks
-  - text: Common on larger box trucks, stake beds, utility bodies and some motorhomes.
-  - text: Often seen as 225/70R19.5 or 245/70R19.5
-  - text: 22.5"
-  - text: Semis and heavy trucks
-  - text: The usual size on semi tractors, most semi trailers, dump trucks and buses.
-  - text: Often seen as 11R22.5 or 295/75R22.5
-  - text: 'Sprinter and work vans usually run LT tires in a 16" size or close to it. We handle those too. [Confirm with Joel: which commercial sizes ride on the truck vs. need to be ordered]'
+  - role: Paragraph
+    text: Size Guide
+  - role: Heading
+    text: Which size does your truck run?
+  - role: Paragraph
+    text: 'Look at the sidewall. The number after the R is the rim size, so 225/70R19.5 is a 19.5" tire. Text us a photo of it and we''ll match the size, load range and tread. Here''s where each size usually shows up:'
+  - role: Paragraph
+    text: 17.5"
+  - role: Paragraph
+    text: Lighter commercial trucks
+  - role: Paragraph
+    text: Common on medium-duty box trucks, cutaway vans and many equipment and low-deck trailers.
+  - role: Paragraph
+    text: Often seen as 215/75R17.5 or 235/75R17.5
+  - role: Paragraph
+    text: 19.5"
+  - role: Paragraph
+    text: Medium-duty trucks
+  - role: Paragraph
+    text: Common on larger box trucks, stake beds, utility bodies and some motorhomes.
+  - role: Paragraph
+    text: Often seen as 225/70R19.5 or 245/70R19.5
+  - role: Paragraph
+    text: 22.5"
+  - role: Paragraph
+    text: Semis and heavy trucks
+  - role: Paragraph
+    text: The usual size on semi tractors, most semi trailers, dump trucks and buses.
+  - role: Paragraph
+    text: Often seen as 11R22.5 or 295/75R22.5
+  - role: Paragraph
+    text: 'Sprinter and work vans usually run LT tires in a 16" size or close to it. We handle those too. [Confirm with Joel: which commercial sizes ride on the truck vs. need to be ordered]'
   links: []
   images: []
 - label: Commercial tire work we do
   copy:
-  - text: Commercial tire work we do
+  - role: Heading
+    text: Commercial tire work we do
   links: []
   images: []
   cards:
@@ -93,8 +139,10 @@ demoSections:
     text: 'Matched to your size and load range. [Confirm with Joel: commercial brands carried, and whether you patch commercial tires or replace only]'
 - label: Big-truck work, on site
   copy:
-  - text: From Recent Jobs
-  - text: Big-truck work, on site
+  - role: Paragraph
+    text: From Recent Jobs
+  - role: Heading
+    text: Big-truck work, on site
   links: []
   images: []
   cards:
@@ -112,7 +160,8 @@ demoSections:
     caption: Roadside service on a big rig hauling an excavator
 - label: Truck tire down? 3 steps.
   copy:
-  - text: Truck tire down? 3 steps.
+  - role: Heading
+    text: Truck tire down? 3 steps.
   links: []
   images: []
   cards:
@@ -130,9 +179,12 @@ demoSections:
     text: Yard, lot or roadside. Mounted, aired up and ready to roll. We text when we're on the way.
 - label: What customers say
   copy:
-  - text: Trucks, Trailers & Big Jobs
-  - text: What customers say
-  - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
+  - role: Paragraph
+    text: Trucks, Trailers & Big Jobs
+  - role: Heading
+    text: What customers say
+  - role: Paragraph
+    text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
   links: []
   images: []
   cards:
@@ -144,16 +196,21 @@ demoSections:
     author: Google review
 - label: How much do commercial truck tires cost?
   copy:
-  - text: How much do commercial truck tires cost?
-  - text: It depends on the tire size, load range and brand. A 17.5" box truck tire and a 22.5" drive tire are priced very differently, so we quote every job by size instead of listing a starting price. Text a photo of the sidewall and your quote will include the tire, mounting and the service call. The price we quote is the price you pay.
-  - text: Text the Size for a Quote
+  - role: Heading
+    text: How much do commercial truck tires cost?
+  - role: Paragraph
+    text: It depends on the tire size, load range and brand. A 17.5" box truck tire and a 22.5" drive tire are priced very differently, so we quote every job by size instead of listing a starting price. Text a photo of the sidewall and your quote will include the tire, mounting and the service call. The price we quote is the price you pay.
+  - role: Button or link text
+    text: Text the Size for a Quote
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text the Size for a Quote
   images: []
 - label: Commercial Truck Tire FAQ
   copy:
-  - text: Commercial Truck Tire FAQ
+  - role: Heading
+    text: Commercial Truck Tire FAQ
   links: []
   images: []
   cards:
@@ -177,12 +234,17 @@ demoSections:
     answer: Fleet accounts are covered in Los Angeles, Long Beach and Commerce as well as all of Orange County.
 - label: Commercial truck tires near you
   copy:
-  - text: Commercial truck tires near you
-  - text: All areas
-  - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
-  - text: Related services
+  - role: Heading
+    text: Commercial truck tires near you
+  - role: Button or link text
+    text: All areas
+  - role: Paragraph
+    text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -224,17 +286,25 @@ demoSections:
     label: Mobile Tire Installation
 - label: Truck down? Text us the tire size.
   copy:
-  - text: Truck down? Text us the tire size.
-  - text: Send a photo of the sidewall and where the truck is. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - text: Text a Photo of the Tire Size
-  - text: Call (888) 333-3173
-  - text: 'Set up a fleet account: call (888) 333-3173'
+  - role: Heading
+    text: Truck down? Text us the tire size.
+  - role: Paragraph
+    text: Send a photo of the sidewall and where the truck is. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
+  - role: Button or link text
+    text: Text a Photo of the Tire Size
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Button or link text
+    text: 'Set up a fleet account: call (888) 333-3173'
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text a Photo of the Tire Size
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: 'Set up a fleet account: call (888) 333-3173'
   images: []
 demoTemplate: commercial-truck-tires

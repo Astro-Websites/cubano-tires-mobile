@@ -5,55 +5,88 @@ description: Mobile Tire Service in Irvine, CA
 demoSections:
 - label: Mobile Tire Service in Irvine, CA
   copy:
-  - text: Home
-  - text: Areas Served
-  - text: Irvine
-  - text: 5.0 from 340+ Google reviews
-  - text: NO SHOP VISIT NEEDED
-  - text: Mobile Tire Service in
-  - text: Irvine, CA
-  - text: From Woodbridge to the Spectrum, we bring new tires, flat repairs and EV tire service to your driveway, apartment garage or office lot in Irvine. Keep working while we handle the tires.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: Price quoted = price paid
-  - text: Most jobs under 45 min
-  - text: Free mobile service with 4 tires
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Areas Served
+  - role: Breadcrumb
+    text: Irvine
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Eyebrow
+    text: NO SHOP VISIT NEEDED
+  - role: Main heading
+    text: Mobile Tire Service in
+  - role: Main heading
+    text: Irvine, CA
+  - role: Paragraph
+    text: From Woodbridge to the Spectrum, we bring new tires, flat repairs and EV tire service to your driveway, apartment garage or office lot in Irvine. Keep working while we handle the tires.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: Most jobs under 45 min
+  - role: Badge
+    text: Free mobile service with 4 tires
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#areas'
+  - role: Link
+    url: '#areas'
     label: Areas Served
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
     alt: Technician installing a new tire on a Tesla in a driveway
 - label: Tire service at your Irvine home or office
   copy:
-  - text: The Shop Comes to You
-  - text: Tire service at your Irvine home or office
-  - text: You don't need a tire shop in Irvine. You need one that shows up. Text us a photo of your tire and Joel quotes the job and gives you an arrival time. Then our truck rolls down from Anaheim with your tires, the machine and a tech, and the job gets done right where you parked.
-  - text: 'That means no dropping the car off, no Uber back to the office and no losing an afternoon in a waiting room. As one repeat customer put it: "I was able to continue working while the work was done."'
-  - text: Serving Irvine from Anaheim
-  - text: 3911 E La Palma Ave, Suite J
-  - text: Anaheim, CA 92807
-  - text: (888) 333-3173
-  - text: Mon–Fri 8:00 AM – 5:00 PM
-  - text: Texts answered next business morning after hours
-  - text: View on Google Maps
+  - role: Paragraph
+    text: The Shop Comes to You
+  - role: Heading
+    text: Tire service at your Irvine home or office
+  - role: Paragraph
+    text: You don't need a tire shop in Irvine. You need one that shows up. Text us a photo of your tire and Joel quotes the job and gives you an arrival time. Then our truck rolls down from Anaheim with your tires, the machine and a tech, and the job gets done right where you parked.
+  - role: Paragraph
+    text: 'That means no dropping the car off, no Uber back to the office and no losing an afternoon in a waiting room. As one repeat customer put it: "I was able to continue working while the work was done."'
+  - role: Paragraph
+    text: Serving Irvine from Anaheim
+  - role: Paragraph
+    text: 3911 E La Palma Ave, Suite J
+  - role: Paragraph
+    text: Anaheim, CA 92807
+  - role: Button or link text
+    text: (888) 333-3173
+  - role: Paragraph
+    text: Mon–Fri 8:00 AM – 5:00 PM
+  - role: Paragraph
+    text: Texts answered next business morning after hours
+  - role: Button or link text
+    text: View on Google Maps
   links:
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: (888) 333-3173
-  - url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
+  - role: Button
+    url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
     label: View on Google Maps
   images: []
 - label: Where we work in Irvine
   copy:
-  - text: Where we work in Irvine
+  - role: Heading
+    text: Where we work in Irvine
   links: []
   images: []
   cards:
@@ -71,14 +104,19 @@ demoSections:
     text: Newer neighborhoods, garages and apartment parking structures.
 - label: Tire services in Irvine
   copy:
-  - text: Tire services in Irvine
-  - text: Irvine Fleet & Company Vehicles
-  - text: Box trucks, trailers and 22.5" tires on-site
+  - role: Heading
+    text: Tire services in Irvine
+  - role: Bold text
+    text: Irvine Fleet & Company Vehicles
+  - role: Button or link text
+    text: Box trucks, trailers and 22.5" tires on-site
   links:
-  - url: /services/fleet-tire-service/
+  - role: Link
+    url: /services/fleet-tire-service/
     label: Irvine Fleet & Company Vehicles Box trucks, trailers and 22.5" tires on-site
   images:
-  - source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
     alt: Semi truck tire service
   cards:
   - _template: linkCard
@@ -113,7 +151,8 @@ demoSections:
     text: Sensors, rotations and balancing at your place
 - label: Why Irvine drivers text Cubano
   copy:
-  - text: Why Irvine drivers text Cubano
+  - role: Heading
+    text: Why Irvine drivers text Cubano
   links: []
   images: []
   cards:
@@ -128,7 +167,8 @@ demoSections:
     author: Tess S. · Google review
 - label: Irvine Tire Service FAQ
   copy:
-  - text: Irvine Tire Service FAQ
+  - role: Heading
+    text: Irvine Tire Service FAQ
   links: []
   images: []
   cards:
@@ -146,10 +186,13 @@ demoSections:
     answer: Yes. We repair or replace EV tires on Teslas, Rivians and other EVs where they're parked, including Cybertruck sizes.
 - label: We also come to cities near Irvine
   copy:
-  - text: We also come to cities near Irvine
-  - text: All areas
+  - role: Heading
+    text: We also come to cities near Irvine
+  - role: Button or link text
+    text: All areas
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -176,14 +219,20 @@ demoSections:
     label: Laguna Hills
 - label: Need tires in Irvine? Text us a photo.
   copy:
-  - text: Need tires in Irvine? Text us a photo.
-  - text: We'll text back a price and an arrival time. On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Need tires in Irvine? Text us a photo.
+  - role: Paragraph
+    text: We'll text back a price and an arrival time. On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: city-irvine

@@ -5,58 +5,96 @@ description: Roadside Tire Service in Orange County
 demoSections:
 - label: Roadside Tire Service in Orange County
   copy:
-  - text: Home
-  - text: Tire Services
-  - text: Roadside Tire Service
-  - text: 5.0 from 340+ Google reviews
-  - text: Roadside Tire Service in
-  - text: Orange County
-  - text: Flat or blowout away from home? Get somewhere safe first. Then text us your location and a photo of the tire. We come to parking lots, freeway shoulders, surface streets and job sites and fix it or replace it right there.
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
-  - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Roadside from $75
-  - text: Mon–Fri 8–5
-  - text: Price quoted = price paid
-  - text: We text when we're on the way
-  - text: '"Ramiro arrived right on time, just as promised."'
-  - text: Tess S. · Google review
+  - role: Breadcrumb
+    text: Home
+  - role: Breadcrumb
+    text: Tire Services
+  - role: Breadcrumb
+    text: Roadside Tire Service
+  - role: Badge
+    text: 5.0 from 340+ Google reviews
+  - role: Main heading
+    text: Roadside Tire Service in
+  - role: Main heading
+    text: Orange County
+  - role: Paragraph
+    text: Flat or blowout away from home? Get somewhere safe first. Then text us your location and a photo of the tire. We come to parking lots, freeway shoulders, surface streets and job sites and fix it or replace it right there.
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
+  - role: Paragraph
+    text: On a computer? Text your photo to (888) 333-3173 from your phone.
+  - role: Badge
+    text: Roadside from $75
+  - role: Badge
+    text: Mon–Fri 8–5
+  - role: Badge
+    text: Price quoted = price paid
+  - role: Badge
+    text: We text when we're on the way
+  - role: Paragraph
+    text: '"Ramiro arrived right on time, just as promised."'
+  - role: Paragraph
+    text: Tess S. · Google review
   links:
-  - url: /
+  - role: Link
+    url: /
     label: Home
-  - url: '#services'
+  - role: Link
+    url: '#services'
     label: Tire Services
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Button
+    url: tel:8883333173
     label: Call (888) 333-3173
   images:
-  - source: /uploads/cubano-pages/google.png
+  - role: Image
+    source: /uploads/cubano-pages/google.png
     alt: Google
-  - source: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
+  - role: Image
+    source: /uploads/cubano-pages/cubano-technician-doing-roadside-tire-service.jpg
     alt: Cubano technician doing roadside tire service on a big rig hauling an excavator
 - label: Stuck with a flat? Do this first.
   copy:
-  - text: Safety First
-  - text: Stuck with a flat? Do this first.
-  - text: 'A tire can be replaced. You can''t. These are the basics most roadside safety guides agree on:'
-  - text: Before you text us
-  - text: Get out of traffic. A parking lot, side street or exit is better than a freeway shoulder, even if you roll there slowly on the flat.
-  - text: Turn on your hazards and set the parking brake.
-  - text: If you're on a shoulder, get out on the side away from traffic and stand well clear of the car.
-  - text: If you're in danger or blocking a lane, call 911 first.
-  - text: Once you're safe, text us your location and a photo of the tire.
-  - text: Our hours, straight up
-  - text: We're out Monday to Friday, 8 to 5
-  - text: We're closed weekends
-  - text: We're not a 24/7 service
-  - text: Texts after hours are answered the next business morning
-  - text: Stuck at night or on a weekend? Your insurance or roadside club can get you moving with a spare or a tow. Text us the photo anyway and we'll get back to you first thing on the next business day.
+  - role: Paragraph
+    text: Safety First
+  - role: Heading
+    text: Stuck with a flat? Do this first.
+  - role: Paragraph
+    text: 'A tire can be replaced. You can''t. These are the basics most roadside safety guides agree on:'
+  - role: Paragraph
+    text: Before you text us
+  - role: List item
+    text: Get out of traffic. A parking lot, side street or exit is better than a freeway shoulder, even if you roll there slowly on the flat.
+  - role: List item
+    text: Turn on your hazards and set the parking brake.
+  - role: List item
+    text: If you're on a shoulder, get out on the side away from traffic and stand well clear of the car.
+  - role: List item
+    text: If you're in danger or blocking a lane, call 911 first.
+  - role: List item
+    text: Once you're safe, text us your location and a photo of the tire.
+  - role: Paragraph
+    text: Our hours, straight up
+  - role: List item
+    text: We're out Monday to Friday, 8 to 5
+  - role: List item
+    text: We're closed weekends
+  - role: List item
+    text: We're not a 24/7 service
+  - role: List item
+    text: Texts after hours are answered the next business morning
+  - role: Paragraph
+    text: Stuck at night or on a weekend? Your insurance or roadside club can get you moving with a spare or a tow. Text us the photo anyway and we'll get back to you first thing on the next business day.
   links: []
   images: []
 - label: Where we meet you
   copy:
-  - text: Where we meet you
+  - role: Heading
+    text: Where we meet you
   links: []
   images: []
   cards:
@@ -80,7 +118,8 @@ demoSections:
     text: Teslas and most EVs don't carry one. We come to the car instead.
 - label: Back on the road in 3 steps
   copy:
-  - text: Back on the road in 3 steps
+  - role: Heading
+    text: Back on the road in 3 steps
   links: []
   images: []
   cards:
@@ -98,8 +137,10 @@ demoSections:
     text: We text when we're on the way, then repair or replace the tire right there.
 - label: What it's like when we come to you
   copy:
-  - text: Real Roadside Jobs
-  - text: What it's like when we come to you
+  - role: Paragraph
+    text: Real Roadside Jobs
+  - role: Heading
+    text: What it's like when we come to you
   links: []
   images: []
   cards:
@@ -111,16 +152,21 @@ demoSections:
     author: Google review
 - label: How much does roadside tire service cost?
   copy:
-  - text: How much does roadside tire service cost?
-  - text: Roadside assistance starts at $75 and up, depending on the service location and whether the vehicle is on a highway, freeway shoulder or regular street. If the tire needs replacing, we quote the new tire before we head out. Commercial and big rig tires are quoted per job.
-  - text: Text a Photo for Your Price
+  - role: Heading
+    text: How much does roadside tire service cost?
+  - role: Paragraph
+    text: Roadside assistance starts at $75 and up, depending on the service location and whether the vehicle is on a highway, freeway shoulder or regular street. If the tire needs replacing, we quote the new tire before we head out. Commercial and big rig tires are quoted per job.
+  - role: Button or link text
+    text: Text a Photo for Your Price
   links:
-  - url: sms:8883333173
+  - role: Button
+    url: sms:8883333173
     label: Text a Photo for Your Price
   images: []
 - label: Roadside Tire Service FAQ
   copy:
-  - text: Roadside Tire Service FAQ
+  - role: Heading
+    text: Roadside Tire Service FAQ
   links: []
   images: []
   cards:
@@ -144,11 +190,15 @@ demoSections:
     answer: No. We don't need your spare. We repair the tire you have or bring a new one on the truck.
 - label: Roadside tire service near you
   copy:
-  - text: Roadside tire service near you
-  - text: All areas
-  - text: Related services
+  - role: Heading
+    text: Roadside tire service near you
+  - role: Button or link text
+    text: All areas
+  - role: Heading
+    text: Related services
   links:
-  - url: '#areas'
+  - role: Button
+    url: '#areas'
     label: All areas
   images: []
   cards:
@@ -190,14 +240,20 @@ demoSections:
     label: TPMS Sensor Service
 - label: Stuck? Get safe, then text us.
   copy:
-  - text: Stuck? Get safe, then text us.
-  - text: Send your location and a photo of the tire. We'll text back a price and when we can be there. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5 · After-hours texts answered the next business morning
-  - text: Text Us a Photo of Your Tire
-  - text: Call (888) 333-3173
+  - role: Heading
+    text: Stuck? Get safe, then text us.
+  - role: Paragraph
+    text: Send your location and a photo of the tire. We'll text back a price and when we can be there. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5 · After-hours texts answered the next business morning
+  - role: Button or link text
+    text: Text Us a Photo of Your Tire
+  - role: Button or link text
+    text: Call (888) 333-3173
   links:
-  - url: sms:8883333173
+  - role: Link
+    url: sms:8883333173
     label: Text Us a Photo of Your Tire
-  - url: tel:8883333173
+  - role: Link
+    url: tel:8883333173
     label: Call (888) 333-3173
   images: []
 demoTemplate: roadside-tire-service

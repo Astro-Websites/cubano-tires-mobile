@@ -20,8 +20,10 @@ export function mountBlogPreview() {
   document.body.append(mount);
   let bodyRoot: Root | undefined;
 
+  const initialData = { blog: null };
+  const variables = { relativePath };
   function TinaBlog() {
-    const { data } = useTina<{ blog: BlogPreview | null }>({ query: blogQuery, variables: { relativePath }, data: { blog: null } });
+    const { data } = useTina<{ blog: BlogPreview | null }>({ query: blogQuery, variables, data: initialData });
     useEffect(() => {
       const blog = data?.blog;
       if (!blog) return;
