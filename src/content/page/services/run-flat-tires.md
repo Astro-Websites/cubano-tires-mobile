@@ -63,45 +63,59 @@ demoSections:
 - label: Run-flat jobs we handle
   copy:
   - text: Run-flat jobs we handle
-  - text: BMW
-  - text: 3, 5 and X series and more. We source the run-flat your BMW calls for.
-  - text: Mini
-  - text: Small tires, small trunk, no spare. We come to you.
-  - text: Mercedes-Benz
-  - text: Run-flat sedans and SUVs, replaced at home or work.
-  - text: Other run-flat cars
-  - text: If it came from the factory on run-flats, send a photo and we'll quote it.
-  - text: One tire or a set
-  - text: We'll tell you if your other tires are worn enough that a pair makes more sense.
-  - text: TPMS checked
-  - text: Run-flats rely on your pressure warning. We check the sensor after install.
   - text: 'We can source all types of run-flat tires for any vehicle make and model, including different brands and tire sizes: Bridgestone, Pirelli, Michelin, Continental, Goodyear and more.'
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: BMW
+    text: 3, 5 and X series and more. We source the run-flat your BMW calls for.
+  - _template: feature
+    title: Mini
+    text: Small tires, small trunk, no spare. We come to you.
+  - _template: feature
+    title: Mercedes-Benz
+    text: Run-flat sedans and SUVs, replaced at home or work.
+  - _template: feature
+    title: Other run-flat cars
+    text: If it came from the factory on run-flats, send a photo and we'll quote it.
+  - _template: feature
+    title: One tire or a set
+    text: We'll tell you if your other tires are worn enough that a pair makes more sense.
+  - _template: feature
+    title: TPMS checked
+    text: Run-flats rely on your pressure warning. We check the sensor after install.
 - label: Warning light to new run-flat in 3 steps
   copy:
   - text: Warning light to new run-flat in 3 steps
-  - text: '1'
-  - text: Park it and text us
-  - text: Send a photo of the damage and the sidewall size. Tell us how far you drove on it.
-  - text: '2'
-  - text: Get your price and time
-  - text: Joel quotes the exact run-flat for your car, plus when we can be there.
-  - text: '3'
-  - text: We swap it where it's parked
-  - text: Mounted, balanced, pressure set and TPMS checked. Most jobs take under 45 minutes.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Park it and text us
+    text: Send a photo of the damage and the sidewall size. Tell us how far you drove on it.
+  - _template: step
+    number: '2'
+    title: Get your price and time
+    text: Joel quotes the exact run-flat for your car, plus when we can be there.
+  - _template: step
+    number: '3'
+    title: We swap it where it's parked
+    text: Mounted, balanced, pressure set and TPMS checked. Most jobs take under 45 minutes.
 - label: Told the truth up front
   copy:
   - text: Straight Answers
   - text: Told the truth up front
-  - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-  - text: Google review
-  - text: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-  - text: Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
+    author: Google review
+  - _template: review
+    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
+    author: Google review
 - label: How much does run-flat tire replacement cost?
   copy:
   - text: How much does run-flat tire replacement cost?
@@ -114,63 +128,70 @@ demoSections:
 - label: Run-Flat Tire FAQ
   copy:
   - text: Run-Flat Tire FAQ
-  - text: How far can I drive on a flat run-flat?
-  - text: The usual rule of thumb is about 50 miles at up to 50 mph, but it depends on the tire, the load and your car. Check your owner's manual. The shorter the drive, the better your odds the tire can be saved.
-  - text: Why can't my run-flat be patched?
-  - text: Driving on it without air can damage the inside of the sidewall, and you can't always see it from outside. Many tire makers say to replace a run-flat once it's been driven flat. Guidance varies by brand.
-  - text: Do I have to replace all four?
-  - text: Not always. If your other tires have plenty of tread, one tire may be fine. On some all-wheel-drive cars, the tires need to be closely matched. Send us a photo of the tread on the others and we'll give you an honest answer.
-  - text: Can I switch from run-flats to regular tires?
-  - text: 'Some drivers do for a softer ride or lower price. The catch is you''d have no spare. [Confirm with Joel: do you offer run-flat to standard tire conversions, and what do you recommend?]'
-  - text: Is it cheaper than the dealer?
-  - text: 'Text us your size and we''ll send a price you can compare. We come to you, so there''s no drive to the dealer and no waiting room. [Confirm with Joel: OK to make a dealer comparison here?]'
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: How far can I drive on a flat run-flat?
+    answer: The usual rule of thumb is about 50 miles at up to 50 mph, but it depends on the tire, the load and your car. Check your owner's manual. The shorter the drive, the better your odds the tire can be saved.
+  - _template: faq
+    question: Why can't my run-flat be patched?
+    answer: Driving on it without air can damage the inside of the sidewall, and you can't always see it from outside. Many tire makers say to replace a run-flat once it's been driven flat. Guidance varies by brand.
+  - _template: faq
+    question: Do I have to replace all four?
+    answer: Not always. If your other tires have plenty of tread, one tire may be fine. On some all-wheel-drive cars, the tires need to be closely matched. Send us a photo of the tread on the others and we'll give you an honest answer.
+  - _template: faq
+    question: Can I switch from run-flats to regular tires?
+    answer: 'Some drivers do for a softer ride or lower price. The catch is you''d have no spare. [Confirm with Joel: do you offer run-flat to standard tire conversions, and what do you recommend?]'
+  - _template: faq
+    question: Is it cheaper than the dealer?
+    answer: 'Text us your size and we''ll send a price you can compare. We come to you, so there''s no drive to the dealer and no waiting room. [Confirm with Joel: OK to make a dealer comparison here?]'
 - label: Run-flat tire replacement near you
   copy:
   - text: Run-flat tire replacement near you
-  - text: Irvine
-  - text: Newport Beach
-  - text: Laguna Niguel
-  - text: Costa Mesa
-  - text: Huntington Beach
-  - text: Anaheim
-  - text: Yorba Linda
-  - text: Tustin
   - text: All areas
   - text: Related services
-  - text: Flat Tire Repair
-  - text: Mobile Tire Installation
-  - text: TPMS Sensor Service
-  - text: Tire Rotation & Balancing
   links:
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#newport-beach'
-    label: Newport Beach
-  - url: '#laguna-niguel'
-    label: Laguna Niguel
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#huntington-beach'
-    label: Huntington Beach
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#yorba-linda'
-    label: Yorba Linda
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
-  - url: /services/tpms-sensor-service/
-    label: TPMS Sensor Service →
-  - url: /services/tire-rotation-balancing/
-    label: Tire Rotation & Balancing →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#newport-beach'
+    label: Newport Beach
+  - _template: pill
+    url: '#laguna-niguel'
+    label: Laguna Niguel
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#huntington-beach'
+    label: Huntington Beach
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#yorba-linda'
+    label: Yorba Linda
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
+  - _template: arrowLink
+    url: /services/tpms-sensor-service/
+    label: TPMS Sensor Service
+  - _template: arrowLink
+    url: /services/tire-rotation-balancing/
+    label: Tire Rotation & Balancing
 - label: Run-flat warning on? Text us before you drive further.
   copy:
   - text: Run-flat warning on? Text us before you drive further.

@@ -30,70 +30,75 @@ demoSections:
   - text: CURRENT REBATES
   - text: Brand rebates we can install today
   - text: Rebates come from the tire makers, usually as a prepaid card after you submit a claim. We hand you the itemized invoice the form asks for.
-  - text: Kumho
-  - text: REBATE
-  - text: $120
-  - text: Manufacturer rebate on qualifying Kumho tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a Kumho Quote
-  - text: Continental
-  - text: REBATE
-  - text: $110
-  - text: Manufacturer rebate on qualifying Continental tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a Continental Quote
-  - text: Goodyear
-  - text: REBATE
-  - text: $100
-  - text: Manufacturer rebate on qualifying Goodyear tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a Goodyear Quote
-  - text: BFGoodrich
-  - text: REBATE
-  - text: $80
-  - text: Manufacturer rebate on qualifying BFGoodrich tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a BFGoodrich Quote
-  - text: Michelin
-  - text: FALL PROMOTION
-  - text: $80
-  - text: Manufacturer rebate on qualifying Michelin tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a Michelin Quote
-  - text: Cooper
-  - text: REBATE
-  - text: $70
-  - text: Manufacturer rebate on qualifying Cooper tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
-  - text: Text for a Cooper Quote
   - text: Online Appointment Special
   - text: '[OFFER DETAILS: amount, what it applies to, how to claim]'
   - text: Book by Text
   links:
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Kumho%20%24120%20rebate.
-    label: Text for a Kumho Quote
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Continental%20%24110%20rebate.
-    label: Text for a Continental Quote
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Goodyear%20%24100%20rebate.
-    label: Text for a Goodyear Quote
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20BFGoodrich%20%2480%20rebate.
-    label: Text for a BFGoodrich Quote
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Michelin%20%2480%20rebate.
-    label: Text for a Michelin Quote
-  - url: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Cooper%20%2470%20rebate.
-    label: Text for a Cooper Quote
   - url: sms:8883333173
     label: Book by Text
   images: []
+  cards:
+  - _template: rebate
+    brand: Kumho
+    tag: REBATE
+    amount: $120
+    details: Manufacturer rebate on qualifying Kumho tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Kumho%20%24120%20rebate.
+    buttonLabel: Text for a Kumho Quote
+  - _template: rebate
+    brand: Continental
+    tag: REBATE
+    amount: $110
+    details: Manufacturer rebate on qualifying Continental tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Continental%20%24110%20rebate.
+    buttonLabel: Text for a Continental Quote
+  - _template: rebate
+    brand: Goodyear
+    tag: REBATE
+    amount: $100
+    details: Manufacturer rebate on qualifying Goodyear tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Goodyear%20%24100%20rebate.
+    buttonLabel: Text for a Goodyear Quote
+  - _template: rebate
+    brand: BFGoodrich
+    tag: REBATE
+    amount: $80
+    details: Manufacturer rebate on qualifying BFGoodrich tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20BFGoodrich%20%2480%20rebate.
+    buttonLabel: Text for a BFGoodrich Quote
+  - _template: rebate
+    brand: Michelin
+    tag: FALL PROMOTION
+    amount: $80
+    details: Manufacturer rebate on qualifying Michelin tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Michelin%20%2480%20rebate.
+    buttonLabel: Text for a Michelin Quote
+  - _template: rebate
+    brand: Cooper
+    tag: REBATE
+    amount: $70
+    details: Manufacturer rebate on qualifying Cooper tire sets. Valid through [DATE]. [QUALIFYING TIRE LINES]
+    buttonUrl: sms:8883333173?&body=Hi%2C%20I%27d%20like%20a%20quote%20with%20the%20Cooper%20%2470%20rebate.
+    buttonLabel: Text for a Cooper Quote
 - label: How to use a coupon
   copy:
   - text: How to use a coupon
-  - text: '1'
-  - text: Text your tire size
-  - text: Send a photo of the sidewall and name the offer you want.
-  - text: '2'
-  - text: Get one clear price
-  - text: The price we quote is the price you pay, with the coupon shown.
-  - text: '3'
-  - text: We install, you claim
-  - text: We mount and balance on site, then send the invoice for your rebate.
   - text: Rebates are offered by the tire manufacturers, not Cubano Tires Mobile Shop. Amounts, dates and qualifying tires are set by each brand and can change, so ask us to confirm before you book. Coupon values have no cash value. [ADD ANY SHOP TERMS]
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text your tire size
+    text: Send a photo of the sidewall and name the offer you want.
+  - _template: step
+    number: '2'
+    title: Get one clear price
+    text: The price we quote is the price you pay, with the coupon shown.
+  - _template: step
+    number: '3'
+    title: We install, you claim
+    text: We mount and balance on site, then send the invoice for your rebate.
 - label: Want the rebate price? Text us your tire size.
   copy:
   - text: Want the rebate price? Text us your tire size.

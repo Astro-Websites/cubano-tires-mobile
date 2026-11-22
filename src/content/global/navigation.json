@@ -31,7 +31,7 @@
     { "sourceLabel": "Yelp", "label": "Yelp", "href": "#reviews" }
   ],
   "legal": [
-    { "sourceLabel": "Privacy", "label": "Privacy", "href": "#" },
+    { "sourceLabel": "Privacy", "label": "Privacy", "href": "/privacy-policy/" },
     { "sourceLabel": "Terms", "label": "Terms", "href": "#" },
     { "sourceLabel": "Cookie", "label": "Cookie", "href": "#" },
     { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "#" },

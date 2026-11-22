@@ -24,17 +24,22 @@ demoSections:
   - source: /uploads/cubano-pages/cubano-tires-technician-at-the-branded-service.jpg
     alt: Cubano Tires technician at the branded service truck
 - label: Section 2
-  copy:
-  - text: 5.0★
-  - text: 340+ Google reviews
-  - text: 565+
-  - text: real jobs posted on video
-  - text: '4'
-  - text: fully stocked service trucks
-  - text: '2018'
-  - text: Established · Serving Orange County since 2018
+  copy: []
   links: []
   images: []
+  cards:
+  - _template: stat
+    value: 5.0★
+    label: 340+ Google reviews
+  - _template: stat
+    value: 565+
+    label: real jobs posted on video
+  - _template: stat
+    value: '4'
+    label: fully stocked service trucks
+  - _template: stat
+    value: '2018'
+    label: Established · Serving Orange County since 2018
 - label: Started by a tire guy who hated waiting rooms as much as you do
   copy:
   - text: Our Story
@@ -63,38 +68,45 @@ demoSections:
   copy:
   - text: Meet the Crew
   - text: The people behind every job
-  - text: Joel Gonzalez
-  - text: Owner
-  - text: Answers the phone, quotes every job and builds the fleet relationships.
-  - text: Jay
-  - text: General Manager
-  - text: With over 20 years of experience in the industry, Jay oversees all in-house operations at Cubano Tires Mobile Shop. He manages daily operations, answers customer calls, coordinates appointments, and oversees scheduling to ensure everything runs smoothly and efficiently.
-  - text: Ramiro
-  - text: Technician
-  - text: '"Arrived right on time, just as promised." Tess S., Google'
-  - text: Steven
-  - text: Technician
-  - text: With approximately seven years of experience in the tire industry, Steven brings hands-on expertise, professionalism, and a commitment to getting every job done right.
-  - text: Orafnel
-  - text: Technician
-  - text: '"My tire miracle worker." Google review'
-  - text: Joey
-  - text: Social Media Manager
-  - text: Rides along and films the job. If you see a camera, say hi.
   links: []
-  images:
-  - source: /uploads/crew/joel-gonzalez.webp
-    alt: Joel Gonzalez
-  - source: /uploads/crew/jay.webp
-    alt: Jay
-  - source: /uploads/crew/ramiro.webp
-    alt: Ramiro
-  - source: /uploads/crew/steven.webp
-    alt: Steven
-  - source: /uploads/crew/orafnel.webp
-    alt: Orafnel
-  - source: /uploads/crew/joey.webp
-    alt: Joey
+  images: []
+  cards:
+  - _template: person
+    photoAlt: Joel Gonzalez
+    photo: /uploads/crew/joel-gonzalez.webp
+    name: Joel Gonzalez
+    role: Owner
+    bio: Answers the phone, quotes every job and builds the fleet relationships.
+  - _template: person
+    photoAlt: Jay
+    photo: /uploads/crew/jay.webp
+    name: Jay
+    role: General Manager
+    bio: With over 20 years of experience in the industry, Jay oversees all in-house operations at Cubano Tires Mobile Shop. He manages daily operations, answers customer calls, coordinates appointments, and oversees scheduling to ensure everything runs smoothly and efficiently.
+  - _template: person
+    photoAlt: Ramiro
+    photo: /uploads/crew/ramiro.webp
+    name: Ramiro
+    role: Technician
+    bio: '"Arrived right on time, just as promised." Tess S., Google'
+  - _template: person
+    photoAlt: Steven
+    photo: /uploads/crew/steven.webp
+    name: Steven
+    role: Technician
+    bio: With approximately seven years of experience in the tire industry, Steven brings hands-on expertise, professionalism, and a commitment to getting every job done right.
+  - _template: person
+    photoAlt: Orafnel
+    photo: /uploads/crew/orafnel.webp
+    name: Orafnel
+    role: Technician
+    bio: '"My tire miracle worker." Google review'
+  - _template: person
+    photoAlt: Joey
+    photo: /uploads/crew/joey.webp
+    name: Joey
+    role: Social Media Manager
+    bio: Rides along and films the job. If you see a camera, say hi.
 - label: Trusted by the tire brands
   copy:
   - text: Trusted by the tire brands

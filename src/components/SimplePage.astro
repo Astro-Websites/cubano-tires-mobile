@@ -1,0 +1,52 @@
+---
+// Generic page template: yellow heading band, optional image, rich-text body (Tina: Simple Pages).
+import Header from './Header.astro';
+import Footer from './Footer.astro';
+import Base from '../layouts/Base.astro';
+import config from '../content/global/config.json';
+import navigation from '../content/global/navigation.json';
+import scriptsSource from '../fragments/scripts.html?raw';
+import { render } from 'astro:content';
+
+const { entry } = Astro.props;
+const data = entry.data as Record<string, string | undefined>;
+const { Content } = await render(entry);
+const safeImage = (value?: string) => (value && /^(?:\/(?![/\\])|https:\/\/)/i.test(value.trim()) ? value.trim() : '');
+const image = safeImage(data.image);
+const relativePath = entry.filePath.replace(/^src\/content\/simple-page\//, '');
+const preview = JSON.stringify({ relativePath }).replace(/</g, '\\u003c');
+---
+<Base title={data.seoTitle || `${data.title} | ${config.siteName}`} description={data.description || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
+  <Header {config} {navigation} />
+  <main>
+    <section id="top" style="background: #FFC72C">
+      <div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 56px">
+        <nav aria-label="Breadcrumb" style="font-size: 14px; color: #4A4020"><a href="/" style="color: #4A4020">Home</a> › <span style="color: #16181D; font-weight: 700" data-simple-field="title">{data.title}</span></nav>
+        <h1 data-simple-field="heading" style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; margin: 24px 0 0; color: #16181D; max-width: 900px">{data.heading || data.title}</h1>
+        <p data-simple-field="intro" style="font-size: 19px; line-height: 1.6; color: #2A2F38; margin: 16px 0 0; max-width: 720px" hidden={!data.intro}>{data.intro}</p>
+      </div>
+    </section>
+    <section style="max-width: 860px; margin: 0 auto; padding: 48px 24px 80px">
+      <img data-simple-field="image" src={image || undefined} alt={data.imageAlt || ''} hidden={!image} style="display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 22px; margin-bottom: 32px" />
+      <div class="cub-article" data-simple-field="body" style="font-size: 18px; line-height: 1.75; color: #2A2F38"><Content /></div>
+    </section>
+  </main>
+  <Footer {config} {navigation} />
+  <Fragment set:html={scriptsSource} />
+  <script type="application/json" id="cubano-simple-preview" set:html={preview} />
+  <script>
+    if (window.parent !== window) import('../lib/simple-preview').then(({ mountSimplePreview }) => mountSimplePreview());
+  </script>
+</Base>
+<style is:global>
+  .cub-article > :first-child { margin-top: 0; }
+  .cub-article h2 { font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 30px; line-height: 1.2; margin: 44px 0 0; color: #16181D; }
+  .cub-article h3 { font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 800; font-size: 23px; line-height: 1.25; margin: 32px 0 0; color: #16181D; }
+  .cub-article p { margin: 14px 0 0; }
+  .cub-article ul, .cub-article ol { margin: 14px 0 0; padding-left: 22px; }
+  .cub-article ul { list-style: disc; }
+  .cub-article ol { list-style: decimal; }
+  .cub-article a { color: #E11B22; font-weight: 700; text-decoration: underline; }
+  .cub-article img { max-width: 100%; height: auto; border-radius: 16px; margin: 24px 0 0; }
+  .cub-article blockquote { margin: 24px 0 0; padding: 16px 22px; border-left: 4px solid #FFC72C; background: #F3F6FA; border-radius: 0 12px 12px 0; }
+</style>

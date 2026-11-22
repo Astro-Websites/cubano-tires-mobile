@@ -64,44 +64,58 @@ demoSections:
 - label: Flats we fix every day
   copy:
   - text: Flats we fix every day
-  - text: Nails & screws
-  - text: The most common flat. Usually a quick repair.
-  - text: Slow leaks
-  - text: Bead leaks, bad valve stems and mystery pressure loss.
-  - text: Blowouts
-  - text: New tire installed where you're parked, cars to big rigs.
-  - text: Tesla & EV flats
-  - text: Most EVs have no spare. We bring the fix to you.
-  - text: Run-flat tires
-  - text: BMW, Mini and others. Inspected and replaced when needed.
-  - text: TPMS light on
-  - text: Sensor checked and reset after the repair.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Nails & screws
+    text: The most common flat. Usually a quick repair.
+  - _template: feature
+    title: Slow leaks
+    text: Bead leaks, bad valve stems and mystery pressure loss.
+  - _template: feature
+    title: Blowouts
+    text: New tire installed where you're parked, cars to big rigs.
+  - _template: feature
+    title: Tesla & EV flats
+    text: Most EVs have no spare. We bring the fix to you.
+  - _template: feature
+    title: Run-flat tires
+    text: BMW, Mini and others. Inspected and replaced when needed.
+  - _template: feature
+    title: TPMS light on
+    text: Sensor checked and reset after the repair.
 - label: From flat to fixed in 3 steps
   copy:
   - text: From flat to fixed in 3 steps
-  - text: '1'
-  - text: Text a photo of the flat
-  - text: Show us the tire and where the damage is. Tell us where you're parked.
-  - text: '2'
-  - text: Get your price and time
-  - text: We tell you if it's a repair or a new tire, what it costs, and when we'll be there.
-  - text: '3'
-  - text: We fix it where you are
-  - text: Repaired or replaced, balanced and back to the right pressure. Most jobs under 45 minutes.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text a photo of the flat
+    text: Show us the tire and where the damage is. Tell us where you're parked.
+  - _template: step
+    number: '2'
+    title: Get your price and time
+    text: We tell you if it's a repair or a new tire, what it costs, and when we'll be there.
+  - _template: step
+    number: '3'
+    title: We fix it where you are
+    text: Repaired or replaced, balanced and back to the right pressure. Most jobs under 45 minutes.
 - label: What customers say after a flat
   copy:
   - text: Real Flat Tire Jobs
   - text: What customers say after a flat
-  - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-  - text: Google review
-  - text: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
-  - text: Tess S. · Google review
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
+    author: Google review
+  - _template: review
+    quote: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
+    author: Tess S. · Google review
 - label: How much does mobile flat tire repair cost?
   copy:
   - text: How much does mobile flat tire repair cost?
@@ -114,63 +128,70 @@ demoSections:
 - label: Flat Tire Repair FAQ
   copy:
   - text: Flat Tire Repair FAQ
-  - text: Can a tire with a nail in it be fixed?
-  - text: Usually, yes, if the nail is in the center of the tread and the hole is ¼" or smaller. Nails in the sidewall or shoulder mean a new tire. Text us a photo and we'll tell you which before we come.
-  - text: How long does a mobile flat repair take?
-  - text: Most jobs take under 45 minutes once we arrive. We text you an arrival time with your quote.
-  - text: My Tesla has no spare. Can you help?
-  - text: Yes. We repair or replace EV tires on Teslas and other EVs where they're parked, including Cybertruck sizes.
-  - text: Where can you fix my flat?
-  - text: Your driveway, office lot, parking structure or job site anywhere in Orange County. If you're on the road, get somewhere safe and text us your location.
-  - text: What if I get a flat after hours?
-  - text: Text us anyway. We're open Monday to Friday, 8 to 5, and answer after-hours texts first thing the next business morning.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: Can a tire with a nail in it be fixed?
+    answer: Usually, yes, if the nail is in the center of the tread and the hole is ¼" or smaller. Nails in the sidewall or shoulder mean a new tire. Text us a photo and we'll tell you which before we come.
+  - _template: faq
+    question: How long does a mobile flat repair take?
+    answer: Most jobs take under 45 minutes once we arrive. We text you an arrival time with your quote.
+  - _template: faq
+    question: My Tesla has no spare. Can you help?
+    answer: Yes. We repair or replace EV tires on Teslas and other EVs where they're parked, including Cybertruck sizes.
+  - _template: faq
+    question: Where can you fix my flat?
+    answer: Your driveway, office lot, parking structure or job site anywhere in Orange County. If you're on the road, get somewhere safe and text us your location.
+  - _template: faq
+    question: What if I get a flat after hours?
+    answer: Text us anyway. We're open Monday to Friday, 8 to 5, and answer after-hours texts first thing the next business morning.
 - label: Flat tire repair near you
   copy:
   - text: Flat tire repair near you
-  - text: Anaheim
-  - text: Santa Ana
-  - text: Irvine
-  - text: Orange
-  - text: Fullerton
-  - text: Costa Mesa
-  - text: Huntington Beach
-  - text: Tustin
   - text: All areas
   - text: Related services
-  - text: Mobile Tire Installation
-  - text: Run-Flat Tire Replacement
-  - text: TPMS Sensor Service
-  - text: Tesla & EV Tires
   links:
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#orange'
-    label: Orange
-  - url: '#fullerton'
-    label: Fullerton
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#huntington-beach'
-    label: Huntington Beach
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
-  - url: /services/run-flat-tires/
-    label: Run-Flat Tire Replacement →
-  - url: /services/tpms-sensor-service/
-    label: TPMS Sensor Service →
-  - url: /vehicles/tesla-ev-tires/
-    label: Tesla & EV Tires →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#huntington-beach'
+    label: Huntington Beach
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
+  - _template: arrowLink
+    url: /services/run-flat-tires/
+    label: Run-Flat Tire Replacement
+  - _template: arrowLink
+    url: /services/tpms-sensor-service/
+    label: TPMS Sensor Service
+  - _template: arrowLink
+    url: /vehicles/tesla-ev-tires/
+    label: Tesla & EV Tires
 - label: Got a flat? Text us a photo.
   copy:
   - text: Got a flat? Text us a photo.

@@ -72,20 +72,27 @@ demoSections:
 - label: Equipment we handle
   copy:
   - text: Equipment we handle
-  - text: Skid steers
-  - text: Including common tire sizes such as 10-16.5 and 12-16.5.
-  - text: Forklifts
-  - text: Pneumatic, solid pneumatic and press-on tires.
-  - text: Loaders & backhoes
-  - text: On-site tire replacement.
-  - text: Scissor lifts
-  - text: Tire replacement at the equipment's location.
-  - text: Boom lifts & telehandlers
-  - text: Industrial tire replacement services.
-  - text: Rental fleets
-  - text: We service equipment for rental companies, including Sunbelt Rentals and Herc Rentals, at job sites and rental yards.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: Skid steers
+    text: Including common tire sizes such as 10-16.5 and 12-16.5.
+  - _template: feature
+    title: Forklifts
+    text: Pneumatic, solid pneumatic and press-on tires.
+  - _template: feature
+    title: Loaders & backhoes
+    text: On-site tire replacement.
+  - _template: feature
+    title: Scissor lifts
+    text: Tire replacement at the equipment's location.
+  - _template: feature
+    title: Boom lifts & telehandlers
+    text: Industrial tire replacement services.
+  - _template: feature
+    title: Rental fleets
+    text: We service equipment for rental companies, including Sunbelt Rentals and Herc Rentals, at job sites and rental yards.
 - label: Equipment and rental work
   copy:
   - text: On the Job
@@ -102,28 +109,35 @@ demoSections:
 - label: Machine down to back at work in 3 steps
   copy:
   - text: Machine down to back at work in 3 steps
-  - text: '1'
-  - text: Text a photo of the tire and machine
-  - text: Show us the sidewall size, the machine and where it's parked. Include the site address and a contact.
-  - text: '2'
-  - text: Get your quote by equipment
-  - text: Joel tells you what tire it needs, what it costs and when we'll be there.
-  - text: '3'
-  - text: We change it on site
-  - text: Job site, warehouse or rental yard. Your crew keeps working while we do it.
   links: []
   images: []
+  cards:
+  - _template: step
+    number: '1'
+    title: Text a photo of the tire and machine
+    text: Show us the sidewall size, the machine and where it's parked. Include the site address and a contact.
+  - _template: step
+    number: '2'
+    title: Get your quote by equipment
+    text: Joel tells you what tire it needs, what it costs and when we'll be there.
+  - _template: step
+    number: '3'
+    title: We change it on site
+    text: Job site, warehouse or rental yard. Your crew keeps working while we do it.
 - label: What customers say
   copy:
   - text: How We Work
   - text: What customers say
-  - text: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
-  - text: Tess S. · Google review
-  - text: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-  - text: Google review
   - text: '[Confirm with Joel: ask a fleet contact at one of the accounts above for a review or quote we can use on this page.]'
   links: []
   images: []
+  cards:
+  - _template: review
+    quote: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
+    author: Tess S. · Google review
+  - _template: review
+    quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
+    author: Google review
 - label: How much does heavy equipment tire service cost?
   copy:
   - text: How much does heavy equipment tire service cost?
@@ -136,66 +150,74 @@ demoSections:
 - label: OTR & Heavy Equipment Tire FAQ
   copy:
   - text: OTR & Heavy Equipment Tire FAQ
-  - text: What does OTR mean?
-  - text: Off-the-road. It covers tires for machines that work off the highway, like construction, warehouse and material-handling equipment.
-  - text: What size are skid steer tires?
-  - text: Many skid steers run 10-16.5 or 12-16.5 tires, but check the sidewall to be sure. Text us a photo and we'll match it.
-  - text: Can you change forklift tires on site?
-  - text: Yes. We change pneumatic, solid pneumatic and press-on forklift tires. Press-on cushion tires need a hydraulic press, and we have access to hydraulic press equipment for solid forklift tire installation.
-  - text: Do you work with equipment rental companies?
-  - text: Yes. We do tire work for rental companies including Herc Rentals and Sunbelt Rentals, on machines at job sites and in rental yards.
-  - text: Can you come to an active job site?
-  - text: 'Yes. Send the site address, a contact name and any gate or safety rules. [Confirm with Joel: PPE, site check-in and insurance certificate (COI) requirements]'
-  - text: Where do you service equipment?
-  - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts. We're open Monday to Friday, 8 to 5.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: What does OTR mean?
+    answer: Off-the-road. It covers tires for machines that work off the highway, like construction, warehouse and material-handling equipment.
+  - _template: faq
+    question: What size are skid steer tires?
+    answer: Many skid steers run 10-16.5 or 12-16.5 tires, but check the sidewall to be sure. Text us a photo and we'll match it.
+  - _template: faq
+    question: Can you change forklift tires on site?
+    answer: Yes. We change pneumatic, solid pneumatic and press-on forklift tires. Press-on cushion tires need a hydraulic press, and we have access to hydraulic press equipment for solid forklift tire installation.
+  - _template: faq
+    question: Do you work with equipment rental companies?
+    answer: Yes. We do tire work for rental companies including Herc Rentals and Sunbelt Rentals, on machines at job sites and in rental yards.
+  - _template: faq
+    question: Can you come to an active job site?
+    answer: 'Yes. Send the site address, a contact name and any gate or safety rules. [Confirm with Joel: PPE, site check-in and insurance certificate (COI) requirements]'
+  - _template: faq
+    question: Where do you service equipment?
+    answer: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts. We're open Monday to Friday, 8 to 5.
 - label: Equipment tire service near you
   copy:
   - text: Equipment tire service near you
-  - text: Anaheim
-  - text: Orange
-  - text: Santa Ana
-  - text: Fullerton
-  - text: Irvine
-  - text: Long Beach
-  - text: Los Angeles
-  - text: Commerce
   - text: All areas
   - text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - text: Related services
-  - text: Fleet Tire Service
-  - text: Commercial Truck Tires
-  - text: Flat Tire Repair
-  - text: Mobile Tire Installation
   links:
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#orange'
-    label: Orange
-  - url: '#santa-ana'
-    label: Santa Ana
-  - url: '#fullerton'
-    label: Fullerton
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#long-beach'
-    label: Long Beach
-  - url: '#los-angeles'
-    label: Los Angeles
-  - url: '#commerce'
-    label: Commerce
   - url: '#areas'
     label: All areas
-  - url: /services/fleet-tire-service/
-    label: Fleet Tire Service →
-  - url: /services/commercial-truck-tires/
-    label: Commercial Truck Tires →
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: /services/mobile-tire-installation/
-    label: Mobile Tire Installation →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#orange'
+    label: Orange
+  - _template: pill
+    url: '#santa-ana'
+    label: Santa Ana
+  - _template: pill
+    url: '#fullerton'
+    label: Fullerton
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#long-beach'
+    label: Long Beach
+  - _template: pill
+    url: '#los-angeles'
+    label: Los Angeles
+  - _template: pill
+    url: '#commerce'
+    label: Commerce
+  - _template: arrowLink
+    url: /services/fleet-tire-service/
+    label: Fleet Tire Service
+  - _template: arrowLink
+    url: /services/commercial-truck-tires/
+    label: Commercial Truck Tires
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: /services/mobile-tire-installation/
+    label: Mobile Tire Installation
 - label: Machine down? Text us a photo.
   copy:
   - text: Machine down? Text us a photo.

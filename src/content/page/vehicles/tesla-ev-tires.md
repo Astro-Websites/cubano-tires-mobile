@@ -38,65 +38,76 @@ demoSections:
   copy:
   - text: Pick Your EV
   - text: Tires for every Tesla and EV
-  - text: Model Y
-  - text: The most common EV we see. All-season and performance sizes.
-  - text: Get a price →
-  - text: Model 3
-  - text: Standard, Long Range and Performance fitments.
-  - text: Get a price →
-  - text: Model S & X
-  - text: Large staggered and performance wheels, handled with care.
-  - text: Get a price →
-  - text: Cybertruck
-  - text: The big all-terrain sizes most shops turn away.
-  - text: Get a price →
-  - text: Rivian
-  - text: R1T and R1S all-terrain and road tires.
-  - text: Get a price →
-  - text: Other EVs
-  - text: Mustang Mach-E, Ioniq 5, EV6, Lucid, Polestar and more.
-  - text: Get a price →
-  links:
-  - url: '#model-y'
-    label: Model Y The most common EV we see. All-season and performance sizes. Get a price →
-  - url: '#model-3'
-    label: Model 3 Standard, Long Range and Performance fitments. Get a price →
-  - url: '#model-s-and-x'
-    label: Model S & X Large staggered and performance wheels, handled with care. Get a price →
-  - url: '#cybertruck'
-    label: Cybertruck The big all-terrain sizes most shops turn away. Get a price →
-  - url: '#rivian'
-    label: Rivian R1T and R1S all-terrain and road tires. Get a price →
-  - url: '#other-evs'
-    label: Other EVs Mustang Mach-E, Ioniq 5, EV6, Lucid, Polestar and more. Get a price →
+  links: []
   images: []
+  cards:
+  - _template: linkCard
+    url: '#model-y'
+    title: Model Y
+    text: The most common EV we see. All-season and performance sizes.
+    cta: Get a price →
+  - _template: linkCard
+    url: '#model-3'
+    title: Model 3
+    text: Standard, Long Range and Performance fitments.
+    cta: Get a price →
+  - _template: linkCard
+    url: '#model-s-and-x'
+    title: Model S & X
+    text: Large staggered and performance wheels, handled with care.
+    cta: Get a price →
+  - _template: linkCard
+    url: '#cybertruck'
+    title: Cybertruck
+    text: The big all-terrain sizes most shops turn away.
+    cta: Get a price →
+  - _template: linkCard
+    url: '#rivian'
+    title: Rivian
+    text: R1T and R1S all-terrain and road tires.
+    cta: Get a price →
+  - _template: linkCard
+    url: '#other-evs'
+    title: Other EVs
+    text: Mustang Mach-E, Ioniq 5, EV6, Lucid, Polestar and more.
+    cta: Get a price →
 - label: Your EV needs a tire shop that knows EVs
   copy:
   - text: Why EV Tires Are Different
   - text: Your EV needs a tire shop that knows EVs
-  - text: No spare tire
-  - text: Most EVs don't carry one. We bring the fix to where you're parked.
-  - text: Heavier, faster wear
-  - text: Battery weight and instant torque wear tires quicker. EV-rated tires and regular rotations help them last.
-  - text: Foam-lined tires
-  - text: Many EV tires have sound-dampening foam inside, which changes how a puncture gets repaired.
-  - text: Lifted on the right points
-  - text: We use proper jack pads and lift points so the battery pack is never touched.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: No spare tire
+    text: Most EVs don't carry one. We bring the fix to where you're parked.
+  - _template: feature
+    title: Heavier, faster wear
+    text: Battery weight and instant torque wear tires quicker. EV-rated tires and regular rotations help them last.
+  - _template: feature
+    title: Foam-lined tires
+    text: Many EV tires have sound-dampening foam inside, which changes how a puncture gets repaired.
+  - _template: feature
+    title: Lifted on the right points
+    text: We use proper jack pads and lift points so the battery pack is never touched.
 - label: What we do for EVs
   copy:
   - text: What we do for EVs
-  - text: New EV tires
-  - text: Michelin, Pirelli, Continental, Hankook, Kumho and more, mounted and balanced in your garage.
-  - text: Flat repair
-  - text: Nails, screws and slow leaks repaired the right way, or replaced if it can't be saved.
-  - text: Rotation & balancing
-  - text: Keep wear even and the ride quiet without a trip to the service center.
-  - text: TPMS sensors
-  - text: Sensor checks and replacements when the pressure warning won't go away.
   links: []
   images: []
+  cards:
+  - _template: feature
+    title: New EV tires
+    text: Michelin, Pirelli, Continental, Hankook, Kumho and more, mounted and balanced in your garage.
+  - _template: feature
+    title: Flat repair
+    text: Nails, screws and slow leaks repaired the right way, or replaced if it can't be saved.
+  - _template: feature
+    title: Rotation & balancing
+    text: Keep wear even and the ride quiet without a trip to the service center.
+  - _template: feature
+    title: TPMS sensors
+    text: Sensor checks and replacements when the pressure warning won't go away.
 - label: Teslas and Cybertrucks, every week
   copy:
   - text: Real EV Jobs
@@ -122,57 +133,64 @@ demoSections:
 - label: Tesla & EV Tire FAQ
   copy:
   - text: Tesla & EV Tire FAQ
-  - text: My Tesla has a flat and no spare. What do I do?
-  - text: Text us a photo and your location. We'll tell you whether it can be repaired or needs a new tire, give you a price and an arrival time, and fix it where it's parked.
-  - text: Why do my Tesla tires wear out so fast?
-  - text: EVs are heavy and deliver torque instantly, which is harder on tires. Rotating on schedule and choosing an EV-rated tire helps them last longer.
-  - text: How often should I rotate my Tesla tires?
-  - text: Tesla's owner manuals generally recommend about every 6,250 miles, or sooner if tread depth differs by 2/32 of an inch or more. We can rotate them at your home or office.
-  - text: Can a foam-lined EV tire be repaired?
-  - text: Often, yes, if the puncture is in the tread. The foam has to be handled correctly during the repair. Send us a photo and we'll tell you before we come out.
-  - text: Do you have tires for the Cybertruck?
-  - text: Yes. We install the large all-terrain sizes the Cybertruck uses, mounted and balanced on site.
   links: []
   images: []
+  cards:
+  - _template: faq
+    question: My Tesla has a flat and no spare. What do I do?
+    answer: Text us a photo and your location. We'll tell you whether it can be repaired or needs a new tire, give you a price and an arrival time, and fix it where it's parked.
+  - _template: faq
+    question: Why do my Tesla tires wear out so fast?
+    answer: EVs are heavy and deliver torque instantly, which is harder on tires. Rotating on schedule and choosing an EV-rated tire helps them last longer.
+  - _template: faq
+    question: How often should I rotate my Tesla tires?
+    answer: Tesla's owner manuals generally recommend about every 6,250 miles, or sooner if tread depth differs by 2/32 of an inch or more. We can rotate them at your home or office.
+  - _template: faq
+    question: Can a foam-lined EV tire be repaired?
+    answer: Often, yes, if the puncture is in the tread. The foam has to be handled correctly during the repair. Send us a photo and we'll tell you before we come out.
+  - _template: faq
+    question: Do you have tires for the Cybertruck?
+    answer: Yes. We install the large all-terrain sizes the Cybertruck uses, mounted and balanced on site.
 - label: EV tire service near you
   copy:
   - text: EV tire service near you
-  - text: Irvine
-  - text: Newport Beach
-  - text: Anaheim
-  - text: Yorba Linda
-  - text: Costa Mesa
-  - text: Tustin
   - text: All areas
   - text: Related pages
-  - text: Flat Tire Repair
-  - text: Cybertruck Tires
-  - text: Luxury & Exotic Tires
-  - text: TPMS Sensor Service
   links:
-  - url: /areas/irvine/
-    label: Irvine
-  - url: '#newport-beach'
-    label: Newport Beach
-  - url: /areas/anaheim/
-    label: Anaheim
-  - url: '#yorba-linda'
-    label: Yorba Linda
-  - url: '#costa-mesa'
-    label: Costa Mesa
-  - url: '#tustin'
-    label: Tustin
   - url: '#areas'
     label: All areas
-  - url: /services/flat-tire-repair/
-    label: Flat Tire Repair →
-  - url: '#cybertruck'
-    label: Cybertruck Tires →
-  - url: '#luxury'
-    label: Luxury & Exotic Tires →
-  - url: /services/tpms-sensor-service/
-    label: TPMS Sensor Service →
   images: []
+  cards:
+  - _template: pill
+    url: /areas/irvine/
+    label: Irvine
+  - _template: pill
+    url: '#newport-beach'
+    label: Newport Beach
+  - _template: pill
+    url: /areas/anaheim/
+    label: Anaheim
+  - _template: pill
+    url: '#yorba-linda'
+    label: Yorba Linda
+  - _template: pill
+    url: '#costa-mesa'
+    label: Costa Mesa
+  - _template: pill
+    url: '#tustin'
+    label: Tustin
+  - _template: arrowLink
+    url: /services/flat-tire-repair/
+    label: Flat Tire Repair
+  - _template: arrowLink
+    url: '#cybertruck'
+    label: Cybertruck Tires
+  - _template: arrowLink
+    url: '#luxury'
+    label: Luxury & Exotic Tires
+  - _template: arrowLink
+    url: /services/tpms-sensor-service/
+    label: TPMS Sensor Service
 - label: EV need tires? Text us a photo.
   copy:
   - text: EV need tires? Text us a photo.
