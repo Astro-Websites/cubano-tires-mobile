@@ -42,3 +42,6 @@ intro: Every page on our site in one place.
 ## Legal
 
 * [Privacy Policy](/privacy-policy/)
+* [Terms of Service](/terms-of-service/)
+* [Cookie Policy](/cookie-policy/)
+* [Accessibility](/accessibility/)
