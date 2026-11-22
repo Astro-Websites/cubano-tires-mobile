@@ -33,6 +33,8 @@ export function bindHomepageFragment(source: string, page: Homepage) {
   for (const [original, replacement] of replacements) {
     if (replacement) html = html.replace(original, escapeHtml(replacement).replaceAll('&lt;br&gt;', '<br>'));
   }
+  // Shop buttons go to the dedicated /tires/ shop page instead of the homepage widget anchor.
+  html = html.replaceAll('href="#shop"', 'href="/tires/"');
   if (hero.primaryCtaHref) html = html.replace('href="tel:8883333173"', `href="${escapeHtml(hero.primaryCtaHref)}"`);
   if (hero.secondaryCtaHref) html = html.replace('href="sms:8883333173"', `href="${escapeHtml(hero.secondaryCtaHref)}"`);
   return html;

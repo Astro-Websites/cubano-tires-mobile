@@ -1,6 +1,6 @@
 {
   "header": [
-    { "sourceLabel": "Shop Tires", "label": "Shop Tires", "href": "#shop" },
+    { "sourceLabel": "Shop Tires", "label": "Shop Tires", "href": "/tires/" },
     { "sourceLabel": "Tire Services", "label": "Tire Services", "href": "#services" },
     { "sourceLabel": "Fleet Services", "label": "Fleet Services", "href": "#fleet" },
     { "sourceLabel": "Coupons", "label": "Coupons", "href": "#coupons" },
