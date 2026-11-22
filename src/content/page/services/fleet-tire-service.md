@@ -6,10 +6,6 @@ demoSections:
 - label: Fleet Tire Service at Your Yard, Orange County to LA
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Fleet Tire Service
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,14 +15,8 @@ demoSections:
     text: Orange County to LA
   - role: Paragraph
     text: Every truck that leaves the route for a tire is a day of work lost. We bring the tire truck to your yard, lot or job site and work through your vehicles on site. One account, one point of contact, one invoice.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - role: Button or link text
-    text: 'Set up a fleet account: call (888) 333-3173'
   - role: Badge
     text: Fleet account pricing
   - role: Badge
@@ -41,20 +31,20 @@ demoSections:
     text: Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
-  - role: Link
     url: tel:8883333173
+  - role: Link
     label: 'Set up a fleet account: call (888) 333-3173'
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -198,12 +188,10 @@ demoSections:
     text: How much does fleet tire service cost?
   - role: Paragraph
     text: Fleet pricing depends on your tire sizes, how many vehicles we service per visit and how often we come out. Joel builds account pricing around your fleet, and we offer Net 30 and Net 45 invoicing terms with purchase orders (POs). Every job is quoted before we roll, and the price we quote is the price you pay.
-  - role: Button or link text
-    text: Call to Set Up a Fleet Account
   links:
   - role: Button
-    url: tel:8883333173
     label: Call to Set Up a Fleet Account
+    url: tel:8883333173
   images: []
 - label: Fleet Tire Service FAQ
   copy:
@@ -234,16 +222,14 @@ demoSections:
   copy:
   - role: Heading
     text: Fleet tire service near you
-  - role: Button or link text
-    text: All areas
   - role: Paragraph
     text: All of Orange County, plus Los Angeles, Long Beach and Commerce for fleet accounts.
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -291,22 +277,16 @@ demoSections:
     text: Keep your fleet on the road.
   - role: Paragraph
     text: Call Joel to set up an account, or text a photo when a truck needs a tire. We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
-  - role: Button or link text
-    text: 'Set up a fleet account: call (888) 333-3173'
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
-  - role: Link
     url: tel:8883333173
+  - role: Link
     label: 'Set up a fleet account: call (888) 333-3173'
+    url: tel:8883333173
   images: []
 demoTemplate: fleet-tire-service
 ---

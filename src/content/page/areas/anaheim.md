@@ -6,10 +6,6 @@ demoSections:
 - label: Mobile Tire Service in Anaheim, CA
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Areas Served
-  - role: Breadcrumb
     text: Anaheim
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -21,10 +17,6 @@ demoSections:
     text: Anaheim, CA
   - role: Paragraph
     text: Our shop is right here on E La Palma Ave. From Anaheim Hills to West Anaheim, we bring new tires, flat repairs and fleet service to your driveway, office lot or job site.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Badge
     text: Price quoted = price paid
   - role: Badge
@@ -33,17 +25,17 @@ demoSections:
     text: Free mobile service with 4 tires
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#areas'
     label: Areas Served
+    url: '#areas'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -67,21 +59,17 @@ demoSections:
     text: 3911 E La Palma Ave, Suite J
   - role: Paragraph
     text: Anaheim, CA 92807
-  - role: Button or link text
-    text: (888) 333-3173
   - role: Paragraph
     text: Mon–Fri 8:00 AM – 5:00 PM
   - role: Paragraph
     text: Texts answered next business morning after hours
-  - role: Button or link text
-    text: View on Google Maps
   links:
   - role: Link
-    url: tel:8883333173
     label: (888) 333-3173
+    url: tel:8883333173
   - role: Button
-    url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
     label: View on Google Maps
+    url: https://www.google.com/maps/search/?api=1&query=Cubano+Tires+Mobile+Shop+3911+E+La+Palma+Ave+Anaheim
   images: []
 - label: Everywhere in Anaheim
   copy:
@@ -188,12 +176,10 @@ demoSections:
   copy:
   - role: Heading
     text: We also come to cities near Anaheim
-  - role: Button or link text
-    text: All areas
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -223,17 +209,13 @@ demoSections:
     text: Need tires in Anaheim? Text us a photo.
   - role: Paragraph
     text: We'll text back a price and an arrival time. On a computer? Text your photo to (888) 333-3173 from your phone.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: city-anaheim
 ---

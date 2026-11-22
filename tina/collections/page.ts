@@ -42,9 +42,11 @@ export const PageCollection: Collection = {
           { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
           { type: 'string', name: 'text', label: 'Text', ui: { component: 'textarea' } },
         ] },
-        { type: 'object', name: 'links', label: 'Link destinations', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.label].filter(Boolean).join(': ') }) }, fields: [
+        { type: 'object', name: 'links', label: 'Buttons & Links', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.label].filter(Boolean).join(': ') }) }, fields: [
           { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
-          { type: 'string', name: 'label', label: 'Editor Label', description: 'Only for finding the link here. Change the visible text in the Text list.' }, { type: 'string', name: 'url', label: 'Link Destination' },
+          { type: 'string', name: 'label', label: 'Button / Link Text' },
+          { type: 'string', name: 'url', label: 'Link URL', description: 'A page like /coupons/, a section like #faq, a full https:// address, tel:8883333173 or sms:8883333173.' },
+          { type: 'boolean', name: 'newTab', label: 'Open in a new tab' },
         ] },
         { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.alt].filter(Boolean).join(': ') }) }, fields: [
           { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },

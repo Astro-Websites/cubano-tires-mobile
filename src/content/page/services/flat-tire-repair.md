@@ -6,10 +6,6 @@ demoSections:
 - label: Mobile Flat Tire Repair in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Tire Services
-  - role: Breadcrumb
     text: Flat Tire Repair
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -19,10 +15,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: Nail, screw, slow leak or full blowout. Text us a photo of your flat and we'll text back a price and an arrival time, then fix it in your driveway, office lot or job site.
-  - role: Button or link text
-    text: Text Us a Photo of Your Flat
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: On a computer? Text your photo to (888) 333-3173 from your phone.
   - role: Badge
@@ -39,17 +31,17 @@ demoSections:
     text: Tess S. · Google review
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#services'
     label: Tire Services
+    url: '#services'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Flat
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -170,12 +162,10 @@ demoSections:
     text: How much does mobile flat tire repair cost?
   - role: Paragraph
     text: Tire repairs start at $35 and up, depending on tire size. The mobile service fee is additional. If the tire can't be saved, we'll quote the replacement tire before we come out, and the price we text you is the price you pay.
-  - role: Button or link text
-    text: Text a Photo for Your Price
   links:
   - role: Button
-    url: sms:8883333173
     label: Text a Photo for Your Price
+    url: sms:8883333173
   images: []
 - label: Flat Tire Repair FAQ
   copy:
@@ -203,14 +193,12 @@ demoSections:
   copy:
   - role: Heading
     text: Flat tire repair near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related services
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -255,17 +243,13 @@ demoSections:
     text: Got a flat? Text us a photo.
   - role: Paragraph
     text: We'll text back a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Flat
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Flat
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: flat-tire-repair
 ---

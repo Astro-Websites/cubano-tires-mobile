@@ -6,10 +6,6 @@ demoSections:
 - label: Mobile Tesla & EV Tire Service in Orange County
   copy:
   - role: Breadcrumb
-    text: Home
-  - role: Breadcrumb
-    text: Vehicles
-  - role: Breadcrumb
     text: Tesla & EV Tires
   - role: Badge
     text: 5.0 from 340+ Google reviews
@@ -21,10 +17,6 @@ demoSections:
     text: Orange County
   - role: Paragraph
     text: New tires, flat repairs and rotations for Model 3, Model Y, Model S, Model X, Cybertruck, Rivian and other EVs, done in your garage or office lot. Lifted the right way, on the right points.
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   - role: Paragraph
     text: Snap the sidewall so we can read your size. On a computer? Text it to (888) 333-3173 from your phone.
   - role: Badge
@@ -33,17 +25,17 @@ demoSections:
     text: Free mobile service with 4 tires
   links:
   - role: Link
-    url: /
     label: Home
+    url: /
   - role: Link
-    url: '#vehicles'
     label: Vehicles
+    url: '#vehicles'
   - role: Button
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Button
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images:
   - role: Image
     source: /uploads/cubano-pages/google.png
@@ -160,12 +152,10 @@ demoSections:
     text: How much do Tesla tires cost?
   - role: Paragraph
     text: It depends on your model, wheel size and the tire you pick. Text us a photo of your sidewall and we'll send options with installed prices. Mobile service is free with 4 tires, and the price we quote is the price you pay.
-  - role: Button or link text
-    text: Shop EV Tires
   links:
   - role: Button
-    url: /
     label: Shop EV Tires
+    url: /
   images: []
 - label: Tesla & EV Tire FAQ
   copy:
@@ -193,14 +183,12 @@ demoSections:
   copy:
   - role: Heading
     text: EV tire service near you
-  - role: Button or link text
-    text: All areas
   - role: Heading
     text: Related pages
   links:
   - role: Button
-    url: '#areas'
     label: All areas
+    url: '#areas'
   images: []
   cards:
   - _template: pill
@@ -239,17 +227,13 @@ demoSections:
     text: EV need tires? Text us a photo.
   - role: Paragraph
     text: We'll text back options, a price and an arrival time. 3911 E La Palma Ave, Suite J, Anaheim, CA 92807 · Mon–Fri 8–5
-  - role: Button or link text
-    text: Text Us a Photo of Your Tire
-  - role: Button or link text
-    text: Call (888) 333-3173
   links:
   - role: Link
-    url: sms:8883333173
     label: Text Us a Photo of Your Tire
+    url: sms:8883333173
   - role: Link
-    url: tel:8883333173
     label: Call (888) 333-3173
+    url: tel:8883333173
   images: []
 demoTemplate: vehicle-tesla-ev
 ---
