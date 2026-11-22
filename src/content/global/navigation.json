@@ -40,6 +40,9 @@
   ],
   "legal": [
     { "sourceLabel": "Privacy", "label": "Privacy", "href": "/privacy-policy/" },
+    { "sourceLabel": "Terms", "label": "Terms", "href": "/terms-of-service/" },
+    { "sourceLabel": "Cookie", "label": "Cookie", "href": "/cookie-policy/" },
+    { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "/accessibility/" },
     { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "/sitemap/" }
   ]
 }
