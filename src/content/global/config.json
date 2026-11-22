@@ -3,7 +3,8 @@
   "seo": {
     "description": "Mobile tire and fleet service in Orange County and Los Angeles.",
     "logo": "/uploads/cubano-logo.png",
-    "favicon": "/uploads/cubano-logo.png",
+    "favicon": "/favicon.svg",
+    "appleTouchIcon": "/apple-touch-icon.png",
     "footerLogo": "/uploads/cubano-logo.png",
     "logoAlt": "Cubano Tires Mobile Shop logo",
     "footerLogoAlt": "Cubano Tires Mobile Shop logo"
