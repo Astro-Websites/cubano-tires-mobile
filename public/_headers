@@ -1,0 +1,22 @@
+# Security and caching headers for Cloudflare static assets.
+# Keep the CSP light: the site relies on inline styles/scripts and the TIRESanytime widget
+# loads code from several hosts, so script/style sources are not restricted here.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=(), usb=(), interest-cohort=()
+  Content-Security-Policy: frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests
+
+# The CMS editor should never be indexed.
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+
+# Hashed build assets never change.
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Staging only: keep it out of search results so it doesn't compete with the live site.
+https://staging.cubano.blissdrive.net/*
+  X-Robots-Tag: noindex, nofollow
