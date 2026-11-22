@@ -1,152 +1,40 @@
 {
   "header": [
-    {
-      "sourceLabel": "Shop Tires",
-      "label": "Shop Tires",
-      "href": "/tires/"
-    },
-    {
-      "sourceLabel": "Tire Services",
-      "label": "Tire Services",
-      "href": "#services"
-    },
-    {
-      "sourceLabel": "Fleet Services",
-      "label": "Fleet Services",
-      "href": "#fleet"
-    },
-    {
-      "sourceLabel": "Coupons",
-      "label": "Coupons",
-      "href": "#coupons"
-    },
-    {
-      "sourceLabel": "Our Work",
-      "label": "Our Work",
-      "href": "#work"
-    },
-    {
-      "sourceLabel": "Areas Served",
-      "label": "Areas Served",
-      "href": "#locations"
-    }
+    { "sourceLabel": "Shop Tires", "label": "Shop Tires", "href": "/tires/" },
+    { "sourceLabel": "Tire Services", "label": "Tire Services", "href": "#services" },
+    { "sourceLabel": "Fleet Services", "label": "Fleet Services", "href": "#fleet" },
+    { "sourceLabel": "Coupons", "label": "Coupons", "href": "#coupons" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" }
   ],
   "services": [
-    {
-      "sourceLabel": "Fleet & Commercial",
-      "label": "Fleet & Commercial",
-      "href": "/services/fleet-tire-service/"
-    },
-    {
-      "sourceLabel": "Tire Installation",
-      "label": "Tire Installation",
-      "href": "/services/mobile-tire-installation/"
-    },
-    {
-      "sourceLabel": "Flat Repair",
-      "label": "Flat Repair",
-      "href": "/services/flat-tire-repair/"
-    },
-    {
-      "sourceLabel": "Tesla & EV",
-      "label": "Tesla & EV",
-      "href": "/vehicles/tesla-ev-tires/"
-    },
-    {
-      "sourceLabel": "TPMS",
-      "label": "TPMS",
-      "href": "/services/tpms-sensor-service/"
-    },
-    {
-      "sourceLabel": "Roadside Service",
-      "label": "Roadside Service",
-      "href": "/services/roadside-tire-service/"
-    }
+    { "sourceLabel": "Fleet & Commercial", "label": "Fleet & Commercial", "href": "/services/fleet-tire-service/" },
+    { "sourceLabel": "Tire Installation", "label": "Tire Installation", "href": "/services/mobile-tire-installation/" },
+    { "sourceLabel": "Flat Repair", "label": "Flat Repair", "href": "/services/flat-tire-repair/" },
+    { "sourceLabel": "Tesla & EV", "label": "Tesla & EV", "href": "/vehicles/tesla-ev-tires/" },
+    { "sourceLabel": "TPMS", "label": "TPMS", "href": "/services/tpms-sensor-service/" },
+    { "sourceLabel": "Roadside Service", "label": "Roadside Service", "href": "/services/roadside-tire-service/" }
   ],
   "company": [
-    {
-      "sourceLabel": "Reviews",
-      "label": "Reviews",
-      "href": "#reviews"
-    },
-    {
-      "sourceLabel": "Our Work",
-      "label": "Our Work",
-      "href": "#work"
-    },
-    {
-      "sourceLabel": "Areas Served",
-      "label": "Areas Served",
-      "href": "#locations"
-    },
-    {
-      "sourceLabel": "FAQ",
-      "label": "FAQ",
-      "href": "#faq"
-    },
-    {
-      "sourceLabel": "About Us",
-      "label": "About Us",
-      "href": "/about-us/"
-    },
-    {
-      "sourceLabel": "Tire Tips",
-      "label": "Tire Tips",
-      "href": "/tire-tips/"
-    }
+    { "sourceLabel": "Reviews", "label": "Reviews", "href": "#reviews" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" },
+    { "sourceLabel": "FAQ", "label": "FAQ", "href": "#faq" },
+    { "sourceLabel": "About Us", "label": "About Us", "href": "/about-us/" },
+    { "sourceLabel": "Tire Tips", "label": "Tire Tips", "href": "/tire-tips/" }
   ],
   "social": [
-    {
-      "sourceLabel": "TikTok",
-      "label": "TikTok",
-      "href": "#work"
-    },
-    {
-      "sourceLabel": "Instagram",
-      "label": "Instagram",
-      "href": "#instagram"
-    },
-    {
-      "sourceLabel": "YouTube",
-      "label": "YouTube",
-      "href": "#work"
-    },
-    {
-      "sourceLabel": "Facebook",
-      "label": "Facebook",
-      "href": "#"
-    },
-    {
-      "sourceLabel": "Yelp",
-      "label": "Yelp",
-      "href": "#reviews"
-    }
+    { "sourceLabel": "TikTok", "label": "TikTok", "href": "#work" },
+    { "sourceLabel": "Instagram", "label": "Instagram", "href": "#instagram" },
+    { "sourceLabel": "YouTube", "label": "YouTube", "href": "#work" },
+    { "sourceLabel": "Facebook", "label": "Facebook", "href": "#" },
+    { "sourceLabel": "Yelp", "label": "Yelp", "href": "#reviews" }
   ],
   "legal": [
-    {
-      "sourceLabel": "Privacy",
-      "label": "Privacy",
-      "href": "/privacy-policy/"
-    },
-    {
-      "sourceLabel": "Terms",
-      "label": "Terms",
-      "href": "#"
-    },
-    {
-      "sourceLabel": "Cookie",
-      "label": "Cookie",
-      "href": "#"
-    },
-    {
-      "sourceLabel": "Accessibility",
-      "label": "Accessibility",
-      "href": "#"
-    },
-    {
-      "sourceLabel": "Sitemap",
-      "label": "Sitemap",
-      "href": "#"
-    }
+    { "sourceLabel": "Privacy", "label": "Privacy", "href": "/privacy-policy/" },
+    { "sourceLabel": "Terms", "label": "Terms", "href": "#" },
+    { "sourceLabel": "Cookie", "label": "Cookie", "href": "#" },
+    { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "#" },
+    { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "#" }
   ]
 }
