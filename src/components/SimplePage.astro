@@ -26,9 +26,11 @@ const preview = JSON.stringify({ relativePath }).replace(/</g, '\\u003c');
         <p data-simple-field="intro" style="font-size: 19px; line-height: 1.6; color: #2A2F38; margin: 16px 0 0; max-width: 720px" hidden={!data.intro}>{data.intro}</p>
       </div>
     </section>
-    <section style="max-width: 860px; margin: 0 auto; padding: 48px 24px 80px">
+    <section style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 80px">
+      <div style="max-width: 860px">
       <img data-simple-field="image" src={image || undefined} alt={data.imageAlt || ''} hidden={!image} style="display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 22px; margin-bottom: 32px" />
       <div class="cub-article" data-simple-field="body" style="font-size: 18px; line-height: 1.75; color: #2A2F38"><Content /></div>
+      </div>
     </section>
   </main>
   <Footer {config} {navigation} />
