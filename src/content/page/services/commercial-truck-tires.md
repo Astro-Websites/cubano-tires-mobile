@@ -127,7 +127,7 @@ demoSections:
 - label: How much do commercial truck tires cost?
   copy:
   - text: How much do commercial truck tires cost?
-  - text: It depends on the size, load range and brand. A 17.5" box truck tire and a 22.5" drive tire are priced very differently, so we quote by size, from [$__] [Confirm with Joel]. Text a photo of the sidewall and your quote will include the tire, mounting and the service call. The price we quote is the price you pay.
+  - text: It depends on the tire size, load range and brand. A 17.5" box truck tire and a 22.5" drive tire are priced very differently, so we quote every job by size instead of listing a starting price. Text a photo of the sidewall and your quote will include the tire, mounting and the service call. The price we quote is the price you pay.
   - text: Text the Size for a Quote
   links:
   - url: sms:8883333173
@@ -137,7 +137,7 @@ demoSections:
   copy:
   - text: Commercial Truck Tire FAQ
   - text: Can you replace a semi truck tire on the side of the road?
-  - text: 'Yes, when the truck is somewhere safe to work. Get off the travel lanes, text us a photo and your location, and we''ll quote it and give you a time. We''re open Monday to Friday, 8 to 5. [Confirm with Joel: freeway shoulder policy]'
+  - text: Yes, including on freeway shoulders. Get as far from the travel lanes as you safely can, text us a photo and your location, and we'll quote it and give you a time. We're open Monday to Friday, 8 to 5.
   - text: Do you repair semi truck tires or only replace them?
   - text: '[Confirm with Joel: whether you patch commercial tires.] As a rule of thumb, a small puncture in the tread can often be repaired, while sidewall damage or a blowout means a new tire.'
   - text: What size are my trailer tires?

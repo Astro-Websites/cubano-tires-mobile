@@ -11,11 +11,11 @@ demoSections:
   - text: 5.0 from 340+ Google reviews
   - text: Roadside Tire Service in
   - text: Orange County
-  - text: Flat or blowout away from home? Get somewhere safe first. Then text us your location and a photo of the tire. We come to parking lots, roadsides and job sites and fix it or replace it right there.
+  - text: Flat or blowout away from home? Get somewhere safe first. Then text us your location and a photo of the tire. We come to parking lots, freeway shoulders, surface streets and job sites and fix it or replace it right there.
   - text: Text Us a Photo of Your Tire
   - text: Call (888) 333-3173
   - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Roadside from [$__]
+  - text: Roadside from $75
   - text: Mon–Fri 8–5
   - text: Price quoted = price paid
   - text: We text when we're on the way
@@ -59,8 +59,8 @@ demoSections:
   - text: Where we meet you
   - text: Parking lots
   - text: Stores, offices, gyms and parking structures. Go back inside and we'll text when we're close.
-  - text: Roadsides & side streets
-  - text: 'Pulled over on a surface street? Drop us a pin. [Confirm with Joel: do you service freeway shoulders?]'
+  - text: Freeway shoulders & side streets
+  - text: We provide roadside tire service on freeway shoulders as well as surface streets. Pull as far from traffic as you safely can and drop us a pin.
   - text: Job sites & yards
   - text: We already work job sites for fleet accounts like Herc Rentals and Sunbelt Rentals.
   - text: Big rigs & box trucks
@@ -98,7 +98,7 @@ demoSections:
 - label: How much does roadside tire service cost?
   copy:
   - text: How much does roadside tire service cost?
-  - text: Roadside service starts at [$__]. If the tire needs replacing, we quote the new tire before we head out. Commercial and big rig tires are quoted per job. Your quote includes coming to you, so the price we text you is the price you pay.
+  - text: Roadside assistance starts at $75 and up, depending on the service location and whether the vehicle is on a highway, freeway shoulder or regular street. If the tire needs replacing, we quote the new tire before we head out. Commercial and big rig tires are quoted per job.
   - text: Text a Photo for Your Price
   links:
   - url: sms:8883333173
@@ -113,8 +113,8 @@ demoSections:
   - text: It depends on where our trucks are that day. We'll tell you when we can be there when we send your quote, and we text you when we're on the way.
   - text: What should I put in my text?
   - text: Your location (a map pin is best), a photo of the damaged tire, a photo of the size on the sidewall, and your vehicle. That's enough for us to quote and bring the right tire.
-  - text: Can you come to the freeway?
-  - text: 'The safest move is to get off at the next exit and into a lot or side street, then text us. [Confirm with Joel: whether you service freeway shoulders at all.]'
+  - text: Do you service freeway shoulders?
+  - text: Yes. We provide roadside tire services on freeway shoulders. Pull as far onto the shoulder as you safely can, turn on your hazards, stay well clear of traffic and text us your location. If you can safely reach the next exit, a lot or side street is even better.
   - text: Do you handle semi trucks and work trucks?
   - text: Yes. We handle 17.5", 19.5" and 22.5" commercial tires, box trucks, trailers, big rigs and heavy equipment. Fleet accounts are also covered in LA, Long Beach and Commerce.
   - text: I don't have a spare. Is that a problem?

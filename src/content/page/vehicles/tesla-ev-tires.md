@@ -16,7 +16,6 @@ demoSections:
   - text: Text Us a Photo of Your Tire
   - text: Call (888) 333-3173
   - text: Snap the sidewall so we can read your size. On a computer? Text it to (888) 333-3173 from your phone.
-  - text: EV tires from [$__]
   - text: Price quoted = price paid
   - text: Free mobile service with 4 tires
   links:

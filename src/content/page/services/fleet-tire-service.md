@@ -61,7 +61,7 @@ demoSections:
   - text: We come to your yard
   - text: 'We work while trucks are parked, before or after routes [Confirm with Joel: early-morning yard visits?]'
   - text: Several vehicles in one visit
-  - text: 'One account and one invoice [Confirm with Joel: net terms / invoicing]'
+  - text: One account and one invoice, with Net 30 or Net 45 terms and POs
   - text: Joel quotes every job before we roll
   - text: Your drivers stay on their routes. You get a clear list of what we did and what it cost.
   links: []
@@ -72,13 +72,13 @@ demoSections:
   - text: On-site yard service
   - text: Your yard, depot, lot or job site. Trucks don't leave the property for tires.
   - text: Scheduled or same-week
-  - text: 'Set a regular visit, or call when a truck needs tires. [Confirm with Joel: same-week turnaround]'
+  - text: Set a regular visit or call when a truck needs tires.
   - text: Multi-vehicle days
   - text: We work down the line in one visit instead of one truck at a time.
   - text: Account billing
-  - text: 'Billed to your company, not the driver. [Confirm with Joel: net terms / invoicing, PO numbers]'
+  - text: Bill to your company, not the driver. We offer Net 30 and Net 45 invoicing terms, with purchase orders (POs).
   - text: DOT-style tire inspections
-  - text: Tread depth, pressure and damage checked across the fleet, with a list of what's due. [Confirm with Joel]
+  - text: 'We provide DOT-style tire inspections for commercial fleets: tread depth, pressure and damage checked across your vehicles, with a list of what''s due.'
   - text: Mixed fleets
   - text: Pickups, vans, box trucks, trailers, big rigs and heavy equipment. 17.5", 19.5" and 22.5" tires.
   links: []
@@ -126,7 +126,7 @@ demoSections:
 - label: How much does fleet tire service cost?
   copy:
   - text: How much does fleet tire service cost?
-  - text: 'Fleet pricing depends on your tire sizes, how many vehicles we service per visit and how often we come out. Joel builds account pricing around your fleet, from [$__] [Confirm with Joel: per-tire vs. per-visit pricing]. Every job is quoted before we roll, and the price we quote is the price you pay.'
+  - text: Fleet pricing depends on your tire sizes, how many vehicles we service per visit and how often we come out. Joel builds account pricing around your fleet, and we offer Net 30 and Net 45 invoicing terms with purchase orders (POs). Every job is quoted before we roll, and the price we quote is the price you pay.
   - text: Call to Set Up a Fleet Account
   links:
   - url: tel:8883333173
@@ -138,13 +138,13 @@ demoSections:
   - text: Do you come to our yard?
   - text: Yes. We service fleets at their yard, depot, lot or job site anywhere in Orange County, and fleet accounts also cover Los Angeles, Long Beach and Commerce.
   - text: Can you bill our company instead of the driver paying?
-  - text: 'That''s what a fleet account is for. Work gets billed to your company so drivers don''t pay at the truck. [Confirm with Joel: net terms, invoice format, PO numbers]'
+  - text: Yes. That's what a fleet account is for. Work gets billed to your company so drivers don't pay at the truck. We offer Net 30 and Net 45 invoicing terms, with purchase orders (POs).
   - text: Do you do DOT tire inspections?
-  - text: 'We can check tread, pressure and damage across your vehicles and tell you what''s due. [Confirm with Joel: DOT-style inspections and written reports] As a rule of thumb, federal rules call for at least 4/32" of tread on a commercial truck''s steer tires and 2/32" on the other positions. Check FMCSA rules for your vehicles.'
+  - text: Yes. We provide DOT-style tire inspections for commercial fleets, checking tread, pressure and damage across your vehicles and telling you what's due. As a rule of thumb, federal rules call for at least 4/32" of tread on a commercial truck's steer tires and 2/32" on the other positions. Check FMCSA rules for your vehicles.
   - text: How soon can you get to us?
   - text: Most accounts book scheduled or same-week visits [Confirm with Joel]. If a truck is down during business hours, text a photo and Joel will tell you when we can be there.
   - text: What vehicles can you handle?
-  - text: Cars, pickups, vans, box trucks, trailers, semis and heavy equipment. We carry 17.5", 19.5" and 22.5" commercial tires. We don't do rim or wheel repair, but we do install new wheels.
+  - text: Cars, pickups, vans, box trucks, trailers, semis and heavy equipment. We carry 17.5", 19.5" and 22.5" commercial tires. We supply tires only. We don't sell or repair wheels, but we can mount tires on wheels you provide.
   - text: What about after hours and weekends?
   - text: We're open Monday to Friday, 8 to 5, and closed weekends. Text anytime. After-hours texts are answered first thing the next business morning.
   links: []

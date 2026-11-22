@@ -15,7 +15,7 @@ demoSections:
   - text: Text Us a Photo of Your Wheels
   - text: Call (888) 333-3173
   - text: On a computer? Text your photo to (888) 333-3173 from your phone.
-  - text: Mounting from [$__]
+  - text: Mounting from $35/tire
   - text: Your wheels, mounted & balanced
   - text: TPMS transferred
   - text: Price quoted = price paid
@@ -100,7 +100,7 @@ demoSections:
 - label: How much does tire mounting cost?
   copy:
   - text: How much does tire mounting on my wheels cost?
-  - text: Mounting and balancing on your wheels starts at [$__]. The final price depends on the tires you pick, the tire size and how many wheels we're doing. We quote everything up front, including the install at your place, so the price we text you is the price you pay. An optional nationwide warranty is available for $15 per tire.
+  - text: Mounting and installing tires on your wheels starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. We supply the tires; you provide the wheels. We quote everything up front, so the price we text you is the price you pay. An optional nationwide warranty is available for $15 per tire.
   - text: Text a Photo for Your Price
   links:
   - url: sms:8883333173
