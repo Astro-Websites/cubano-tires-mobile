@@ -1,11 +1,11 @@
 {
   "header": [
     { "sourceLabel": "Shop Tires", "label": "Shop Tires", "href": "/tires/" },
-    { "sourceLabel": "Tire Services", "label": "Tire Services", "href": "#services" },
-    { "sourceLabel": "Fleet Services", "label": "Fleet Services", "href": "#fleet" },
-    { "sourceLabel": "Coupons", "label": "Coupons", "href": "#coupons" },
-    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
-    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" }
+    { "sourceLabel": "Tire Services", "label": "Tire Services", "href": "/#services" },
+    { "sourceLabel": "Fleet Services", "label": "Fleet Services", "href": "/services/fleet-tire-service/" },
+    { "sourceLabel": "Coupons", "label": "Coupons", "href": "/coupons/" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "/#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "/#locations" }
   ],
   "services": [
     { "sourceLabel": "Fleet & Commercial", "label": "Fleet & Commercial", "href": "/services/fleet-tire-service/" },
@@ -16,25 +16,25 @@
     { "sourceLabel": "Roadside Service", "label": "Roadside Service", "href": "/services/roadside-tire-service/" }
   ],
   "company": [
-    { "sourceLabel": "Reviews", "label": "Reviews", "href": "#reviews" },
-    { "sourceLabel": "Our Work", "label": "Our Work", "href": "#work" },
-    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "#locations" },
-    { "sourceLabel": "FAQ", "label": "FAQ", "href": "#faq" },
+    { "sourceLabel": "Reviews", "label": "Reviews", "href": "/#reviews" },
+    { "sourceLabel": "Our Work", "label": "Our Work", "href": "/#work" },
+    { "sourceLabel": "Areas Served", "label": "Areas Served", "href": "/#locations" },
+    { "sourceLabel": "FAQ", "label": "FAQ", "href": "/#faq" },
     { "sourceLabel": "About Us", "label": "About Us", "href": "/about-us/" },
     { "sourceLabel": "Tire Tips", "label": "Tire Tips", "href": "/tire-tips/" }
   ],
   "social": [
-    { "sourceLabel": "TikTok", "label": "TikTok", "href": "#work" },
-    { "sourceLabel": "Instagram", "label": "Instagram", "href": "#instagram" },
-    { "sourceLabel": "YouTube", "label": "YouTube", "href": "#work" },
-    { "sourceLabel": "Facebook", "label": "Facebook", "href": "#" },
-    { "sourceLabel": "Yelp", "label": "Yelp", "href": "#reviews" }
+    { "sourceLabel": "TikTok", "label": "TikTok", "href": "https://www.tiktok.com/@cubanotiresmobileshop" },
+    { "sourceLabel": "Instagram", "label": "Instagram", "href": "https://www.instagram.com/cubanotiresmobile/" },
+    { "sourceLabel": "YouTube", "label": "YouTube", "href": "https://www.youtube.com/@CubanoTiresMobileShop" },
+    { "sourceLabel": "Facebook", "label": "Facebook", "href": "https://www.facebook.com/cubanotiresmobile/" },
+    { "sourceLabel": "Yelp", "label": "Yelp", "href": "https://www.yelp.com/biz/cubano-tires-mobile-shop-fullerton-7" }
   ],
   "legal": [
     { "sourceLabel": "Privacy", "label": "Privacy", "href": "/privacy-policy/" },
     { "sourceLabel": "Terms", "label": "Terms", "href": "#" },
     { "sourceLabel": "Cookie", "label": "Cookie", "href": "#" },
     { "sourceLabel": "Accessibility", "label": "Accessibility", "href": "#" },
-    { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "#" }
+    { "sourceLabel": "Sitemap", "label": "Sitemap", "href": "/sitemap/" }
   ]
 }

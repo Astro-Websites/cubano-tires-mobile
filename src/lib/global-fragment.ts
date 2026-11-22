@@ -47,7 +47,8 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   }
 
   for (const item of Object.values(navigation).flat()) {
-    const label = escapeRegExp(item.sourceLabel);
+    // Labels in the fragments are HTML-escaped ("Fleet &amp; Commercial"), so match either form.
+    const label = `(?:${escapeRegExp(item.sourceLabel)}|${escapeRegExp(escapeHtml(item.sourceLabel))})`;
     const pattern = new RegExp(`<a([^>]*?)href="[^"]*"([^>]*?)>${label}</a>`, 'g');
     html = html.replace(pattern, `<a$1href="${escapeHtml(item.href)}"$2>${escapeHtml(item.label)}</a>`);
   }
