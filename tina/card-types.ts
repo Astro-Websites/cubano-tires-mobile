@@ -10,26 +10,26 @@ export const CARD_TYPES: Record<string, { label: string; title: string; fields: 
     { name: 'details', label: 'Details and dates', kind: 'textarea' }, { name: 'buttonLabel', label: 'Button text' }, { name: 'buttonUrl', label: 'Button link', kind: 'url' }] },
   review: { label: 'Review', title: 'author', fields: [
     { name: 'quote', label: 'Review text', kind: 'textarea' }, { name: 'author', label: 'Reviewer' },
-    { name: 'logo', label: 'Review site logo (homepage only)', kind: 'image' }, { name: 'logoAlt', label: 'Review site name' }] },
+    { name: 'logo', label: 'Review site logo (homepage only)', kind: 'image' }, { name: 'logoAlt', label: 'Logo Alt Text (SEO)' }] },
   stat: { label: 'Stat', title: 'value', fields: [
     { name: 'value', label: 'Number' }, { name: 'label', label: 'Label' }] },
   person: { label: 'Team member', title: 'name', fields: [
-    { name: 'photo', label: 'Photo', kind: 'image' }, { name: 'photoAlt', label: 'Photo description' },
+    { name: 'photo', label: 'Photo', kind: 'image' }, { name: 'photoAlt', label: 'Photo Alt Text (SEO)' },
     { name: 'name', label: 'Name' }, { name: 'role', label: 'Role' }, { name: 'bio', label: 'Bio (About page only)', kind: 'textarea' }] },
   photo: { label: 'Photo', title: 'caption', fields: [
-    { name: 'image', label: 'Photo', kind: 'image' }, { name: 'imageAlt', label: 'Photo description' },
+    { name: 'image', label: 'Photo', kind: 'image' }, { name: 'imageAlt', label: 'Photo Alt Text (SEO)' },
     { name: 'title', label: 'Title (if shown)' }, { name: 'caption', label: 'Caption' }] },
   logo: { label: 'Logo', title: 'imageAlt', fields: [
-    { name: 'image', label: 'Logo', kind: 'image' }, { name: 'imageAlt', label: 'Name' }, { name: 'url', label: 'Link', kind: 'url' }] },
+    { name: 'image', label: 'Logo', kind: 'image' }, { name: 'imageAlt', label: 'Logo Alt Text (SEO), e.g. brand name' }, { name: 'url', label: 'Link', kind: 'url' }] },
   pill: { label: 'Area / tag link', title: 'label', fields: [
     { name: 'label', label: 'Text' }, { name: 'url', label: 'Link', kind: 'url' }] },
   arrowLink: { label: 'Related link', title: 'label', fields: [
     { name: 'label', label: 'Text' }, { name: 'url', label: 'Link', kind: 'url' }] },
   linkCard: { label: 'Link card', title: 'title', fields: [
-    { name: 'image', label: 'Image (if shown)', kind: 'image' }, { name: 'imageAlt', label: 'Image description' },
+    { name: 'image', label: 'Image (if shown)', kind: 'image' }, { name: 'imageAlt', label: 'Image Alt Text (SEO)' },
     { name: 'title', label: 'Title' }, { name: 'text', label: 'Text', kind: 'textarea' }, { name: 'cta', label: 'Link text (if shown)' }, { name: 'url', label: 'Link', kind: 'url' }] },
   service: { label: 'Service card', title: 'title', fields: [
-    { name: 'image', label: 'Image', kind: 'image' }, { name: 'imageAlt', label: 'Image description' },
+    { name: 'image', label: 'Image', kind: 'image' }, { name: 'imageAlt', label: 'Image Alt Text (SEO)' },
     { name: 'title', label: 'Title' }, { name: 'text', label: 'Text', kind: 'textarea' },
     { name: 'learnMoreLabel', label: 'First button text' }, { name: 'learnMoreUrl', label: 'First button link', kind: 'url' },
     { name: 'callLabel', label: 'Second button text' }, { name: 'callUrl', label: 'Second button link', kind: 'url' }] },

@@ -66,7 +66,7 @@ demoSections:
     alt: Technician servicing a semi truck
   - role: Image
     source: /uploads/home/hero.png
-    alt: ''
+    alt: Cubano Tires Mobile Shop logo
   cards:
   - _template: feature
     title: 'We come to you:'

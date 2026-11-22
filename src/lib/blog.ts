@@ -1,7 +1,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Category = { slug: string; title: string; description?: string; color: string };
-export type Author = { name: string; role?: string; avatar?: string; bio?: string };
+export type Author = { name: string; role?: string; avatar?: string; avatarAlt?: string; bio?: string };
 export type Post = {
   entry: CollectionEntry<'blog'>;
   slug: string;

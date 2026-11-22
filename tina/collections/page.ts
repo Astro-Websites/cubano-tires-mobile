@@ -7,7 +7,7 @@ const cardTemplates: Template[] = Object.entries(CARD_TYPES).map(([name, card]) 
   ui: { itemProps: (item: Record<string, string>) => ({ label: item?.[card.title] ? `${card.label}: ${item[card.title]}` : card.label }) },
   fields: card.fields.map((field) => field.kind === 'image'
     ? { type: 'image' as const, name: field.name, label: field.label }
-    : { type: 'string' as const, name: field.name, label: field.label, ...(field.kind === 'textarea' ? { ui: { component: 'textarea' } } : {}) }),
+    : { type: 'string' as const, name: field.name, label: field.label, ...(/Alt$/.test(field.name) ? { description: 'Alt text for SEO: describe the image for Google and screen readers.' } : {}), ...(field.kind === 'textarea' ? { ui: { component: 'textarea' } } : {}) }),
 }));
 
 export const PageCollection: Collection = {
@@ -48,7 +48,7 @@ export const PageCollection: Collection = {
         ] },
         { type: 'object', name: 'images', label: 'Images', list: true, ui: { itemProps: (item) => ({ label: [item?.role, item?.alt].filter(Boolean).join(': ') }) }, fields: [
           { type: 'string', name: 'role', label: 'Role', ui: { component: 'hidden' } },
-          { type: 'image', name: 'source', label: 'Image' }, { type: 'string', name: 'alt', label: 'Alternative Text' },
+          { type: 'image', name: 'source', label: 'Image' }, { type: 'string', name: 'alt', label: 'Alt Text (SEO)', description: 'Describe the image for Google and screen readers, e.g. "Technician replacing a semi truck tire in Anaheim".' },
         ] },
         { type: 'object', name: 'cards', label: 'Repeating items (add, remove, reorder)', list: true, templates: cardTemplates,
           description: 'FAQs, coupons, team members, photos, reviews and similar. New items must use the same type as the ones already in this section.' },
