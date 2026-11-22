@@ -115,7 +115,7 @@ demoSections:
   links:
   - role: Button
     label: Get My Free Quote
-    url: '#'
+    url: '#quote'
   - role: Link
     label: or text (888) 333-3173
     url: sms:8883333173
@@ -150,7 +150,7 @@ demoSections:
     image: /uploads/home/technician-replacing-a-22-5-inch-tire-beside-a-green-semi-tr.jpg
     title: Fleet & Commercial
     text: On-site replacement for trucks, trailers, box trucks and heavy equipment. Built for uptime.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /services/fleet-tire-service/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -159,7 +159,7 @@ demoSections:
     image: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
     title: Tire Sales & Installation
     text: New tires from top brands, mounted and balanced in your driveway. $75 mobile fee waived with 4 tires in Orange County.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /services/mobile-tire-installation/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -168,7 +168,7 @@ demoSections:
     image: /uploads/home/technician-removing-a-shredded-blowout-tire-at-the-roadside.jpg
     title: Flats, Blowouts & Repairs
     text: Punctures, bead leaks, valve stems and roadside blowouts fixed where you are.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /services/flat-tire-repair/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -177,7 +177,7 @@ demoSections:
     image: /uploads/home/technician-installing-a-new-tire-on-a-tesla-in-a-driveway.jpg
     title: Tesla, EV & Cybertruck
     text: EV-rated tires and the big Cybertruck sizes most shops turn away.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /vehicles/tesla-ev-tires/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -186,7 +186,7 @@ demoSections:
     image: /uploads/home/technician-installing-new-tires-on-a-white-bmw-m8-in-a-drive.jpg
     title: Luxury & Exotics
     text: G-Wagons, BMW M, Land Rovers, Lambos. Careful handling on premium wheels.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /services/mobile-tire-installation/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -195,7 +195,7 @@ demoSections:
     image: /uploads/home/technician-servicing-a-wheel-and-tpms-valve-on-the-tire-mach.jpg
     title: TPMS, Rotation & Balancing
     text: Sensor diagnostics and replacement, rotations and balancing to make your tires last.
-    learnMoreUrl: '#services'
+    learnMoreUrl: /services/tpms-sensor-service/
     learnMoreLabel: Learn More
     callUrl: sms:8883333173
     callLabel: Text or Call
@@ -530,47 +530,47 @@ demoSections:
   links:
   - role: Button
     label: Los Angeles
-    url: '#los-angeles'
+    url: '#locations'
   images: []
   cards:
   - _template: pill
-    url: '#anaheim'
+    url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#fullerton'
+    url: '#locations'
     label: Fullerton
   - _template: pill
-    url: '#irvine'
+    url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: '#costa-mesa'
+    url: '#locations'
     label: Costa Mesa
   - _template: pill
-    url: '#laguna-beach'
+    url: '#locations'
     label: Laguna Beach
   - _template: pill
-    url: '#huntington-beach'
+    url: '#locations'
     label: Huntington Beach
   - _template: pill
-    url: '#orange'
+    url: '#locations'
     label: Orange
   - _template: pill
-    url: '#santa-ana'
+    url: '#locations'
     label: Santa Ana
   - _template: pill
-    url: '#placentia'
+    url: '#locations'
     label: Placentia
   - _template: pill
-    url: '#los-alamitos'
+    url: '#locations'
     label: Los Alamitos
   - _template: pill
-    url: '#newport-beach'
+    url: '#locations'
     label: Newport Beach
   - _template: pill
-    url: '#diamond-bar'
+    url: '#locations'
     label: Diamond Bar
   - _template: pill
-    url: '#chino-hills'
+    url: '#locations'
     label: Chino Hills
 - label: Request a quote
   copy:

@@ -29,7 +29,7 @@ demoSections:
     url: /
   - role: Link
     label: Areas Served
-    url: '#areas'
+    url: /#locations
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -126,7 +126,7 @@ demoSections:
     title: Tesla, EV & Cybertruck Tires
     text: EV-rated tires for Teslas, Rivians and Cybertrucks, no spare needed
   - _template: linkCard
-    url: '#luxury'
+    url: /services/mobile-tire-installation/
     imageAlt: BMW M8 tire install
     image: /uploads/cubano-pages/cubano-technician-installing-tires-on-a-white.jpg
     title: Luxury & Exotic Tires
@@ -179,29 +179,29 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
-    url: '#tustin'
+    url: /#locations
     label: Tustin
   - _template: pill
-    url: '#costa-mesa'
+    url: /#locations
     label: Costa Mesa
   - _template: pill
-    url: '#newport-beach'
+    url: /#locations
     label: Newport Beach
   - _template: pill
-    url: '#lake-forest'
+    url: /#locations
     label: Lake Forest
   - _template: pill
-    url: '#santa-ana'
+    url: /#locations
     label: Santa Ana
   - _template: pill
-    url: '#mission-viejo'
+    url: /#locations
     label: Mission Viejo
   - _template: pill
-    url: '#laguna-hills'
+    url: /#locations
     label: Laguna Hills
 - label: Need tires in Irvine? Text us a photo.
   copy:

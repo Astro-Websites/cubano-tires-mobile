@@ -35,7 +35,7 @@ demoSections:
     url: /
   - role: Link
     label: Tire Services
-    url: '#services'
+    url: /#services
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -199,32 +199,32 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: '#santa-ana'
+    url: /#locations
     label: Santa Ana
   - _template: pill
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#garden-grove'
+    url: /#locations
     label: Garden Grove
   - _template: pill
-    url: '#brea'
+    url: /#locations
     label: Brea
   - _template: pill
-    url: '#costa-mesa'
+    url: /#locations
     label: Costa Mesa
   - _template: pill
-    url: '#fullerton'
+    url: /#locations
     label: Fullerton
   - _template: pill
-    url: '#tustin'
+    url: /#locations
     label: Tustin
   - _template: arrowLink
     url: /services/mobile-tire-installation/

@@ -37,7 +37,7 @@ demoSections:
     url: /
   - role: Link
     label: Tire Services
-    url: '#services'
+    url: /#services
   - role: Button
     label: Text Us a Photo of Your Tire
     url: sms:8883333173
@@ -226,7 +226,7 @@ demoSections:
   links:
   - role: Button
     label: All areas
-    url: '#areas'
+    url: /#locations
   images: []
   cards:
   - _template: pill
@@ -236,22 +236,22 @@ demoSections:
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: '#newport-beach'
+    url: /#locations
     label: Newport Beach
   - _template: pill
-    url: '#yorba-linda'
+    url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: '#mission-viejo'
+    url: /#locations
     label: Mission Viejo
   - _template: pill
-    url: '#tustin'
+    url: /#locations
     label: Tustin
   - _template: pill
-    url: '#orange'
+    url: /#locations
     label: Orange
   - _template: pill
-    url: '#lake-forest'
+    url: /#locations
     label: Lake Forest
   - _template: arrowLink
     url: /
