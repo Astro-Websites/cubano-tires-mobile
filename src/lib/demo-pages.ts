@@ -44,7 +44,7 @@ function kindOf(list: string, field: string): Kind {
 function clean(kind: Kind, raw: unknown) {
   let value = String(raw ?? '');
   if (kind === 'url' || kind === 'image') {
-    value = value.trim();
+    value = value.trim().replace(/ +/g, '%20'); // editors often paste addresses with spaces
     const allowed = /^(?:\/(?![/\\])|https:\/\/)/i.test(value) || (kind === 'url' && /^(?:#|tel:|sms:|mailto:)/i.test(value));
     if (!allowed || /[\u0000- \\]/.test(value)) value = kind === 'url' ? '#' : '';
   }

@@ -67,7 +67,7 @@ demoSections:
     url: mailto:{{email}}
   - role: Map
     label: Map
-    url: https://www.google.com/maps?q={{address}}&output=embed
+    url: https://www.google.com/maps?q={{addressQuery}}&output=embed
   images: []
 - label: How to reach us
   copy:
