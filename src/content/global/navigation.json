@@ -81,13 +81,37 @@
     {
       "label": "OTR & Heavy Equipment",
       "href": "/services/otr-heavy-equipment-tires/"
+    },
+    {
+      "label": "Forklift Tires",
+      "href": "/tires/forklift-tires/"
+    },
+    {
+      "label": "Construction Equipment Tires",
+      "href": "/tires/construction-equipment-tires/"
+    },
+    {
+      "label": "Heavy Duty Equipment Tires",
+      "href": "/tires/heavy-duty-equipment-tires/"
+    },
+    {
+      "label": "RV Tires",
+      "href": "/tires/rv-tires/"
+    },
+    {
+      "label": "Trailer Tires",
+      "href": "/tires/trailer-tires/"
+    },
+    {
+      "label": "Farm & Agricultural Tires",
+      "href": "/tires/farm-agricultural-tires/"
     }
   ],
   "company": [
     {
       "sourceLabel": "Reviews",
       "label": "Reviews",
-      "href": "/#reviews"
+      "href": "/about/read-our-reviews/"
     },
     {
       "sourceLabel": "Our Work",
@@ -102,12 +126,24 @@
     {
       "sourceLabel": "FAQ",
       "label": "FAQ",
-      "href": "/#faq"
+      "href": "/faq/"
     },
     {
       "sourceLabel": "About Us",
       "label": "About Us",
       "href": "/about-us/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "label": "Gallery",
+      "href": "/about/gallery/"
+    },
+    {
+      "label": "Nationwide Warranty",
+      "href": "/about/nationwide-warranty/"
     },
     {
       "sourceLabel": "Tire Tips",
