@@ -6,7 +6,7 @@ heading: Thanks, we got your message
 intro: We reply during business hours. For a faster answer, text a photo of the tire to (888) 333-3173.
 ---
 
-Your request is on its way to our office team. We will get back to you with a price and an arrival time as soon as we can during business hours.
+Your message is on its way to our office team. We will get back to you as soon as we can during business hours.
 
 Need a tire today? Call or text [(888) 333-3173](tel:8883333173) and send a photo of the tire and where you are parked.
 
