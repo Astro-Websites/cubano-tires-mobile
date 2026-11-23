@@ -39,10 +39,10 @@ demoSections:
   images: []
   cards:
   - _template: photo
-    image: /uploads/demo/photo-needed.svg
-    imageAlt: Placeholder for an RV tire replacement photo
+    image: /uploads/gallery/technician-replacing-a-motorhome-tire-curbside.jpg
+    imageAlt: Cubano Tires technician replacing a motorhome tire at the curb
     title: ''
-    caption: '[Client to provide: RV tire photo from the live album]'
+    caption: Replacing a motorhome tire right at the curb, no tow needed.
   - _template: photo
     image: /uploads/demo/photo-needed.svg
     imageAlt: Placeholder for a travel trailer tire photo
