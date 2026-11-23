@@ -2,7 +2,7 @@ import { createElement, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { useTina } from 'tinacms/dist/react';
 import { addImageEditStyles } from './preview-styles';
-import { pageQuery, renderDemo, type DemoPage, type Globals } from './demo-pages';
+import { fillTokens, pageQuery, renderDemo, type DemoPage, type Globals } from './demo-pages';
 
 // Live preview inside the Tina editor: re-render the design from the form values and
 // tag every text and image with data-tina-field so clicking it opens that field.
@@ -28,8 +28,8 @@ export function mountDemoPreview() {
       root!.innerHTML = renderDemo(template, data.page, { preview: true, globals });
       const fresh = root!.querySelector('#ta-widget-container');
       if (widget && fresh) fresh.replaceWith(widget);
-      document.title = data.page.seoTitle || data.page.title;
-      document.querySelector('meta[name="description"]')?.setAttribute('content', data.page.description);
+      document.title = String(fillTokens(data.page.seoTitle || data.page.title, globals));
+      document.querySelector('meta[name="description"]')?.setAttribute('content', String(fillTokens(data.page.description ?? '', globals)));
     }, [data]);
     return null;
   }
