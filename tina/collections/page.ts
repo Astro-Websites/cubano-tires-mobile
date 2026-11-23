@@ -34,7 +34,7 @@ export const PageCollection: Collection = {
     { type: 'string', name: 'demoTemplate', label: 'Layout', ui: { component: 'hidden' } },
     {
       type: 'object', name: 'demoSections', label: 'Page Sections', list: true,
-      description: 'Tip: click any text or image in the page preview to jump straight to its field.',
+      description: 'Tip: click any text or image in the page preview to jump straight to its field. Business facts come from Global Config: type {{phone}}, {{phoneDigits}}, {{email}}, {{address}}, {{weekdayDays}}, {{weekdayHours}}, {{weekendDays}} or {{weekendHours}} and the current value is filled in everywhere.',
       ui: { itemProps: (item) => ({ label: item?.label }) },
       fields: [
         { type: 'string', name: 'label', label: 'Section Label' },

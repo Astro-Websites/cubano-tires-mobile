@@ -12,6 +12,12 @@ intro: Every page on our site in one place.
 * [Shop Tires](/tires/)
 * [Coupons & Rebates](/coupons/)
 * [About Us](/about-us/)
+* [Reviews](/about/read-our-reviews/)
+* [Gallery](/about/gallery/)
+* [News](/about/news/)
+* [Nationwide Warranty](/about/nationwide-warranty/)
+* [FAQ](/faq/)
+* [Contact](/contact/)
 * [Tire Tips](/tire-tips/)
 
 ## Tire services
@@ -30,9 +36,15 @@ intro: Every page on our site in one place.
 * [Commercial Truck Tires](/services/commercial-truck-tires/)
 * [OTR & Heavy Equipment Tires](/services/otr-heavy-equipment-tires/)
 
-## Vehicles
+## Vehicles and equipment
 
 * [Tesla & EV Tires](/vehicles/tesla-ev-tires/)
+* [RV Tires](/tires/rv-tires/)
+* [Trailer Tires](/tires/trailer-tires/)
+* [Forklift Tires](/tires/forklift-tires/)
+* [Construction Equipment Tires](/tires/construction-equipment-tires/)
+* [Heavy Duty Equipment Tires](/tires/heavy-duty-equipment-tires/)
+* [Farm & Agricultural Tires](/tires/farm-agricultural-tires/)
 
 ## Areas we serve
 

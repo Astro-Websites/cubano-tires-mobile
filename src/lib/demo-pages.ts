@@ -13,6 +13,22 @@ export const pageQuery = `query CubanoPage($relativePath: String!) {
   page(relativePath: $relativePath) { ${pageFields} }
 }`;
 
+// Business facts typed as {{token}} in any text, link or alt field are filled from Global Config,
+// so the phone, address and hours are stored once. See GLOBAL_TOKENS for the list.
+export type Globals = Record<string, string>;
+export const GLOBAL_TOKENS = ['siteName', 'phone', 'phoneDigits', 'email', 'address', 'addressLine1', 'addressLine2', 'weekdayDays', 'weekdayHours', 'weekendDays', 'weekendHours', 'addressQuery'] as const;
+export function globalsFrom(config: Record<string, any>): Globals {
+  const hours = config?.hours || {};
+  return {
+    siteName: config?.siteName || '', phone: config?.phoneDisplay || '', phoneDigits: config?.phoneDigits || '', email: config?.email || '',
+    address: [config?.addressLine1, config?.addressLine2].filter(Boolean).join(', '), addressLine1: config?.addressLine1 || '', addressLine2: config?.addressLine2 || '',
+    weekdayDays: hours.weekdayLabel || '', weekdayHours: hours.weekdayHours || '', weekendDays: hours.weekendLabel || '', weekendHours: hours.weekendHours || '',
+    addressQuery: encodeURIComponent([config?.addressLine1, config?.addressLine2].filter(Boolean).join(', ')),
+  };
+}
+export const fillTokens = (value: unknown, globals?: Globals) =>
+  globals && typeof value === 'string' ? value.replace(/\{\{(\w+)\}\}/g, (match, key) => (key in globals ? globals[key] : match)) : value;
+
 const entities: Record<string, string> = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
 const escape = (value: string) => value.replace(/[&<>"']/g, (char) => entities[char]);
 const SLOT = /@@(\d+):(copy|links|images|cards):(\d+):(\w+)@@/g;
@@ -43,7 +59,7 @@ function tinaField(row: Row | undefined, field: string) {
 
 const cardType = (card: Row) => card?._template || String(card?.__typename || '').replace(/^PageDemoSectionsCards/, '').replace(/^./, (c) => c.toLowerCase());
 
-export function renderDemo(template: string, page: DemoPage, options: { preview?: boolean } = {}) {
+export function renderDemo(template: string, page: DemoPage, options: { preview?: boolean; globals?: Globals } = {}) {
   const sections = page.demoSections || [];
   const expanded = template.replace(/<!--repeat:(\d+):(\w+)-->([\s\S]*?)<!--\/repeat-->/g, (_, section, type, block: string) =>
     (sections[+section]?.cards || [])
@@ -64,14 +80,14 @@ export function renderDemo(template: string, page: DemoPage, options: { preview?
         const kind = kindOf(list, name);
         if (kind === 'image' && options.preview) field ||= tinaField(row, name);
         if (kind === 'url' && row?.newTab) newTab = true;
-        return escape(clean(kind, row?.[name]));
+        return escape(clean(kind, fillTokens(row?.[name], options.globals)));
       });
       const extra = (newTab ? ' target="_blank" rel="noopener"' : '') + (field ? ` data-tina-field="${escape(field)}"` : '');
       return extra ? tag.replace(/\s*(\/?)>$/, `${extra}$1>`) : tag;
     }
     return token.replace(SLOT, (_, section, list, index, name) => {
       const row = lookup(section, list, index);
-      const value = escape(clean(kindOf(list, name), row?.[name]));
+      const value = escape(clean(kindOf(list, name), fillTokens(row?.[name], options.globals)));
       const field = options.preview ? tinaField(row, name) : '';
       return field ? `<span data-tina-field="${escape(field)}">${value}</span>` : value;
     });

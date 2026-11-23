@@ -11,6 +11,7 @@
   },
   "phoneDisplay": "(888) 333-3173",
   "phoneDigits": "8883333173",
+  "email": "cubanotiresmobile@gmail.com",
   "addressLine1": "3911 E La Palma Ave, Suite J",
   "addressLine2": "Anaheim, CA 92807",
   "copyright": "© 2026 Cubano Tires Mobile Shop. All rights reserved.",
@@ -25,9 +26,9 @@
   },
   "announcement": "$75 mobile fee waived with 4 new tires in Orange County",
   "hours": {
-    "weekdayLabel": "Monday – Friday",
-    "weekdayHours": "8:00 AM – 5:00 PM",
-    "weekendLabel": "Saturday – Sunday",
+    "weekdayLabel": "Monday to Friday",
+    "weekdayHours": "8:00 AM to 5:00 PM",
+    "weekendLabel": "Saturday and Sunday",
     "weekendHours": "Closed"
   }
 }
