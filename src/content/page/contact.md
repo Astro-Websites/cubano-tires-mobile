@@ -51,9 +51,9 @@ demoSections:
   - role: Bot check error
     text: Please complete the security check above, then press Send again.
   links:
-  - role: Form sends to (FormSubmit address)
+  - role: Form sends to (leave as /api/contact/, messages go to Global Config Contact Form Email)
     label: Form action
-    url: https://formsubmit.co/{{formEmail}}
+    url: /api/contact/
   - role: Thank you page
     label: Thank you page
     url: /thank-you/

@@ -13,3 +13,4 @@ tina/__generated__/
 !.env.example
 .DS_Store
 __pycache__/
+.dev.vars
