@@ -24,6 +24,44 @@ demoSections:
     label: Call {{phone}}
     url: tel:{{phoneDigits}}
   images: []
+- label: Contact form
+  copy:
+  - role: Eyebrow
+    text: Send a Message
+  - role: Heading
+    text: Ask for a tire quote online
+  - role: Paragraph
+    text: Tell us about the tire and add a photo if you can. We reply during business hours, {{weekdayDays}}, {{weekdayHours}}.
+  - role: Name label
+    text: Your name
+  - role: Phone label
+    text: Phone number
+  - role: Email label
+    text: Email (optional)
+  - role: Vehicle label
+    text: Vehicle or equipment
+  - role: Tire size label
+    text: Tire size, if you have it
+  - role: Location label
+    text: Where is it parked?
+  - role: Message label
+    text: What do you need?
+  - role: Photo label
+    text: Photo of the tire (optional)
+  - role: Button
+    text: Send My Request
+  - role: Note
+    text: In a hurry? Text the photo to {{phone}} instead.
+  - role: Email subject
+    text: New tire quote request from the website
+  links:
+  - role: Form sends to (FormSubmit address)
+    label: Form action
+    url: https://formsubmit.co/{{formEmail}}
+  - role: Thank you page
+    label: Thank you page
+    url: /thank-you/
+  images: []
 - label: Contact details
   copy:
   - role: Eyebrow
@@ -152,44 +190,6 @@ demoSections:
   - role: Button
     label: Call {{phone}}
     url: tel:{{phoneDigits}}
-  images: []
-- label: Contact form
-  copy:
-  - role: Eyebrow
-    text: Send a Message
-  - role: Heading
-    text: Ask for a tire quote online
-  - role: Paragraph
-    text: Tell us about the tire and add a photo if you can. We reply during business hours, {{weekdayDays}}, {{weekdayHours}}.
-  - role: Name label
-    text: Your name
-  - role: Phone label
-    text: Phone number
-  - role: Email label
-    text: Email (optional)
-  - role: Vehicle label
-    text: Vehicle or equipment
-  - role: Tire size label
-    text: Tire size, if you have it
-  - role: Location label
-    text: Where is it parked?
-  - role: Message label
-    text: What do you need?
-  - role: Photo label
-    text: Photo of the tire (optional)
-  - role: Button
-    text: Send My Request
-  - role: Note
-    text: In a hurry? Text the photo to {{phone}} instead.
-  - role: Email subject
-    text: New tire quote request from the website
-  links:
-  - role: Form sends to (FormSubmit address)
-    label: Form action
-    url: https://formsubmit.co/{{formEmail}}
-  - role: Thank you page
-    label: Thank you page
-    url: /thank-you/
   images: []
 demoTemplate: contact-page
 ---
