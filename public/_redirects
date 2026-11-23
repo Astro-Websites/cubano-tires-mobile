@@ -92,6 +92,22 @@
 /vehicles/                                 /#services                                302
 /vehicles                                  /#services                                302
 
+# --- Old gallery albums -> new album pages ---
+/About/Gallery/ID/163                         /about/gallery/inside-the-cubano-trucks/ 301
+/About/Gallery/ID/163/*                         /about/gallery/inside-the-cubano-trucks/ 301
+/About/Gallery/ID/160                         /about/gallery/reliable-tire-solutions-wherever-you-are/ 301
+/About/Gallery/ID/160/*                         /about/gallery/reliable-tire-solutions-wherever-you-are/ 301
+/About/Gallery/ID/158                         /about/gallery/the-cubano-fleet/ 301
+/About/Gallery/ID/158/*                         /about/gallery/the-cubano-fleet/ 301
+/About/Gallery/ID/156                         /about/gallery/heavy-duty-tires/ 301
+/About/Gallery/ID/156/*                         /about/gallery/heavy-duty-tires/ 301
+/About/Gallery/ID/155                         /about/gallery/rv-trailer-tires/ 301
+/About/Gallery/ID/155/*                         /about/gallery/rv-trailer-tires/ 301
+/About/Gallery/ID/154                         /about/gallery/fleet-vehicle-tire-service/ 301
+/About/Gallery/ID/154/*                         /about/gallery/fleet-vehicle-tire-service/ 301
+/About/Gallery/ID/153                         /about/gallery/on-site-tire-installations/ 301
+/About/Gallery/ID/153/*                         /about/gallery/on-site-tire-installations/ 301
+
 # --- Splats ---
 /About/News/*                              /tire-tips/                               301
 /blog                                      /tire-tips/                               301

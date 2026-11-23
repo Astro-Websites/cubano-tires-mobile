@@ -34,45 +34,59 @@ demoSections:
   - role: Heading
     text: Browse our work
   - role: Paragraph
-    text: '[Client to provide: the original photo files from the 7 albums on the current site. The live site blocks downloads, so these covers use photos we already have.]'
+    text: 'Open an album to see the photos. [Client to provide: original photo files from the 7 albums on the current site.]'
   links: []
   images: []
   cards:
-  - _template: photo
+  - _template: linkCard
     image: /uploads/home/how-it-works-background.jpg
-    imageAlt: Inside a Cubano Tires service truck with tire machine and compressor
+    imageAlt: Open Cubano Tires service truck with tire machine and compressor
     title: Inside the Cubano Trucks
-    caption: Each truck is fully equipped with tire machines, compressors and professional tools, laid out so we can install, repair and service tires at your home, job site or roadside.
-  - _template: photo
+    text: Each truck is fully equipped with tire machines, compressors and professional tools, laid out so we can install, repair and service tires at your home, job site or roadside without a traditional shop..
+    cta: View album →
+    url: /about/gallery/inside-the-cubano-trucks/
+  - _template: linkCard
     image: /uploads/home/technician-installing-a-new-tire-on-a-tesla-in-a-driveway.jpg
     imageAlt: Technician installing a new tire on a Tesla in a driveway
     title: Reliable Tire Solutions Wherever You Are
-    caption: Home, work, the road or a job site. Our mobile team handles tire replacements, repairs and inspections on the spot.
-  - _template: photo
+    text: Home, work, the road or a job site.
+    cta: View album →
+    url: /about/gallery/reliable-tire-solutions-wherever-you-are/
+  - _template: linkCard
     image: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
-    imageAlt: Cubano Tires Mobile Shop yellow service truck
+    imageAlt: Cubano Tires Mobile Shop yellow service truck with We Come To You on the side
     title: The Cubano Fleet
-    caption: Our yellow trucks are the heart of the business. Each one is a full tire shop on wheels serving Orange County.
-  - _template: photo
+    text: Our yellow trucks are the heart of Cubano Tires Mobile Shop.
+    cta: View album →
+    url: /about/gallery/the-cubano-fleet/
+  - _template: linkCard
     image: /uploads/home/roadside-tire-service-on-a-big-rig-hauling-an-excavator.jpg
     imageAlt: Roadside tire service on a big rig hauling an excavator
     title: Heavy Duty Tires
-    caption: Tire service for construction equipment and heavy commercial vehicles, from excavator haulers to skid steers and box trucks, right on the job.
-  - _template: photo
+    text: A closer look at our tire service for construction equipment and heavy commercial vehicles.
+    cta: View album →
+    url: /about/gallery/heavy-duty-tires/
+  - _template: linkCard
     image: /uploads/demo/photo-needed.svg
-    imageAlt: Placeholder for the RV and trailer tire album cover
+    imageAlt: Placeholder for an RV tire replacement photo
     title: RV & Trailer Tires
-    caption: Travel trailers, toy haulers, RVs and motorhomes. Real replacements, dry rot fixes and safety checks at homes, storage yards and campsites.
-  - _template: photo
-    image: /uploads/home/technician-replacing-a-22-5-inch-tire-beside-a-green-semi-tr.jpg
-    imageAlt: Technician replacing a 22.5 inch tire beside a green semi truck
+    text: From travel trailers and toy haulers to large RVs and motorhomes, we bring heavy duty tire service to your home, storage yard or campsite.
+    cta: View album →
+    url: /about/gallery/rv-trailer-tires/
+  - _template: linkCard
+    image: /uploads/home/technician-servicing-a-semi-truck.jpg
+    imageAlt: Technician servicing a fleet semi truck tire
     title: Fleet Vehicle Tire Service
-    caption: Delivery vans, security vehicles and contractor trucks serviced where the fleet is parked. No towing and less downtime.
-  - _template: photo
+    text: We keep business fleets rolling with on site tire service.
+    cta: View album →
+    url: /about/gallery/fleet-vehicle-tire-service/
+  - _template: linkCard
     image: /uploads/home/technician-installing-new-tires-on-a-white-bmw-m8-in-a-drive.jpg
     imageAlt: Technician installing new tires on a white BMW M8 in a driveway
     title: On Site Tire Installations
-    caption: Cars, SUVs, trailers, RVs and fleets. Real installations completed at homes, job sites and roadside locations across Orange County.
+    text: Real on site tire installations at homes, job sites and roadside locations across Orange County.
+    cta: View album →
+    url: /about/gallery/on-site-tire-installations/
 - label: Follow along
   copy:
   - role: Heading
