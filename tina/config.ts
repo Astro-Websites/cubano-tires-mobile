@@ -71,6 +71,7 @@ export default defineConfig({
           { type: 'string', name: 'phoneDisplay', label: 'Phone Display', required: true },
           { type: 'string', name: 'phoneDigits', label: 'Phone Digits', required: true },
           { type: 'string', name: 'email', label: 'Email', description: 'Shown on the Contact page. Type {{email}} in any page text to insert it.' },
+          { type: 'string', name: 'formEmail', label: 'Contact Form Email', description: 'Where Contact page form messages are sent. The first message to a new address sends a one time activation email from FormSubmit to that address: click it to start getting messages. Type {{formEmail}} to insert it.' },
           { type: 'string', name: 'addressLine1', label: 'Address Line 1', required: true },
           { type: 'string', name: 'addressLine2', label: 'Address Line 2', required: true },
           { type: 'string', name: 'copyright', label: 'Copyright', required: true },
