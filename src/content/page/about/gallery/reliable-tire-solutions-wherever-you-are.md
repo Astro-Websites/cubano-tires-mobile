@@ -85,8 +85,8 @@ demoSections:
     cta: ''
     url: /about/gallery/heavy-duty-tires/
   - _template: linkCard
-    image: /uploads/demo/photo-needed.svg
-    imageAlt: Placeholder for an RV tire replacement photo
+    image: /uploads/gallery/technician-replacing-a-motorhome-tire-curbside.jpg
+    imageAlt: Cubano Tires technician replacing a motorhome tire at the curb
     title: RV & Trailer Tires
     text: ''
     cta: ''
