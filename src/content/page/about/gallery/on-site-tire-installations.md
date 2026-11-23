@@ -1,7 +1,7 @@
 ---
 title: On Site Tire Installations
 seoTitle: On Site Tire Installations | Photo Gallery | Cubano Tires Mobile Shop
-description: Real on site tire installations at homes, job sites and roadside locations across Orange County. Cars, SUVs, trailers, RVs and fleets, with no tire shop.
+description: Real on site tire installations at homes, job sites and roadside spots across Orange County. Cars, SUVs, trailers, RVs and fleets, no trip to a tire shop.
 demoSections:
 - label: On Site Tire Installations
   copy:

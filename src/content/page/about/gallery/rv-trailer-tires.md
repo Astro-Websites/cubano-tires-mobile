@@ -1,7 +1,7 @@
 ---
 title: RV & Trailer Tires
 seoTitle: RV & Trailer Tires | Photo Gallery | Cubano Tires Mobile Shop
-description: From travel trailers and toy haulers to large RVs and motorhomes, we bring heavy duty tire service to your home, storage yard or campsite. Real.
+description: Travel trailers, toy haulers, RVs and motorhomes get new tires at your home, storage yard or campsite. Real photos from our mobile RV and trailer tire jobs.
 demoSections:
 - label: RV & Trailer Tires
   copy:

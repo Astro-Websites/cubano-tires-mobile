@@ -1,7 +1,7 @@
 ---
 title: Heavy Duty Tires
 seoTitle: Heavy Duty Tires | Photo Gallery | Cubano Tires Mobile Shop
-description: A closer look at our tire service for construction equipment and heavy commercial vehicles. Excavator haulers, skid steers, box trucks and job site.
+description: Photos of our job site tire service for construction equipment and heavy commercial vehicles, from excavator haulers and skid steers to box trucks.
 demoSections:
 - label: Heavy Duty Tires
   copy:

@@ -1,7 +1,7 @@
 ---
 title: Fleet Vehicle Tire Service
 seoTitle: Fleet Vehicle Tire Service | Photo Gallery | Cubano Tires Mobile Shop
-description: We keep business fleets rolling with on site tire service. Delivery vans, security vehicles and contractor trucks get replacements, repairs and.
+description: We keep fleets rolling with on site tire service. Delivery vans, security vehicles and contractor trucks get tires replaced and repaired where they park.
 demoSections:
 - label: Fleet Vehicle Tire Service
   copy:

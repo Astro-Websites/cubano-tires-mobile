@@ -1,7 +1,7 @@
 ---
 title: Reliable Tire Solutions Wherever You Are
 seoTitle: Reliable Tire Solutions Wherever You Are | Photo Gallery | Cubano Tires Mobile Shop
-description: Home, work, the road or a job site. Our mobile team handles tire replacements, repairs and inspections on the.
+description: Home, work, the road or a job site. Our mobile team handles tire replacements, repairs and inspections wherever you are in Orange County.
 demoSections:
 - label: Reliable Tire Solutions Wherever You Are
   copy:
