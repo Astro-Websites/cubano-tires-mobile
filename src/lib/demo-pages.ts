@@ -16,13 +16,14 @@ export const pageQuery = `query CubanoPage($relativePath: String!) {
 // Business facts typed as {{token}} in any text, link or alt field are filled from Global Config,
 // so the phone, address and hours are stored once. See GLOBAL_TOKENS for the list.
 export type Globals = Record<string, string>;
-export const GLOBAL_TOKENS = ['siteName', 'phone', 'phoneDigits', 'email', 'address', 'addressLine1', 'addressLine2', 'weekdayDays', 'weekdayHours', 'weekendDays', 'weekendHours', 'addressQuery'] as const;
+export const GLOBAL_TOKENS = ['siteName', 'phone', 'phoneDigits', 'email', 'address', 'addressLine1', 'addressLine2', 'weekdayDays', 'weekdayHours', 'weekendDays', 'weekendHours', 'addressQuery', 'formEmail'] as const;
 export function globalsFrom(config: Record<string, any>): Globals {
   const hours = config?.hours || {};
   return {
     siteName: config?.siteName || '', phone: config?.phoneDisplay || '', phoneDigits: config?.phoneDigits || '', email: config?.email || '',
     address: [config?.addressLine1, config?.addressLine2].filter(Boolean).join(', '), addressLine1: config?.addressLine1 || '', addressLine2: config?.addressLine2 || '',
     weekdayDays: hours.weekdayLabel || '', weekdayHours: hours.weekdayHours || '', weekendDays: hours.weekendLabel || '', weekendHours: hours.weekendHours || '',
+    formEmail: config?.formEmail || config?.email || '',
     addressQuery: encodeURIComponent([config?.addressLine1, config?.addressLine2].filter(Boolean).join(', ')),
   };
 }
