@@ -29,31 +29,27 @@ demoSections:
   - role: Eyebrow
     text: Send a Message
   - role: Heading
-    text: Ask for a tire quote online
+    text: Send us a message
   - role: Paragraph
-    text: Tell us about the tire and add a photo if you can. We reply during business hours, {{weekdayDays}}, {{weekdayHours}}.
-  - role: Name label
-    text: Your name
-  - role: Phone label
-    text: Phone number
+    text: Questions about our service, fleet accounts or anything else? Send us a note and we will reply during business hours. For a tire price, texting a photo of the tire is fastest.
+  - role: Full name label
+    text: Full name
   - role: Email label
-    text: Email (optional)
-  - role: Vehicle label
-    text: Vehicle or equipment
-  - role: Tire size label
-    text: Tire size, if you have it
-  - role: Location label
-    text: Where is it parked?
+    text: Email
+  - role: Phone label
+    text: Phone
   - role: Message label
-    text: What do you need?
-  - role: Photo label
-    text: Photo of the tire (optional)
+    text: Message (optional)
   - role: Button
-    text: Send My Request
+    text: Send Message
   - role: Note
-    text: In a hurry? Text the photo to {{phone}} instead.
+    text: Need a tire today? Text a photo to {{phone}}.
   - role: Email subject
-    text: New tire quote request from the website
+    text: New message from the website contact form
+  - role: Bot check site key (leave as is)
+    text: '{{turnstileSiteKey}}'
+  - role: Bot check error
+    text: Please complete the security check above, then press Send again.
   links:
   - role: Form sends to (FormSubmit address)
     label: Form action
