@@ -34,25 +34,175 @@ demoSections:
   - role: Heading
     text: Big tires, on the job
   - role: Paragraph
-    text: '[Client to provide: the original photos from this album on the current site. More photos will be added here.]'
+    text: Tap any photo to see it full size.
   links: []
   images: []
   cards:
   - _template: photo
-    image: /uploads/home/roadside-tire-service-on-a-big-rig-hauling-an-excavator.jpg
-    imageAlt: Roadside tire service on a big rig hauling an excavator
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-1.jpg
+    imageAlt: Black and white photo of a technician working on a large backhoe tire in a parking lot
     title: ''
-    caption: Big rig hauling an excavator
+    caption: ''
   - _template: photo
-    image: /uploads/home/technician-servicing-a-semi-truck.jpg
-    imageAlt: Technician servicing a semi truck tire
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-2.jpg
+    imageAlt: Technician working the bead of a large backhoe tire with a pry bar
     title: ''
-    caption: Semi truck tire service
+    caption: ''
   - _template: photo
-    image: /uploads/home/technician-replacing-a-22-5-inch-tire-beside-a-green-semi-tr.jpg
-    imageAlt: Technician replacing a 22.5 inch tire beside a green semi truck
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-3.jpg
+    imageAlt: Technician repairing the rear tire of a yellow backhoe outside a warehouse
     title: ''
-    caption: 22.5 inch tire replacement
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-4.jpg
+    imageAlt: Technician removing a large tire from a yellow backhoe with an impact wrench nearby
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-5.jpg
+    imageAlt: Technician using an impact wrench on the rear wheel of a yellow backhoe
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-6.jpg
+    imageAlt: Close up of a technician loosening lug nuts on a large backhoe wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-7.jpg
+    imageAlt: Technician using an impact wrench on a front loader tire on a gravel lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-8.jpg
+    imageAlt: Technician changing the front tire of a yellow backhoe loader on a jack stand
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-9.jpg
+    imageAlt: Technician kneeling to change a tire on a boat trailer with an impact wrench nearby
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-10.jpg
+    imageAlt: Cubano Tires truck parked beside a boat trailer while technicians change its tires
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-11.jpg
+    imageAlt: Black and white photo of a technician mounting a new truck tire by hand
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-12.jpg
+    imageAlt: Black and white photo of a technician seating a new commercial tire with a tire iron
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-13.jpg
+    imageAlt: Technician using an impact wrench on a flatbed trailer wheel at an equipment rental yard
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-14.jpg
+    imageAlt: Technician using a sledgehammer to break the bead on a commercial truck tire
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-15.jpg
+    imageAlt: Technician separating a truck tire from its rim beside shipping containers
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-16.jpg
+    imageAlt: Technician mounting a commercial truck tire by hand at an equipment yard
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-17.jpg
+    imageAlt: Technician removing lug nuts from a flatbed trailer wheel with an impact wrench
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-18.jpg
+    imageAlt: Stack of new commercial truck tires ready to install, with a pickup truck behind
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-19.jpg
+    imageAlt: Technician kneeling to change a tire on a roadside arrow board trailer behind traffic cones
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-20.jpg
+    imageAlt: Technician rolling a commercial truck tire in a utility fleet yard
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-21.jpg
+    imageAlt: Technician changing the front tire of a Ford F-550 work truck next to the Cubano Tires truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-22.jpg
+    imageAlt: Technician checking the dual rear tires of a dump truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-23.jpg
+    imageAlt: Technician using an impact wrench on a dump truck wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-24.jpg
+    imageAlt: Black and white photo of a technician removing lug nuts from a dump truck wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-25.jpg
+    imageAlt: Technician loosening the lug nuts on a dump truck wheel with a cordless impact wrench
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-26.jpg
+    imageAlt: Technician rolling a dump truck wheel and tire across the lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-27.jpg
+    imageAlt: Technician using a tire iron to remove a commercial tire from its rim
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-28.jpg
+    imageAlt: Black and white photo of a technician standing on a truck tire to break the bead
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-29.jpg
+    imageAlt: Technician demounting a commercial tire behind the open Cubano Tires service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-30.jpg
+    imageAlt: Technician inflating a new Michelin tire on the tire machine inside the service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-31.jpg
+    imageAlt: Technician removing a front wheel from a white dump truck with an impact wrench
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-32.jpg
+    imageAlt: Technician in a safety vest loosening lug nuts on a fleet dump truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/heavy-duty-tires/heavy-duty-tires-33.jpg
+    imageAlt: Low angle view of a technician using an impact wrench on a dump truck front wheel
+    title: ''
+    caption: ''
 - label: More albums
   copy:
   - role: Heading
