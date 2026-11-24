@@ -5,12 +5,12 @@ import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { addImageEditStyles } from './preview-styles';
 
 const blogQuery = `query CubanoBlog($relativePath: String!) {
-  blog(relativePath: $relativePath) { __typename _sys { filename relativePath } title seoTitle description quickAnswer reviewedBy heroImage heroImageAlt
+  blog(relativePath: $relativePath) { __typename _sys { filename relativePath } title seoTitle description quickAnswer heroImage heroImageAlt
     faqs { question answer } relatedService { label url } body }
 }`;
 
 type Faq = { question?: string; answer?: string };
-type BlogPreview = { title?: string; seoTitle?: string; description?: string; quickAnswer?: string; reviewedBy?: string; heroImage?: string; heroImageAlt?: string; faqs?: Faq[]; relatedService?: { label?: string; url?: string }; body?: any };
+type BlogPreview = { title?: string; seoTitle?: string; description?: string; quickAnswer?: string; heroImage?: string; heroImageAlt?: string; faqs?: Faq[]; relatedService?: { label?: string; url?: string }; body?: any };
 
 // Live preview for blog posts inside the Tina editor: updates the text as you type and tags every
 // part of the post with data-tina-field, so clicking it in the preview opens that field.
@@ -41,7 +41,6 @@ export function mountBlogPreview() {
       };
       tag(field('title'), 'title', blog.title || '');
       tag(field('quickAnswer'), 'quickAnswer', blog.quickAnswer || '');
-      tag(field('reviewedBy'), 'reviewedBy', blog.reviewedBy || '');
       for (const node of all('category')) tag(node, 'categories');
       for (const node of all('author')) tag(node, 'author');
       tag(field('date'), 'pubDate');
