@@ -35,16 +35,16 @@ const preview = JSON.stringify({ relativePath: post.entry.filePath?.split('/').p
     <section id="top" style="background: #FFFFFF">
       <div style="max-width: 820px; margin: 0 auto; padding: 20px 24px 24px">
         <nav aria-label="Breadcrumb" style="margin: 0 0 32px; font-size: 14px; color: #5B6575"><a href="/" style="color: #5B6575">Home</a> › <a href="/tire-tips/" style="color: #5B6575">Tire Tips</a>{category && <> › <a href={`/tire-tips/category/${category.slug}/`} style="color: #5B6575">{category.title}</a></>}</nav>
-        {category && <p style={`margin: 0; display: inline-block; padding: 6px 12px; border-radius: 999px; background: ${colors.bg}; font-size: 13px; font-weight: 800; color: ${colors.fg}; text-transform: uppercase`}>{category.title}</p>}
+        {category && <p data-blog-field="category" style={`margin: 0; display: inline-block; padding: 6px 12px; border-radius: 999px; background: ${colors.bg}; font-size: 13px; font-weight: 800; color: ${colors.fg}; text-transform: uppercase`}>{category.title}</p>}
         <h1 data-blog-field="title" style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(34px, 4vw, 52px); line-height: 1.08; margin: 16px 0 0; color: #16181D">{post.title}</h1>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 22px; font-size: 14px; color: #5B6575">
-          {post.author && <span style="display: flex; align-items: center; gap: 10px">{post.author.avatar ? <img src={post.author.avatar} alt={post.author.avatarAlt || post.author.name} style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover"/> : <span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; color: #16181D">{initial(post.author.name)}</span>}<span><strong style="color: #16181D">{post.author.name}</strong>{post.author.role && <><br/>{post.author.role}</>}</span></span>}
-          {data.reviewedBy && <span>{data.reviewedBy}</span>}
-          <span>{[updated && `${post.updated ? 'Updated' : 'Published'} ${formatDate(updated)}`, post.readTime].filter(Boolean).join(' · ')}</span>
+          {post.author && <span data-blog-field="author" style="display: flex; align-items: center; gap: 10px">{post.author.avatar ? <img src={post.author.avatar} alt={post.author.avatarAlt || post.author.name} style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover"/> : <span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; color: #16181D">{initial(post.author.name)}</span>}<span><strong style="color: #16181D">{post.author.name}</strong>{post.author.role && <><br/>{post.author.role}</>}</span></span>}
+          {data.reviewedBy && <span data-blog-field="reviewedBy">{data.reviewedBy}</span>}
+          <span data-blog-field="date">{[updated && `${post.updated ? 'Updated' : 'Published'} ${formatDate(updated)}`, post.readTime].filter(Boolean).join(' · ')}</span>
         </div>
       </div>
       <div style="max-width: 1040px; margin: 0 auto; padding: 8px 24px 0">
-        <img alt={post.heroImageAlt || post.title} src={post.heroImage} style="display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 22px"/>
+        <img data-blog-field="heroImage" alt={post.heroImageAlt || post.title} src={post.heroImage} style="display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 22px"/>
       </div>
     </section>
     <section style="max-width: 1240px; margin: 0 auto; padding: 48px 24px 72px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
@@ -68,12 +68,12 @@ const preview = JSON.stringify({ relativePath: post.entry.filePath?.split('/').p
           <>
             <h2 id="faq" style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 30px; line-height: 1.2; margin: 44px 0 0; color: #16181D">FAQ</h2>
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px">
-              {faqs.map((faq) => <details style="padding: 18px 22px; border-radius: 14px; background: #F3F6FA"><summary style="font-weight: 800; font-size: 17px; color: #16181D; cursor: pointer">{faq.question}</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.65; color: #4A5565">{faq.answer}</p></details>)}
+              {faqs.map((faq) => <details data-blog-field="faq" style="padding: 18px 22px; border-radius: 14px; background: #F3F6FA"><summary style="font-weight: 800; font-size: 17px; color: #16181D; cursor: pointer">{faq.question}</summary><p style="margin: 10px 0 0; font-size: 16px; line-height: 1.65; color: #4A5565">{faq.answer}</p></details>)}
             </div>
           </>
         )}
         {post.author && (
-          <div style="margin: 44px 0 0; padding: 28px; border-radius: 18px; border: 1px solid #E4E8EE; display: flex; gap: 20px; align-items: flex-start">
+          <div data-blog-field="author" style="margin: 44px 0 0; padding: 28px; border-radius: 18px; border: 1px solid #E4E8EE; display: flex; gap: 20px; align-items: flex-start">
             {post.author.avatar ? <img src={post.author.avatar} alt={post.author.avatarAlt || post.author.name} style="flex: none; width: 72px; height: 72px; border-radius: 50%; object-fit: cover"/> : <span style="flex: none; display: inline-flex; width: 72px; height: 72px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 28px; color: #16181D">{initial(post.author.name)}</span>}
             <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-weight: 900; font-size: 19px; color: #16181D">{post.author.name}</span>{post.author.bio && <span style="font-size: 15px; line-height: 1.6; color: #5B6575">{post.author.bio}</span>}</span>
           </div>
@@ -81,15 +81,15 @@ const preview = JSON.stringify({ relativePath: post.entry.filePath?.split('/').p
       </article>
       <aside style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 20px; position: sticky; top: 120px">
         <div style="padding: 28px; border-radius: 20px; background: #FFC72C">
-          <p style="margin: 0; font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 22px; line-height: 1.2; color: #16181D">Flat tire? We come to you.</p>
-          <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #2A2F38">Text a photo for a price and an arrival time. The price we quote is the price you pay.</p>
-          <a href={sms} style="margin-top: 16px; display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 999px; background: #16181D; font-weight: 800; color: #FFFFFF">Text Us a Photo</a>
+          <p style="margin: 0; font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: 22px; line-height: 1.2; color: #16181D" data-global-field="sidebarHeading">{(config as any).blog?.sidebarHeading}</p>
+          <p style="margin: 10px 0 0; font-size: 15px; line-height: 1.6; color: #2A2F38" data-global-field="sidebarText">{(config as any).blog?.sidebarText}</p>
+          <a href={sms} style="margin-top: 16px; display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 999px; background: #16181D; font-weight: 800; color: #FFFFFF" data-global-field="sidebarButton">{(config as any).blog?.sidebarButton}</a>
           <a href={`tel:${config.phoneDigits}`} style="margin-top: 10px; display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 999px; background: #FFFFFF; font-weight: 800">Call {config.phoneDisplay}</a>
         </div>
         {data.relatedService?.label && (
           <div style="padding: 24px; border-radius: 20px; border: 1px solid #E4E8EE">
             <p style="margin: 0; font-weight: 800; color: #16181D">Related service</p>
-            <a href={safeUrl(data.relatedService.url)} style="margin-top: 12px; display: flex; justify-content: space-between; font-weight: 700; color: #E11B22">{data.relatedService.label} <span aria-hidden="true">→</span></a>
+            <a data-blog-field="relatedService" href={safeUrl(data.relatedService.url)} style="margin-top: 12px; display: flex; justify-content: space-between; font-weight: 700; color: #E11B22"><span data-blog-label>{data.relatedService.label}</span> <span aria-hidden="true">→</span></a>
           </div>
         )}
       </aside>
@@ -109,7 +109,10 @@ const preview = JSON.stringify({ relativePath: post.entry.filePath?.split('/').p
   <Fragment set:html={scriptsSource} />
   <script type="application/json" id="cubano-blog-preview" set:html={preview} />
   <script>
-    if (window.parent !== window) import('../../lib/blog-preview').then(({ mountBlogPreview }) => mountBlogPreview());
+    if (window.parent !== window) {
+      import('../../lib/blog-preview').then(({ mountBlogPreview }) => mountBlogPreview());
+      import('../../lib/global-preview').then(({ mountBlogCopyPreview }) => mountBlogCopyPreview());
+    }
   </script>
 </Base>
 <style is:global>
