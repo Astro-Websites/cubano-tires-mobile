@@ -79,7 +79,8 @@ async function sendMail(env, to, msg, site) {
     port,
     secure: port === 465,
     startTls: true,
-    credentials: { username: env.SMTP_USER, password: env.SMTP_PASS },
+    // trim(): a password pasted into the dashboard often carries a stray space or line break.
+    credentials: { username: String(env.SMTP_USER).trim(), password: String(env.SMTP_PASS).trim() },
     authType: ['plain', 'login'],
     name: site,
     socketTimeoutMs: 15000,
