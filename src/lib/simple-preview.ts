@@ -5,10 +5,10 @@ import { TinaMarkdown } from 'tinacms/dist/rich-text';
 import { addImageEditStyles } from './preview-styles';
 
 const query = `query CubanoSimplePage($relativePath: String!) {
-  simplePage(relativePath: $relativePath) { __typename _sys { filename relativePath } title seoTitle description heading intro image imageAlt body }
+  page(relativePath: $relativePath) { ... on PageSimple { __typename _sys { filename relativePath } title seoTitle description heading intro image imageAlt body } }
 }`;
 
-// Live preview for Simple Pages inside the Tina editor, with click-to-edit.
+// Live preview for simple pages (Tina: Pages, "Simple page" type) inside the Tina editor, with click-to-edit.
 export function mountSimplePreview() {
   const script = document.querySelector('#cubano-simple-preview');
   if (!script?.textContent) return;
@@ -19,12 +19,12 @@ export function mountSimplePreview() {
   mount.hidden = true;
   document.body.append(mount);
   let bodyRoot: Root | undefined;
-  const initialData = { simplePage: null };
+  const initialData = { page: null };
   const variables = { relativePath };
   function TinaSimplePage() {
-    const { data } = useTina<{ simplePage: any }>({ query, variables, data: initialData });
+    const { data } = useTina<{ page: any }>({ query, variables, data: initialData });
     useEffect(() => {
-      const page = data?.simplePage;
+      const page = data?.page;
       if (!page) return;
       const set = (name: string, text: string | undefined, field = name) => {
         const node = el(name);

@@ -2,8 +2,7 @@ import { defineConfig } from 'tinacms';
 import { BlogCollection } from './collections/blog';
 import { CategoryCollection } from './collections/category';
 import { GalleryCollection } from './collections/gallery';
-import { PageCollection } from './collections/page';
-import { SimplePageCollection } from './collections/simple-page';
+import { PageCollection, sectionCollection } from './collections/page';
 import { UserCollection } from './collections/user';
 
 const navigationItem = {
@@ -29,8 +28,11 @@ export default defineConfig({
       BlogCollection,
       CategoryCollection,
       PageCollection,
+      sectionCollection('areas'),
+      sectionCollection('services'),
+      sectionCollection('tires'),
+      sectionCollection('vehicles'),
       GalleryCollection,
-      SimplePageCollection,
       UserCollection,
       {
         name: 'globalConfig',

@@ -1,24 +1,29 @@
 ---
-// Designed pages (Tina: Pages and Gallery) and simple rich-text pages (Tina: Simple Pages) share the URL space.
+// Every page except the homepage and the blog. Tina: Pages (designed and simple pages) plus the
+// folder collections Areas, Services, Tires, Vehicles and Gallery (src/lib/page-collections.ts).
 import DesignedPage from '../components/DesignedPage.astro';
 import SimplePage from '../components/SimplePage.astro';
 import { getCollection } from 'astro:content';
+import { SECTION_COLLECTIONS, sectionSlug, type SectionCollection } from '../lib/page-collections';
 export async function getStaticPaths() {
-  const designed = (await getCollection('page'))
-    .filter(({ id, data }) => Boolean(data.demoTemplate) && id !== 'homepage')
-    .map((entry) => ({ params: { slug: entry.id }, props: { entry, kind: 'designed' } }));
-  // Tina: Gallery. index.md is /about/gallery/, every other file is an album under it.
-  const gallery = (await getCollection('gallery'))
-    .filter(({ data }) => Boolean(data.demoTemplate))
-    .map((entry) => ({ params: { slug: entry.id === 'index' ? 'about/gallery' : `about/gallery/${entry.id}` }, props: { entry, kind: 'designed' } }));
-  const taken = new Set(designed.map((p) => p.params.slug));
-  for (const p of gallery) if (taken.has(p.params.slug)) throw new Error(`Gallery page "${p.params.slug}" uses a URL that already exists in Pages.`);
-  const reserved = new Set([...designed.map((p) => p.params.slug), ...gallery.map((p) => p.params.slug), 'tires', 'tire-tips', 'admin', 'uploads']);
-  const simple = (await getCollection('simplePage')).map((entry) => {
-    if (reserved.has(entry.id) || reserved.has(entry.id.split('/')[0])) throw new Error(`Simple page "${entry.id}" uses a URL that already exists. Rename the file.`);
-    return { params: { slug: entry.id }, props: { entry, kind: 'simple' } };
-  });
-  return [...designed, ...gallery, ...simple];
+  const pages = (await getCollection('page'))
+    .filter(({ id }) => id !== 'homepage')
+    .map((entry) => entry.data._template === 'simple' || !entry.data.demoTemplate
+      ? { params: { slug: entry.id }, props: { entry, kind: 'simple' as const } }
+      : { params: { slug: entry.id }, props: { entry, kind: 'designed' as const } });
+  const folders = await Promise.all((Object.keys(SECTION_COLLECTIONS) as SectionCollection[]).map(async (name) =>
+    (await getCollection(name))
+      .filter(({ data }) => Boolean(data.demoTemplate))
+      .map((entry) => ({ params: { slug: sectionSlug(name, entry.id) }, props: { entry, kind: 'designed' as const } }))));
+  const all = [...pages, ...folders.flat()];
+  const reserved = new Set(['tire-tips', 'admin', 'uploads']);
+  const seen = new Set<string>();
+  for (const { params, props } of all) {
+    if (seen.has(params.slug) || reserved.has(params.slug.split('/')[0]))
+      throw new Error(`"${props.entry.filePath}" uses the URL /${params.slug}/, which already exists. Rename the file.`);
+    seen.add(params.slug);
+  }
+  return all;
 }
 const { entry, kind } = Astro.props;
 ---

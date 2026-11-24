@@ -1,4 +1,5 @@
 ---
+_template: simple
 title: Sitemap
 seoTitle: Sitemap | Cubano Tires Mobile Shop
 description: Every page on the Cubano Tires Mobile Shop website, in one list.

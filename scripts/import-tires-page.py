@@ -1,5 +1,5 @@
 """One-off: move the hardcoded /tires/ shop page into a designed page
-(src/fragments/demo-pages/tires.html + src/content/page/tires.md). Reads the built
+(src/fragments/demo-pages/tires.html + src/content/tires/index.md). Reads the built
 dist/tires/index.html, so run `npm run build:site` on the old page first."""
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -21,4 +21,4 @@ for i, node in enumerate(doc.find('main').find_all('section', recursive=False)):
     sections.append(str(node)); data.append(values)
 (root / 'src/fragments/demo-pages/tires.html').write_text('\n'.join(sections) + '\n')
 page = {'title': 'Shop Tires', 'seoTitle': doc.title.get_text(), 'description': doc.find('meta', attrs={'name': 'description'})['content'], 'demoSections': data, 'demoTemplate': 'tires'}
-(root / 'src/content/page/tires.md').write_text('---\n' + yaml.safe_dump(page, allow_unicode=True, sort_keys=False, width=1000) + '---\n')
+(root / 'src/content/tires/index.md').write_text('---\n' + yaml.safe_dump(page, allow_unicode=True, sort_keys=False, width=1000) + '---\n')

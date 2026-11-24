@@ -2,7 +2,8 @@ import { createElement, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { useTina } from 'tinacms/dist/react';
 import { addImageEditStyles } from './preview-styles';
-import { fillTokens, galleryQuery, pageQuery, renderDemo, type DemoPage, type Globals } from './demo-pages';
+import type { DesignedCollection } from './page-collections';
+import { designedQuery, fillTokens, renderDemo, type DemoPage, type Globals } from './demo-pages';
 
 // Live preview inside the Tina editor: re-render the design from the form values and
 // tag every text and image with data-tina-field so clicking it opens that field.
@@ -10,8 +11,8 @@ export function mountDemoPreview() {
   const root = document.querySelector<HTMLElement>('#cubano-demo-content');
   const script = document.querySelector('#cubano-tina-preview');
   if (!root || !script?.textContent) return;
-  const { template, collection = 'page', relativePath, page, globals } = JSON.parse(script.textContent) as { template: string; collection?: 'page' | 'gallery'; relativePath: string; page: DemoPage; globals?: Globals };
-  const query = collection === 'gallery' ? galleryQuery : pageQuery;
+  const { template, collection = 'page', relativePath, page, globals } = JSON.parse(script.textContent) as { template: string; collection?: DesignedCollection; relativePath: string; page: DemoPage; globals?: Globals };
+  const query = designedQuery(collection);
   addImageEditStyles();
   const mount = document.createElement('div');
   mount.hidden = true;

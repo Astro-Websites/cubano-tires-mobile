@@ -1,5 +1,5 @@
 ---
-// Generic page template: yellow heading band, optional image, rich-text body (Tina: Simple Pages).
+// Generic page template: yellow heading band, optional image, rich-text body (Tina: Pages, "Simple page" type).
 import Header from './Header.astro';
 import Footer from './Footer.astro';
 import Base from '../layouts/Base.astro';
@@ -13,7 +13,7 @@ const data = entry.data as Record<string, string | undefined>;
 const { Content } = await render(entry);
 const safeImage = (value?: string) => (value && /^(?:\/(?![/\\])|https:\/\/)/i.test(value.trim()) ? value.trim() : '');
 const image = safeImage(data.image);
-const relativePath = entry.filePath.replace(/^src\/content\/simple-page\//, '');
+const relativePath = entry.filePath.replace(/^src\/content\/page\//, '');
 const preview = JSON.stringify({ relativePath }).replace(/</g, '\\u003c');
 ---
 <Base title={data.seoTitle || `${data.title} | ${config.siteName}`} description={data.description || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>

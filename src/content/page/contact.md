@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: Contact
 seoTitle: Contact & Hours | Cubano Tires Mobile Shop, Anaheim CA
 description: Call or text Cubano Tires Mobile Shop at {{phone}}. Hours, address and service area for mobile tire service in Orange County and LA.

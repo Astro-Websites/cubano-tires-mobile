@@ -14,8 +14,8 @@ const { entry } = Astro.props;
 const page = entry.data as DemoPage;
 const template = templates[`../fragments/demo-pages/${page.demoTemplate}.html`];
 if (!template) throw new Error(`Missing design ${page.demoTemplate} for ${entry.id}`);
-const collection = entry.collection === 'gallery' ? 'gallery' : 'page';
-const relativePath = entry.filePath.replace(/^src\/content\/(page|gallery)\//, '');
+const collection = entry.collection;
+const relativePath = entry.filePath.replace(`src/content/${collection}/`, '');
 const globals = globalsFrom(config);
 const preview = JSON.stringify({ template, collection, relativePath, page, globals }).replace(/</g, '\\u003c');
 ---

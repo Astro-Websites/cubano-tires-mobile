@@ -1,4 +1,5 @@
 ---
+_template: simple
 title: Thank You
 seoTitle: Message Sent | Cubano Tires Mobile Shop
 description: Thanks for contacting Cubano Tires Mobile Shop. We will reply during business hours.

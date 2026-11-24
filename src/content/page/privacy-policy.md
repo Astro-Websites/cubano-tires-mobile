@@ -1,4 +1,5 @@
 ---
+_template: simple
 title: Privacy Policy
 seoTitle: Privacy Policy | Cubano Tires Mobile Shop
 description: How Cubano Tires Mobile Shop collects and uses the information you share with us.

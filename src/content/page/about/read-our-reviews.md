@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: Reviews
 seoTitle: Customer Reviews | Cubano Tires Mobile Shop
 description: Read what Orange County drivers and fleet managers say about Cubano Tires Mobile Shop. 5.0 stars on Google from real mobile tire service customers.

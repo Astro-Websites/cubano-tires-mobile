@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: About Us
 seoTitle: About Cubano Tires Mobile Shop | Anaheim Mobile Tire Service
 description: We bring the tire shop to you, and we show our work.
