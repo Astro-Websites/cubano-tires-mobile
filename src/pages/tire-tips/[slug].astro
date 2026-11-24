@@ -39,7 +39,6 @@ const preview = JSON.stringify({ relativePath: post.entry.filePath?.split('/').p
         <h1 data-blog-field="title" style="font-family: Montserrat, Inter, system-ui, sans-serif; font-weight: 900; font-size: clamp(34px, 4vw, 52px); line-height: 1.08; margin: 16px 0 0; color: #16181D">{post.title}</h1>
         <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 22px; font-size: 14px; color: #5B6575">
           {post.author && <span data-blog-field="author" style="display: flex; align-items: center; gap: 10px">{post.author.avatar ? <img src={post.author.avatar} alt={post.author.avatarAlt || post.author.name} style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover"/> : <span style="display: inline-flex; width: 44px; height: 44px; border-radius: 50%; background: #FFC72C; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; color: #16181D">{initial(post.author.name)}</span>}<span><strong style="color: #16181D">{post.author.name}</strong>{post.author.role && <><br/>{post.author.role}</>}</span></span>}
-          {data.reviewedBy && <span data-blog-field="reviewedBy">{data.reviewedBy}</span>}
           <span data-blog-field="date">{[updated && `${post.updated ? 'Updated' : 'Published'} ${formatDate(updated)}`, post.readTime].filter(Boolean).join(' · ')}</span>
         </div>
       </div>
