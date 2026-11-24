@@ -2,12 +2,17 @@
 // Static pages are served from ./dist (the ASSETS binding). The only route the
 // Worker answers itself is POST /api/contact/, the Contact page form:
 //   1. checks the Cloudflare Turnstile token with the TURNSTILE_SECRET Worker secret,
-//   2. returns a short page that posts the message from the visitor's browser to FormSubmit,
-//      which emails it to Global Config "Contact Form Email" and shows the thank you page.
-// Set the secret with: wrangler secret put TURNSTILE_SECRET (never commit it).
+//   2. emails the message through Bliss Drive's own mail server (mail.blissdrive.net)
+//      to Global Config "Contact Form Email",
+//   3. redirects the visitor to the thank you page.
+// Worker secrets (Cloudflare dashboard > Workers & Pages > cubano-tires-staging >
+// Settings > Variables and Secrets; never commit them):
+//   TURNSTILE_SECRET  Turnstile secret key
+//   SMTP_USER         full address of the sending mailbox on blissdrive.net
+//   SMTP_PASS         that mailbox's password
+// Optional plain variables: SMTP_HOST (default mail.blissdrive.net), SMTP_PORT (default 465).
+import { WorkerMailer } from 'worker-mailer';
 import config from '../src/content/global/config.json';
-
-const FIELDS = ['name', 'email', 'phone', 'message', '_subject', '_template'];
 
 export default {
   async fetch(request, env) {
@@ -38,43 +43,77 @@ async function handleContact(request, env, url) {
     if (!ok) return Response.redirect(new URL('/contact/?check=failed#message', url).href, 303);
   }
 
-  const to = String(config.formEmail || config.email || '').trim();
-  if (!to) return errorPage(500, 'The contact form is not set up yet.');
-
-  const fields = { _captcha: 'false', _next: thankYou };
-  for (const key of FIELDS) {
-    const value = form.get(key);
-    if (typeof value === 'string' && value.trim()) fields[key] = value.trim().slice(0, 5000);
+  const field = (key, max = 200) => String(form.get(key) || '').replace(/\r/g, '').trim().slice(0, max);
+  const msg = {
+    name: field('name').replace(/\n/g, ' '),
+    email: field('email'),
+    phone: field('phone', 60).replace(/\n/g, ' '),
+    message: field('message', 5000),
+    subject: field('_subject').replace(/\n/g, ' ') || 'New message from the website contact form',
+  };
+  if (!msg.name || !/^[^\s@<>,;"]+@[^\s@<>,;"]+\.[^\s@<>,;"]+$/.test(msg.email)) {
+    return errorPage(400, 'Please include your name and a valid email.');
   }
-  if (!fields.name || !fields.email) return errorPage(400, 'Please include your name and email.');
-  fields._replyto = fields.email;
 
-  // Hand the checked message to FormSubmit from the visitor's own browser.
-  // A Worker can't post it itself: every Worker reaches FormSubmit from the same
-  // shared Cloudflare address, which FormSubmit rate limits (HTTP 429).
-  // The FormSubmit address only appears here, after the bot check has passed.
-  return handoffPage(`https://formsubmit.co/${to.replace(/[^\w.@+-]/g, "")}`, fields);
+  const to = String(config.formEmail || config.email || '').trim();
+  if (!to || !env.SMTP_USER || !env.SMTP_PASS) {
+    console.log('Contact form email is not set up: missing', !to ? 'formEmail' : 'SMTP_USER/SMTP_PASS');
+    return errorPage(500, 'Your message did not go through.');
+  }
+
+  try {
+    await sendMail(env, to, msg, url.host);
+  } catch (err) {
+    console.log('Contact form email failed', String(err && err.message ? err.message : err).slice(0, 300));
+    return errorPage(502, 'Your message did not go through.');
+  }
+
+  return Response.redirect(thankYou, 303);
 }
 
-function handoffPage(action, fields) {
-  const inputs = Object.entries(fields)
-    .map(([k, v]) => `<input type="hidden" name="${escapeHtml(k)}" value="${escapeHtml(v)}">`)
-    .join('');
-  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Sending your message</title></head>
-<body style="font-family: system-ui, sans-serif; max-width: 560px; margin: 64px auto; padding: 0 16px; color: #16181D; line-height: 1.6">
-<form id="send" method="POST" action="${escapeHtml(action)}">${inputs}
-<p style="font-size: 20px; font-weight: 700">Sending your message...</p>
-<noscript><button type="submit" style="min-height: 48px; padding: 0 24px; border: 0; border-radius: 999px; background: #E11B22; color: #fff; font: inherit; font-weight: 800">Send message</button></noscript>
-</form>
-<script>document.getElementById('send').submit();</script></body></html>`;
-  return new Response(html, {
-    headers: {
-      'Content-Type': 'text/html; charset=utf-8',
-      'Cache-Control': 'no-store',
-      'X-Robots-Tag': 'noindex',
-      'Referrer-Policy': 'strict-origin-when-cross-origin',
-    },
+async function sendMail(env, to, msg, site) {
+  const port = Number(env.SMTP_PORT || 465);
+  const mailer = await WorkerMailer.connect({
+    host: env.SMTP_HOST || 'mail.blissdrive.net',
+    port,
+    secure: port === 465,
+    startTls: true,
+    credentials: { username: env.SMTP_USER, password: env.SMTP_PASS },
+    authType: ['plain', 'login'],
+    name: site,
+    socketTimeoutMs: 15000,
+    responseTimeoutMs: 15000,
   });
+  const rows = [
+    ['Name', msg.name],
+    ['Email', msg.email],
+    ['Phone', msg.phone],
+    ['Message', msg.message],
+  ];
+  const text = rows.map(([k, v]) => `${k}: ${v || '-'}`).join('\n') + `\n\nSent from the contact form on ${site}`;
+  const html =
+    '<table cellpadding="8" style="border-collapse: collapse; font-family: Arial, sans-serif; font-size: 15px">' +
+    rows
+      .map(
+        ([k, v]) =>
+          `<tr><th align="left" valign="top" style="border: 1px solid #ddd; background: #f5f5f5">${k}</th><td style="border: 1px solid #ddd; white-space: pre-wrap">${escapeHtml(v || '-')}</td></tr>`,
+      )
+      .join('') +
+    `</table><p style="font-family: Arial, sans-serif; font-size: 13px; color: #666">Sent from the contact form on ${escapeHtml(site)}</p>`;
+  try {
+    await mailer.send({
+      from: { name: `${config.siteName || 'Website'} website`, email: env.SMTP_USER },
+      to: { email: to },
+      reply: { name: msg.name, email: msg.email },
+      subject: msg.subject,
+      text,
+      html,
+    });
+  } finally {
+    try {
+      await mailer.close();
+    } catch {}
+  }
 }
 
 async function verifyTurnstile(token, secret, ip) {

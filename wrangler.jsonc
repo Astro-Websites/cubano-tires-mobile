@@ -2,6 +2,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "cubano-tires-staging",
   "compatibility_date": "2026-01-15",
+  // nodejs_compat is needed by worker-mailer, which sends the Contact form email over SMTP.
+  "compatibility_flags": ["nodejs_compat"],
   // The Worker only handles the Contact form (/api/contact/); every other request is a static file from dist/.
   "main": "worker/index.js",
   "assets": {
