@@ -7,7 +7,6 @@ featured: true
 categories:
   - category: src/content/category/flats-and-repairs.json
 author: src/content/user/Joel-Gonzalez.json
-reviewedBy: Reviewed by [Technician name]
 heroImage: /uploads/cubano-pages/cubano-technician-removing-a-shredded-blowout.jpg
 heroImageAlt: Technician inspecting a damaged tire at the roadside
 quickAnswer: Usually, yes. A nail or screw in the tread with a hole about ¼" or smaller can normally be repaired. A nail in the sidewall or shoulder, a bigger hole, or a tire that was driven on flat means a new tire.
