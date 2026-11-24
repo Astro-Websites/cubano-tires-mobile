@@ -1,0 +1,51 @@
+---
+// Client review flags: bracketed notes in content such as "[Confirm with Joel: ...]",
+// "[Client to provide: ...]" or "[Photo: ...]". On staging they are highlighted so the
+// client spots them while reviewing. On any other host (the live site) they are removed,
+// so a forgotten note never shows publicly. Delete the note in Tina once it's answered.
+const staging = !Astro.site || Astro.site.hostname.startsWith('staging.') || Astro.site.hostname.endsWith('.workers.dev');
+---
+<style is:global>
+  mark.review-flag {
+    display: inline-flex; align-items: flex-start; gap: 6px; margin: 2px 2px; padding: 4px 10px;
+    background: #FFE94D; color: #7A0B0B; border: 2px solid #E11D2E; border-radius: 8px;
+    font: 700 14px/1.45 Inter, system-ui, sans-serif; text-align: left;
+    box-shadow: 0 0 0 3px rgba(225, 29, 46, .18);
+  }
+  mark.review-flag::before { content: '⚠'; flex: none; color: #E11D2E; font-size: 15px; }
+</style>
+<script is:inline define:vars={{ staging }}>
+  (function () {
+    var re = /\[(?:Confirm with Joel|Client to (?:confirm|provide)|Photo|Caption|DATE|QUALIFYING TIRE LINES|OFFER DETAILS|Embed|Cybertruck job video)[^\]]*\]/g;
+    function run() {
+      var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode: function (n) {
+          var p = n.parentNode && n.parentNode.nodeName;
+          if (p === 'SCRIPT' || p === 'STYLE' || p === 'NOSCRIPT' || p === 'TEXTAREA' || p === 'MARK') return NodeFilter.FILTER_REJECT;
+          re.lastIndex = 0;
+          return re.test(n.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+        }
+      });
+      var nodes = [];
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+      nodes.forEach(function (n) {
+        var text = n.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+        re.lastIndex = 0;
+        while ((m = re.exec(text))) {
+          if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+          if (staging) {
+            var mark = document.createElement('mark');
+            mark.className = 'review-flag';
+            mark.title = 'Needs client input before launch';
+            mark.textContent = m[0].slice(1, -1);
+            frag.appendChild(mark);
+          }
+          last = m.index + m[0].length;
+        }
+        if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+        n.parentNode.replaceChild(frag, n);
+      });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', run); else run();
+  })();
+</script>
