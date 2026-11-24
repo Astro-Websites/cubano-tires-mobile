@@ -6,3 +6,12 @@ const { config, navigation } = Astro.props;
 const html = bindGlobalFragment(headerSource, config, navigation, 'header');
 ---
 <Fragment set:html={html} />
+<script is:inline>
+(function(){var dds=document.querySelectorAll('header .cub-dd');if(!dds.length)return;
+function set(dd,o){dd.classList.toggle('open',o);var b=dd.querySelector('.cub-dd-btn');if(b)b.setAttribute('aria-expanded',o?'true':'false');}
+dds.forEach(function(dd){var b=dd.querySelector('.cub-dd-btn');if(!b)return;
+b.addEventListener('click',function(e){e.stopPropagation();var o=!dd.classList.contains('open');dds.forEach(function(x){if(x!==dd)set(x,false)});set(dd,o);});
+dd.addEventListener('keydown',function(e){if(e.key==='Escape'&&dd.classList.contains('open')){set(dd,false);b.focus();}});
+dd.addEventListener('focusout',function(e){if(innerWidth>=1024&&!dd.contains(e.relatedTarget))set(dd,false);});});
+document.addEventListener('click',function(e){dds.forEach(function(dd){if(!dd.contains(e.target))set(dd,false)});});})();
+</script>

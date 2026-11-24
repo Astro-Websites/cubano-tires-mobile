@@ -11,8 +11,15 @@ type GlobalConfig = {
   codeInjection?: { headerCode?: string; footerCode?: string };
 };
 
-type NavigationItem = { sourceLabel?: string; label: string; href: string };
-type Navigation = Record<string, NavigationItem[]>;
+type NavigationLink = { label?: string | null; href?: string | null };
+type NavigationItem = NavigationLink & { sourceLabel?: string | null; children?: NavigationLink[] | null };
+type FooterColumn = { heading?: string | null; links?: NavigationLink[] | null };
+type Navigation = {
+  header?: NavigationItem[] | null;
+  footerColumns?: FooterColumn[] | null;
+  social?: NavigationItem[] | null;
+  legal?: NavigationItem[] | null;
+};
 
 const escapeHtml = (value: string) => value
   .replaceAll('&', '&amp;')
@@ -58,8 +65,8 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   }
 
   // Links outside the menus below (e.g. the mobile action bar's "Shop Tires") are matched by their original label.
-  for (const item of Object.values(navigation).flat()) {
-    if (!item?.sourceLabel) continue;
+  for (const item of [...(navigation.header || []), ...(navigation.social || []), ...(navigation.legal || [])]) {
+    if (!item?.sourceLabel || !item.label || !item.href) continue;
     const label = `(?:${escapeRegExp(item.sourceLabel)}|${escapeRegExp(escapeHtml(item.sourceLabel))})`;
     const pattern = new RegExp(`<a([^>]*?)href="[^"]*"([^>]*?)>${label}</a>`, 'g');
     html = html.replace(pattern, `<a$1href="${escapeHtml(safeHref(item.href))}"$2>${escapeHtml(item.label)}</a>`);
@@ -69,22 +76,49 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   const menus: Array<[string, RegExp]> = placement === 'header'
     ? [['social', /(<span style="display: flex; flex-wrap: wrap; gap: 20px">)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
        ['header', /(<div id="cub-links"[^>]*>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/]]
-    : [['services', /(>Services<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
-       ['company', /(>Company<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
-       ['social', /(>Follow Us<\/span>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/],
-       ['legal', /(<nav aria-label="Legal"[^>]*>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/]];
+    : [['legal', /(<nav aria-label="Legal"[^>]*>)((?:\s*<a\b[^>]*>[^<]*<\/a>)+)/]];
   for (const [group, pattern] of menus) {
-    const items = (navigation[group] || []).filter((item) => item?.label && item?.href);
+    const items = (navigation[group as 'header' | 'social' | 'legal'] || []).filter((item) => item?.label && item?.href);
     html = html.replace(pattern, (_, open: string, run: string) => {
       const newline = run.startsWith('\n') ? '\n' : '';
       const attrs = (run.match(/<a\b([^>]*)>/)?.[1] || '').replace(/\s*href="[^"]*"/, '');
-      return open + items.map((item) => {
-        const href = safeHref(item.href);
+      return open + items.map((item, index) => {
+        const href = safeHref(item.href || '');
+        if (group === 'header') return newline + headerItem(item, href, index);
         const external = /^https?:\/\//i.test(href) ? ' target="_blank" rel="noopener"' : '';
-        return `${newline}<a href="${escapeHtml(href)}"${external}${attrs}>${escapeHtml(item.label)}</a>`;
+        return `${newline}<a href="${escapeHtml(href)}"${external}${attrs}>${escapeHtml(item.label || '')}</a>`;
       }).join('');
     });
   }
 
+  // Footer link columns (plus "Follow Us" from Social Links) are rebuilt from Navigation → Footer Link Columns.
+  if (placement === 'footer') {
+    const columns = [
+      ...(navigation.footerColumns || []).map((column) => ({ heading: column?.heading || '', links: column?.links || [] })),
+      { heading: 'Follow Us', links: navigation.social || [] },
+    ].map((column) => ({ ...column, links: column.links.filter((link) => link?.label && link?.href) }))
+      .filter((column) => column.heading && column.links.length);
+    const markup = `<nav class="cub-fcols" aria-label="Footer">${columns.map((column) => `
+<div class="cub-fcol"><span class="cub-fhead">${escapeHtml(column.heading)}</span><ul>${column.links.map((link) => `<li>${anchor(link)}</li>`).join('')}</ul></div>`).join('')}
+</nav>`;
+    html = html.replace(/<div style="flex: 2 1 460px[^>]*>[\s\S]*?>Follow Us<\/span>(?:\s*<a\b[^>]*>[^<]*<\/a>)*\s*<\/div>\s*<\/div>/, markup);
+  }
+
   return html;
+}
+
+function anchor(link: NavigationLink, extra = '') {
+  const href = safeHref(link.href || '');
+  const external = /^https?:\/\//i.test(href) ? ' target="_blank" rel="noopener"' : '';
+  return `<a href="${escapeHtml(href)}"${external}${extra}>${escapeHtml(link.label || '')}</a>`;
+}
+
+// A header item with Dropdown Links becomes a parent link plus a toggle button and a sub-menu.
+function headerItem(item: NavigationItem, href: string, index: number) {
+  const children = (item.children || []).filter((child) => child?.label && child?.href);
+  const external = /^https?:\/\//i.test(href) ? ' target="_blank" rel="noopener"' : '';
+  const top = `<a href="${escapeHtml(href)}"${external}>${escapeHtml(item.label || '')}</a>`;
+  if (!children.length) return top;
+  const id = `cub-sub-${index}`;
+  return `<div class="cub-dd">${top}<button type="button" class="cub-dd-btn" aria-expanded="false" aria-controls="${id}" aria-label="${escapeHtml(`${item.label} menu`)}"><svg aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button><ul class="cub-dd-menu" id="${id}">${children.map((child) => `<li>${anchor(child)}</li>`).join('')}</ul></div>`;
 }

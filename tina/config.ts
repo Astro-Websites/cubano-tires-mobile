@@ -110,10 +110,34 @@ export default defineConfig({
         format: 'json',
         ui: { allowedActions: { create: false, delete: false } },
         fields: [
-          { ...navigationItem, name: 'header', label: 'Header Navigation' },
-          { ...navigationItem, name: 'services', label: 'Footer Services' },
-          { ...navigationItem, name: 'company', label: 'Footer Company' },
-          { ...navigationItem, name: 'social', label: 'Social Links' },
+          {
+            ...navigationItem,
+            name: 'header',
+            label: 'Header Navigation',
+            fields: [
+              ...navigationItem.fields,
+              {
+                ...navigationItem,
+                name: 'children',
+                label: 'Dropdown Links',
+                description: 'Optional. Links shown in a dropdown under this menu item. Leave empty for a plain link.',
+                fields: navigationItem.fields.filter((field) => field.name !== 'sourceLabel'),
+              },
+            ],
+          },
+          {
+            type: 'object',
+            list: true,
+            name: 'footerColumns',
+            label: 'Footer Link Columns',
+            description: 'Each column is a heading with its own list of links. Add, remove or reorder columns and links here.',
+            ui: { itemProps: (item: { heading?: string }) => ({ label: item?.heading }) },
+            fields: [
+              { type: 'string', name: 'heading', label: 'Column Heading', required: true },
+              { ...navigationItem, name: 'links', label: 'Links', fields: navigationItem.fields.filter((field) => field.name !== 'sourceLabel') },
+            ],
+          },
+          { ...navigationItem, name: 'social', label: 'Social Links', description: 'Shown in the top bar and as the "Follow Us" footer column.' },
           { ...navigationItem, name: 'legal', label: 'Legal Links' },
         ],
       },
