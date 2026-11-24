@@ -34,25 +34,105 @@ demoSections:
   - role: Heading
     text: Step inside our trucks
   - role: Paragraph
-    text: '[Client to provide: the original photos from this album on the current site. More photos will be added here.]'
+    text: Tap any photo to see it full size.
   links: []
   images: []
   cards:
   - _template: photo
-    image: /uploads/home/how-it-works-background.jpg
-    imageAlt: Open Cubano Tires service truck with tire machine and compressor
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-1.jpg
+    imageAlt: Technician lifting a Nexen tire onto a steel wheel inside a Cubano Tires service truck
     title: ''
-    caption: A full tire shop on wheels
+    caption: ''
   - _template: photo
-    image: /uploads/home/technician-servicing-a-wheel-and-tpms-valve-on-the-tire-mach.jpg
-    imageAlt: Technician servicing a wheel and TPMS valve on the truck tire machine
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-2.jpg
+    imageAlt: Technician cleaning a tire bead, seen through the center of a tire inside the truck
     title: ''
-    caption: Tire machine on board
+    caption: ''
   - _template: photo
-    image: /uploads/cubano-pages/cubano-technician-servicing-a-wheel-on-the-tire.jpg
-    imageAlt: Technician working a wheel on the tire machine
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-3.jpg
+    imageAlt: Technician working a wheel on the tire machine at the open door of a Cubano Tires truck
     title: ''
-    caption: Mounting and balancing on site
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-4.jpg
+    imageAlt: Technician fitting a Michelin tire onto a wheel inside the service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-5.jpg
+    imageAlt: Technician using a tire iron on the tire machine inside the truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-6.jpg
+    imageAlt: Tire changer machine and Michelin banner inside a Cubano Tires truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-7.jpg
+    imageAlt: Technician mounting a Porsche GT3 wheel on the tire machine inside the truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-8.jpg
+    imageAlt: Technician protecting a black alloy wheel with a rim guard on the tire machine
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-9.jpg
+    imageAlt: Technician lowering a performance tire onto a wheel on the tire machine
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-10.jpg
+    imageAlt: Technician taping a rim guard around a black wheel before mounting a tire
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-11.jpg
+    imageAlt: Technician lubricating the bead of a new Michelin tire inside the truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-12.jpg
+    imageAlt: Technician checking a mounted Michelin tire on the wheel balancer
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-13.jpg
+    imageAlt: Technician using the tire machine to dismount an old truck tire
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-14.jpg
+    imageAlt: Technician mounting a tire inside a Cubano Tires truck with the door open
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-15.jpg
+    imageAlt: Technician fitting a low profile tire on the tire machine inside the truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-16.jpg
+    imageAlt: Technician spraying a wheel before mounting a Michelin Pilot Sport tire
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-17.jpg
+    imageAlt: Technician working the mount head of the tire machine on a large wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-18.jpg
+    imageAlt: Technician inflating a new tire on an alloy wheel inside the truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/inside-the-cubano-trucks/inside-the-cubano-trucks-19.jpg
+    imageAlt: Technician inflating a new tire in the truck parked outside a home
+    title: ''
+    caption: ''
 - label: More albums
   copy:
   - role: Heading
