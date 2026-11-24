@@ -1,0 +1,146 @@
+---
+// The grouped page directory on /sitemap/. Pages come from the Tina collections
+// (src/lib/site-pages.ts); headings, descriptions and the bottom CTA come from
+// Tina: Simple Pages → Sitemap → Sitemap Page Settings.
+import { getSitemapSections, type SitePage, type SitemapSectionKey } from '../lib/site-pages';
+import config from '../content/global/config.json';
+
+const { settings = {} } = Astro.props as { settings?: Record<string, any> };
+const sections = await getSitemapSections(settings.sections || []);
+const total = sections.reduce((sum, section) => sum + section.count + section.categories.length, 0);
+const cta = settings.cta || {};
+const button = cta.button || {};
+const safeHref = (value?: string) => (value && /^(?:\/(?![/\\])|https:\/\/|tel:|sms:|mailto:)/i.test(value.trim()) ? value.trim() : '');
+const buttonHref = safeHref(button.href);
+const phoneDigits = String(config.phoneDigits || '').replace(/\D/g, '');
+
+// Simple line icons (24px grid, stroke drawn in currentColor).
+const icons: Record<SitemapSectionKey, string> = {
+  main: '<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/>',
+  services: '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.6 17.2a1.9 1.9 0 0 0 2.7 2.7l5.7-5.7a4 4 0 0 0 5.2-5.4l-2.5 2.5-2.3-.4-.4-2.3z"/>',
+  tires: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/><path d="M12 3v3.5M12 17.5V21M3 12h3.5M17.5 12H21M5.6 5.6l2.5 2.5M15.9 15.9l2.5 2.5M5.6 18.4l2.5-2.5M15.9 8.1l2.5-2.5"/>',
+  vehicles: '<path d="M2 16V7a1 1 0 0 1 1-1h11v10"/><path d="M14 9h4l3 3.5V16h-1"/><path d="M2 16h2M9 16h6"/><circle cx="6.5" cy="16.5" r="2"/><circle cx="17.5" cy="16.5" r="2"/>',
+  areas: '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
+  about: '<path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/>',
+  blog: '<path d="M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5z"/><path d="M12 6v13.5"/>',
+  legal: '<path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>',
+};
+const icon = (key: SitemapSectionKey) => `<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[key]}</svg>`;
+const plural = (n: number) => `${n} ${n === 1 ? 'page' : 'pages'}`;
+---
+<div class="cub-sm">
+  <nav class="cub-sm-jump" aria-label="Sitemap sections">
+    <span class="cub-sm-total">{plural(total)}</span>
+    {sections.map((section) => (
+      <a href={`#${section.key}`}><span class="cub-sm-jump-icon" set:html={icon(section.key)} /><span data-sitemap-heading={section.key}>{section.heading}</span></a>
+    ))}
+  </nav>
+
+  <div class="cub-sm-grid">
+    {sections.map((section) => (
+      <section class="cub-sm-card" id={section.key} aria-labelledby={`${section.key}-heading`}>
+        <header class="cub-sm-head">
+          <span class="cub-sm-icon" set:html={icon(section.key)} />
+          <div>
+            <h2 id={`${section.key}-heading`} data-sitemap-heading={section.key}>{section.heading}</h2>
+            <span class="cub-sm-count">{plural(section.count)}</span>
+          </div>
+        </header>
+        <p class="cub-sm-desc" data-sitemap-desc={section.key} hidden={!section.description}>{section.description}</p>
+        {section.hub && (
+          <a class="cub-sm-hub" href={section.hub.url}>{section.key === 'blog' ? 'All Tire Tips' : section.hub.title}<span aria-hidden="true">→</span></a>
+        )}
+        {section.pages.length > 0 && (
+          <ul class="cub-sm-list">
+            {section.pages.map((page: SitePage) => (
+              <li>
+                <a href={page.url}>{page.title}</a>
+                {page.children.length > 0 && (
+                  <ul class="cub-sm-sub">
+                    {page.children.map((child) => <li><a href={child.url}>{child.title}</a></li>)}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+        {section.categories.length > 0 && (
+          <div class="cub-sm-cats">
+            <span>Browse by topic</span>
+            <div>{section.categories.map((category) => <a href={category.url}>{category.title}</a>)}</div>
+          </div>
+        )}
+      </section>
+    ))}
+  </div>
+
+  {(cta.heading || cta.text) && (
+    <aside class="cub-sm-cta">
+      <div>
+        <h2 data-sitemap-cta="heading">{cta.heading}</h2>
+        <p data-sitemap-cta="text" hidden={!cta.text}>{cta.text}</p>
+      </div>
+      <div class="cub-sm-cta-actions">
+        {phoneDigits && <a class="cub-sm-btn cub-sm-btn-red" href={`tel:${phoneDigits}`}>Call {config.phoneDisplay}</a>}
+        {buttonHref && button.label && (
+          <a class="cub-sm-btn cub-sm-btn-light" data-sitemap-cta="button" href={buttonHref} target={button.newTab ? '_blank' : undefined} rel={button.newTab ? 'noopener' : undefined}>{button.label}</a>
+        )}
+      </div>
+    </aside>
+  )}
+</div>
+
+<style is:global>
+  .cub-sm { margin-top: 8px; }
+  .cub-sm-jump { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0 0 36px; }
+  .cub-sm-total { font-family: Montserrat, Inter, sans-serif; font-weight: 900; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #E11B22; margin-right: 6px; }
+  .cub-sm-jump a { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px 9px 12px; border: 1px solid #E4E8EE; border-radius: 999px; background: #FFFFFF; color: #16181D; font-size: 14px; font-weight: 700; transition: border-color .15s, background-color .15s, color .15s; }
+  .cub-sm-jump a:hover { border-color: #16181D; background: #16181D; color: #FFFFFF; }
+  .cub-sm-jump-icon { display: inline-flex; color: #E11B22; }
+  .cub-sm-jump a:hover .cub-sm-jump-icon { color: #FFC72C; }
+  .cub-sm-jump-icon svg { width: 18px; height: 18px; }
+
+  .cub-sm-grid { columns: 3 320px; column-gap: 24px; }
+  .cub-sm-card { break-inside: avoid; display: block; margin: 0 0 24px; padding: 28px 28px 26px; background: #FFFFFF; border: 1px solid #E4E8EE; border-top: 4px solid #E11B22; border-radius: 22px; box-shadow: 0 14px 36px -24px rgba(22, 24, 29, .35); scroll-margin-top: 120px; }
+  .cub-sm-head { display: flex; align-items: center; gap: 16px; }
+  .cub-sm-icon { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 16px; background: #16181D; color: #FFC72C; }
+  .cub-sm-head h2 { margin: 0; font-weight: 900; font-size: 22px; line-height: 1.15; color: #16181D; }
+  .cub-sm-count { display: inline-block; margin-top: 4px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: #6B7280; }
+  .cub-sm-desc { margin: 16px 0 0; font-size: 15px; line-height: 1.55; color: #4A5565; }
+  .cub-sm-hub { display: flex; align-items: center; justify-content: space-between; margin: 18px 0 0; padding: 12px 16px; border-radius: 12px; background: #E11B22; color: #FFFFFF !important; font-weight: 800; font-size: 15px; transition: background-color .15s; }
+  .cub-sm-hub:hover { background: #B3241F; }
+  .cub-sm-list, .cub-sm-sub { list-style: none; margin: 0; padding: 0; }
+  .cub-sm-list { margin-top: 14px; }
+  .cub-sm-list > li + li { border-top: 1px solid #EEF1F5; }
+  .cub-sm-list a { position: relative; display: block; padding: 11px 28px 11px 0; font-size: 16px; font-weight: 600; line-height: 1.35; color: #16181D; transition: color .15s, padding-left .15s; }
+  .cub-sm-list a::after { content: ''; position: absolute; right: 6px; top: 50%; width: 7px; height: 7px; border-top: 2px solid #C5CCD6; border-right: 2px solid #C5CCD6; transform: translateY(-50%) rotate(45deg); transition: border-color .15s, right .15s; }
+  .cub-sm-list a:hover { color: #E11B22; padding-left: 4px; }
+  .cub-sm-list a:hover::after { border-color: #E11B22; right: 2px; }
+  .cub-sm-sub { margin: 0 0 10px 2px; padding-left: 14px; border-left: 3px solid #FFC72C; }
+  .cub-sm-sub a { padding: 6px 28px 6px 0; font-size: 14.5px; font-weight: 500; color: #2A2F38; }
+  .cub-sm-sub a::after { width: 6px; height: 6px; }
+  .cub-sm-cats { margin-top: 18px; padding-top: 16px; border-top: 1px dashed #DCE1E8; }
+  .cub-sm-cats > span { display: block; margin-bottom: 10px; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #6B7280; }
+  .cub-sm-cats > div { display: flex; flex-wrap: wrap; gap: 8px; }
+  .cub-sm-cats a { padding: 6px 12px; border-radius: 999px; background: #FFF4D1; color: #4A4020; font-size: 13px; font-weight: 700; transition: background-color .15s; }
+  .cub-sm-cats a:hover { background: #FFC72C; color: #16181D; }
+
+  .cub-sm-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; margin-top: 24px; padding: 36px 40px; border-radius: 24px; background: #16181D; background-image: radial-gradient(circle at 100% 0, rgba(225, 27, 34, .45), transparent 55%); color: #FFFFFF; }
+  .cub-sm-cta h2 { margin: 0; font-weight: 900; font-size: clamp(24px, 3vw, 32px); line-height: 1.15; color: #FFFFFF; }
+  .cub-sm-cta p { margin: 10px 0 0; max-width: 560px; font-size: 17px; line-height: 1.55; color: #D5DAE1; }
+  .cub-sm-cta-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .cub-sm-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border-radius: 999px; font-weight: 800; font-size: 16px; transition: background-color .15s, color .15s; }
+  .cub-sm-btn-red { background: #E11B22; color: #FFFFFF !important; }
+  .cub-sm-btn-red:hover { background: #B3241F; }
+  .cub-sm-btn-light { background: #FFC72C; color: #16181D !important; }
+  .cub-sm-btn-light:hover { background: #FFFFFF; }
+
+  @media (max-width: 760px) {
+    .cub-sm-jump { gap: 8px; margin-bottom: 28px; }
+    .cub-sm-total { width: 100%; }
+    .cub-sm-jump a { padding: 8px 14px 8px 10px; font-size: 13px; }
+    .cub-sm-card { padding: 22px 20px; }
+    .cub-sm-cta { padding: 28px 22px; }
+    .cub-sm-cta-actions, .cub-sm-btn { width: 100%; }
+  }
+</style>
