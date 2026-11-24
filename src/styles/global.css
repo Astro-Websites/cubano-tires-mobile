@@ -118,5 +118,3 @@ header.open .cub-ctas a{flex:1 1 200px;justify-content:center}
 header.open .cub-tog .ic-m{display:none}
 header.open .cub-tog .ic-x{display:block}
 }
-/* Images get width/height at build (scripts/image-performance.mjs) to reserve space while they load; keep their CSS height in charge. */
-:where(img[width][height]){height:auto}

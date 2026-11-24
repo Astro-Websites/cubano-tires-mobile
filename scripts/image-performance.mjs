@@ -15,7 +15,7 @@
 //   - width/height from the real file in public/ when the tag has none and its
 //     inline style already sets a width, so the browser reserves the space
 //     before the photo arrives (less layout shift) without changing the layout.
-//     global.css has the matching `:where(img[width][height]) { height: auto }`.
+//     navigation.css has the matching `:where(img[width][height]) { height: auto }`.
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
