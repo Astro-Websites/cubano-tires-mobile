@@ -34,25 +34,175 @@ demoSections:
   - role: Heading
     text: Fleets kept rolling
   - role: Paragraph
-    text: '[Client to provide: the original photos from this album on the current site. More photos will be added here.]'
+    text: Tap any photo to see it full size.
   links: []
   images: []
   cards:
   - _template: photo
-    image: /uploads/home/technician-servicing-a-semi-truck.jpg
-    imageAlt: Technician servicing a fleet semi truck tire
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-1.jpg
+    imageAlt: Black and white photo of a technician using an impact wrench on a white box truck front wheel
     title: ''
-    caption: Fleet truck serviced at the yard
+    caption: ''
   - _template: photo
-    image: /uploads/cubano-pages/cubano-technician-replacing-a-22-5-inch-tire.jpg
-    imageAlt: Technician replacing a 22.5 inch commercial tire
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-2.jpg
+    imageAlt: Technician removing lug nuts from the front wheel of a rental moving truck
     title: ''
-    caption: Commercial tire replacement
+    caption: ''
   - _template: photo
-    image: /uploads/cubano-pages/cubano-technician-servicing-a-semi-truck-on-a.jpg
-    imageAlt: Technician servicing a semi truck on a rental job
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-3.jpg
+    imageAlt: Technician rolling a tire away from the Cubano Tires service truck in a parking lot
     title: ''
-    caption: Rental fleet job
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-4.jpg
+    imageAlt: Technician changing the front tire of a delivery van with a floor jack
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-5.jpg
+    imageAlt: Technician loosening lug nuts on the rear wheel of a delivery van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-6.jpg
+    imageAlt: Technician positioning a floor jack under a commercial service van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-7.jpg
+    imageAlt: Technician raising a fleet service van with a floor jack in a parking lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-8.jpg
+    imageAlt: Commercial service van on jacks with its wheels off during an on-site tire service
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-9.jpg
+    imageAlt: Technician sliding a floor jack under a moving trailer axle
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-10.jpg
+    imageAlt: Technician removing lug nuts from a moving trailer wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-11.jpg
+    imageAlt: Technician checking the lug nuts on a moving trailer wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-12.jpg
+    imageAlt: Technician using an impact wrench on the front wheel of a delivery step van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-13.jpg
+    imageAlt: Technician rolling a new tire into place on a delivery step van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-14.jpg
+    imageAlt: Cubano Tires service truck parked beside a delivery step van during on-site fleet tire service
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-15.jpg
+    imageAlt: Cubano Tires Mobile Shop truck parked next to a delivery step van at a fleet yard
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-16.jpg
+    imageAlt: Black and white photo of a technician inflating a newly mounted tire inside the mobile service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-17.jpg
+    imageAlt: Technician inflating a newly mounted tire inside the Cubano Tires service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-18.jpg
+    imageAlt: Technician using an impact wrench on the front wheel of a plumbing company work truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-19.jpg
+    imageAlt: Black and white photo of a technician tightening lug nuts on a fleet pickup truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-20.jpg
+    imageAlt: Technician changing the rear tire of a plumbing company pickup at the curb
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-21.jpg
+    imageAlt: Technician working on the rear wheel of a plumbing company pickup parked on a residential street
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-22.jpg
+    imageAlt: Technician removing the front wheel of a box truck with the impact wrench beside him
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-23.jpg
+    imageAlt: Technician using an impact wrench on the front wheel of a commercial box truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-24.jpg
+    imageAlt: Utility bucket van on a jack with its front wheel off, beside the Cubano Tires service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-25.jpg
+    imageAlt: Utility bucket van seen from inside the Cubano Tires service truck during a fleet tire job
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-26.jpg
+    imageAlt: Technician mounting a tire on a steel wheel with the tire changer inside the service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-27.jpg
+    imageAlt: Technician fitting the front wheel back onto a utility bucket van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-28.jpg
+    imageAlt: Side of a utility contractor van serviced on site by Cubano Tires
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-29.jpg
+    imageAlt: Technician in a safety vest tightening lug nuts on a restoration company van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-30.jpg
+    imageAlt: Technician removing a shredded tire from a steel wheel inside the service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-31.jpg
+    imageAlt: Technician using a tire iron to remove a blown-out tire on the tire changer
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-32.jpg
+    imageAlt: Technician hand-threading lug nuts on a restoration company van
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/fleet-vehicle-tire-service/fleet-vehicle-tire-service-33.jpg
+    imageAlt: Technician inflating a new tire on an alloy wheel inside the service truck
+    title: ''
+    caption: ''
 - label: More albums
   copy:
   - role: Heading
