@@ -34,25 +34,105 @@ demoSections:
   - role: Heading
     text: RVs, trailers and toy haulers
   - role: Paragraph
-    text: '[Client to provide: the original photos from this album on the current site. More photos will be added here.]'
+    text: Tap any photo to see it full size.
   links: []
   images: []
   cards:
   - _template: photo
-    image: /uploads/gallery/technician-replacing-a-motorhome-tire-curbside.jpg
-    imageAlt: Cubano Tires technician replacing a motorhome tire at the curb
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-1.jpg
+    imageAlt: Black and white photo of a technician changing a travel trailer tire in a home driveway
     title: ''
-    caption: Replacing a motorhome tire right at the curb, no tow needed.
+    caption: ''
   - _template: photo
-    image: /uploads/demo/photo-needed.svg
-    imageAlt: Placeholder for a travel trailer tire photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-2.jpg
+    imageAlt: Technician installing new tires on a travel trailer with the Cubano Tires truck parked behind
     title: ''
-    caption: '[Client to provide: travel trailer photo from the live album]'
+    caption: ''
   - _template: photo
-    image: /uploads/demo/photo-needed.svg
-    imageAlt: Placeholder for a toy hauler tire photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-3.jpg
+    imageAlt: Technician working on the front tire of a large motorhome parked on a residential street
     title: ''
-    caption: '[Client to provide: toy hauler photo from the live album]'
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-4.jpg
+    imageAlt: View under a motorhome as a technician positions a floor jack
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-5.jpg
+    imageAlt: Technician mounting a new tire on a motorhome next to a covered boat
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-6.jpg
+    imageAlt: Technician jacking up a Class C motorhome to change a rear tire
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-7.jpg
+    imageAlt: Black and white photo of a technician rolling a tire beside a motorhome at an RV storage lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-8.jpg
+    imageAlt: Technician fitting a tire and wheel back onto a Class C motorhome
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-9.jpg
+    imageAlt: Technician rolling a tire between rows of motorhomes at an RV storage lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-10.jpg
+    imageAlt: Technician removing a rear tire from a Class A motorhome
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-11.jpg
+    imageAlt: Low angle view of a technician lying under a motorhome to place a floor jack
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-12.jpg
+    imageAlt: New RV tires on the lift gate of the Cubano Tires truck next to a motorhome
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-13.jpg
+    imageAlt: Technician removing a motorhome tire from its rim on the pavement
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-14.jpg
+    imageAlt: Technician using a tire iron to demount a motorhome tire at an RV lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-15.jpg
+    imageAlt: Technician removing the rear wheel of a Class A motorhome between parked RVs
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-16.jpg
+    imageAlt: Black and white photo of a technician demounting a motorhome tire with tire irons
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-17.jpg
+    imageAlt: Black and white photo of a technician seating a new RV tire on its wheel
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-18.jpg
+    imageAlt: Technician mounting a new 19.5 inch RV tire with a tire iron behind a motorhome
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/rv-trailer-tires/rv-trailer-tires-19.jpg
+    imageAlt: Black and white photo of a technician tightening the lug nuts on a motorhome wheel
+    title: ''
+    caption: ''
 - label: More albums
   copy:
   - role: Heading
