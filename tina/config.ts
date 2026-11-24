@@ -1,6 +1,7 @@
 import { defineConfig } from 'tinacms';
 import { BlogCollection } from './collections/blog';
 import { CategoryCollection } from './collections/category';
+import { GalleryCollection } from './collections/gallery';
 import { PageCollection } from './collections/page';
 import { SimplePageCollection } from './collections/simple-page';
 import { UserCollection } from './collections/user';
@@ -28,6 +29,7 @@ export default defineConfig({
       BlogCollection,
       CategoryCollection,
       PageCollection,
+      GalleryCollection,
       SimplePageCollection,
       UserCollection,
       {

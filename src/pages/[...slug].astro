@@ -1,5 +1,5 @@
 ---
-// Designed pages (Tina: Pages) and simple rich-text pages (Tina: Simple Pages) share the URL space.
+// Designed pages (Tina: Pages and Gallery) and simple rich-text pages (Tina: Simple Pages) share the URL space.
 import DesignedPage from '../components/DesignedPage.astro';
 import SimplePage from '../components/SimplePage.astro';
 import { getCollection } from 'astro:content';
@@ -7,12 +7,18 @@ export async function getStaticPaths() {
   const designed = (await getCollection('page'))
     .filter(({ id, data }) => Boolean(data.demoTemplate) && id !== 'homepage')
     .map((entry) => ({ params: { slug: entry.id }, props: { entry, kind: 'designed' } }));
-  const reserved = new Set([...designed.map((p) => p.params.slug), 'tires', 'tire-tips', 'admin', 'uploads']);
+  // Tina: Gallery. index.md is /about/gallery/, every other file is an album under it.
+  const gallery = (await getCollection('gallery'))
+    .filter(({ data }) => Boolean(data.demoTemplate))
+    .map((entry) => ({ params: { slug: entry.id === 'index' ? 'about/gallery' : `about/gallery/${entry.id}` }, props: { entry, kind: 'designed' } }));
+  const taken = new Set(designed.map((p) => p.params.slug));
+  for (const p of gallery) if (taken.has(p.params.slug)) throw new Error(`Gallery page "${p.params.slug}" uses a URL that already exists in Pages.`);
+  const reserved = new Set([...designed.map((p) => p.params.slug), ...gallery.map((p) => p.params.slug), 'tires', 'tire-tips', 'admin', 'uploads']);
   const simple = (await getCollection('simplePage')).map((entry) => {
     if (reserved.has(entry.id) || reserved.has(entry.id.split('/')[0])) throw new Error(`Simple page "${entry.id}" uses a URL that already exists. Rename the file.`);
     return { params: { slug: entry.id }, props: { entry, kind: 'simple' } };
   });
-  return [...designed, ...simple];
+  return [...designed, ...gallery, ...simple];
 }
 const { entry, kind } = Astro.props;
 ---

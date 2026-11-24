@@ -41,8 +41,8 @@
 /About/Read-Our-Reviews/                   /about/read-our-reviews/                  301
 /About/Gallery                             /about/gallery/                           301
 /About/Gallery/                            /about/gallery/                           301
-/About/News                                /about/news/                              301
-/About/News/                               /about/news/                              301
+/About/News                                /tire-tips/                               301
+/About/News/                               /tire-tips/                               301
 /Hours                                     /contact/                                 301
 /Hours/                                    /contact/                                 301
 /Hours/Contact                             /contact/                                 301
@@ -110,6 +110,10 @@
 
 # --- Splats ---
 /About/News/*                              /tire-tips/                               301
+# News was merged into the blog (Tire Tips).
+/about/news                                /tire-tips/                               301
+/about/news/                               /tire-tips/                               301
+/about/news/*                              /tire-tips/                               301
 /blog                                      /tire-tips/                               301
 /blog/*                                    /tire-tips/:splat                         301
 

@@ -34,7 +34,7 @@ demoSections:
   - role: Heading
     text: Browse our work
   - role: Paragraph
-    text: 'Open an album to see the photos. [Client to provide: original photo files from the 7 albums on the current site.]'
+    text: Open an album to see the photos.
   links: []
   images: []
   cards:
