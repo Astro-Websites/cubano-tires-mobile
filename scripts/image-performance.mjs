@@ -7,8 +7,8 @@
 //
 // Per page:
 //   - Header logo: left as is (loads right away).
-//   - Hero image (the first large, visible image in the top two sections of the
-//     page; pages whose hero has no photo get none): kept eager
+//   - Hero image (the first large, visible image in the page's hero section, the
+//     one holding the <h1>; pages whose hero has no photo get none): kept eager
 //     with fetchpriority="high", because lazy-loading the main above-the-fold
 //     image slows Largest Contentful Paint.
 //   - Every other image: loading="lazy" and decoding="async".
@@ -93,14 +93,16 @@ export default function imagePerformance() {
           // Leave <script>, <template>, <noscript> and <style> content alone.
           const parts = html.split(/(<(script|template|noscript|style)\b[\s\S]*?<\/\2>)/i);
           const headerEnd = html.search(/<\/header>/i);
-          // The hero must sit in the top of the page: the first two <section>s of
-          // <main>, and never in the footer.
+          // The hero must sit in the page's hero section (the <section> holding the
+          // <h1>, or the first section of <main>), never further down or in the footer.
           const footerStart = html.search(/<footer\b/i);
           const mainStart = html.search(/<main\b/i);
+          const h1 = html.search(/<h1\b/i);
           const sections = [...html.matchAll(/<section\b/gi)].map((s) => s.index).filter((s) => s > mainStart);
+          const heroSectionEnd = sections.find((s) => s > Math.max(h1, sections[0] ?? 0));
           const heroLimit = Math.min(
             footerStart === -1 ? html.length : footerStart,
-            sections[2] ?? html.length,
+            heroSectionEnd ?? html.length,
           );
           let offset = 0;
           let heroDone = false;
