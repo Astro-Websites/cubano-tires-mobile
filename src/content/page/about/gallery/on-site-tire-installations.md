@@ -34,25 +34,50 @@ demoSections:
   - role: Heading
     text: Installs at homes and job sites
   - role: Paragraph
-    text: '[Client to provide: the original photos from this album on the current site. More photos will be added here.]'
+    text: Tap any photo to see it full size.
   links: []
   images: []
   cards:
   - _template: photo
-    image: /uploads/home/technician-installing-new-tires-on-a-white-bmw-m8-in-a-drive.jpg
-    imageAlt: Technician installing new tires on a white BMW M8 in a driveway
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-1.jpg
+    imageAlt: Technician installing a tire on a white sedan parked at the curb outside a home
     title: ''
-    caption: BMW M8 in the driveway
+    caption: ''
   - _template: photo
-    image: /uploads/cubano-pages/cubano-technician-installing-a-tire-on-a-tesla.jpg
-    imageAlt: Technician installing a tire on a Tesla
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-2.jpg
+    imageAlt: Technician mounting a new tire on the tire changer inside the mobile service truck
     title: ''
-    caption: Tesla install at home
+    caption: ''
   - _template: photo
-    image: /uploads/home/technician-removing-a-shredded-blowout-tire-at-the-roadside.jpg
-    imageAlt: Technician removing a shredded blowout tire at the roadside
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-3.jpg
+    imageAlt: Technician lifting a wheel inside the Cubano Tires Mobile Shop truck parked curbside
     title: ''
-    caption: Roadside blowout replaced
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-4.jpg
+    imageAlt: Technician using an impact wrench on the front wheel of a gray sedan
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-5.jpg
+    imageAlt: Technician working on a wheel at the tire changer inside the open service truck
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-6.jpg
+    imageAlt: Technician using an impact wrench on the front wheel of a red electric sedan in a parking lot
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-7.jpg
+    imageAlt: Technician positioning a floor jack under a white SUV on a residential street
+    title: ''
+    caption: ''
+  - _template: photo
+    image: /uploads/gallery/on-site-tire-installations/on-site-tire-installations-8.jpg
+    imageAlt: Technician removing the front wheel of a dump truck with an impact wrench
+    title: ''
+    caption: ''
 - label: More albums
   copy:
   - role: Heading
