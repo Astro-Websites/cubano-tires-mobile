@@ -105,7 +105,7 @@ demoSections:
     links: []
     images: []
     cards:
-      - image: /uploads/cubano-logo.png
+      - image: /uploads/photo-needed.svg
         imageAlt: Placeholder for a travel trailer tire job photo
         title: ''
         caption: '[Client to provide: travel trailer tire swap from the RV & Trailer album]'
