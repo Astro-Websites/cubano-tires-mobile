@@ -20,6 +20,9 @@ const noindex = Astro.props.noindex || !Astro.site || Astro.site.hostname.starts
 const iconType = (href: string) => (/\.svg$/i.test(href) ? 'image/svg+xml' : /\.png$/i.test(href) ? 'image/png' : undefined);
 const icon = favicon || config.seo?.favicon || '/favicon.svg';
 const appleIcon = (config.seo as { appleTouchIcon?: string } | undefined)?.appleTouchIcon || '/apple-touch-icon.png';
+// A build stamp makes every deploy upload fresh HTML, so a page whose stored copy
+// broke on Cloudflare (served as an empty HTTP 500) is replaced on the next deploy.
+const buildId = new Date().toISOString();
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : undefined;
 ---
 <!doctype html>
@@ -28,6 +31,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : un
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <meta name="build" content={buildId} />
     {noindex && <meta name="robots" content="noindex, nofollow" />}
     {canonical && <link rel="canonical" href={canonical} />}
     {icon === '/favicon.svg' && <link rel="icon" href="/favicon.ico" sizes="48x48" />}
