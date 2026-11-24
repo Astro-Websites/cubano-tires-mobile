@@ -22,7 +22,7 @@ demoSections:
   - role: Badge
     text: Price quoted = price paid
   - role: Badge
-    text: Free mobile service with 4 tires
+    text: Free mobile service with 4 new tires from us
   links:
   - role: Link
     label: Home
@@ -151,7 +151,7 @@ demoSections:
   - role: Heading
     text: How much do Tesla tires cost?
   - role: Paragraph
-    text: It depends on your model, wheel size and the tire you pick. Text us a photo of your sidewall and we'll send options with installed prices. Mobile service is free with 4 tires, and the price we quote is the price you pay.
+    text: It depends on your model, wheel size and the tire you pick. Text us a photo of your sidewall and we'll send options with installed prices. Mobile service is free when you buy 4 new tires from us, and the price we quote is the price you pay.
   links:
   - role: Button
     label: Shop EV Tires

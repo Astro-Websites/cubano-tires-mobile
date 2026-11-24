@@ -15,13 +15,13 @@ demoSections:
   - role: Main heading
     text: installed in your driveway.
   - role: Paragraph
-    text: Current manufacturer rebates on the brands we install, plus free mobile service when you buy 4 tires in Orange County. Text us your tire size and the offer you want, and we quote with it applied.
+    text: Current manufacturer rebates on the brands we install, plus free mobile service when you buy 4 new tires from us in Orange County. Text us your tire size and the offer you want, and we quote with it applied.
   - role: Eyebrow
     text: ORANGE COUNTY
   - role: Paragraph
     text: FREE mobile service
   - role: Paragraph
-    text: With the purchase of 4 new tires at an Orange County address. We come to your home, office or job site.
+    text: With the purchase of 4 new tires from us, installed at an Orange County address. Bringing your own tires? Standard installation and mobile service fees apply. We come to your home, office or job site.
   - role: Paragraph
     text: Outside OC? Ask for our flat mobile rate. Combines with manufacturer rebates.
   links:

@@ -185,7 +185,7 @@ demoSections:
         answer: 'Yes. We handle box trucks, trailers and big rigs, including 17.5, 19.5 and 22.5 inch tires.'
         _template: faq
       - question: Is there a mobile service fee?
-        answer: 'Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires. Outside Orange County, the $75 fee applies.'
+        answer: 'Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires from us. If you bring your own tires, standard installation and mobile service fees apply. Outside Orange County, the $75 fee applies.'
         _template: faq
       - question: Can I add a warranty?
         answer: Yes. You can add an optional nationwide warranty for $15 per tire. Ask when you get your quote.

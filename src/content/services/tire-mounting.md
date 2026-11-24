@@ -80,7 +80,7 @@ demoSections:
   - role: List item
     text: Tell us if the wheels already have TPMS sensors
   - role: Paragraph
-    text: 'Need tires for them? We carry the major brands, including BFGoodrich, Nitto, Toyo, Falken, General and Cooper for trucks. [Confirm with Joel: do you also mount tires the customer already bought?] Going bigger than stock on a truck? Make sure your lift or leveling kit clears the new size first.'
+    text: 'Need tires for them? We carry the major brands, including BFGoodrich, Nitto, Toyo, Falken, General and Cooper for trucks. Already bought your tires? We can install those too. Standard installation and mobile service fees apply. Going bigger than stock on a truck? Make sure your lift or leveling kit clears the new size first.'
   - role: Paragraph
     text: We don't sell, repair or straighten wheels.
   - role: Paragraph

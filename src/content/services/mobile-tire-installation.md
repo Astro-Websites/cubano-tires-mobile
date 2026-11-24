@@ -22,7 +22,7 @@ demoSections:
   - role: Badge
     text: Install from $35/tire
   - role: Badge
-    text: Free mobile service with 4 tires
+    text: Free mobile service with 4 new tires from us
   - role: Badge
     text: Price quoted = price paid
   - role: Badge
@@ -186,7 +186,7 @@ demoSections:
   - role: Heading
     text: How much does mobile tire installation cost?
   - role: Paragraph
-    text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
+    text: Tire installation starts at $35 per tire and up, depending on the tire size, plus tire disposal fees and the mobile service fee. Buy 4 new tires from us and the mobile service fee is waived in Orange County. We quote the whole job up front, so the price we text you is the price you pay.
   links:
   - role: Button
     label: Text a Photo for Your Price
@@ -201,7 +201,7 @@ demoSections:
   cards:
   - _template: faq
     question: Is mobile tire service really free?
-    answer: Yes, when you buy 4 new tires in Orange County. For smaller jobs there's a flat $75 mobile fee, and it's already in your quote. No surprises when we show up.
+    answer: Yes, when you buy 4 new tires from us in Orange County. If you bring your own tires, standard installation and mobile service fees apply. For smaller jobs there's a flat $75 mobile fee, and it's already in your quote. No surprises when we show up.
   - _template: faq
     question: How do I find my tire size?
     answer: 'It''s printed on the side of the tire and looks something like 225/65R17. Easiest option: text us a photo of it and we''ll read it for you.'
@@ -216,7 +216,7 @@ demoSections:
     answer: Yes. You can add an optional nationwide warranty for $15 per tire. Ask when you get your quote.
   - _template: faq
     question: Can you install tires I bought somewhere else?
-    answer: '[Confirm with Joel: do you install customer-supplied tires, and at what price?] Text us what you have and we''ll let you know.'
+    answer: Yes. Bringing your own tires is no problem, and we can still install them at your location. Standard installation and mobile service fees apply. The mobile service fee is only waived when you buy 4 new tires from us.
 - label: Mobile tire installation near you
   copy:
   - role: Heading
