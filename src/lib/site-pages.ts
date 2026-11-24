@@ -6,7 +6,8 @@ import { getCategories, getPosts } from './blog';
 import navigation from '../content/global/navigation.json';
 import { SECTION_COLLECTIONS, sectionSlug, type SectionCollection } from './page-collections';
 
-export type SitePage = { url: string; title: string; kind: 'page' | 'post' | 'category'; children: SitePage[] };
+// topic: a blog post's first category, used to group posts on the sitemap.
+export type SitePage = { url: string; title: string; kind: 'page' | 'post' | 'category'; children: SitePage[]; topic?: { title: string; url: string } };
 export type SitemapSectionKey = 'main' | 'services' | 'tires' | 'vehicles' | 'areas' | 'about' | 'blog' | 'legal';
 export type SitemapSection = {
   key: SitemapSectionKey;
@@ -83,7 +84,11 @@ export async function getSitePages(): Promise<SitePage[]> {
 
   const posts = (await getPosts()).filter((post) => !hidden(post.data));
   if (posts.length) add('/tire-tips/', 'Tire Tips');
-  for (const post of posts) add(post.url, post.title, 'post');
+  for (const post of posts) {
+    add(post.url, post.title, 'post');
+    const first = post.categories[0];
+    if (first) pages[pages.length - 1].topic = { title: first.title, url: `/tire-tips/category/${first.slug}/` };
+  }
   const used = new Set(posts.flatMap((post) => post.categories.map((category) => category.slug)));
   for (const category of (await getCategories()).filter((c) => used.has(c.slug))) {
     add(`/tire-tips/category/${category.slug}/`, category.title, 'category');

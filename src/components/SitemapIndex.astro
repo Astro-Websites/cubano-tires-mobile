@@ -7,6 +7,18 @@ import config from '../content/global/config.json';
 
 const { settings = {} } = Astro.props as { settings?: Record<string, any> };
 const sections = await getSitemapSections(settings.sections || []);
+// Tire Tips (the blog) gets its own full-width block under the cards, since it keeps growing.
+const blog = sections.find((section) => section.key === 'blog');
+const cards = sections.filter((section) => section.key !== 'blog');
+const ordered = blog ? [...cards, blog] : cards;
+const topicGroups = new Map<string, { title: string; url?: string; posts: SitePage[] }>();
+for (const post of blog?.pages || []) {
+  const key = post.topic?.url || '';
+  const group = topicGroups.get(key) || { title: post.topic?.title || 'More Tire Tips', url: post.topic?.url, posts: [] };
+  group.posts.push(post);
+  topicGroups.set(key, group);
+}
+const groups = [...topicGroups.values()].sort((a, b) => (!a.url ? 1 : !b.url ? -1 : a.title.localeCompare(b.title)));
 const total = sections.reduce((sum, section) => sum + section.count + section.categories.length, 0);
 const cta = settings.cta || {};
 const button = cta.button || {};
@@ -31,13 +43,13 @@ const plural = (n: number) => `${n} ${n === 1 ? 'page' : 'pages'}`;
 <div class="cub-sm">
   <nav class="cub-sm-jump" aria-label="Sitemap sections">
     <span class="cub-sm-total">{plural(total)}</span>
-    {sections.map((section) => (
+    {ordered.map((section) => (
       <a href={`#${section.key}`}><span class="cub-sm-jump-icon" set:html={icon(section.key)} /><span data-sitemap-heading={section.key}>{section.heading}</span></a>
     ))}
   </nav>
 
   <div class="cub-sm-grid">
-    {sections.map((section) => (
+    {cards.map((section) => (
       <section class="cub-sm-card" id={section.key} aria-labelledby={`${section.key}-heading`}>
         <header class="cub-sm-head">
           <span class="cub-sm-icon" set:html={icon(section.key)} />
@@ -73,6 +85,40 @@ const plural = (n: number) => `${n} ${n === 1 ? 'page' : 'pages'}`;
       </section>
     ))}
   </div>
+
+  {blog && (
+    <section class="cub-sm-card cub-sm-blog" id="blog" aria-labelledby="blog-heading">
+      <div class="cub-sm-blog-top">
+        <header class="cub-sm-head">
+          <span class="cub-sm-icon" set:html={icon('blog')} />
+          <div>
+            <h2 id="blog-heading" data-sitemap-heading="blog">{blog.heading}</h2>
+            <span class="cub-sm-count">{blog.pages.length} {blog.pages.length === 1 ? 'article' : 'articles'}</span>
+          </div>
+        </header>
+        {blog.hub && <a class="cub-sm-hub" href={blog.hub.url}>All Tire Tips<span aria-hidden="true">→</span></a>}
+      </div>
+      <p class="cub-sm-desc" data-sitemap-desc="blog" hidden={!blog.description}>{blog.description}</p>
+      {blog.categories.length > 0 && (
+        <div class="cub-sm-cats">
+          <span>Browse by topic</span>
+          <div>{blog.categories.map((category) => <a href={category.url}>{category.title}</a>)}</div>
+        </div>
+      )}
+      {groups.length > 0 && (
+        <div class="cub-sm-topics">
+          {groups.map((group) => (
+            <div class="cub-sm-topic">
+              <h3>{group.url ? <a href={group.url}>{group.title}</a> : group.title}<span>{group.posts.length}</span></h3>
+              <ul class="cub-sm-list">
+                {group.posts.map((post) => <li><a href={post.url}>{post.title}</a></li>)}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </section>
+  )}
 
   {(cta.heading || cta.text) && (
     <aside class="cub-sm-cta">
@@ -125,6 +171,19 @@ const plural = (n: number) => `${n} ${n === 1 ? 'page' : 'pages'}`;
   .cub-sm-cats a { padding: 6px 12px; border-radius: 999px; background: #FFF4D1; color: #4A4020; font-size: 13px; font-weight: 700; transition: background-color .15s; }
   .cub-sm-cats a:hover { background: #FFC72C; color: #16181D; }
 
+  .cub-sm-blog { margin-top: 0; }
+  .cub-sm-blog-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; }
+  .cub-sm-blog-top .cub-sm-hub { margin: 0; min-width: 220px; gap: 24px; }
+  .cub-sm-blog .cub-sm-desc { max-width: 720px; }
+  .cub-sm-blog .cub-sm-cats { margin-top: 18px; }
+  .cub-sm-topics { columns: 3 280px; column-gap: 40px; margin-top: 22px; padding-top: 6px; border-top: 1px solid #EEF1F5; }
+  .cub-sm-topic { break-inside: avoid; padding-top: 18px; }
+  .cub-sm-topic h3 { display: flex; align-items: center; gap: 10px; margin: 0; font-size: 13px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: #E11B22; }
+  .cub-sm-topic h3 a { color: #E11B22; }
+  .cub-sm-topic h3 a:hover { color: #B3241F; text-decoration: underline; }
+  .cub-sm-topic h3 span { padding: 2px 8px; border-radius: 999px; background: #F3F6FA; color: #6B7280; font-size: 11px; letter-spacing: 0; }
+  .cub-sm-topic .cub-sm-list { margin-top: 6px; }
+
   .cub-sm-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; margin-top: 24px; padding: 36px 40px; border-radius: 24px; background: #16181D; background-image: radial-gradient(circle at 100% 0, rgba(225, 27, 34, .45), transparent 55%); color: #FFFFFF; }
   .cub-sm-cta h2 { margin: 0; font-weight: 900; font-size: clamp(24px, 3vw, 32px); line-height: 1.15; color: #FFFFFF; }
   .cub-sm-cta p { margin: 10px 0 0; max-width: 560px; font-size: 17px; line-height: 1.55; color: #D5DAE1; }
@@ -142,5 +201,6 @@ const plural = (n: number) => `${n} ${n === 1 ? 'page' : 'pages'}`;
     .cub-sm-card { padding: 22px 20px; }
     .cub-sm-cta { padding: 28px 22px; }
     .cub-sm-cta-actions, .cub-sm-btn { width: 100%; }
+    .cub-sm-blog-top .cub-sm-hub { width: 100%; }
   }
 </style>
