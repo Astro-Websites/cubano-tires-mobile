@@ -2,8 +2,8 @@
 // Static pages are served from ./dist (the ASSETS binding). The only route the
 // Worker answers itself is POST /api/contact/, the Contact page form:
 //   1. checks the Cloudflare Turnstile token with the TURNSTILE_SECRET Worker secret,
-//   2. forwards the message to FormSubmit, which emails it to Global Config "Contact Form Email",
-//   3. redirects the visitor to the thank you page.
+//   2. returns a short page that posts the message from the visitor's browser to FormSubmit,
+//      which emails it to Global Config "Contact Form Email" and shows the thank you page.
 // Set the secret with: wrangler secret put TURNSTILE_SECRET (never commit it).
 import config from '../src/content/global/config.json';
 
@@ -41,33 +41,40 @@ async function handleContact(request, env, url) {
   const to = String(config.formEmail || config.email || '').trim();
   if (!to) return errorPage(500, 'The contact form is not set up yet.');
 
-  const payload = {};
+  const fields = { _captcha: 'false', _next: thankYou };
   for (const key of FIELDS) {
     const value = form.get(key);
-    if (typeof value === 'string' && value.trim()) payload[key] = value.trim().slice(0, 5000);
+    if (typeof value === 'string' && value.trim()) fields[key] = value.trim().slice(0, 5000);
   }
-  if (!payload.name || !payload.email) return errorPage(400, 'Please include your name and email.');
-  payload._captcha = 'false';
-  if (payload.email) payload._replyto = payload.email;
+  if (!fields.name || !fields.email) return errorPage(400, 'Please include your name and email.');
+  fields._replyto = fields.email;
 
-  const page = new URL('/contact/', url).href;
-  try {
-    const res = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(to)}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json', Origin: url.origin, Referer: page },
-      body: JSON.stringify(payload),
-    });
-    const data = await res.json().catch(() => ({}));
-    if (!res.ok || String(data.success) !== 'true') {
-      console.log('FormSubmit refused the message', res.status, JSON.stringify(data).slice(0, 300));
-      return errorPage(502, 'Your message did not go through.');
-    }
-  } catch (err) {
-    console.log('FormSubmit request failed', String(err));
-    return errorPage(502, 'Your message did not go through.');
-  }
+  // Hand the checked message to FormSubmit from the visitor's own browser.
+  // A Worker can't post it itself: every Worker reaches FormSubmit from the same
+  // shared Cloudflare address, which FormSubmit rate limits (HTTP 429).
+  // The FormSubmit address only appears here, after the bot check has passed.
+  return handoffPage(`https://formsubmit.co/${to.replace(/[^\w.@+-]/g, "")}`, fields);
+}
 
-  return Response.redirect(thankYou, 303);
+function handoffPage(action, fields) {
+  const inputs = Object.entries(fields)
+    .map(([k, v]) => `<input type="hidden" name="${escapeHtml(k)}" value="${escapeHtml(v)}">`)
+    .join('');
+  const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Sending your message</title></head>
+<body style="font-family: system-ui, sans-serif; max-width: 560px; margin: 64px auto; padding: 0 16px; color: #16181D; line-height: 1.6">
+<form id="send" method="POST" action="${escapeHtml(action)}">${inputs}
+<p style="font-size: 20px; font-weight: 700">Sending your message...</p>
+<noscript><button type="submit" style="min-height: 48px; padding: 0 24px; border: 0; border-radius: 999px; background: #E11B22; color: #fff; font: inherit; font-weight: 800">Send message</button></noscript>
+</form>
+<script>document.getElementById('send').submit();</script></body></html>`;
+  return new Response(html, {
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'X-Robots-Tag': 'noindex',
+      'Referrer-Policy': 'strict-origin-when-cross-origin',
+    },
+  });
 }
 
 async function verifyTurnstile(token, secret, ip) {
