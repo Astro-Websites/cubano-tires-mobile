@@ -21,7 +21,6 @@ intro: Every page on our site in one place.
   * [RV & Trailer Tires](/about/gallery/rv-trailer-tires/)
   * [Fleet Vehicle Tire Service](/about/gallery/fleet-vehicle-tire-service/)
   * [On Site Tire Installations](/about/gallery/on-site-tire-installations/)
-* [News](/about/news/)
 * [Nationwide Warranty](/about/nationwide-warranty/)
 * [FAQ](/faq/)
 * [Contact](/contact/)

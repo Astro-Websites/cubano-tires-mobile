@@ -39,6 +39,7 @@ export const CARD_TYPES: Record<string, { label: string; title: string; fields: 
     { name: 'title', label: 'Title' }, { name: 'text', label: 'Text', kind: 'textarea' }] },
 };
 
-export const cardQueryFields = `cards { __typename ${Object.entries(CARD_TYPES)
-  .map(([type, card]) => `... on PageDemoSectionsCards${type[0].toUpperCase()}${type.slice(1)} { ${card.fields.map((f) => f.name).join(' ')} }`)
+export const cardQueryFieldsFor = (prefix: string) => `cards { __typename ${Object.entries(CARD_TYPES)
+  .map(([type, card]) => `... on ${prefix}DemoSectionsCards${type[0].toUpperCase()}${type.slice(1)} { ${card.fields.map((f) => f.name).join(' ')} }`)
   .join(' ')} }`;
+export const cardQueryFields = cardQueryFieldsFor('Page');

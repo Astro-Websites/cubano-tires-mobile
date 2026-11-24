@@ -1,16 +1,21 @@
 // Designed pages: each design lives in src/fragments/demo-pages/<template>.html with
 // @@section:list:index:field@@ slots. The values live in Tina (src/content/page/**.md).
-import { cardQueryFields } from '../../tina/card-types';
+import { cardQueryFieldsFor } from '../../tina/card-types';
 // Repeatable groups are wrapped in <!--repeat:section:type--> ... <!--/repeat--> and
 // use @@section:cards:#:field@@ slots, filled from demoSections[section].cards.
 type Row = Record<string, any> & { _content_source?: { queryId: string; path: (string | number)[] } };
 export type Section = { label: string; copy: Row[]; links: Row[]; images: Row[]; cards?: Row[] };
 export type DemoPage = { title: string; seoTitle?: string; description: string; demoSections: Section[]; demoTemplate: string; _sys?: unknown };
 
-export const pageFields = `__typename _sys { filename basename path relativePath extension } title seoTitle description demoTemplate
-    demoSections { label copy { text } links { label url newTab } images { source alt } ${cardQueryFields} }`;
+const fieldsFor = (prefix: string) => `__typename _sys { filename basename path relativePath extension } title seoTitle description demoTemplate
+    demoSections { label copy { text } links { label url newTab } images { source alt } ${cardQueryFieldsFor(prefix)} }`;
+export const pageFields = fieldsFor('Page');
 export const pageQuery = `query CubanoPage($relativePath: String!) {
   page(relativePath: $relativePath) { ${pageFields} }
+}`;
+// Tina: Gallery uses the same fields in its own collection.
+export const galleryQuery = `query CubanoGallery($relativePath: String!) {
+  gallery(relativePath: $relativePath) { ${fieldsFor('Gallery')} }
 }`;
 
 // Business facts typed as {{token}} in any text, link or alt field are filled from Global Config,

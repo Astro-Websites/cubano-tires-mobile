@@ -22,6 +22,11 @@ const page = defineCollection({
   schema: z.record(z.string(), z.unknown()),
 });
 
+const gallery = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/gallery' }),
+  schema: z.record(z.string(), z.unknown()),
+});
+
 const simplePage = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/simple-page' }),
   schema: z.record(z.string(), z.unknown()),
@@ -32,4 +37,4 @@ const user = defineCollection({
   schema: z.record(z.string(), z.unknown()),
 });
 
-export const collections = { global, blog, category, page, simplePage, user };
+export const collections = { global, blog, category, page, gallery, simplePage, user };
