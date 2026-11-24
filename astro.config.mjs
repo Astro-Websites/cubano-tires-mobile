@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { writeFile } from 'node:fs/promises';
+import imagePerformance from './scripts/image-performance.mjs';
 
 const site = 'https://staging.cubano.blissdrive.net';
 
@@ -22,5 +23,5 @@ const sitemap = {
 export default defineConfig({
   site,
   output: 'static',
-  integrations: [sitemap],
+  integrations: [sitemap, imagePerformance()],
 });

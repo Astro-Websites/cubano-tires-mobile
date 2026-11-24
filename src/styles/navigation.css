@@ -36,3 +36,6 @@ header.open .cub-links .cub-dd-menu a{display:flex;min-height:44px;padding:0 12p
 .cub-fcol a{font-size:14.5px;line-height:1.4;color:#3B4352;transition:color .15s ease}
 .cub-fcol a:hover,.cub-fcol a:focus-visible{color:#E11B22}
 @media (max-width: 640px){.cub-fcols{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}}
+
+/* Images get width/height at build (scripts/image-performance.mjs) to reserve space while they load; keep their CSS height in charge. */
+:where(img[width][height]){height:auto}
