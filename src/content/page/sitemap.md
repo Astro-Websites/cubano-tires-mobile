@@ -2,65 +2,40 @@
 _template: simple
 title: Sitemap
 seoTitle: Sitemap | Cubano Tires Mobile Shop
-description: Every page on the Cubano Tires Mobile Shop website, in one list.
-heading: Sitemap
-intro: Every page on our site in one place.
+description: Every page on the Cubano Tires Mobile Shop website, grouped by services, tires, vehicles, areas, tire tips and more.
+heading: Find your way around
+intro: Every page on our site in one place, from mobile tire services and the tires we carry to the cities we cover and our latest tire tips.
+sitemap:
+  sections:
+    - key: main
+      heading: Main Pages
+      description: 'Start here: our homepage, deals, answers and how to reach us.'
+    - key: services
+      heading: Tire Services
+      description: Mobile tire work done at your home, office, jobsite or the roadside.
+    - key: tires
+      heading: Shop Tires
+      description: Search tires online and browse tires for trailers, RVs and equipment.
+    - key: vehicles
+      heading: Vehicles
+      description: Tire service for the vehicles that need a little extra know-how.
+    - key: areas
+      heading: Areas We Serve
+      description: Cities where our mobile tire trucks come to you.
+    - key: about
+      heading: About Cubano
+      description: Who we are, what customers say and photos of our work.
+    - key: blog
+      heading: Tire Tips
+      description: Straight answers and guides from the techs who do the work.
+    - key: legal
+      heading: Legal & Policies
+      description: Privacy, terms and how we keep the site accessible.
+  cta:
+    heading: Can't find what you need?
+    text: Call or text us a photo of your tire and we'll tell you what it needs and when we can get there.
+    button:
+      label: Contact Us
+      href: /contact/
+      newTab: false
 ---
-
-## Main pages
-
-* [Home](/)
-* [Shop Tires](/tires/)
-* [Coupons & Rebates](/coupons/)
-* [About Us](/about-us/)
-* [Reviews](/about/read-our-reviews/)
-* [Gallery](/about/gallery/)
-  * [Inside the Cubano Trucks](/about/gallery/inside-the-cubano-trucks/)
-  * [Reliable Tire Solutions Wherever You Are](/about/gallery/reliable-tire-solutions-wherever-you-are/)
-  * [The Cubano Fleet](/about/gallery/the-cubano-fleet/)
-  * [Heavy Duty Tires](/about/gallery/heavy-duty-tires/)
-  * [RV & Trailer Tires](/about/gallery/rv-trailer-tires/)
-  * [Fleet Vehicle Tire Service](/about/gallery/fleet-vehicle-tire-service/)
-  * [On Site Tire Installations](/about/gallery/on-site-tire-installations/)
-* [Nationwide Warranty](/about/nationwide-warranty/)
-* [FAQ](/faq/)
-* [Contact](/contact/)
-* [Tire Tips](/tire-tips/)
-
-## Tire services
-
-* [Mobile Tire Installation](/services/mobile-tire-installation/)
-* [Tire Mounting](/services/tire-mounting/)
-* [Flat Tire Repair](/services/flat-tire-repair/)
-* [Roadside Tire Service](/services/roadside-tire-service/)
-* [Tire Rotation & Balancing](/services/tire-rotation-balancing/)
-* [TPMS Sensor Service](/services/tpms-sensor-service/)
-* [Run-Flat Tires](/services/run-flat-tires/)
-
-## Fleet & commercial
-
-* [Fleet Tire Service](/services/fleet-tire-service/)
-* [Commercial Truck Tires](/services/commercial-truck-tires/)
-* [OTR & Heavy Equipment Tires](/services/otr-heavy-equipment-tires/)
-
-## Vehicles and equipment
-
-* [Tesla & EV Tires](/vehicles/tesla-ev-tires/)
-* [RV Tires](/tires/rv-tires/)
-* [Trailer Tires](/tires/trailer-tires/)
-* [Forklift Tires](/tires/forklift-tires/)
-* [Construction Equipment Tires](/tires/construction-equipment-tires/)
-* [Heavy Duty Equipment Tires](/tires/heavy-duty-equipment-tires/)
-* [Farm & Agricultural Tires](/tires/farm-agricultural-tires/)
-
-## Areas we serve
-
-* [Anaheim](/areas/anaheim/)
-* [Irvine](/areas/irvine/)
-
-## Legal
-
-* [Privacy Policy](/privacy-policy/)
-* [Terms of Service](/terms-of-service/)
-* [Cookie Policy](/cookie-policy/)
-* [Accessibility](/accessibility/)

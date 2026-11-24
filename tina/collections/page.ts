@@ -1,5 +1,6 @@
 import type { Collection, Template, TinaField } from 'tinacms';
 import { CARD_TYPES } from '../card-types';
+import { sitemapFields } from './sitemap-fields';
 import { SECTION_COLLECTIONS, type SectionCollection } from '../../src/lib/page-collections';
 
 const cardTemplates: Template[] = Object.entries(CARD_TYPES).map(([name, card]) => ({
@@ -53,6 +54,7 @@ export const simplePageFields: TinaField[] = [
   { type: 'image', name: 'image', label: 'Top Image (optional)' },
   { type: 'string', name: 'imageAlt', label: 'Top Image Alt Text (SEO)', description: 'Describe the image for Google and screen readers, e.g. "Technician replacing a semi truck tire in Anaheim".' },
   { type: 'rich-text', name: 'body', label: 'Content', isBody: true },
+  ...sitemapFields,
 ];
 
 const slugify = (values: Record<string, unknown> | undefined) =>

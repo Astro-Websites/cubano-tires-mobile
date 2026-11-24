@@ -6,10 +6,13 @@ import Base from '../layouts/Base.astro';
 import config from '../content/global/config.json';
 import navigation from '../content/global/navigation.json';
 import scriptsSource from '../fragments/scripts.html?raw';
+import SitemapIndex from './SitemapIndex.astro';
 import { render } from 'astro:content';
 
 const { entry } = Astro.props;
 const data = entry.data as Record<string, string | undefined>;
+// /sitemap/ adds the page directory generated from every collection (src/lib/site-pages.ts).
+const isSitemap = entry.id === 'sitemap';
 const { Content } = await render(entry);
 const safeImage = (value?: string) => (value && /^(?:\/(?![/\\])|https:\/\/)/i.test(value.trim()) ? value.trim() : '');
 const image = safeImage(data.image);
@@ -31,6 +34,7 @@ const preview = JSON.stringify({ relativePath }).replace(/</g, '\\u003c');
       <img data-simple-field="image" src={image || undefined} alt={data.imageAlt || ''} hidden={!image} style="display: block; width: 100%; aspect-ratio: 16 / 8; object-fit: cover; border-radius: 22px; margin-bottom: 32px" />
       <div class="cub-article" data-simple-field="body" style="font-size: 18px; line-height: 1.75; color: #2A2F38"><Content /></div>
       </div>
+      {isSitemap && <SitemapIndex settings={(entry.data as Record<string, any>).sitemap} />}
     </section>
   </main>
   <Footer {config} {navigation} />
