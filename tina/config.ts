@@ -84,11 +84,17 @@ export default defineConfig({
             type: 'object',
             name: 'blog',
             label: 'Blog Archive',
-            description: 'Heading copy for the /tire-tips/ archive and category pages.',
+            description: 'Copy for the /tire-tips/ archive, the category pages and the blog post sidebar.',
             fields: [
               { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
               { type: 'string', name: 'heading', label: 'Heading' },
               { type: 'string', name: 'intro', label: 'Introduction', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaHeading', label: 'Bottom Call to Action Heading', description: 'Dark band at the bottom of /tire-tips/ and the category pages.' },
+              { type: 'string', name: 'ctaText', label: 'Bottom Call to Action Text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'ctaButton', label: 'Bottom Call to Action Button' },
+              { type: 'string', name: 'sidebarHeading', label: 'Post Sidebar Heading', description: 'Yellow box beside every blog post.' },
+              { type: 'string', name: 'sidebarText', label: 'Post Sidebar Text', ui: { component: 'textarea' } },
+              { type: 'string', name: 'sidebarButton', label: 'Post Sidebar Text Button', description: 'The call button under it always shows the phone number.' },
             ],
           },
           {
