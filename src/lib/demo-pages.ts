@@ -68,7 +68,8 @@ function tinaField(row: Row | undefined, field: string) {
   return source ? `${source.queryId}---${[...source.path, field].join('.')}` : '';
 }
 
-const cardType = (card: Row) => card?._template || String(card?.__typename || '').replace(/^PageDemoSectionsCards/, '').replace(/^./, (c) => c.toLowerCase());
+// Tina names card types <Collection>DemoSectionsCards<Type> (e.g. GalleryDemoSectionsCardsPhoto, PageDesignedDemoSectionsCardsFaq).
+const cardType = (card: Row) => card?._template || String(card?.__typename || '').replace(/^\w*?DemoSectionsCards/, '').replace(/^./, (c) => c.toLowerCase());
 
 export function renderDemo(template: string, page: DemoPage, options: { preview?: boolean; globals?: Globals } = {}) {
   const sections = page.demoSections || [];
