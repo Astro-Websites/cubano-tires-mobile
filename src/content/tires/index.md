@@ -14,7 +14,7 @@ demoSections:
   - role: Bold text
     text: $75 MOBILE FEE WAIVED
   - role: Text
-    text: with 4 new tires · Orange County only
+    text: with 4 new tires from us · Orange County only
   - role: Paragraph
     text: Can't find your tire?
   links:

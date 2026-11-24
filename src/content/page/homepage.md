@@ -26,7 +26,7 @@ demoSections:
       - role: Bold text
         text: $75 MOBILE FEE WAIVED
       - role: Text
-        text: with 4 new tires · Orange County only
+        text: with 4 new tires from us · Orange County only
       - role: Paragraph
         text: Can't find your tire?
     links:
@@ -159,7 +159,7 @@ demoSections:
       - image: /uploads/home/cubano-tires-mobile-service-truck-we-come-to-you.jpg
         imageAlt: 'Cubano Tires mobile service truck: We come to you'
         title: Tire Sales & Installation
-        text: 'New tires from top brands, mounted and balanced in your driveway. $75 mobile fee waived with 4 tires in Orange County.'
+        text: 'New tires from top brands, mounted and balanced in your driveway. $75 mobile fee waived when you buy 4 new tires from us in Orange County.'
         learnMoreLabel: Learn More
         learnMoreUrl: /services/mobile-tire-installation/
         callLabel: Text or Call
@@ -210,12 +210,12 @@ demoSections:
       - role: Bold text
         text: on new tires
       - role: Button or link text
-        text: 'Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service with 4 tires in Orange County.'
+        text: 'Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service when you buy 4 new tires from us in Orange County.'
       - role: Badge
         text: View Coupons & Rebates
     links:
       - role: Link
-        label: 'Save up to $100 on new tires Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service with 4 tires in Orange County. View Coupons & Rebates'
+        label: 'Save up to $100 on new tires Current rebates from Goodyear, Michelin, Bridgestone and more, plus free mobile service when you buy 4 new tires from us in Orange County. View Coupons & Rebates'
         url: /coupons/
     images: []
   - label: Truck band
@@ -510,7 +510,7 @@ demoSections:
         answer: 'Yes. Our service trucks come to your home, office, job site or fleet yard anywhere in Orange County and LA.'
         _template: faq
       - question: Is there a mobile service fee?
-        answer: 'Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires. Outside Orange County, the $75 fee applies.'
+        answer: 'Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires from us. If you bring your own tires, standard installation and mobile service fees apply. Outside Orange County, the $75 fee applies.'
         _template: faq
       - question: Do you service commercial and fleet vehicles?
         answer: 'Yes. We handle box trucks, trailers, big rigs and heavy equipment, including 17.5", 19.5" and 22.5" tires.'

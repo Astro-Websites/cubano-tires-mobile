@@ -22,7 +22,7 @@ demoSections:
   - role: Badge
     text: Most jobs under 45 min
   - role: Badge
-    text: Free mobile service with 4 tires
+    text: Free mobile service with 4 new tires from us
   links:
   - role: Link
     label: Home
@@ -162,7 +162,7 @@ demoSections:
   cards:
   - _template: faq
     question: Do you charge extra to come to my part of Anaheim?
-    answer: No. Anaheim Hills, the Canyon, the Platinum Triangle or West Anaheim, the mobile service is the same. It's free with 4 new tires, and any fee is included up front in your quote.
+    answer: No. Anaheim Hills, the Canyon, the Platinum Triangle or West Anaheim, the mobile service is the same. It's free when you buy 4 new tires from us, and any fee is included up front in your quote.
   - _template: faq
     question: Can you come to my work instead of my house?
     answer: Yes. Office lots, parking structures and job sites all work. Many customers keep working while we change the tires.

@@ -54,7 +54,7 @@ demoSections:
     answer: Yes. Our service trucks come to your home, office, job site or fleet yard anywhere in Orange County and LA.
   - _template: faq
     question: Is there a mobile service fee?
-    answer: Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires. Outside Orange County, the $75 fee applies.
+    answer: Our mobile service fee is $75. In Orange County, we waive it when you buy four new tires from us. If you bring your own tires, standard installation and mobile service fees apply. Outside Orange County, the $75 fee applies.
   - _template: faq
     question: How do I get a quote?
     answer: Text a photo of the tire sidewall to {{phone}} with your vehicle and location. We text back a price before we roll. The price we quote is the price you pay.
@@ -82,7 +82,7 @@ demoSections:
     answer: Often, yes. Nails, screws and slow leaks in the tread can usually be repaired. Damage in the sidewall means the tire has to be replaced. A photo tells us which one it is.
   - _template: faq
     question: Can I bring my own tires?
-    answer: Yes. We mount and install tires on your wheels. See our tire mounting page for details.
+    answer: Yes. Bringing your own tires is no problem, and we can still install them at your location. Standard installation and mobile service fees apply. The mobile service fee is only waived when you buy 4 new tires from us.
 - label: Fleet, trucks and equipment
   copy:
   - role: Heading

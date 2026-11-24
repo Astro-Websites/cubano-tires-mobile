@@ -22,7 +22,7 @@ demoSections:
   - role: Badge
     text: Most jobs under 45 min
   - role: Badge
-    text: Free mobile service with 4 tires
+    text: Free mobile service with 4 new tires from us
   links:
   - role: Link
     label: Home
@@ -165,7 +165,7 @@ demoSections:
     answer: No, and you don't need one. Our trucks come to you from our Anaheim shop with everything needed to finish the job where you're parked.
   - _template: faq
     question: Is there an extra charge to come to Irvine?
-    answer: No. Irvine costs the same as anywhere else we serve in Orange County. Mobile service is free with 4 new tires, and any fee is included up front in your quote.
+    answer: No. Irvine costs the same as anywhere else we serve in Orange County. Mobile service is free when you buy 4 new tires from us, and any fee is included up front in your quote.
   - _template: faq
     question: Can you change tires in my apartment or office parking garage?
     answer: Usually, yes. Most garages and office lots work fine. If your building or HOA has rules about service vehicles, let us know when you text and we'll plan around them.
