@@ -10,7 +10,7 @@ const sitemap = {
     'astro:build:done': async ({ dir, pages }) => {
       const urls = pages
         .map(({ pathname }) => `/${pathname}`.replace(/\/+$/, '/') )
-        .filter((path) => !/^\/(404|500)\/?$/.test(path) && !path.startsWith('/admin'))
+        .filter((path) => !/^\/(404|500|thank-you)\/?$/.test(path) && !path.startsWith('/admin'))
         .sort()
         .map((path) => `  <url><loc>${new URL(path, site).href}</loc></url>`);
       const xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join('\n')}\n</urlset>\n`;

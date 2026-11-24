@@ -19,7 +19,7 @@ const relativePath = entry.filePath.replace(`src/content/${collection}/`, '');
 const globals = globalsFrom(config);
 const preview = JSON.stringify({ template, collection, relativePath, page, globals }).replace(/</g, '\\u003c');
 ---
-<Base title={String(fillTokens(page.seoTitle || page.title, globals))} description={String(fillTokens(page.description || config.seo?.description, globals))} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
+<Base title={String(fillTokens(page.seoTitle || page.title, globals))} description={String(fillTokens(page.description || config.seo?.description, globals))} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode} noindex={entry.id === 'thank-you'}>
   <Header {config} {navigation} />
   <main id="cubano-demo-content" set:html={renderDemo(template, page, { globals })} />
   <Footer {config} {navigation} />

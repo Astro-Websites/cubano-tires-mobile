@@ -19,7 +19,8 @@ export type SitemapSection = {
 };
 
 type Data = Record<string, any>;
-const hidden = (data: Data) => Boolean(data.hideFromSitemap || data.draft || data.noindex);
+// The form Thank You page is never listed (it is only reached after sending the Contact form).
+const hidden = (data: Data) => Boolean(data.hideFromSitemap || data.draft || data.noindex || data.demoTemplate === 'thank-you');
 const label = (data: Data, fallback: string) => String(data.title || fallback).trim();
 
 // Default wording for each group. Editors can override heading and description in

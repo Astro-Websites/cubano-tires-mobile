@@ -9,11 +9,13 @@ interface Props {
   favicon?: string;
   headerCode?: string;
   footerCode?: string;
+  /** Keep this page out of search results (e.g. the form Thank You page). */
+  noindex?: boolean;
 }
 
 const { title, description, favicon, headerCode, footerCode } = Astro.props;
 // Staging (staging.*) is never indexed; the canonical follows `site` in astro.config.mjs.
-const noindex = !Astro.site || Astro.site.hostname.startsWith('staging.');
+const noindex = Astro.props.noindex || !Astro.site || Astro.site.hostname.startsWith('staging.');
 const iconType = (href: string) => (/\.svg$/i.test(href) ? 'image/svg+xml' : /\.png$/i.test(href) ? 'image/png' : undefined);
 const icon = favicon || config.seo?.favicon || '/favicon.svg';
 const appleIcon = (config.seo as { appleTouchIcon?: string } | undefined)?.appleTouchIcon || '/apple-touch-icon.png';

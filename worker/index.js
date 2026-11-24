@@ -32,7 +32,8 @@ async function handleContact(request, env, url) {
     return errorPage(400, 'We could not read that message.');
   }
 
-  const thankYou = safeNext(form.get('_next'), url) || new URL('/thank-you/', url).href;
+  // A successful send always lands on the Thank You page (Tina: Pages → Thank You).
+  const thankYou = new URL('/thank-you/', url).href;
 
   // Hidden honeypot field: people never fill it, bots often do. Pretend it worked.
   if (String(form.get('_honey') || '').trim()) return Response.redirect(thankYou, 303);
@@ -132,16 +133,6 @@ async function verifyTurnstile(token, secret, ip) {
   }
 }
 
-// Only allow redirects back to this same site.
-function safeNext(value, url) {
-  if (typeof value !== 'string' || !value) return '';
-  try {
-    const next = new URL(value, url);
-    return next.origin === url.origin ? next.href : '';
-  } catch {
-    return '';
-  }
-}
 
 function errorPage(status, message) {
   const phone = escapeHtml(config.phoneDisplay || '');
