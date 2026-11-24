@@ -24,13 +24,13 @@ The Tina build step needs two Cloudflare build variables: `NEXT_PUBLIC_TINA_CLIE
 Every designed page (homepage, services, areas, vehicles, about, coupons) is a design template plus Tina content:
 
 - Design: `src/fragments/demo-pages/<template>.html`, with `@@section:list:index:field@@` slots. Edit this only to change layout.
-- Content: `src/content/page/**.md` (Tina: **Pages**). All text, links and images are here, under `demoSections`. Edit copy and prices here, not in the HTML.
+- Content: `src/content/<collection>/**.md`: Tina **Pages** (`page`, top level pages) and the folder collections **Areas**, **Services**, **Tires**, **Vehicles** and **Gallery** (`src/lib/page-collections.ts`; `index.md` is the folder's own page, e.g. `/tires/`). All text, links and images are here, under `demoSections`. Edit copy and prices here, not in the HTML.
 - `title` is the short page name shown in Tina; `seoTitle` is the browser tab and Google title.
 - In the Tina visual editor, clicking any text or image in the preview opens its field.
 
 Repeated blocks (FAQs, coupons/rebates, team, photos, reviews, steps, links) are `cards` lists in each section, marked in the template with `<!--repeat:section:type-->`; card types are defined in `tina/card-types.ts`.
 
-Simple pages (Tina: **Simple Pages**, `src/content/simple-page/*.md`) are a generic heading + rich-text template served at `/<file-name>/`.
+Simple pages (Tina: **Pages**, page type "Simple page", `_template: simple` in `src/content/page/*.md`) are a generic heading + rich-text template served at `/<file-name>/`. Designed pages in Pages carry `_template: designed`.
 
 Each button/link is one `links` item (`label`, `url`, optional `newTab`); its text slot is `@@S:links:i:label@@`. Each text/link/image item carries a `role` (Heading, Eyebrow, Button...) used as its label in the Tina sidebar. After adding slots, rerun `cd scripts && python3 label-copy-roles.py`.
 

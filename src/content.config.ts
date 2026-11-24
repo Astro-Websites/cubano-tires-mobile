@@ -22,19 +22,20 @@ const page = defineCollection({
   schema: z.record(z.string(), z.unknown()),
 });
 
-const gallery = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/gallery' }),
+// Tina: Areas, Services, Tires, Vehicles and Gallery (see src/lib/page-collections.ts).
+const designedFolder = (folder: string) => defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: `./src/content/${folder}` }),
   schema: z.record(z.string(), z.unknown()),
 });
-
-const simplePage = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/simple-page' }),
-  schema: z.record(z.string(), z.unknown()),
-});
+const areas = designedFolder('areas');
+const services = designedFolder('services');
+const tires = designedFolder('tires');
+const vehicles = designedFolder('vehicles');
+const gallery = designedFolder('gallery');
 
 const user = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/user' }),
   schema: z.record(z.string(), z.unknown()),
 });
 
-export const collections = { global, blog, category, page, gallery, simplePage, user };
+export const collections = { global, blog, category, page, areas, services, tires, vehicles, gallery, user };

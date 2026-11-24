@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: FAQ
 seoTitle: Mobile Tire Service FAQ | Cubano Tires Mobile Shop
 description: 'Answers about mobile tire service from Cubano Tires Mobile Shop: pricing, the mobile fee, warranty, fleet accounts, EVs, RVs and equipment tires in Orange County and LA.'

@@ -1,6 +1,6 @@
 """Helpers for one-off edits to designed-page templates and their Tina content.
 A designed page is src/fragments/demo-pages/<template>.html (markup with
-@@section:list:index:field@@ slots) plus src/content/page/**.md (the values)."""
+@@section:list:index:field@@ slots) plus src/content/<collection>/**.md (the values)."""
 import glob, html, re
 from pathlib import Path
 import yaml
@@ -10,7 +10,8 @@ SLOT = re.compile(r'@@(\d+):(copy|links|images):(\d+):(\w+)@@')
 
 def load_all():
     pages = []
-    for f in sorted(glob.glob(str(ROOT / 'src/content/page/**/*.md'), recursive=True)):
+    files = [f for c in ('page', 'areas', 'services', 'tires', 'vehicles', 'gallery') for f in glob.glob(str(ROOT / f'src/content/{c}/**/*.md'), recursive=True)]
+    for f in sorted(files):
         text = Path(f).read_text()
         _, front, body = text.split('---', 2)
         data = yaml.safe_load(front)

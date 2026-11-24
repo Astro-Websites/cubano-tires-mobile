@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: Nationwide Warranty
 seoTitle: Nationwide Tire Warranty, $15 per Tire | Cubano Tires Mobile Shop
 description: 'Add nationwide tire protection for $15 per tire: road hazard coverage, repair warranty and 24 hour roadside assistance honored at over 50,000 locations.'

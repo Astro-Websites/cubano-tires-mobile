@@ -1,5 +1,5 @@
 import type { Collection } from 'tinacms';
-import { designedPageFields } from './page';
+import { sectionCollection } from './page';
 
 // The photo gallery: index.md is the gallery page (/about/gallery/), every other file is an
 // album (/about/gallery/<file-name>/). Same fields as Pages; new albums start from the album layout.
@@ -52,24 +52,6 @@ const albumSections = [
   },
 ];
 
-export const GalleryCollection: Collection = {
-  name: 'gallery',
-  label: 'Gallery',
-  path: 'src/content/gallery',
-  format: 'md',
+export const GalleryCollection: Collection = sectionCollection('gallery', {
   defaultItem: () => ({ title: 'New album', description: 'A short description of this album.', demoTemplate: 'gallery-album', demoSections: albumSections }),
-  ui: {
-    router: ({ document }) => document._sys.filename === 'index' ? '/about/gallery/' : `/about/gallery/${document._sys.filename}/`,
-    filename: {
-      readonly: false,
-      description: 'The file name becomes the album URL: /about/gallery/<file-name>/. "index" is the main Gallery page.',
-      slugify: (values) =>
-        String(values?.title || 'untitled')
-          .toLowerCase()
-          .trim()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, ''),
-    },
-  },
-  fields: designedPageFields,
-};
+});

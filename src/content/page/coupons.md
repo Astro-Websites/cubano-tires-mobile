@@ -1,4 +1,5 @@
 ---
+_template: designed
 title: Coupons
 seoTitle: Tire Coupons & Rebates | Cubano Tires Mobile Shop, Anaheim
 description: Save up to $120 on new tires, installed in your driveway.
