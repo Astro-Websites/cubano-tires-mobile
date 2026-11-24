@@ -137,9 +137,10 @@ export default defineConfig({
             name: 'footerColumns',
             label: 'Footer Link Columns',
             description: 'Each column is a heading with its own list of links. Add, remove or reorder columns and links here.',
-            ui: { itemProps: (item: { heading?: string }) => ({ label: item?.heading }) },
+            ui: { itemProps: (item: { heading?: string; hidden?: boolean }) => ({ label: `${item?.heading || ''}${item?.hidden ? ' (hidden)' : ''}` }) },
             fields: [
               { type: 'string', name: 'heading', label: 'Column Heading', required: true },
+              { type: 'boolean', name: 'hidden', label: 'Hide this column', description: 'Keep the column here but don\'t show it in the footer.' },
               { ...navigationItem, name: 'links', label: 'Links', fields: navigationItem.fields.filter((field) => field.name !== 'sourceLabel') },
             ],
           },

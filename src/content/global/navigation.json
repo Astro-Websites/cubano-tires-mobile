@@ -194,7 +194,8 @@
           "label": "Farm & Agricultural Tires",
           "href": "/tires/farm-agricultural-tires/"
         }
-      ]
+      ],
+      "hidden": true
     },
     {
       "heading": "Company",
@@ -248,7 +249,8 @@
           "label": "OTR & Heavy Equipment",
           "href": "/services/otr-heavy-equipment-tires/"
         }
-      ]
+      ],
+      "hidden": true
     },
     {
       "heading": "Areas Served",
@@ -261,7 +263,8 @@
           "label": "Irvine",
           "href": "/areas/irvine/"
         }
-      ]
+      ],
+      "hidden": true
     }
   ],
   "social": [
