@@ -21,7 +21,7 @@ export const galleryQuery = `query CubanoGallery($relativePath: String!) {
 // Business facts typed as {{token}} in any text, link or alt field are filled from Global Config,
 // so the phone, address and hours are stored once. See GLOBAL_TOKENS for the list.
 export type Globals = Record<string, string>;
-export const GLOBAL_TOKENS = ['siteName', 'phone', 'phoneDigits', 'email', 'address', 'addressLine1', 'addressLine2', 'weekdayDays', 'weekdayHours', 'weekendDays', 'weekendHours', 'addressQuery', 'formEmail', 'turnstileSiteKey'] as const;
+export const GLOBAL_TOKENS = ['siteName', 'phone', 'phoneDigits', 'email', 'address', 'addressLine1', 'addressLine2', 'weekdayDays', 'weekdayHours', 'weekendDays', 'weekendHours', 'addressQuery', 'mapQuery', 'formEmail', 'turnstileSiteKey'] as const;
 export function globalsFrom(config: Record<string, any>): Globals {
   const hours = config?.hours || {};
   return {
@@ -31,6 +31,8 @@ export function globalsFrom(config: Record<string, any>): Globals {
     formEmail: config?.formEmail || config?.email || '',
     turnstileSiteKey: config?.turnstileSiteKey || '',
     addressQuery: encodeURIComponent([config?.addressLine1, config?.addressLine2].filter(Boolean).join(', ')),
+    // Business name + address, so Google resolves the embed to the Business Profile pin (named, with rating) instead of a bare address pin.
+    mapQuery: encodeURIComponent([config?.siteName, config?.addressLine1, config?.addressLine2].filter(Boolean).join(', ')),
   };
 }
 export const fillTokens = (value: unknown, globals?: Globals) =>
