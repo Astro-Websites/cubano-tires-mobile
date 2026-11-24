@@ -13,7 +13,7 @@ type GlobalConfig = {
 
 type NavigationLink = { label?: string | null; href?: string | null };
 type NavigationItem = NavigationLink & { sourceLabel?: string | null; children?: NavigationLink[] | null };
-type FooterColumn = { heading?: string | null; links?: NavigationLink[] | null };
+type FooterColumn = { heading?: string | null; hidden?: boolean | null; links?: NavigationLink[] | null };
 type Navigation = {
   header?: NavigationItem[] | null;
   footerColumns?: FooterColumn[] | null;
@@ -94,7 +94,7 @@ export function bindGlobalFragment(source: string, config: GlobalConfig, navigat
   // Footer link columns (plus "Follow Us" from Social Links) are rebuilt from Navigation → Footer Link Columns.
   if (placement === 'footer') {
     const columns = [
-      ...(navigation.footerColumns || []).map((column) => ({ heading: column?.heading || '', links: column?.links || [] })),
+      ...(navigation.footerColumns || []).filter((column) => column && !column.hidden).map((column) => ({ heading: column?.heading || '', links: column?.links || [] })),
       { heading: 'Follow Us', links: navigation.social || [] },
     ].map((column) => ({ ...column, links: column.links.filter((link) => link?.label && link?.href) }))
       .filter((column) => column.heading && column.links.length);
