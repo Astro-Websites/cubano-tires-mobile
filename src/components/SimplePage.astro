@@ -19,7 +19,7 @@ const image = safeImage(data.image);
 const relativePath = entry.filePath.replace(/^src\/content\/page\//, '');
 const preview = JSON.stringify({ relativePath }).replace(/</g, '\\u003c');
 ---
-<Base title={data.seoTitle || `${data.title} | ${config.siteName}`} description={data.description || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode}>
+<Base title={data.seoTitle || `${data.title} | ${config.siteName}`} description={data.description || config.seo?.description} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode} noindex={Boolean(data.hideFromSitemap)}>
   <Header {config} {navigation} />
   <main>
     <section id="top" style="background: #FFC72C">
