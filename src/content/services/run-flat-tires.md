@@ -205,16 +205,16 @@ demoSections:
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: /#locations
+    url: /areas/newport-beach/
     label: Newport Beach
   - _template: pill
     url: /#locations
     label: Laguna Niguel
   - _template: pill
-    url: /#locations
+    url: /areas/costa-mesa/
     label: Costa Mesa
   - _template: pill
-    url: /#locations
+    url: /areas/huntington-beach/
     label: Huntington Beach
   - _template: pill
     url: /areas/anaheim/

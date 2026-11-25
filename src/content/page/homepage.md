@@ -532,47 +532,47 @@ demoSections:
     links:
       - role: Button
         label: Los Angeles
-        url: '#locations'
+        url: /areas/los-angeles/
     images: []
     cards:
       - label: Anaheim
         url: /areas/anaheim/
         _template: pill
       - label: Fullerton
-        url: '#locations'
+        url: /areas/fullerton/
         _template: pill
       - label: Irvine
         url: /areas/irvine/
         _template: pill
       - label: Costa Mesa
-        url: '#locations'
+        url: /areas/costa-mesa/
         _template: pill
       - label: Laguna Beach
-        url: '#locations'
+        url: /areas/laguna-beach/
         _template: pill
       - label: Huntington Beach
-        url: '#locations'
+        url: /areas/huntington-beach/
         _template: pill
       - label: Orange
-        url: '#locations'
+        url: /areas/orange/
         _template: pill
       - label: Santa Ana
-        url: '#locations'
+        url: /areas/santa-ana/
         _template: pill
       - label: Placentia
-        url: '#locations'
+        url: /areas/placentia/
         _template: pill
       - label: Los Alamitos
-        url: '#locations'
+        url: /areas/los-alamitos/
         _template: pill
       - label: Newport Beach
-        url: '#locations'
+        url: /areas/newport-beach/
         _template: pill
       - label: Diamond Bar
-        url: '#locations'
+        url: /areas/diamond-bar/
         _template: pill
       - label: Chino Hills
-        url: '#locations'
+        url: /areas/chino-hills/
         _template: pill
   - label: Request a quote
     copy:

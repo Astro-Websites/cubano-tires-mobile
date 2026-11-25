@@ -236,25 +236,25 @@ demoSections:
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: /#locations
+    url: /areas/santa-ana/
     label: Santa Ana
   - _template: pill
-    url: /#locations
+    url: /areas/orange/
     label: Orange
   - _template: pill
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: /#locations
+    url: /areas/fullerton/
     label: Fullerton
   - _template: pill
-    url: /#locations
+    url: /areas/costa-mesa/
     label: Costa Mesa
   - _template: pill
     url: /#locations
     label: Long Beach
   - _template: pill
-    url: /#locations
+    url: /areas/los-angeles/
     label: Los Angeles
   - _template: pill
     url: /#locations

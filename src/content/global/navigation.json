@@ -123,8 +123,56 @@
           "href": "/areas/anaheim/"
         },
         {
+          "label": "Fullerton",
+          "href": "/areas/fullerton/"
+        },
+        {
           "label": "Irvine",
           "href": "/areas/irvine/"
+        },
+        {
+          "label": "Costa Mesa",
+          "href": "/areas/costa-mesa/"
+        },
+        {
+          "label": "Laguna Beach",
+          "href": "/areas/laguna-beach/"
+        },
+        {
+          "label": "Huntington Beach",
+          "href": "/areas/huntington-beach/"
+        },
+        {
+          "label": "Orange",
+          "href": "/areas/orange/"
+        },
+        {
+          "label": "Santa Ana",
+          "href": "/areas/santa-ana/"
+        },
+        {
+          "label": "Placentia",
+          "href": "/areas/placentia/"
+        },
+        {
+          "label": "Los Alamitos",
+          "href": "/areas/los-alamitos/"
+        },
+        {
+          "label": "Newport Beach",
+          "href": "/areas/newport-beach/"
+        },
+        {
+          "label": "Diamond Bar",
+          "href": "/areas/diamond-bar/"
+        },
+        {
+          "label": "Chino Hills",
+          "href": "/areas/chino-hills/"
+        },
+        {
+          "label": "Los Angeles",
+          "href": "/areas/los-angeles/"
         }
       ]
     }
@@ -260,8 +308,56 @@
           "href": "/areas/anaheim/"
         },
         {
+          "label": "Fullerton",
+          "href": "/areas/fullerton/"
+        },
+        {
           "label": "Irvine",
           "href": "/areas/irvine/"
+        },
+        {
+          "label": "Costa Mesa",
+          "href": "/areas/costa-mesa/"
+        },
+        {
+          "label": "Laguna Beach",
+          "href": "/areas/laguna-beach/"
+        },
+        {
+          "label": "Huntington Beach",
+          "href": "/areas/huntington-beach/"
+        },
+        {
+          "label": "Orange",
+          "href": "/areas/orange/"
+        },
+        {
+          "label": "Santa Ana",
+          "href": "/areas/santa-ana/"
+        },
+        {
+          "label": "Placentia",
+          "href": "/areas/placentia/"
+        },
+        {
+          "label": "Los Alamitos",
+          "href": "/areas/los-alamitos/"
+        },
+        {
+          "label": "Newport Beach",
+          "href": "/areas/newport-beach/"
+        },
+        {
+          "label": "Diamond Bar",
+          "href": "/areas/diamond-bar/"
+        },
+        {
+          "label": "Chino Hills",
+          "href": "/areas/chino-hills/"
+        },
+        {
+          "label": "Los Angeles",
+          "href": "/areas/los-angeles/"
         }
       ],
       "hidden": true

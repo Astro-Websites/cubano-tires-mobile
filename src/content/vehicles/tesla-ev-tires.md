@@ -195,7 +195,7 @@ demoSections:
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: /#locations
+    url: /areas/newport-beach/
     label: Newport Beach
   - _template: pill
     url: /areas/anaheim/
@@ -204,7 +204,7 @@ demoSections:
     url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: /#locations
+    url: /areas/costa-mesa/
     label: Costa Mesa
   - _template: pill
     url: /#locations

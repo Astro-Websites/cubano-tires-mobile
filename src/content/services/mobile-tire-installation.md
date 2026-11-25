@@ -236,7 +236,7 @@ demoSections:
     url: /areas/anaheim/
     label: Anaheim
   - _template: pill
-    url: /#locations
+    url: /areas/newport-beach/
     label: Newport Beach
   - _template: pill
     url: /#locations
@@ -248,7 +248,7 @@ demoSections:
     url: /#locations
     label: Tustin
   - _template: pill
-    url: /#locations
+    url: /areas/orange/
     label: Orange
   - _template: pill
     url: /#locations
