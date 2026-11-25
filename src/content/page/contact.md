@@ -139,13 +139,13 @@ demoSections:
     url: /areas/anaheim/
   - _template: pill
     label: Orange
-    url: /#locations
+    url: /areas/orange/
   - _template: pill
     label: Santa Ana
-    url: /#locations
+    url: /areas/santa-ana/
   - _template: pill
     label: Fullerton
-    url: /#locations
+    url: /areas/fullerton/
   - _template: pill
     label: Irvine
     url: /areas/irvine/
@@ -154,7 +154,7 @@ demoSections:
     url: /#locations
   - _template: pill
     label: Los Angeles
-    url: /#locations
+    url: /areas/los-angeles/
   - _template: pill
     label: Commerce
     url: /#locations

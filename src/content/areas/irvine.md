@@ -186,16 +186,16 @@ demoSections:
     url: /#locations
     label: Tustin
   - _template: pill
-    url: /#locations
+    url: /areas/costa-mesa/
     label: Costa Mesa
   - _template: pill
-    url: /#locations
+    url: /areas/newport-beach/
     label: Newport Beach
   - _template: pill
     url: /#locations
     label: Lake Forest
   - _template: pill
-    url: /#locations
+    url: /areas/santa-ana/
     label: Santa Ana
   - _template: pill
     url: /#locations

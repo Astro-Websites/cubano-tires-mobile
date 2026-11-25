@@ -206,7 +206,7 @@ demoSections:
     url: /areas/irvine/
     label: Irvine
   - _template: pill
-    url: /#locations
+    url: /areas/santa-ana/
     label: Santa Ana
   - _template: pill
     url: /areas/anaheim/
@@ -218,10 +218,10 @@ demoSections:
     url: /#locations
     label: Brea
   - _template: pill
-    url: /#locations
+    url: /areas/costa-mesa/
     label: Costa Mesa
   - _template: pill
-    url: /#locations
+    url: /areas/fullerton/
     label: Fullerton
   - _template: pill
     url: /#locations

@@ -183,19 +183,19 @@ demoSections:
   images: []
   cards:
   - _template: pill
-    url: /#locations
+    url: /areas/orange/
     label: Orange
   - _template: pill
-    url: /#locations
+    url: /areas/fullerton/
     label: Fullerton
   - _template: pill
-    url: /#locations
+    url: /areas/placentia/
     label: Placentia
   - _template: pill
     url: /#locations
     label: Yorba Linda
   - _template: pill
-    url: /#locations
+    url: /areas/santa-ana/
     label: Santa Ana
   - _template: pill
     url: /#locations
