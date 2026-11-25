@@ -101,7 +101,7 @@ demoSections:
     url: https://www.tiktok.com/@cubanotiresmobileshop
   - _template: pill
     label: Instagram
-    url: https://www.instagram.com/cubanotiresmobileshop/
+    url: https://www.instagram.com/cubanotiresmobile/
   - _template: pill
     label: YouTube
     url: https://www.youtube.com/@CubanoTiresMobileShop

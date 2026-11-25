@@ -281,7 +281,7 @@ demoSections:
         url: 'https://www.tiktok.com/@cubanotiresmobileshop'
       - role: Button
         label: Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Button
         label: YouTube
         url: 'https://www.youtube.com/@CubanoTiresMobileShop'
@@ -394,7 +394,7 @@ demoSections:
   - label: Instagram feed
     copy:
       - role: Paragraph
-        text: '@cubanotiresmobileshop'
+        text: '@cubanotiresmobile'
       - role: Heading
         text: Fresh From Our Instagram
       - role: Paragraph
@@ -402,37 +402,37 @@ demoSections:
     links:
       - role: Button
         label: Follow on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
       - role: Link
         label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobileshop/'
+        url: 'https://www.instagram.com/cubanotiresmobile/'
     images: []
   - label: Brands
     copy:
