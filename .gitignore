@@ -14,3 +14,6 @@ tina/__generated__/
 .DS_Store
 __pycache__/
 .dev.vars
+# Instagram photos and list, downloaded from Behold at build time (scripts/instagram-feed.mjs)
+.cache/
+public/instagram/

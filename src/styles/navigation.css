@@ -39,3 +39,9 @@ header.open .cub-links .cub-dd-menu a{display:flex;min-height:44px;padding:0 12p
 
 /* Images get width/height at build (scripts/image-performance.mjs) to reserve space while they load; keep their CSS height in charge. */
 :where(img[width][height]){height:auto}
+
+/* Homepage Instagram grid (src/lib/instagram.ts): 6 across on desktop, 3 on tablets.
+   Phones (2 across) are set in global.css. */
+@media (min-width: 761px) and (max-width: 1024px) { .ig-grid { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; } }
+.ig-tile img { transition: transform 0.3s ease; }
+.ig-tile:hover img, .ig-tile:focus-visible img { transform: scale(1.04); }

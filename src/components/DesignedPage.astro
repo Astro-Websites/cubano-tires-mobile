@@ -7,7 +7,8 @@ import Base from '../layouts/Base.astro';
 import config from '../content/global/config.json';
 import navigation from '../content/global/navigation.json';
 import scriptsSource from '../fragments/scripts.html?raw';
-import { renderDemo, globalsFrom, fillTokens, type DemoPage } from '../lib/demo-pages';
+import { renderDemo, globalsFrom, fillTokens, type DemoBlocks, type DemoPage } from '../lib/demo-pages';
+import { renderInstagramGrid } from '../lib/instagram';
 
 const templates = import.meta.glob<string>('../fragments/demo-pages/*.html', { eager: true, query: '?raw', import: 'default' });
 const { entry } = Astro.props;
@@ -17,11 +18,13 @@ if (!template) throw new Error(`Missing design ${page.demoTemplate} for ${entry.
 const collection = entry.collection;
 const relativePath = entry.filePath.replace(`src/content/${collection}/`, '');
 const globals = globalsFrom(config);
-const preview = JSON.stringify({ template, collection, relativePath, page, globals }).replace(/</g, '\\u003c');
+// The Instagram grid is read from the Behold feed at build time, only for designs that have the slot.
+const blocks: DemoBlocks = template.includes('<!--instagram-feed-->') ? { 'instagram-feed': await renderInstagramGrid((config as any).instagram) } : {};
+const preview = JSON.stringify({ template, collection, relativePath, page, globals, blocks }).replace(/</g, '\\u003c');
 ---
 <Base title={String(fillTokens(page.seoTitle || page.title, globals))} description={String(fillTokens(page.description || config.seo?.description, globals))} favicon={config.seo?.favicon} headerCode={config.codeInjection?.headerCode} footerCode={config.codeInjection?.footerCode} noindex={entry.id === 'thank-you'}>
   <Header {config} {navigation} />
-  <main id="cubano-demo-content" set:html={renderDemo(template, page, { globals })} />
+  <main id="cubano-demo-content" set:html={renderDemo(template, page, { globals, blocks })} />
   <Footer {config} {navigation} />
   <Fragment set:html={scriptsSource} />
   <script type="application/json" id="cubano-tina-preview" set:html={preview} />

@@ -77,6 +77,17 @@ export default defineConfig({
           { type: 'string', name: 'email', label: 'Email', description: 'Shown on the Contact page. Type {{email}} in any page text to insert it.' },
           { type: 'string', name: 'formEmail', label: 'Contact Form Email', description: 'Where Contact page form messages are sent. They are emailed through the Bliss Drive mail server (mail.blissdrive.net). Type {{formEmail}} to insert it.' },
           { type: 'string', name: 'turnstileSiteKey', label: 'Contact Form Bot Check Site Key', description: 'Cloudflare Turnstile site key (Cloudflare dashboard, Turnstile, add the site domains). Leave empty to hide the check.' },
+          {
+            type: 'object',
+            name: 'instagram',
+            label: 'Instagram Feed (homepage)',
+            description: 'The "Fresh From Our Instagram" grid on the homepage. Posts are pulled from Behold (app.behold.so) when the site rebuilds, and the photos are saved on this site.',
+            fields: [
+              { type: 'string', name: 'handle', label: 'Instagram Handle', description: 'Without the @, e.g. cubanotiresmobile. Used for photo alt text when a post has no caption.' },
+              { type: 'string', name: 'feedUrl', label: 'Behold JSON Feed URL', description: 'From Behold: Feeds, then this feed, then Feed URL (https://feeds.behold.so/...). Leave empty to hide the photo grid.' },
+              { type: 'number', name: 'postCount', label: 'Number of Posts', description: 'How many of the latest posts to show (1 to 12). The free Behold plan returns up to 6.' },
+            ],
+          },
           { type: 'string', name: 'addressLine1', label: 'Address Line 1', required: true, description: 'The Contact page map searches Google for the Site Name plus this address (token {{mapQuery}}), so the pin shows the Google Business listing name. Keep both matching the Google Business Profile.' },
           { type: 'string', name: 'addressLine2', label: 'Address Line 2', required: true },
           { type: 'string', name: 'copyright', label: 'Copyright', required: true },

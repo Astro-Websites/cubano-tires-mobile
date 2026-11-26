@@ -38,5 +38,10 @@
     "weekdayHours": "8:00 AM to 5:00 PM",
     "weekendLabel": "Saturday and Sunday",
     "weekendHours": "Closed"
+  },
+  "instagram": {
+    "handle": "cubanotiresmobile",
+    "feedUrl": "https://feeds.behold.so/wBgzEaDiGYLRrBhK5UkO",
+    "postCount": 6
   }
 }
