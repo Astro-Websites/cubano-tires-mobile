@@ -71,7 +71,15 @@ function tinaField(row: Row | undefined, field: string) {
 // Tina names card types <Collection>DemoSectionsCards<Type> (e.g. GalleryDemoSectionsCardsPhoto, PageDesignedDemoSectionsCardsFaq).
 const cardType = (card: Row) => card?._template || String(card?.__typename || '').replace(/^\w*?DemoSectionsCards/, '').replace(/^./, (c) => c.toLowerCase());
 
-export function renderDemo(template: string, page: DemoPage, options: { preview?: boolean; globals?: Globals } = {}) {
+// Build-time blocks (e.g. the Instagram grid) are dropped into <!--name--> markers after the slots are filled.
+export type DemoBlocks = Record<string, string>;
+export function renderDemo(template: string, page: DemoPage, options: { preview?: boolean; globals?: Globals; blocks?: DemoBlocks } = {}) {
+  const html = fillSlots(template, page, options);
+  const blocks = options.blocks || {};
+  return html.replace(/<!--([a-z][\w-]*)-->/g, (marker, name) => (name in blocks ? blocks[name] : marker));
+}
+
+function fillSlots(template: string, page: DemoPage, options: { preview?: boolean; globals?: Globals }) {
   const sections = page.demoSections || [];
   const expanded = template.replace(/<!--repeat:(\d+):(\w+)-->([\s\S]*?)<!--\/repeat-->/g, (_, section, type, block: string) =>
     (sections[+section]?.cards || [])

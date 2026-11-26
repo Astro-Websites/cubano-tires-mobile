@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { useTina } from 'tinacms/dist/react';
 import { addImageEditStyles } from './preview-styles';
 import type { DesignedCollection } from './page-collections';
-import { designedQuery, fillTokens, renderDemo, type DemoPage, type Globals } from './demo-pages';
+import { designedQuery, fillTokens, renderDemo, type DemoBlocks, type DemoPage, type Globals } from './demo-pages';
 
 // Live preview inside the Tina editor: re-render the design from the form values and
 // tag every text and image with data-tina-field so clicking it opens that field.
@@ -11,7 +11,7 @@ export function mountDemoPreview() {
   const root = document.querySelector<HTMLElement>('#cubano-demo-content');
   const script = document.querySelector('#cubano-tina-preview');
   if (!root || !script?.textContent) return;
-  const { template, collection = 'page', relativePath, page, globals } = JSON.parse(script.textContent) as { template: string; collection?: DesignedCollection; relativePath: string; page: DemoPage; globals?: Globals };
+  const { template, collection = 'page', relativePath, page, globals, blocks } = JSON.parse(script.textContent) as { template: string; collection?: DesignedCollection; relativePath: string; page: DemoPage; globals?: Globals; blocks?: DemoBlocks };
   const query = designedQuery(collection);
   addImageEditStyles();
   const mount = document.createElement('div');
@@ -28,7 +28,7 @@ export function mountDemoPreview() {
       if (!current) return;
       // Keep third-party widgets (the TIRESanytime shop search) alive across re-renders.
       const widget = root!.querySelector('#ta-widget-container');
-      root!.innerHTML = renderDemo(template, current, { preview: true, globals });
+      root!.innerHTML = renderDemo(template, current, { preview: true, globals, blocks });
       const fresh = root!.querySelector('#ta-widget-container');
       if (widget && fresh) fresh.replaceWith(widget);
       document.title = String(fillTokens(current.seoTitle || current.title, globals));

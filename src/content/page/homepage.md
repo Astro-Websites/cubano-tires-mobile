@@ -403,36 +403,6 @@ demoSections:
       - role: Button
         label: Follow on Instagram
         url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
-      - role: Link
-        label: View on Instagram
-        url: 'https://www.instagram.com/cubanotiresmobile/'
     images: []
   - label: Brands
     copy:
