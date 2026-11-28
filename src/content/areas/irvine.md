@@ -149,7 +149,7 @@ demoSections:
     author: Repeat customer · Google review
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy."'
-    author: Google review
+    author: Sara V. · Google review
   - _template: review
     quote: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
     author: Tess S. · Google review

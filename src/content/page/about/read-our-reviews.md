@@ -57,12 +57,12 @@ demoSections:
   - role: Heading
     text: Real reviews from real jobs
   - role: Paragraph
-    text: 'A few favorites from our Google reviews. [Client to provide: 6 to 9 more recent reviews, or a live Google reviews widget]'
+    text: A few favorites from our 5-star Google reviews.
   links: []
   images: []
   cards:
   - _template: review
-    quote: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
+    quote: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
     author: Tess S., Google review
   - _template: review
     quote: '"I was pleasantly impressed with the whole operation. Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appointment for today! Romero arrived on time and was very professional."'
@@ -71,17 +71,23 @@ demoSections:
     quote: '"They came right to my driveway and replaced all four tires on my travel trailer in about 40 minutes. I didn''t have to move the trailer or deal with taking it anywhere."'
     author: Justin K., Google review
   - _template: review
-    quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
+    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges). Orfanel was my tire miracle worker."'
+    author: Sara V., Google review
+  - _template: review
+    quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I also appreciate, the price they quote is the price I pay."'
     author: Repeat customer, Google review
   - _template: review
-    quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    quote: '"Got a nail in my Bronco, spoke to Joel on Monday evening and a tech got here at 11:06 am and done in 20 min or less. I was still able to be in my home while he worked on my tire."'
+    author: Nancy G., Google review
   - _template: review
-    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    quote: '"Called them at 2:30pm, all four tires replaced by 5:00pm. The whole process was on point. Price was reasonable, they came to the RV park. 5 star customer service!"'
+    author: Ronnie B., Google review
   - _template: review
-    quote: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
-    author: Google review
+    quote: '"I recently moved from Minnesota and needed my snow tires swapped out. They were incredibly friendly, professional, and FAST. The work was done quickly and correctly."'
+    author: Mike W., Google review
+  - _template: review
+    quote: '"Our service tech, Orfanel Fierros, was top notch. The whole service took about, maybe 30 mins. Payment was easy. I will recommend Cubano Mobile Tire Service to my friends and family."'
+    author: Shirley B., Google review
 - label: Leave a review
   copy:
   - role: Heading

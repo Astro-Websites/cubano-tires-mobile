@@ -150,10 +150,10 @@ demoSections:
     author: Jesse M. V., Google review
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
-    author: Google review
+    author: Tess S., Google review
 - label: Placentia Tire Service FAQ
   copy:
   - role: Heading

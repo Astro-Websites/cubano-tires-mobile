@@ -150,10 +150,10 @@ demoSections:
     author: Tess S., Google review
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-    author: Google review
+    author: Jesse M. V., Google review
 - label: Diamond Bar Tire Service FAQ
   copy:
   - role: Heading

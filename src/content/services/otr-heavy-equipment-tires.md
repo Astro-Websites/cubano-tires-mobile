@@ -187,7 +187,7 @@ demoSections:
     author: Tess S. · Google review
   - _template: review
     quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    author: Sara V. · Google review
 - label: How much does heavy equipment tire service cost?
   copy:
   - role: Heading

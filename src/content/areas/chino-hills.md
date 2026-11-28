@@ -150,10 +150,10 @@ demoSections:
     author: Justin K., Google review
   - _template: review
     quote: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-    author: Google review
+    author: Jesse M. V., Google review
   - _template: review
     quote: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
-    author: Google review
+    author: Tess S., Google review
 - label: Chino Hills Tire Service FAQ
   copy:
   - role: Heading

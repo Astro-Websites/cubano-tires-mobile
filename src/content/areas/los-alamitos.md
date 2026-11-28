@@ -147,7 +147,7 @@ demoSections:
   cards:
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done."'
     author: Repeat customer, Google review

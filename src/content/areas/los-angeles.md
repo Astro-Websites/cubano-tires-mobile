@@ -147,7 +147,7 @@ demoSections:
   cards:
   - _template: review
     quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done."'
     author: Repeat customer, Google review

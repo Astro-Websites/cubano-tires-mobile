@@ -147,10 +147,10 @@ demoSections:
   cards:
   - _template: review
     quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"Ramiro arrived right on time, just as promised. When you''re dealing with a tire issue, it can definitely be stressful, but Ramiro made the whole experience feel easy and worry free."'
-    author: Google review
+    author: Tess S., Google review
   - _template: review
     quote: '"Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today!"'
     author: Jesse M. V., Google review

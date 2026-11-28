@@ -147,13 +147,13 @@ demoSections:
   cards:
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"Called yesterday and spoke to Joel, who was very helpful on the phone. He scheduled an appt for today!"'
     author: Jesse M. V., Google review
   - _template: review
-    quote: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-    author: Google review
+    quote: '"Excellent service! I recently moved from Minnesota and needed my snow tires swapped out. They were incredibly friendly, professional, and FAST."'
+    author: Mike W., Google review
 - label: Fullerton Tire Service FAQ
   copy:
   - role: Heading

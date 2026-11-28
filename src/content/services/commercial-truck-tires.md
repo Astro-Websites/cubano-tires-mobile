@@ -183,7 +183,7 @@ demoSections:
     author: Justin K. · Google review
   - _template: review
     quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    author: Sara V. · Google review
 - label: How much do commercial truck tires cost?
   copy:
   - role: Heading
