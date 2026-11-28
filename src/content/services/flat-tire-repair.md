@@ -81,22 +81,14 @@ demoSections:
     text: Tread worn below 4/32", or the tire is over 6 years old
   - role: Paragraph
     text: No problem. We bring the right tire on the truck and install it on the spot. You'll know the price before we come.
-  - role: Paragraph
-    text: Where the puncture is matters
-  - role: List item
-    text: 'Center of the tread: may be repaired under certain circumstances.'
-  - role: List item
-    text: 'Edge of the shoulder: may be repaired if the puncture angles toward the center of the tread.'
-  - role: List item
-    text: 'Shoulder and sidewall: not repairable.'
-  - role: Paragraph
-    text: No outer grooves on your tread? Then we don't repair a puncture within 25% of the tire's width from the tread edge. On a 205mm tire, that's about 2 inches from the edge.
   - role: Subheading
     text: How a Proper Tire Repair Is Done
   - role: Paragraph
     text: At Cubano Tires Mobile Shop, we use professional plug-patch repairs to safely repair punctured tires. We start by removing the tire from the wheel and inspecting the inside to make sure the damage is repairable. Once approved, we install a plug-patch combination from the inside of the tire to properly seal the puncture. We then remount the tire, balance the wheel, and inflate it to the manufacturer's recommended tire pressure before completing the service.
   links: []
-  images: []
+  images:
+  - source: /uploads/cubano-pages/cubano-tires-our-tire-repair-policy.webp
+    alt: 'Cubano Tires repair policy diagram: punctures in the green center of the tread may be repaired, punctures at the yellow shoulder edge only if angled toward the center, and punctures in the red shoulder or sidewall cannot be repaired. We will not repair a tire worn below 4/32 inch, over 6 years old, with sidewall damage, driven on while flat, with a puncture larger than 1/4 inch, or with a slice.'
 - label: Flats we fix every day
   copy:
   - role: Heading
