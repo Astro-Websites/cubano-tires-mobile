@@ -180,7 +180,7 @@ demoSections:
     author: Justin K. · Google review
   - _template: review
     quote: '"2nd time working with Cubano Tires. Tech was professional and courteous. Like the first time, they got the work done quickly and super convenient. I was able to continue working while the work was done. I also appreciate, the price they quote is the price I pay."'
-    author: Google review
+    author: Repeat customer · Google review
 - label: How much does mobile tire installation cost?
   copy:
   - role: Heading

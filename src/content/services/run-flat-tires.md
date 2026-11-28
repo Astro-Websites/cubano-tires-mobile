@@ -152,10 +152,10 @@ demoSections:
   cards:
   - _template: review
     quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    author: Sara V. · Google review
   - _template: review
-    quote: '"I was skeptical when there were only 5 star reviews, but after working with Cubano Tire, I see why! Everything was so simple, straightforward and easy: booking an appointment, the tech sharing arrival time info, and the whole service took less than 45 min."'
-    author: Google review
+    quote: '"Called them at 2:30pm, all four tires replaced by 5:00pm. The whole process was on point. Price was reasonable, they came to the RV park."'
+    author: Ronnie B. · Google review
 - label: How much does run-flat tire replacement cost?
   copy:
   - role: Heading

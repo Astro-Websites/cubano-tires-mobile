@@ -147,10 +147,10 @@ demoSections:
   cards:
   - _template: review
     quote: '"Joel answered at the main office, set my appointment and gave me a quote (which was also what I paid, no hidden fees or upcharges) as well as what the timeline would be if my tire couldn''t be patched. Orfanel was my tire miracle worker."'
-    author: Google review
+    author: Sara V., Google review
   - _template: review
     quote: '"They had everything needed in the truck! Removed my old tires, and balanced and installed 2 new tires. All considered, the price was very reasonable for my 2015 Nissan Frontier!"'
-    author: Google review
+    author: Jesse M. V., Google review
   - _template: review
     quote: '"They came right to me and had my tire changed in just 9 minutes! Ramiro arrived right on time, just as promised."'
     author: Tess S., Google review
